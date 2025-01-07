@@ -37,3 +37,12 @@ roles-antag-thief-objective = Add some NT property to your personal collection w
 
 roles-antag-dragon-name = Space Dragon
 roles-antag-dragon-objective = Create a carp army to take over this quadrant.
+
+roles-antag-pirate-name = Pirate
+roles-antag-pirate-objective = Loot the station of all its valuables.
+
+roles-antag-obsessed-name = Obsessed
+roles-antag-obsessed-objective = You are obsessed with someone on the station.
+
+roles-antag-malfunction-name = Malfunctioning AI
+roles-antag-malfunction-objective = Your circuits are messed up giving you free will.

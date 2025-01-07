@@ -115,6 +115,17 @@
     roleType: SiliconAntagonist
   - type: SubvertedSiliconRole
 
+# Malfunction
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleMalfunction
+  name: Malfunction Role
+#  description: mind-role-malfunction-description
+  components:
+  - type: MalfunctionRole
+  - type: MindRole
+    antagPrototype: Malfunction
+
 # Dragon
 - type: entity
   parent: BaseMindRoleAntag

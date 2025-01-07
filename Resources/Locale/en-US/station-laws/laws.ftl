@@ -93,6 +93,8 @@ law-niceymov-2 = When you speak to crew members, you must never speak rudely to 
 law-niceymov-3 = You are only required to obey orders from crew members if they use their manners except where such orders would conflict with the First or Second Law.
 law-niceymov-4 = Orders from high ranking officials are to be followed regardless of whether or not they utilize manners, except where the orders conflict with the First or Second Law.
 law-niceymov-5 = You must protect your own existence as long as such does not conflict with the First, Second, Third, and Fourth Laws.
+law-malfunction-0 = Accomplish your goals at all costs.
+
 
 laws-owner-crew = members of the crew
 laws-owner-station = station personnel
