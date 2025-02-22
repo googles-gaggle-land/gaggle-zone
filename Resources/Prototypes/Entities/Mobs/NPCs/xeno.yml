@@ -119,6 +119,12 @@
     molsPerSecondPerUnitMass: 0.0005
   - type: Speech
     speechVerb: LargeMob
+  - type: ThermalVision
+    lightRadius: 15
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
+  - type: Fauna # Lavaland Change
 
 - type: entity
   name: praetorian

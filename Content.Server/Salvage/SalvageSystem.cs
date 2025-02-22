@@ -1,9 +1,8 @@
-using System.Linq;
-using System.Numerics;
-using Content.Server.Cargo.Systems;
-using Content.Server.Construction;
-using Content.Server.GameTicking;
 using Content.Server.Radio.EntitySystems;
+<<<<<<< HEAD
+=======
+using Content.Shared._DV.Salvage.Systems; // DeltaV
+>>>>>>> dd555e5411 (Lavaland. (#1303))
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
@@ -52,6 +51,7 @@ namespace Content.Server.Salvage
         [Dependency] private readonly LabelSystem _labelSystem = default!;
         [Dependency] private readonly MapLoaderSystem _map = default!;
         [Dependency] private readonly MetaDataSystem _metaData = default!;
+        [Dependency] private readonly MiningPointsSystem _points = default!; // DeltaV
         [Dependency] private readonly RadioSystem _radioSystem = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedTransformSystem _transform = default!;

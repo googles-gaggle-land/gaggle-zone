@@ -146,7 +146,7 @@ entities:
           version: 6
         -3,1:
           ind: -3,1
-          tiles: AAAAAAAAeAAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAeAAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAeAAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAeAAAAAAAeAAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          tiles: AAAAAAAAeAAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAeAAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAeAAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAeAAAAAAAeAAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAATQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAWQAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
           version: 6
         -4,0:
           ind: -4,0
@@ -2872,11 +2872,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 235
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -2902,6 +2910,10 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
@@ -2917,9 +2929,17 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -2947,11 +2967,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
           - 0
           - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -3889,6 +3917,12 @@ entities:
     - type: Transform
       pos: -24.5,16.5
       parent: 2
+    - type: Door
+      secondsUntilStateChange: -77.63124
+      state: Opening
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: True
   - uid: 66
     components:
     - type: Transform
@@ -4238,24 +4272,11 @@ entities:
       linkedPorts:
         113:
         - DoorStatus: DoorBolt
-  - uid: 115
-    components:
-    - type: Transform
-      pos: -37.5,22.5
-      parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        116:
-        - DoorStatus: DoorBolt
   - uid: 116
     components:
     - type: Transform
       pos: -37.5,20.5
       parent: 2
-    - type: DeviceLinkSource
-      linkedPorts:
-        115:
-        - DoorStatus: DoorBolt
   - uid: 117
     components:
     - type: Transform
@@ -4343,6 +4364,14 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -19.5,26.5
+      parent: 2
+- proto: AirlockExternalGlassShuttleMiningFilled
+  entities:
+  - uid: 1363
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -37.5,22.5
       parent: 2
 - proto: AirlockExternalLocked
   entities:
@@ -5181,6 +5210,12 @@ entities:
       parent: 2
 - proto: AtmosDeviceFanDirectional
   entities:
+  - uid: 115
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -37.5,22.5
+      parent: 2
   - uid: 263
     components:
     - type: Transform
@@ -10925,31 +10960,6 @@ entities:
     components:
     - type: Transform
       pos: -37.5,22.5
-      parent: 2
-  - uid: 1363
-    components:
-    - type: Transform
-      pos: -37.5,23.5
-      parent: 2
-  - uid: 1364
-    components:
-    - type: Transform
-      pos: -37.5,24.5
-      parent: 2
-  - uid: 1365
-    components:
-    - type: Transform
-      pos: -37.5,27.5
-      parent: 2
-  - uid: 1366
-    components:
-    - type: Transform
-      pos: -37.5,26.5
-      parent: 2
-  - uid: 1367
-    components:
-    - type: Transform
-      pos: -37.5,25.5
       parent: 2
   - uid: 1368
     components:
@@ -21551,20 +21561,20 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -27.5,-11.5
       parent: 2
-- proto: ComputerSalvageExpedition
-  entities:
-  - uid: 3354
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -33.5,19.5
-      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 3355
     components:
     - type: Transform
       pos: -20.5,23.5
+      parent: 2
+- proto: ComputerShuttleMiningLavaland
+  entities:
+  - uid: 3354
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -33.5,19.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -25023,13 +25033,6 @@ entities:
       parent: 2
     - type: Physics
       canCollide: False
-- proto: DungeonMasterCircuitBoard
-  entities:
-  - uid: 3896
-    components:
-    - type: Transform
-      pos: -48.563347,7.265581
-      parent: 2
 - proto: ElectricGuitarInstrument
   entities:
   - uid: 3897
@@ -26115,7 +26118,7 @@ entities:
       parent: 2
     - type: Physics
       canCollide: False
-- proto: FloraTree04
+- proto: FloraTree
   entities:
   - uid: 4078
     components:
@@ -26127,8 +26130,6 @@ entities:
     - type: Transform
       pos: 7.499776,2.590732
       parent: 2
-- proto: FloraTree05
-  entities:
   - uid: 4080
     components:
     - type: Transform
@@ -26303,6 +26304,13 @@ entities:
     components:
     - type: Transform
       pos: -36.5,7.5
+      parent: 2
+- proto: GameMasterCircuitBoard
+  entities:
+  - uid: 3896
+    components:
+    - type: Transform
+      pos: -48.563347,7.265581
       parent: 2
 - proto: GasAnalyzer
   entities:
@@ -45097,11 +45105,6 @@ entities:
     - type: Transform
       pos: -23.5,-16.5
       parent: 2
-  - uid: 6718
-    components:
-    - type: Transform
-      pos: -37.5,28.5
-      parent: 2
   - uid: 6719
     components:
     - type: Transform
@@ -48903,11 +48906,6 @@ entities:
     components:
     - type: Transform
       pos: -34.5,14.5
-      parent: 2
-  - uid: 7339
-    components:
-    - type: Transform
-      pos: -37.5,29.5
       parent: 2
 - proto: SignSpace
   entities:
@@ -58567,12 +58565,6 @@ entities:
     components:
     - type: Transform
       pos: -33.5,-2.5
-      parent: 2
-  - uid: 8998
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -37.5,29.5
       parent: 2
   - uid: 8999
     components:

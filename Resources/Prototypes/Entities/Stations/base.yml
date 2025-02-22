@@ -52,15 +52,7 @@
             - type: TradeStation
           paths:
             - /Maps/Shuttles/trading_outpost.yml
-        mining: !type:GridSpawnGroup
-          paths:
-          - /Maps/Shuttles/mining.yml
-        oldstation: !type:GridSpawnGroup #force this to always spawn so ghost roles are always accessible
-          minimumDistance: 950 #unlikely to work
-          maximumDistance: 1200
-          stationGrid: false
-          paths:
-          - /Maps/_Funkystation/Ruins/oldstation.yml
+          nameDataset: TradeStationNames
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true
@@ -80,18 +72,18 @@
           - /Maps/Ruins/syndicate_dropship.yml
           - /Maps/Ruins/whiteship_ancient.yml
           - /Maps/Ruins/whiteship_bluespacejumper.yml
-          - /Maps/Ruins/wrecklaimer.yml
-        vgroid: !type:DungeonSpawnGroup
-          minimumDistance: 300
-          maximumDistance: 350
-          nameDataset: NamesBorer
-          stationGrid: false
-          addComponents:
-          - type: Gravity
-            enabled: true
-            inherent: true
-          protos:
-          - VGRoid
+# Lavaland Change: no vgroid
+#        vgroid: !type:DungeonSpawnGroup
+#          minimumDistance: 300
+#          maximumDistance: 350
+#          nameDataset: NamesBorer
+#          stationGrid: false
+#          addComponents:
+#          - type: Gravity
+#            enabled: true
+#            inherent: true
+#          protos:
+#          - VGRoid
 
 - type: entity
   id: BaseStationCentcomm

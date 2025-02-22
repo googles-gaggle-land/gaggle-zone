@@ -1177,6 +1177,16 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+  - type: MobThresholds # Goobstation
+    thresholds:
+      0: Alive
+      120: Critical
+      220: Dead
+  - type: SlowOnDamage # Goobstation
+    speedModifierThresholds:
+      80: 0.7
+      100: 0.5
+  - type: Fauna # Lavaland Change
 
 - type: entity
   name: kangaroo
@@ -1457,7 +1467,7 @@
         Burn: 3
     clumsySound:
       path: /Audio/Animals/monkey_scream.ogg
-
+  - type: Fauna # Lavaland Change
 
 - type: entity
   name: monkey
@@ -2462,7 +2472,9 @@
   - type: NightVision # Goobstation - Nigthvision
     isToggle: true
     color: "#808080"
-    playSoundOn: false
+    activateSound: null
+    deactivateSound: null
+  - type: Fauna # Lavaland Change
 
 - type: entity
   parent: MobSpiderBase
