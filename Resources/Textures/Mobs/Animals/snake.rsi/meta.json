@@ -53,5 +53,17 @@
         ]
       ]
     }
+    {
+      "name": "darcy_dead",
+      "delays": [
+        [
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "darcy",
+      "directions": 4
+    }
   ]
 }

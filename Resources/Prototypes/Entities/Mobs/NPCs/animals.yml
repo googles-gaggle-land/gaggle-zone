@@ -2328,7 +2328,7 @@
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: snake
+      state: darcy
       sprite: Mobs/Animals/snake.rsi
   - type: Physics
   - type: Fixtures
@@ -2345,11 +2345,11 @@
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: snake
+        Base: darcy
       Critical:
-        Base: dead
+        Base: darcy_dead
       Dead:
-        Base: dead
+        Base: darcy_dead
   - type: Butcherable
     spawned:
     - id: FoodMeatSnake
