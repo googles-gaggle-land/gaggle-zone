@@ -74,6 +74,15 @@ public sealed class TeleportSystem : EntitySystem
             _pullingSystem.TryStopPull(uid, pull);
 
         var xform = Transform(uid);
+        // break any active pulls e.g. secoff pulling you with cuffs
+        if (TryComp<PullableComponent>(uid, out var pullable) && _pullingSystem.IsPulled(uid, pullable))
+            _pullingSystem.TryStopPull(uid, pullable, ignoreGrab: true);
+
+        // if we teleport the pulled entity goes with us
+        EntityUid? pullableEntity = null;
+        if (TryComp<PullerComponent>(uid, out var puller))
+            pullableEntity = puller.Pulling;
+
         var entityCoords = xform.Coordinates.ToMap(EntityManager, _xform);
 
         var targetCoords = new MapCoordinates();

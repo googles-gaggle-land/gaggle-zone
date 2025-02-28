@@ -21,6 +21,8 @@ using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Content.Shared._Impstation.CosmicCult.Components;
+using Content.Shared.Movement.Pulling.Components; // Goobstation
+using Content.Shared.Movement.Pulling.Systems; // Goobstation
 
 
 namespace Content.Server.Body.Systems;
@@ -53,6 +55,15 @@ public sealed class RespiratorSystem : EntitySystem
         SubscribeLocalEvent<RespiratorComponent, ApplyMetabolicMultiplierEvent>(OnApplyMetabolicMultiplier);
     }
 
+    // Goobstation start
+    // Can breathe check for grab
+    public bool CanBreathe(EntityUid uid, RespiratorComponent respirator)
+    {
+        if(respirator.Saturation < respirator.SuffocationThreshold)
+            return false;
+        return !TryComp<PullableComponent>(uid, out var pullable) || pullable.GrabStage != GrabStage.Suffocate;
+    }
+    // Goobstation end
     private void OnMapInit(Entity<RespiratorComponent> ent, ref MapInitEvent args)
     {
         ent.Comp.NextUpdate = _gameTiming.CurTime + ent.Comp.UpdateInterval;
@@ -95,7 +106,7 @@ public sealed class RespiratorSystem : EntitySystem
                 }
             }
 
-            if (respirator.Saturation < respirator.SuffocationThreshold)
+            if (!CanBreathe(uid, respirator)) // Goobstation edit
             {
                 if (TryComp<CosmicCultComponent>(uid, out var cultComponent) && !cultComponent.Respiration && !_mobState.IsIncapacitated(uid)) return; // Imp HACK so cultists gasp while in crit.
                 // One line change but a refactor would be so much better. this is VERY BAD and AWFUL.

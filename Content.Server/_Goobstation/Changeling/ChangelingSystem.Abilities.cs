@@ -17,8 +17,9 @@ using Content.Shared.Eye.Blinding.Components;
 using Content.Server.Flash.Components;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Stealth.Components;
-using Content.Shared.Damage.Components;
-using Content.Server.Radio.Components;
+using Content.Shared._Goobstation.Weapons.AmmoSelector;
+using Content.Shared.Actions;
+using Content.Shared.Movement.Pulling.Systems;
 
 namespace Content.Server.Changeling;
 
@@ -93,6 +94,14 @@ public sealed partial class ChangelingSystem : EntitySystem
         {
             _popup.PopupEntity(Loc.GetString("changeling-absorb-fail-unabsorbable"), uid, uid);
             return;
+        }
+        if (TryComp<PullableComponent>(target, out var pullable)) // Agressive grab check
+        {
+            if (pullable.GrabStage <= GrabStage.Soft)
+            {
+                _popup.PopupEntity(Loc.GetString("changeling-absorb-fail-nograb"), uid, uid);
+                return;
+            }
         }
 
         if (!TryUseAbility(uid, comp, args))
