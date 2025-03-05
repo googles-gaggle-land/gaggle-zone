@@ -1131,14 +1131,17 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - type: FTLDestination
-      requireCoordinateDisk: True
 - proto: APCBasic
   entities:
   - uid: 155
     components:
     - type: Transform
       pos: 14.5,21.5
+      parent: 2
+  - uid: 6269
+    components:
+    - type: Transform
+      pos: 2.5,11.5
       parent: 2
 - proto: BarSignOfficerBeersky
   entities:
@@ -1336,6 +1339,121 @@ entities:
     - type: Transform
       pos: 12.5,21.5
       parent: 2
+  - uid: 6270
+    components:
+    - type: Transform
+      pos: 2.5,11.5
+      parent: 2
+  - uid: 6271
+    components:
+    - type: Transform
+      pos: 2.5,9.5
+      parent: 2
+  - uid: 6272
+    components:
+    - type: Transform
+      pos: 2.5,8.5
+      parent: 2
+  - uid: 6273
+    components:
+    - type: Transform
+      pos: 2.5,10.5
+      parent: 2
+  - uid: 6274
+    components:
+    - type: Transform
+      pos: 3.5,8.5
+      parent: 2
+  - uid: 6275
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 2
+  - uid: 6276
+    components:
+    - type: Transform
+      pos: 5.5,8.5
+      parent: 2
+  - uid: 6277
+    components:
+    - type: Transform
+      pos: 6.5,8.5
+      parent: 2
+  - uid: 6278
+    components:
+    - type: Transform
+      pos: 6.5,9.5
+      parent: 2
+  - uid: 6279
+    components:
+    - type: Transform
+      pos: 6.5,10.5
+      parent: 2
+  - uid: 6280
+    components:
+    - type: Transform
+      pos: 7.5,10.5
+      parent: 2
+  - uid: 6281
+    components:
+    - type: Transform
+      pos: 8.5,10.5
+      parent: 2
+  - uid: 6282
+    components:
+    - type: Transform
+      pos: 9.5,10.5
+      parent: 2
+  - uid: 6283
+    components:
+    - type: Transform
+      pos: 1.5,8.5
+      parent: 2
+  - uid: 6284
+    components:
+    - type: Transform
+      pos: 0.5,8.5
+      parent: 2
+  - uid: 6285
+    components:
+    - type: Transform
+      pos: -0.5,8.5
+      parent: 2
+  - uid: 6286
+    components:
+    - type: Transform
+      pos: -0.5,9.5
+      parent: 2
+  - uid: 6287
+    components:
+    - type: Transform
+      pos: -0.5,10.5
+      parent: 2
+  - uid: 6288
+    components:
+    - type: Transform
+      pos: -1.5,10.5
+      parent: 2
+  - uid: 6289
+    components:
+    - type: Transform
+      pos: -2.5,10.5
+      parent: 2
+  - uid: 6290
+    components:
+    - type: Transform
+      pos: -3.5,10.5
+      parent: 2
+  - uid: 6291
+    components:
+    - type: Transform
+      pos: 2.5,12.5
+      parent: 2
+  - uid: 6292
+    components:
+    - type: Transform
+      pos: 2.5,13.5
+      parent: 2
 - proto: CableHVUncuttable
   entities:
   - uid: 57
@@ -1429,6 +1547,86 @@ entities:
     components:
     - type: Transform
       pos: 10.5,13.5
+      parent: 2
+  - uid: 6253
+    components:
+    - type: Transform
+      pos: 10.5,12.5
+      parent: 2
+  - uid: 6254
+    components:
+    - type: Transform
+      pos: 10.5,11.5
+      parent: 2
+  - uid: 6255
+    components:
+    - type: Transform
+      pos: 10.5,10.5
+      parent: 2
+  - uid: 6256
+    components:
+    - type: Transform
+      pos: 9.5,10.5
+      parent: 2
+  - uid: 6257
+    components:
+    - type: Transform
+      pos: 7.5,10.5
+      parent: 2
+  - uid: 6258
+    components:
+    - type: Transform
+      pos: 6.5,10.5
+      parent: 2
+  - uid: 6259
+    components:
+    - type: Transform
+      pos: 8.5,10.5
+      parent: 2
+  - uid: 6260
+    components:
+    - type: Transform
+      pos: 6.5,9.5
+      parent: 2
+  - uid: 6261
+    components:
+    - type: Transform
+      pos: 6.5,8.5
+      parent: 2
+  - uid: 6262
+    components:
+    - type: Transform
+      pos: 5.5,8.5
+      parent: 2
+  - uid: 6263
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 2
+  - uid: 6264
+    components:
+    - type: Transform
+      pos: 3.5,8.5
+      parent: 2
+  - uid: 6265
+    components:
+    - type: Transform
+      pos: 2.5,8.5
+      parent: 2
+  - uid: 6266
+    components:
+    - type: Transform
+      pos: 2.5,9.5
+      parent: 2
+  - uid: 6267
+    components:
+    - type: Transform
+      pos: 2.5,10.5
+      parent: 2
+  - uid: 6268
+    components:
+    - type: Transform
+      pos: 2.5,11.5
       parent: 2
 - proto: CableTerminal
   entities:
