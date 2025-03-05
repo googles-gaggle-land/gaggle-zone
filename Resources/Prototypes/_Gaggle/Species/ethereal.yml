@@ -1,0 +1,130 @@
+- type: species
+  id: Ethereal
+  name: species-name-ethereal
+  roundStart: true
+  prototype: MobEthereal
+  sprites: MobEtherealSprites
+  defaultSkinTone: "#b8b8b8"
+  markingLimits: MobEtherealMarkingLimits
+  dollPrototype: MobEtherealDummy
+  skinColoration: Hues
+
+- type: speciesBaseSprites
+  id: MobEtherealSprites
+  sprites:
+    Head: MobEtherealHead
+    Tail: MobHumanoidAnyMarking
+    Chest: MobEtherealTorso
+    Eyes: MobEtherealEyes
+    LArm: MobEtherealLArm
+    RArm: MobEtherealRArm
+    LHand: MobEtherealLHand
+    RHand: MobEtherealRHand
+    LLeg: MobEtherealLLeg
+    RLeg: MobEtherealRLeg
+    LFoot: MobEtherealLFoot
+    RFoot: MobEtherealRFoot
+
+- type: markingPoints
+  id: MobEtherealMarkingLimits
+  points:
+    Tail:
+      points: 1
+      required: false
+    Head:
+      points: 1
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobEtherealMarkingFollowSkin
+  markingsMatchSkin: true
+
+- type: humanoidBaseSprite
+  id: MobEtherealHead
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: head_m
+    
+- type: humanoidBaseSprite
+  id: MobEtherealEyes
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobEtherealHeadMale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobEtherealHeadFemale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobEtherealTorso
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobEtherealTorsoMale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobEtherealTorsoFemale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobEtherealLLeg
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobEtherealLArm
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobEtherealLHand
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobEtherealLFoot
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobEtherealRLeg
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobEtherealRArm
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobEtherealRHand
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobEtherealRFoot
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
+    state: r_foot

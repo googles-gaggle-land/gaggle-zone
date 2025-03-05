@@ -11,19 +11,24 @@
     - HeadTop
   - type: Hunger
   - type: Thirst
+  - type: PointLight
+    energy: 0.5
+    radius: 3
   - type: Icon
-    sprite: Mobs/Species/Ethereal/parts.rsi
+    sprite: _gaggle/Mobs/Species/Ethereal/parts.rsi
     state: full
   - type: Body
     prototype: Ethereal
     requiredLegs: 2
+  #- type: EtherealBodyLight
+  # nonexistant component, once its added will make the body's light color match their appearance
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Ethereal
   - type: ZombieAccentOverride
     accent: zombieEthereal
   - type: Speech
-    speechVerb: Ethereal
+    speechVerb: Electricity
   - type: TypingIndicator
     proto: default
   - type: Bloodstream
@@ -45,22 +50,24 @@
     damage:
       types:
         Heat: 1
+  - type: ThermalRegulator
+    normalBodyTemperature: 353.15
   - type: Temperature # Ethereals hate the cold and thrive in the heat.
-    heatDamageThreshold: 375
-    coldDamageThreshold: 260
-    currentTemperature: 310.15
+    heatDamageThreshold: 385.15
+    coldDamageThreshold: 280
+    currentTemperature: 353.15
     specificHeat: 46
     coldDamage:
       types:
         Cold : 1 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat : 0.05 #per second, scales with temperature & other constants
+        Heat : 0.2 #per second, scales with temperature & other constants
   - type: TemperatureSpeed
     thresholds:
-      289: 0.8
-      275: 0.6
-      250: 0.4
+      285: 0.6
+      275: 0.4
+      250: 0.2
   - type: Sprite # sprite again because we want different layer ordering
     noRot: true
     drawdepth: Mobs
