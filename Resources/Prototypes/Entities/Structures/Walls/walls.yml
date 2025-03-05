@@ -1380,6 +1380,31 @@
         layer:
         - GlassLayer
   - type: Airtight
+  
+- type: entity
+  id: WallInvisiblePermanent
+  name: invisible wall
+  suffix: permanent
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: Airtight
+  - type: Icon
+    sprite: Structures/Magic/forcewall.rsi
+    state: forcewall
 
 - type: entity
   id: WallForce
