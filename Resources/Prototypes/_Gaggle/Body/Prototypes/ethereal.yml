@@ -1,0 +1,50 @@
+﻿- type: body
+  id: Ethereal
+  name: "ethereal"
+  root: torso
+  slots:
+    head:
+      part: HeadEthereal
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganEtherealEyes
+    torso:
+      part: TorsoEthereal
+      organs:
+        heart: OrganEtherealHeart
+        lungs: OrganAnimalLungs
+        stomach: OrganEtherealStomach
+        liver: OrganEtherealLiver
+        kidneys: OrganEtherealKidneys
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
+    right arm:
+      part: RightArmEthereal
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmEthereal
+      connections:
+      - left hand
+    right hand:
+      part: RightHandEthereal
+    left hand:
+      part: LeftHandEthereal
+    right leg:
+      part: RightLegEthereal
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegEthereal
+      connections:
+      - left foot
+    right foot:
+      part: RightFootEthereal
+    left foot:
+      part: LeftFootEthereal

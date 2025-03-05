@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "m_spider_legs_carapace_BEHIND",
+      "directions": 4
+    },
+    {
+      "name": "m_spider_legs_secondary_carapace_BEHIND",
+      "directions": 4
+    },
+    {
+      "name": "m_spider_legs_carapace_FRONT",
+      "directions": 4
+    },
+    {
+      "name": "m_spider_legs_secondary_carapace_FRONT",
+      "directions": 4
+    }
+  ]
+}
