@@ -1,0 +1,45 @@
+# Anything human specific (e.g. UI, input) goes under MobHuman
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobHuman2003
+  name: Urist McAncient
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Body
+    prototype: Human2003
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: full
+  - type: Thirst
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: HumanoidAppearance
+    species: Human2003
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobHuman2003Dummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female

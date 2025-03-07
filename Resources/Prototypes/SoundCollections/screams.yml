@@ -7,6 +7,12 @@
     - /Audio/Voice/Human/malescream_4.ogg
     - /Audio/Voice/Human/malescream_5.ogg
     - /Audio/Voice/Human/malescream_6.ogg
+    
+- type: soundCollection
+  id: EtherealScreams
+  files:
+    - /Audio/_gaggle/Mobs/Species/Ethereal/ethereal_scream_1.ogg
+    - /Audio/_gaggle/Mobs/Species/Ethereal/ethereal_scream_2.ogg
 
 - type: soundCollection
   id: FemaleScreams

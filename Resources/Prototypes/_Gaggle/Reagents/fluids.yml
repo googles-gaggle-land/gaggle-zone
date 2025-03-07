@@ -8,3 +8,12 @@
   recognizable: true
   physicalDesc: reagent-physical-desc-shocking
   slippery: false
+  metabolisms:
+    Poison:
+      effects:
+        - !type:Electrocute
+          probability: 1
+          conditions:
+            - !type:OrganType
+                type: Ethereal
+                shouldHave: false

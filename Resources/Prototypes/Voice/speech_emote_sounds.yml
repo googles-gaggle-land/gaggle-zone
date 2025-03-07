@@ -395,6 +395,26 @@
       collection: MothDeathGasp
 
 - type: emoteSounds
+  id: UnisexEthereal
+  params:
+    variation: 0
+  sounds:
+    Scream:
+      collection: EtherealScreams
+    Laugh:
+      path: /Audio/_gaggle/Mobs/Species/Ethereal/ethereal_laugh_1.ogg
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Honk:
+      collection: BikeHorn
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+
+- type: emoteSounds
   id: UnisexSilicon
   params:
     variation: 0.05

@@ -1,0 +1,82 @@
+﻿- type: tile
+  id: Plating2003
+  name: tiles-plating-2003
+  sprite: /Textures/_gaggle/2003/Tiles/Floor1.png
+  baseTurf: Lattice2003
+  isSubfloor: true
+  deconstructTools: [ Axing ]
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  heatCapacity: 10000
+
+- type: tile
+  id: Lattice2003
+  name: tiles-lattice-2003
+  sprite: /Textures/_gaggle/2003/Tiles/Grate.png
+  baseTurf: Space
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  isSpace: true
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+  
+- type: tile
+  id: FloorSteel2003
+  name: tiles-steel-floor-2003
+  sprite: /Textures/_gaggle/2003/Tiles/Floor.png
+  variants: 1
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+    
+- type: tile
+  id: FloorSteelOld2003
+  name: tiles-steel-floor-old-2003
+  sprite: /Textures/_gaggle/2003/Tiles/oldFloor.png
+  variants: 1
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+  
+- type: tile
+  id: FloorSteelLight2003
+  name: tiles-steel-light-floor-2003
+  sprite: /Textures/_gaggle/2003/Tiles/Floor2.png
+  variants: 1
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+  
+- type: tile
+  id: FloorSteelDark2003
+  name: tiles-steel-dark-floor-2003
+  sprite: /Textures/_gaggle/2003/Tiles/Floor3.png
+  variants: 1
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500

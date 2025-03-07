@@ -1,0 +1,37 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitJanitor2003
+  name: janitor jumpsuit
+  description: The jumpsuit for the poor sop with a mop.
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Clothes/uniform.rsi
+    state: janitor
+  - type: Clothing
+    sprite: _gaggle/2003/Clothes/uniform.rsi
+    state: janitor
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlue2003
+  name: blue jumpsuit
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Clothes/uniform.rsi
+    state: blue
+  - type: Clothing
+    sprite: _gaggle/2003/Clothes/uniform.rsi
+    state: blue
+    
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesColorBlack2003
+  name: black shoes
+  description: Stylish black shoes.
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Clothes/uniform.rsi
+    state: shoes
+  - type: Clothing
+    sprite: _gaggle/2003/Clothes/uniform.rsi
+    state: shoes

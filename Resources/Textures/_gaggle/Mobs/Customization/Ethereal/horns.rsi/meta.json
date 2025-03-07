@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "short",
+      "directions": 4
+    },
+    {
+      "name": "sharp",
+      "directions": 4
+    },
+    {
+      "name": "clipped",
+      "directions": 4
+    },
+    {
+      "name": "helm",
+      "directions": 4
+    },
+    {
+      "name": "inward",
+      "directions": 4
+    },
+    {
+      "name": "lunar",
+      "directions": 4
+    },
+    {
+      "name": "majesty",
+      "directions": 4
+    }
+  ]
+}

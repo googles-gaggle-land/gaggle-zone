@@ -1,0 +1,103 @@
+- type: entity
+  id: TorsoHuman2003
+  name: "human torso"
+  parent: [PartHuman, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "torso"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  id: HeadHuman2003
+  name: "human head"
+  parent: [PartHuman, BaseHead]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "head"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: LeftArmHuman2003
+  name: "left human arm"
+  parent: [PartHuman, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmHuman2003
+  name: "right human arm"
+  parent: [PartHuman, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandHuman2003
+  name: "left human hand"
+  parent: [PartHuman, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandHuman2003
+  name: "right human hand"
+  parent: [PartHuman, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegHuman2003
+  name: "left human leg"
+  parent: [PartHuman, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegHuman2003
+  name: "right human leg"
+  parent: [PartHuman, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootHuman2003
+  name: "left human foot"
+  parent: [PartHuman, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootHuman2003
+  name: "right human foot"
+  parent: [PartHuman, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: _gaggle/2003/Mobs/human.rsi
+    state: "r_foot"

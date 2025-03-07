@@ -1,29 +1,36 @@
 - type: entity
   id: OrganEtherealStomach
-  parent: OrganAnimalStomach
+  parent: BaseAnimalOrgan
+  name: ethereal stomach
   categories: [ HideSpawnMenu ]
-  name: ethereal stomach # Shitmed
   components:
-  - type: Stomach
-    specialDigestible:
-      tags:
-      - Battery
+  - type: Sprite
+    state: stomach
+  - type: Organ
+    slotId: stomach # Shitmed
   - type: SolutionContainerManager
     solutions:
       stomach:
-        maxVol: 50
+        maxVol: 40
       food:
         maxVol: 5
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+  - type: Stomach
   - type: Metabolizer
-    maxReagents: 6
+    maxReagents: 3
     metabolizerTypes: [ Ethereal ]
-    removeEmpty: true
     groups:
-      - id: Food
-      - id: Drink
+    - id: Drink
+  - type: Tag # goob edit
+    tags:
+    - Meat
+    - Organ
+    - Stomach
+  - type: Item
+    size: Small
+    heldPrefix: stomach
 
 - type: entity
   id: OrganEtherealEyes

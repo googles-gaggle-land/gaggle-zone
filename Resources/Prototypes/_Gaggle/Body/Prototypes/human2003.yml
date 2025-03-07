@@ -1,0 +1,51 @@
+# DIE SNAKE CASE
+- type: body
+  id: Human2003
+  name: "human"
+  root: torso
+  slots:
+    head:
+      part: HeadHuman2003
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHuman2003
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmHuman2003
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmHuman2003
+      connections:
+      - left hand
+    right hand:
+      part: RightHandHuman2003
+    left hand:
+      part: LeftHandHuman2003
+    right leg:
+      part: RightLegHuman2003
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegHuman2003
+      connections:
+      - left foot
+    right foot:
+      part: RightFootHuman2003
+    left foot:
+      part: LeftFootHuman2003

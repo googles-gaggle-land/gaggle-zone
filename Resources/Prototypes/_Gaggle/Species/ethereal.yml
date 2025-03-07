@@ -13,6 +13,7 @@
   id: MobEtherealSprites
   sprites:
     Head: MobEtherealHead
+    HeadTop: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
     Chest: MobEtherealTorso
     Eyes: MobEtherealEyes

@@ -1,0 +1,76 @@
+- type: marking
+  id: EtherealHornClipped
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: clipped
+
+- type: marking
+  id: EtherealHornHelm
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: helm
+
+- type: marking
+  id: EtherealHornInward
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: inward
+
+- type: marking
+  id: EtherealHornLunar
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: lunar
+
+- type: marking
+  id: EtherealHornMajesty
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: majesty
+
+- type: marking
+  id: EtherealHornSharp
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: sharp
+
+- type: marking
+  id: EtherealHornShort
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Ethereal]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
+    state: short

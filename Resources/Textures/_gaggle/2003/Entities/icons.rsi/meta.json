@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "Wall"
+    },
+    {
+      "name": "Grate"
+    },
+    {
+      "name": "EW Wall"
+    },
+    {
+      "name": "NEW Wall"
+    },
+    {
+      "name": "SEW Wall"
+    },
+    {
+      "name": "NS Wall"
+    },
+    {
+      "name": "stool"
+    },
+    {
+      "name": "NES Wall"
+    },
+    {
+      "name": "NWS Wall"
+    },
+    {
+      "name": "oldFloor"
+    },
+    {
+      "name": "Wall"
+    },
+    {
+      "name": "Floor"
+    },
+    {
+      "name": "rack",
+      "directions": 4
+    },
+    {
+      "name": "burning",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "Floor1"
+    },
+    {
+      "name": "Table",
+      "directions": 8
+    },
+    {
+      "name": "chair",
+      "directions": 4
+    },
+    {
+      "name": "rackbroken",
+      "directions": 4
+    },
+    {
+      "name": "Table2broken",
+      "directions": 8
+    },
+    {
+      "name": "Floor-nt"
+    },
+    {
+      "name": "bench"
+    },
+    {
+      "name": "bed"
+    },
+    {
+      "name": "sheet"
+    },
+    {
+      "name": "Floor2"
+    },
+    {
+      "name": "Floor3"
+    },
+    {
+      "name": "securearea"
+    }
+  ]
+}
