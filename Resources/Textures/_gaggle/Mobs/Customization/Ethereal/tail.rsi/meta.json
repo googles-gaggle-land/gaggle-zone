@@ -8,15 +8,7 @@
   },
   "states": [
     {
-      "name": "m_ethereal_tail_none_BEHIND",
-      "directions": 4
-    },
-    {
-      "name": "m_ethereal_tail_none_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "m_ethereal_tail_wagging_long_BEHIND",
+      "name": "wagging_long",
       "directions": 4,
       "delays": [
         [
@@ -38,7 +30,7 @@
       ]
     },
     {
-      "name": "m_ethereal_tail_wagging_long_FRONT",
+      "name": "wagging_bifurcated",
       "directions": 4,
       "delays": [
         [
@@ -60,97 +52,19 @@
       ]
     },
     {
-      "name": "m_ethereal_tail_wagging_bifurcated_BEHIND",
-      "directions": 4,
-      "delays": [
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "m_ethereal_tail_wagging_bifurcated_FRONT",
-      "directions": 4,
-      "delays": [
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "m_ethereal_tail_long_BEHIND",
+      "name": "long",
       "directions": 4
     },
     {
-      "name": "m_ethereal_tail_long_FRONT",
+      "name": "bifurcated",
       "directions": 4
     },
     {
-      "name": "m_ethereal_tail_bifurcated_BEHIND",
+      "name": "stubby",
       "directions": 4
     },
     {
-      "name": "m_ethereal_tail_bifurcated_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "m_ethereal_tail_stubby_BEHIND",
-      "directions": 4
-    },
-    {
-      "name": "m_ethereal_tail_stubby_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "m_ethereal_tail_wagging_stubby_BEHIND",
-      "directions": 4,
-      "delays": [
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1
-        ]
-      ]
-    },
-    {
-      "name": "m_ethereal_tail_wagging_stubby_FRONT",
+      "name": "wagging_stubby",
       "directions": 4,
       "delays": [
         [

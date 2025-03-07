@@ -1,3 +1,5 @@
+# Ethereal markings (HeadTop)
+
 - type: marking
   id: EtherealHornClipped
   bodyPart: HeadTop
@@ -74,3 +76,65 @@
   sprites:
   - sprite: _gaggle/Mobs/Customization/Ethereal/horns.rsi
     state: short
+    
+# Ethereal markings (Tail)
+
+# long
+
+- type: marking
+  id: EtherealTailLong
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: long
+
+- type: marking
+  id: EtherealTailLongAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: wagging_long
+      
+# stubby
+
+- type: marking
+  id: EtherealTailStubby
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: stubby
+
+- type: marking
+  id: EtherealTailStubbyAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: wagging_stubby
+      
+# bifurcated
+
+- type: marking
+  id: EtherealTailBifurcated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: bifurcated
+
+- type: marking
+  id: EtherealTailBifurcatedAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ethereal]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Ethereal/tail.rsi
+      state: wagging_bifurcated
