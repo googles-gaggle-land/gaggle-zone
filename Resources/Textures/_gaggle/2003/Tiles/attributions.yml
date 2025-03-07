@@ -1,7 +1,0 @@
-# Attempted to keep the files in alphabetical order so its easier to audit.
-# Finding individual authors is an unfeasible task. If you can reference the author please do so.
-
-- files: ["Floor.png", "Floor1.png", "Floor2.png", "Floor3.png", "Floor-nt.png", "oldFloor.png"]
-  license: "CC-BY-SA-3.0"
-  copyright: "exadv1, space station 13"
-  source: "https://github.com/Merlin1230/goonstationrepo"
