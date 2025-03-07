@@ -29,6 +29,15 @@
     accent: zombieEthereal
   - type: Speech
     speechVerb: Electricity
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Heat: 5
   - type: TypingIndicator
     proto: default
   - type: Bloodstream
