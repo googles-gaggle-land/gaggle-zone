@@ -1,17 +1,20 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/pull/5645/commits/46a3170b2a1a0f9b6f03dd6bda8e443afed85ee3",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/80ab61c8c7741e1d95e5f168357a9e6e61b38f2c",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
     {
-      "name": "icon"
+      "name": "scroll"
     },
     {
-      "name": "equipped-BACKPACK",
+      "name": "scroll2"
+    },
+    {
+      "name": "equipped-BELT",
       "directions": 4
     },
     {

@@ -7,6 +7,8 @@ using Content.Server.Chat.Systems;
 using Content.Server.EntityEffects.EffectConditions;
 using Content.Server.EntityEffects.Effects;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared._Goobstation.MartialArts.Components; // Goobstation - Martial Arts
+using Content.Server.Popups;
 using Content.Shared.Alert;
 using Content.Shared.Atmos;
 using Content.Shared.Body.Components;
@@ -53,6 +55,19 @@ public sealed class RespiratorSystem : EntitySystem
         SubscribeLocalEvent<RespiratorComponent, ApplyMetabolicMultiplierEvent>(OnApplyMetabolicMultiplier);
     }
 
+    // Goobstation start
+    // Can breathe check for grab
+    public bool CanBreathe(EntityUid uid, RespiratorComponent respirator)
+    {
+        if(respirator.Saturation < respirator.SuffocationThreshold)
+            return false;
+        if (TryComp<PullableComponent>(uid, out var pullable)
+            && pullable.GrabStage == GrabStage.Suffocate)
+            return false;
+
+        return !HasComp<KravMagaBlockedBreathingComponent>(uid);
+    }
+    // Goobstation end
     private void OnMapInit(Entity<RespiratorComponent> ent, ref MapInitEvent args)
     {
         ent.Comp.NextUpdate = _gameTiming.CurTime + ent.Comp.UpdateInterval;
