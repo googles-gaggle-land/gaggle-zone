@@ -1,0 +1,23 @@
+- type: species
+  id: MonkeyPlayer
+  name: species-name-monkey
+  roundStart: true
+  prototype: MobMonkeyPlayer
+  sprites: MobMonkeySprites
+  markingLimits: MobHumanMarkingLimits
+  dollPrototype: MobMonkeyPlayerDummy
+  skinColoration: TintedHues
+
+- type: species
+  id: KoboldPlayer
+  name: species-name-kobold
+  roundStart: true
+  prototype: MobKoboldPlayer
+  sprites: MobKoboldSprites
+  markingLimits: MobHumanMarkingLimits
+  dollPrototype: MobKoboldPlayerDummy
+  skinColoration: Hues
+  defaultSkinTone: "#34a223"
+  maleFirstNames: names_reptilian_male
+  femaleFirstNames: names_reptilian_female
+  naming: FirstDashFirst

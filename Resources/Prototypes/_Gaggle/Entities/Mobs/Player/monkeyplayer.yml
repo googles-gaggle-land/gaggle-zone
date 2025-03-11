@@ -1,0 +1,11 @@
+- type: entity
+  save: false
+  name: Urist McOok
+  parent: BaseMobMonkeyPlayer
+  id: MobMonkeyPlayer
+  
+- type: entity
+  save: false
+  name: Urist McHiss
+  parent: BaseMobKoboldPlayer
+  id: MobKoboldPlayer
