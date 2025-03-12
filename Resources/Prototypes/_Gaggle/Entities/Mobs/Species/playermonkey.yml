@@ -73,7 +73,8 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-    #- map: [ "gloves" ]
+    - map: [ "gloves" ]
+      visible: false
     #- map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ]
@@ -183,7 +184,8 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-    #- map: [ "gloves" ]
+    - map: [ "gloves" ]
+      visible: false
     #- map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ]
@@ -240,7 +242,8 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-    #- map: [ "gloves" ]
+    - map: [ "gloves" ]
+      visible: false
     #- map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ]
@@ -297,8 +300,9 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-    #- map: [ "gloves" ]
-    - map: [ "shoes" ]
+    - map: [ "gloves" ]
+      visible: false
+    #- map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ]
     - map: [ "eyes" ]
