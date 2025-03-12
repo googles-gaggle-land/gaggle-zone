@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from monkestation https://github.com/Monkestation/Monkestation2.0/blob/master/icons/mob/clothing/underwear.dmi, edited by miapyxel",
+  "size": {"x": 32, "y": 32},
+  "states": [
+    {
+      "name": "female_bikini",
+      "directions": 4
+    },
+    {
+      "name": "female_bralette",
+      "directions": 4
+    },
+    {
+      "name": "female_sport",
+      "directions": 4
+    },
+    {
+      "name": "female_sportsbra",
+      "directions": 4
+    },
+    {
+      "name": "female_sportsbra_alt",
+      "directions": 4
+    },
+    {
+      "name": "female_top",
+      "directions": 4
+    },
+    {
+      "name": "female_bottom",
+      "directions": 4
+    },
+    {
+      "name": "female_shirt",
+      "directions": 4
+    },
+    {
+      "name": "female_shortsleeve",
+      "directions": 4
+    },
+    {
+      "name": "female_tank",
+      "directions": 4
+    },
+    {
+      "name": "female_tank_alt",
+      "directions": 4
+    },
+    {
+      "name": "female_swim_twopiece",
+      "directions": 4
+    },
+    {
+      "name": "male_briefs",
+      "directions": 4
+    },
+    {
+      "name": "male_boxers",
+      "directions": 4
+    },
+    {
+      "name": "male_boxers-hearts",
+      "directions": 4
+    },
+    {
+      "name": "male_boxers-stripes",
+      "directions": 4
+    },
+    {
+      "name": "male_longjohns",
+      "directions": 4
+    },
+    {
+      "name": "male_midway",
+      "directions": 4
+    },
+    {
+      "name": "male_shirt",
+      "directions": 4
+    },
+    {
+      "name": "male_shortsleeve",
+      "directions": 4
+    },
+    {
+      "name": "male_tank",
+      "directions": 4
+    },
+    {
+      "name": "male_tank_alt",
+      "directions": 4
+    },
+    {
+      "name": "socks",
+      "directions": 4
+    },
+    {
+      "name": "socks_knee",
+      "directions": 4
+    },
+    {
+      "name": "socks_knee-stripes",
+      "directions": 4
+    },
+    {
+      "name": "socks_short",
+      "directions": 4
+    },
+    {
+      "name": "socks_thigh",
+      "directions": 4
+    },
+    {
+      "name": "socks_thigh-stripes",
+      "directions": 4
+    },
+    {
+      "name": "socks_thin_knee",
+      "directions": 4
+    },
+    {
+      "name": "socks_thin_thigh",
+      "directions": 4
+    },
+    {
+      "name": "pantyhose",
+      "directions": 4
+    },
+    {
+      "name": "fishnet_full",
+      "directions": 4
+    },
+    {
+      "name": "fishnet_knee",
+      "directions": 4
+    },
+    {
+      "name": "fishnet_thigh",
+      "directions": 4
+    }
+  ]
+}
