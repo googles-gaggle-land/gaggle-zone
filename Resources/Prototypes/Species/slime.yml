@@ -15,6 +15,7 @@
     Head: MobSlimeHead
     Hair: MobSlimeMarkingFollowSkin
     FacialHair: MobSlimeMarkingFollowSkin
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobSlimeTorso
     Eyes: MobHumanoidEyes
     LArm: MobSlimeLArm
@@ -34,6 +35,9 @@
       required: false
     FacialHair:
       points: 1
+      required: false
+    Undergarments: # google's gaggle land
+      points: 4
       required: false
     Chest:
       points: 4 # imp 1<4

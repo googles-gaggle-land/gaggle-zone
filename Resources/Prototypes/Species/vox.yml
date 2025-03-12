@@ -28,6 +28,7 @@
     HeadSide: MobHumanoidAnyMarking #imp
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobVoxTorso
     Eyes: MobVoxEyes
     LArm: MobVoxLArm
@@ -60,6 +61,9 @@
       points: 1
       required: false #imp
       #defaultMarkings: [ VoxBeak ]
+    Undergarments: # google's gaggle land
+      points: 4
+      required: false
     Arms:
       points: 6
       required: false #imp

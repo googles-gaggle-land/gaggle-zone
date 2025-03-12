@@ -43,6 +43,7 @@
         sprite: _DV/Mobs/Customization/Vulpkanin/masking_helpers.rsi
         state: female_full
         visible: false
+      - map: ["enum.HumanoidVisualLayers.Undergarments"] # google's gaggle land
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]

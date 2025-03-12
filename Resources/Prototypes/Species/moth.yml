@@ -17,6 +17,7 @@
   sprites:
     Head: MobMothHead
     Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking # google's gaggle land
     Chest: MobMothTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -53,6 +54,9 @@
       defaultMarkings: [ MothWingsDefault ]
     Snout:
       points: 1
+      required: false
+    Undergarments: # google's gaggle land
+      points: 4
       required: false
     HeadTop:
       points: 1

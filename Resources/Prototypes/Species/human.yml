@@ -22,6 +22,7 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking # google's gaggle land
     Chest: MobHumanTorso
     Eyes: MobHumanoidEyes
     HeadTop: MobHumanoidAnyMarking
@@ -49,6 +50,9 @@
       required: false
     Snout:
       points: 1
+      required: false
+    Undergarments: # google's gaggle land
+      points: 4
       required: false
     Tail: # the cat tail joke
       points: 0
