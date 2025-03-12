@@ -15,6 +15,7 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobHarpyTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -47,6 +48,9 @@
       points: 1
       required: true
       defaultMarkings: [ HarpyEarsDefault ]
+    Undergarments: # google's gaggle land
+      points: 4
+      required: false
     Chest:
       points: 1
       required: true

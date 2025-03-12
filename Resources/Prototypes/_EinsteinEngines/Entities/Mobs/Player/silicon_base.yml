@@ -120,6 +120,7 @@
         - map: ["socks"]
         - map: ["underpants"]
         - map: ["undershirt"]
+        - map: ["enum.HumanoidVisualLayers.Undergarments"] # google's gaggle land
         - map: ["jumpsuit"]
         - map: ["enum.HumanoidVisualLayers.LHand"]
         - map: ["enum.HumanoidVisualLayers.RHand"]

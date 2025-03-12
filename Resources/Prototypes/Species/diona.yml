@@ -19,6 +19,7 @@
     Head: MobDionaHead
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobDionaTorso
     Eyes: MobDionaEyes
     LArm: MobDionaLArm
@@ -42,6 +43,9 @@
       required: false
     HeadSide:
       points: 1
+      required: false
+    Undergarments: # google's gaggle land
+      points: 4
       required: false
     Chest:
       points: 1

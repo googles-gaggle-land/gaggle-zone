@@ -60,6 +60,7 @@ namespace Content.Shared.Humanoid
                     yield return HumanoidVisualLayers.RFoot;
                     break;
                 case HumanoidVisualLayers.Chest:
+                    yield return HumanoidVisualLayers.Undergarments; // google's gaggle land
                     yield return HumanoidVisualLayers.Chest;
                     yield return HumanoidVisualLayers.Wings; // for IPC wings port from SimpleStation
                     yield return HumanoidVisualLayers.Tail;

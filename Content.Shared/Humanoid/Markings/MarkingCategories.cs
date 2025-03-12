@@ -8,6 +8,7 @@ namespace Content.Shared.Humanoid.Markings
         Special,
         Hair,
         FacialHair,
+        Undergarments, // google's gaggle land
         Head,
         HeadTop,
         HeadSide,
@@ -29,6 +30,7 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.Special => MarkingCategories.Special,
                 HumanoidVisualLayers.Hair => MarkingCategories.Hair,
                 HumanoidVisualLayers.FacialHair => MarkingCategories.FacialHair,
+                HumanoidVisualLayers.Undergarments => MarkingCategories.Undergarments, // google's gaggle land
                 HumanoidVisualLayers.Head => MarkingCategories.Head,
                 HumanoidVisualLayers.HeadTop => MarkingCategories.HeadTop,
                 HumanoidVisualLayers.HeadSide => MarkingCategories.HeadSide,

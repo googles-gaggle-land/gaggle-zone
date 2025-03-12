@@ -15,6 +15,7 @@
     Head: MobEtherealHead
     HeadTop: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobEtherealTorso
     Eyes: MobEtherealEyes
     LArm: MobEtherealLArm
@@ -34,6 +35,9 @@
       required: false
     Head:
       points: 1
+      required: false
+    Undergarments: # google's gaggle land
+      points: 4
       required: false
 
 - type: humanoidBaseSprite

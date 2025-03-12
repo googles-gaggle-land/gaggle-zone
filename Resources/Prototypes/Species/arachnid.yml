@@ -19,6 +19,7 @@
   sprites:
     Head: MobArachnidHead
     Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobArachnidTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -60,6 +61,9 @@
       points: 1
       required: true
       defaultMarkings: [ ArachnidCheliceraeDownwards ]
+    Undergarments: # google's gaggle land
+      points: 4
+      required: false
     Chest:
       points: 1
       required: false

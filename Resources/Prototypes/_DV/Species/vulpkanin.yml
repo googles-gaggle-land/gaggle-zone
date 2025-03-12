@@ -19,6 +19,7 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
     Chest: MobVulpkaninTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -48,6 +49,9 @@
       defaultMarkings: [ VulpTail ]
     Head:
       points: 1
+      required: false
+    Undergarments: # google's gaggle land
+      points: 4
       required: false
     Legs:
       points: 1
