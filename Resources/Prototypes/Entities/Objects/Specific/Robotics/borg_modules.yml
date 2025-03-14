@@ -151,12 +151,8 @@
   - type: ItemBorgModule
     items:
     - HandheldGPSBasic
-<<<<<<< HEAD
     - HandHeldMassScannerBorg
     - HandheldStationMapUnpowered
-=======
-    #- HandHeldMassScannerBorg - Removed by Lavaland
->>>>>>> 317761c96a (More Lavaland Tweaks (#1758))
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: gps-module }
 

@@ -68,21 +68,9 @@ public sealed partial class MaterialStorageComponent : Component
     [DataField]
     public bool CanEjectStoredMaterials = true;
 
-    // Goobstation Change Start
+    // Goobstation
     [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
     public bool ConnectToSilo;
-
-    [DataField, AutoNetworkedField]
-    public bool DisconnectSiloOffMap;
-
-    [DataField, AutoNetworkedField]
-    public bool DisallowOreEjection = true;
-
-    // WHY THE FUCK DID WIZDEN THINK IT WOULD BE A GOOD IDEA TO INTRODUCE A WHITELIST, AND IMMEDIATELY INVALIDATING IT BY DYNAMICALLY GENERATING
-    // ANOTHER BASED ON RECIPES. ON TWO FUCKING COMPONENTS THAT ARE ALMOST ALWAYS USED TOGETHER, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    [DataField, AutoNetworkedField]
-    public bool IgnoreMaterialWhiteList;
-    // Goobstation Change End
 }
 
 [Serializable, NetSerializable]

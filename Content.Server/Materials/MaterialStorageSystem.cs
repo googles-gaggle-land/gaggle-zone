@@ -12,7 +12,6 @@ using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
-using Content.Shared.Tag; // Goobstation Change
 
 namespace Content.Server.Materials;
 
@@ -27,9 +26,7 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly StackSystem _stackSystem = default!;
-    [Dependency] private readonly TagSystem _tag = default!; // Goobstation Change
 
-    private static readonly ProtoId<TagPrototype> OreTag = "Ore"; // Goobstation Change
     public override void Initialize()
     {
         base.Initialize();
@@ -72,16 +69,8 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
 
         if (material.StackEntity != null)
         {
-            // Goobstation Change Start
-            var proto = _prototypeManager.Index<EntityPrototype>(material.StackEntity);
-            if (!proto.TryGetComponent<PhysicalCompositionComponent>(out var composition))
+            if (!_prototypeManager.Index<EntityPrototype>(material.StackEntity).TryGetComponent<PhysicalCompositionComponent>(out var composition))
                 return;
-
-            if (proto.TryGetComponent<TagComponent>(out var tag)
-                && component.DisallowOreEjection
-                && _tag.HasTag(tag, OreTag))
-                return;
-            // Goobstation Change End
 
             var volumePerSheet = composition.MaterialComposition.FirstOrDefault(kvp => kvp.Key == msg.Material).Value;
             var sheetsToExtract = Math.Min(msg.SheetsToExtract, _stackSystem.GetMaxCount(material.StackEntity));

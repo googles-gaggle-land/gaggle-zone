@@ -285,14 +285,6 @@
           Quantity: 2
         - ReagentId: Honk
           Quantity: 5
-<<<<<<< HEAD
-=======
-  - type: Item
-    heldPrefix: bananium
-  - type: RadiationSource # Goobstation - yeag
-    intensity: 0.006
-    slope: 0.1
->>>>>>> 317761c96a (More Lavaland Tweaks (#1758))
 
 - type: entity
   parent: BananiumOre
@@ -331,16 +323,7 @@
           Quantity: 0.1
   - type: PhysicalComposition
     materialComposition:
-<<<<<<< HEAD
       Coal: 200 # Goobstation - was 100
-=======
-      Coal: 300 # Goobstation - was 100
-  - type: Item
-    heldPrefix: coal
-  - type: RadiationSource
-    intensity: 0.02
-    slope: 0.1
->>>>>>> 317761c96a (More Lavaland Tweaks (#1758))
 
 - type: entity
   parent: Coal

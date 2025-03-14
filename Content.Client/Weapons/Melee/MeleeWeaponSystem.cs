@@ -105,12 +105,10 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
         // Ranged component has priority over melee if both are supported.
         bool gunBoundToUse = false;
         bool gunBoundToAlt = false;
-        Logger.Debug($"weaponUid: {ToPrettyString(weaponUid)}");
         if (TryComp<GunComponent>(weaponUid, out var gun)) {
             gunBoundToUse = gun.UseKey;
             gunBoundToAlt = !gun.UseKey; //Bound to alt-use when false
 
-            Logger.Debug($"Handling internal trycomp");
             // If ranged mode only works when wielded, do not block melee attacks when unwielded
             // (e.g. crusher & crusher glaive)
             if (TryComp<GunRequiresWieldComponent>(weaponUid, out var _) &&
@@ -119,7 +117,6 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
                 gunBoundToAlt &= wield.Wielded;
             }
         }
-        Logger.Debug($"gunBoundToUse: {gunBoundToUse}, gunBoundToAlt: {gunBoundToAlt}");
         //End Frontier
 
         var mousePos = _eyeManager.PixelToMap(_inputManager.MouseScreenPosition);
@@ -157,29 +154,6 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
                 return;
             }
 
-<<<<<<< HEAD
-=======
-            // WD EDIT START
-            if (TryComp(weaponUid, out BlinkComponent? blink) && blink.IsActive)
-            {
-                var direction = GetDirection();
-                if (direction != Vector2.Zero)
-                    RaisePredictiveEvent(new BlinkEvent(GetNetEntity(weaponUid), direction));
-                return;
-            }
-            // WD EDIT END
-
-            // Goobstation
-            if (TryComp(weaponUid, out MeleeDashComponent? dash))
-            {
-                var direction = GetDirection();
-                if (direction != Vector2.Zero)
-                    RaisePredictiveEvent(new MeleeDashEvent(GetNetEntity(weaponUid), direction));
-                return;
-            }
-
-            Logger.Debug($"entity: {ToPrettyString(entity)}, weaponUid: {ToPrettyString(weaponUid)}");
->>>>>>> 317761c96a (More Lavaland Tweaks (#1758))
             ClientHeavyAttack(entity, coordinates, weaponUid, weapon);
             return;
         }

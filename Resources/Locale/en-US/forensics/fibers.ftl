@@ -11,7 +11,6 @@ fibers-nitrile = nitrile
 fibers-nanomachines = insulative mysterious
 fibers-chameleon = mysterious
 fibers-rubber = rubber
-fibers-kinetic = kinetic
 
 fibers-purple = purple
 fibers-red = red
