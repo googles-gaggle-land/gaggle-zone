@@ -21,10 +21,10 @@
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: ["enum.HumanoidVisualLayers.LFoot"] # reordered
     - map: ["enum.HumanoidVisualLayers.RFoot"]
-    - map: ["enum.HumanoidVisualLayers.LHand"]
-    - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: ["enum.HumanoidVisualLayers.Undergarments"] # google's gaggle land
     - map: ["jumpsuit"]
+    - map: ["enum.HumanoidVisualLayers.LHand"]
+    - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: [ "gloves" ]
     - map: [ "shoes" ]
     - map: [ "ears" ]
