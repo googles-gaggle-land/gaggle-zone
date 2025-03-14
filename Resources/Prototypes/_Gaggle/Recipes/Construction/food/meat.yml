@@ -1,0 +1,45 @@
+- type: constructionGraph
+  id: MeatPork
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: cooked pork
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: cooked pork
+    entity: FoodMeatPorkCooked
+
+- type: constructionGraph
+  id: MeatPorkchop
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: cooked porkchop
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 330
+  - node: cooked porkchop
+    entity: FoodMeatPorkchopCooked
+
+- type: constructionGraph
+  id: MeatSausage
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: cooked sausage
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 345
+  - node: cooked sausage
+    entity: FoodMeatSausageCooked
+

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "skewer-sausage by miapyxel",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pork"
+    },
+    {
+      "name": "pork-cooked"
+    },
+    {
+      "name": "porkchop"
+    },
+    {
+      "name": "porkchop-cooked"
+    },
+    {
+      "name": "sausage"
+    },
+    {
+      "name": "sausage-cooked"
+    }
+  ]
+}

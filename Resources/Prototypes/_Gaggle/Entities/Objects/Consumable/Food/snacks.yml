@@ -1,0 +1,23 @@
+- type: entity
+  name: gaggle sugar cookie
+  id: FoodSnackGaggleCookie
+  description: It's like it's really staring at you.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - chalky
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/snacks.rsi
+    state: gaggle-cookie
+  - type: Item
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30 # Room for extra condiments
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Laughter
+          Quantity: 2
