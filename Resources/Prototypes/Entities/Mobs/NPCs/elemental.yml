@@ -73,7 +73,6 @@
   - type: MobMover
   - type: ZombieImmune
   - type: ProtectedFromStepTriggers
-  - type: Fauna # Lavaland Change
 
 - type: entity
   abstract: true
@@ -299,7 +298,6 @@
     solution: bloodstream
   - type: DrainableSolution
     solution: bloodstream
-  - type: Fauna # Lavaland Change
 
 - type: entity
   name: Reagent Slime Spawner

@@ -1,4 +1,3 @@
-using Content.Server._Goobstation.Wizard.Systems;
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.Components;
 using Content.Server.IgnitionSource;
@@ -322,7 +321,7 @@ namespace Content.Server.Atmos.EntitySystems
         public void Ignite(EntityUid uid, EntityUid ignitionSource, FlammableComponent? flammable = null,
             EntityUid? ignitionSourceUser = null)
         {
-            if (!Resolve(uid, ref flammable, false)) // Lavaland Change: SHUT THE FUCK UP FLAMMABLE
+            if (!Resolve(uid, ref flammable))
                 return;
 
             if (flammable.AlwaysCombustible)
@@ -456,12 +455,7 @@ namespace Content.Server.Atmos.EntitySystems
                     if (_inventoryQuery.TryComp(uid, out var inv))
                         _inventory.RelayEvent((uid, inv), ref ev);
 
-<<<<<<< HEAD
                     _damageableSystem.TryChangeDamage(uid, flammable.Damage * flammable.FireStacks * ev.Multiplier, interruptsDoAfters: false);
-=======
-                    if (ev.Multiplier > 0f && !_spellblade.IsHoldingItemWithComponent<FireSpellbladeEnchantmentComponent>(uid)) // Goob edit
-                        _damageableSystem.TryChangeDamage(uid, flammable.Damage * flammable.FireStacks * ev.Multiplier, interruptsDoAfters: false, partMultiplier: 0.3f); // Lavaland: Nerf fire delimbing
->>>>>>> dd555e5411 (Lavaland. (#1303))
 
                     AdjustFireStacks(uid, flammable.FirestackFade * (flammable.Resisting ? 10f : 1f), flammable, flammable.OnFire);
                 }

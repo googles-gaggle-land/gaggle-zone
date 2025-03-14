@@ -13,7 +13,6 @@
     - BasicStationEventScheduler
     #- MeteorSwarmScheduler Goobstation - nuh uh
     - BasicRoundstartVariation
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Traitorling
@@ -30,7 +29,6 @@
     - BasicStationEventScheduler
     #- MeteorSwarmScheduler Goobstation - nuh uh
     - BasicRoundstartVariation
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: NukeTraitor
@@ -47,7 +45,6 @@
     - BasicStationEventScheduler
     #- MeteorSwarmScheduler Goobstation - nuh uh
     - BasicRoundstartVariation
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: NukeLing
@@ -63,7 +60,6 @@
     - BasicStationEventScheduler
     #- MeteorSwarmScheduler Goobstation - nuh uh
     - BasicRoundstartVariation
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: RevTraitor
@@ -79,7 +75,6 @@
     - CalmTraitor
     - BasicStationEventScheduler
     #- MeteorSwarmScheduler Goobstation - nuh uh
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: RevLing
@@ -97,7 +92,6 @@
     #- MeteorSwarmScheduler Goobstation - nuh uh
     - BasicRoundstartVariation
     - BasicRoundstartVariation
-    - LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Blob
@@ -111,20 +105,3 @@
   - BasicStationEventScheduler
   - BasicRoundstartVariation
   - SubGamemodesRule
-  - LavalandStormScheduler # Lavaland Change
-
-- type: gamePreset
-  id: Honkops
-  alias:
-    - honkops
-  name: honkops-title
-  description: honkops-description
-  showInVote: false
-  rules:
-    - Honkops
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
-    - LavalandStormScheduler # Lavaland Change

@@ -4,32 +4,32 @@
 # High yields
 - type: ore
   id: OreSteel
-  oreEntity: SteelOre1Unprocessed # Lavaland Change
+  oreEntity: SteelOre1
   minOreYield: 1
   maxOreYield: 5
 
 - type: ore
   id: OreSpaceQuartz
-  oreEntity: SpaceQuartz1Unprocessed # Lavaland Change
+  oreEntity: SpaceQuartz1
   minOreYield: 1
   maxOreYield: 5
 
 - type: ore
   id: OreCoal
-  oreEntity: Coal1Unprocessed # Lavaland Change
+  oreEntity: Coal1
   minOreYield: 1
   maxOreYield: 5
 
 # Medium yields
 - type: ore
   id: OreGold
-  oreEntity: GoldOre1Unprocessed # Lavaland Change
+  oreEntity: GoldOre1
   minOreYield: 1
   maxOreYield: 3
 
 - type: ore
   id: OreSilver
-  oreEntity: SilverOre1Unprocessed # Lavaland Change
+  oreEntity: SilverOre1
   minOreYield: 1
   maxOreYield: 3
 
@@ -42,25 +42,25 @@
 # Low yields
 - type: ore
   id: OrePlasma
-  oreEntity: PlasmaOre1Unprocessed # Lavaland Change
+  oreEntity: PlasmaOre1
   minOreYield: 1
   maxOreYield: 2
 
 - type: ore
   id: OreUranium
-  oreEntity: UraniumOre1Unprocessed # Lavaland Change
+  oreEntity: UraniumOre1
   minOreYield: 1
   maxOreYield: 2
 
 - type: ore
   id: OreBananium
-  oreEntity: BananiumOre1Unprocessed # Lavaland Change
+  oreEntity: BananiumOre1
   minOreYield: 1
   maxOreYield: 2
 
 - type: ore
   id: OreDiamond
-  oreEntity: DiamondOre1Unprocessed # Lavaland Change
+  oreEntity: DiamondOre1
   minOreYield: 1
   maxOreYield: 2
 
@@ -89,7 +89,6 @@
 - type: weightedRandomOre
   id: RandomOreDistributionStandard
   weights:
-  # Lavaland Change Start - Unprocessed Ores
     OreSteel: 10
     OreCoal: 10
     OreSpaceQuartz: 8
@@ -98,7 +97,6 @@
     OreSilver: 1
     OreUranium: 1
     OreBananium: 0.5
-  # Lavaland Change End
     OreArtifactFragment: 0.5
 
 - type: weightedRandomOre

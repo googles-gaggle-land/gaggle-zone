@@ -92,8 +92,7 @@
     - id: FoodMeatGoliath
       amount: 3
     - id: MaterialGoliathHide1
-      amount: 2
-  - type: Fauna # Lavaland Change
+      amount: 3
 
 - type: entity
   id: ActionGoliathTentacle
@@ -243,7 +242,6 @@
   - type: Butcherable
     spawned:
     - id: FoodHivelordRemains
-  - type: Fauna # Lavaland Change
 
 - type: entity
   id: MobHivelordBrood

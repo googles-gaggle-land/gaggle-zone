@@ -11568,12 +11568,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 39.5,-20.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -8338.132
-      state: Opening
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: True
 - proto: AirlockArmoryLocked
   entities:
   - uid: 107
@@ -12327,6 +12321,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -58.5,-17.5
       parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        231:
+        - DoorStatus: DoorBolt
   - uid: 228
     components:
     - type: Transform
@@ -12343,6 +12341,16 @@ entities:
     - type: Transform
       pos: -58.5,-4.5
       parent: 2
+  - uid: 231
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -61.5,-17.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        227:
+        - DoorStatus: DoorBolt
 - proto: AirlockExternalGlassEngineeringLocked
   entities:
   - uid: 232
@@ -12609,6 +12617,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -61.5,-4.5
       parent: 2
+  - uid: 254
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -61.5,-19.5
+      parent: 2
 - proto: AirlockExternalGlassShuttleEmergencyLocked
   entities:
   - uid: 255
@@ -12692,20 +12706,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -2.5,0.5
       parent: 22429
-- proto: AirlockExternalGlassShuttleMiningFilled
-  entities:
-  - uid: 254
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -61.5,-19.5
-      parent: 2
-  - uid: 8002
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -61.5,-17.5
-      parent: 2
 - proto: AirlockExternalLocked
   entities:
   - uid: 22469
@@ -13124,7 +13124,7 @@ entities:
       pos: 46.5,-40.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -444892.44
+      secondsUntilStateChange: -436273.53
       state: Opening
   - uid: 309
     components:
@@ -13554,7 +13554,7 @@ entities:
       pos: -3.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -561060
+      secondsUntilStateChange: -552441.1
       state: Opening
   - uid: 376
     components:
@@ -34301,12 +34301,6 @@ entities:
       parent: 22429
 - proto: AtmosDeviceFanTiny
   entities:
-  - uid: 231
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -61.5,-17.5
-      parent: 2
   - uid: 983
     components:
     - type: Transform
@@ -76140,6 +76134,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -2.5,-50.5
       parent: 2
+- proto: ComputerSalvageExpedition
+  entities:
+  - uid: 7999
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -57.5,-20.5
+      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 8000
@@ -76153,14 +76155,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -57.5,-3.5
-      parent: 2
-- proto: ComputerShuttleMiningLavaland
-  entities:
-  - uid: 7999
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -57.5,-20.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -181062,14 +181056,6 @@ entities:
     - type: Transform
       pos: 38.5,-18.5
       parent: 2
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -8331.999
-      state: Opening
-    - type: Airlock
-      autoClose: False
   - uid: 22133
     components:
     - type: Transform
@@ -182743,7 +182729,7 @@ entities:
       pos: 24.5,2.5
       parent: 22429
     - type: Door
-      secondsUntilStateChange: -339191.7
+      secondsUntilStateChange: -330572.78
       state: Opening
 - proto: WoodenBench
   entities:

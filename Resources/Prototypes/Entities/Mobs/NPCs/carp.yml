@@ -95,9 +95,7 @@
     - type: NightVision # Goobstation - Nigthvision
       isToggle: true
       color: "#808080"
-      activateSound: null
-      deactivateSound: null
-    - type: Fauna # Lavaland Change
+      playSoundOn: false
 
 - type: entity
   parent: BaseMobCarp

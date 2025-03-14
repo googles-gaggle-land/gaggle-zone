@@ -73,7 +73,6 @@ namespace Content.IntegrationTests.Tests
             "Barratry", // Goobstation - add Barratry
             "Kettle", // Goobstation - add Kettle
             "Amber",
-<<<<<<< HEAD
             "Hot Springs",
             "Gate",
             "Loop",
@@ -83,11 +82,6 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Convex",
             "Relic"
-=======
-            "Gate", // Goobstation - goob changes
-            "Lavatest", // Lavaland Change
-            "Loop"
->>>>>>> dd555e5411 (Lavaland. (#1303))
         };
 
         /// <summary>
