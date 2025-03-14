@@ -12,6 +12,7 @@
   - type: Tag
     tags:
       - RawMaterial
+      - DroneUsable # Goobstation
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -134,6 +135,7 @@
       - ClothMade
       - Gauze
       - RawMaterial
+      - DroneUsable # Goobstation
   - type: Construction
     graph: WebObjects # not sure if I should either keep this here or just make another prototype. Will keep it here just in case.
     node: cloth
@@ -199,6 +201,7 @@
     tags:
       - ClothMade
       - RawMaterial
+      - DroneUsable # Goobstation
   - type: Item
     heldPrefix: durathread
 
@@ -248,6 +251,7 @@
     tags:
     - Wooden
     - RawMaterial
+    - DroneUsable # Goobstation
   - type: Extractable
     grindableSolutionName: wood
   - type: SolutionContainerManager
@@ -432,6 +436,7 @@
     tags:
       - ClothMade
       - RawMaterial
+      - DroneUsable # Goobstation
   - type: Item
     heldPrefix: cotton
 
