@@ -146,6 +146,11 @@
         name: porkchop
       taco:
         name: porkchop
+      skewer:
+        name: porkchop
+        sprite:
+          sprite: Objects/Consumable/Food/skewer.rsi
+          state: skewer-meat
 
 - type: entity #glizzy!
   name: raw sausage
@@ -215,5 +220,5 @@
       skewer:
         name: sausage
         sprite:
-          sprite: _gaggle/Objects/Consumable/Food/skewer.rsi
+          sprite: Objects/Consumable/Food/skewer.rsi
           state: skewer-sausage
