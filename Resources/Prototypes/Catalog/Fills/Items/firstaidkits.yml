@@ -107,8 +107,7 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: SyringeRevivopine # Funkychem
-        amount: 1
+      - id: SyringeEphedrine
       - id: SyringeSaline
       - id: BruteAutoInjector
       - id: BurnAutoInjector

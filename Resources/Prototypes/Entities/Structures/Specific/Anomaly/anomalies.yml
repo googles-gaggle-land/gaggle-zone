@@ -805,7 +805,6 @@
     - Honk
     - Carpetium
     - JuiceThatMakesYouWeh
-    - ExoticReagent # Funkychem
   - type: Drink
     solution: anomaly
   - type: DrainableSolution

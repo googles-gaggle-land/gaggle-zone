@@ -10,7 +10,6 @@
     - Honk
     - BuzzochloricBees
     - Stimulants
-    - ExoticReagent # Funkychem
   - quantity: 5
     weight: 1
     reagents:
@@ -22,7 +21,6 @@
     - CarpoToxin
     - SulfuricAcid
     - Licoxide
-    - Pestiline # Funkychem
     - Napalm
     - ChlorineTrifluoride
     - Radium
