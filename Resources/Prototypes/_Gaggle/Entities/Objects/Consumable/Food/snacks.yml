@@ -1,5 +1,6 @@
 - type: entity
   name: gaggle sugar cookie
+  parent: FoodSnackBase
   id: FoodSnackGaggleCookie
   description: It's like it's really staring at you.
   components:
@@ -10,12 +11,10 @@
   - type: Sprite
     sprite: _gaggle/Objects/Consumable/Food/snacks.rsi
     state: gaggle-cookie
-  - type: Item
-  - type: Food
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 30 # Room for extra condiments
+        maxVol: 30
         reagents:
         - ReagentId: Nutriment
           Quantity: 8
