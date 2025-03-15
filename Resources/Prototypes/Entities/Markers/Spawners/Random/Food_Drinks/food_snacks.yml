@@ -45,5 +45,6 @@
       - FoodFrozenSnowconeRainbow
       - FoodSnackPistachios
       - FoodSnackSemki
+      - FoodSnackGaggleCookie
     chance: 0.8
     offset: 0.0

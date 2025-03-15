@@ -3489,7 +3489,9 @@
   - type: Butcherable
     spawned:
     - id: FoodMeatBacon
-      amount: 6
+      amount: 5 # gaggle
+    - id: FoodMeatPork # gaggle
+      amount: 3
   - type: Grammar
     attributes:
       gender: epicene

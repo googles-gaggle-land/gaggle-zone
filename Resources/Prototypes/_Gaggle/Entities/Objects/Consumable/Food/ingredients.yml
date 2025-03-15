@@ -1,0 +1,67 @@
+- type: entity
+  name: thin dough slice
+  parent: FoodBakingBase
+  id: FoodDoughThin
+  description: A thin slice of dough.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - dough
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/ingredients.rsi
+    state: dough-thin
+  - type: Tag
+    tags:
+    - Slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+
+- type: entity
+  name: thin bun
+  parent: FoodBreadSliceBase
+  id: FoodBreadBunThin
+  description: A thin bun.
+  components:
+  - type: Food
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/ingredients.rsi
+    state: bun-thin
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3.33
+  - type: Butcherable
+    butcherDelay: 1
+    spawned:
+      - id: FoodBreadBunThinCut
+        amount: 1
+
+- type: entity
+  name: hot dog bun
+  parent: FoodBreadSliceBase
+  id: FoodBreadBunThinCut
+  description: A thin bun that's almost cut in half.
+  components:
+  - type: Food
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/ingredients.rsi
+    state: bun-thin-cut
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3.33
+  - type: Construction
+    graph: FoodHotDog
+    node: start
+    defaultTarget: hot dog
