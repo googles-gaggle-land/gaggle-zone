@@ -7,3 +7,11 @@
     Cold: 1.5
     Heat: 0.3
     Poison: 1
+
+- type: damageModifierSet
+  id: Wallpaper
+  coefficients:
+    Blunt: 0.1
+    Slash: 1.5
+    Piercing: 0.1
+    Heat: 1.5

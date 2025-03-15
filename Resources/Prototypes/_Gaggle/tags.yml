@@ -1,0 +1,11 @@
+- type: Tag
+  id: Wallpaper
+
+- type: Tag
+  id: WallpaperItem
+  
+- type: Tag
+  id: WallpaperStructure
+
+- type: Tag
+  id: Painter

@@ -1,0 +1,100 @@
+- type: reagent
+  id: BasePaint
+  name: reagent-name-paint
+  group: Others
+  name: reagent-desc-paint
+  flavor: bitter
+  color: "#000000"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-glossy
+  slippery: true
+  metabolisms:
+    Poison:
+      effects:
+        - !type:HealthChange
+          damage:
+            types:
+              Poison: 1.5
+  plantMetabolism:
+    - !type:PlantAdjustHealth
+      amount: -1.5
+    - !type:PlantAdjustNutrition
+      amount: -0.3
+
+- type: reagent
+  parent: BasePaint
+  id: PaintRed
+  name: reagent-name-red-paint
+  color: "#E41000"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintOrange
+  name: reagent-name-orange-paint
+  color: "#EA8800"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintYellow
+  name: reagent-name-yellow-paint
+  color: "#EFD700"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintGreen
+  name: reagent-name-green-paint
+  color: "#009E00"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintCyan
+  name: reagent-name-cyan-paint
+  color: "#00B7EA"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintBlue
+  name: reagent-name-blue-paint
+  color: "#002FEF"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintPurple
+  name: reagent-name-purple-paint
+  color: "#8000D1"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintMagenta
+  name: reagent-name-magenta-paint
+  color: "#FF2BDD"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintPink
+  name: reagent-name-pink-paint
+  color: "#EF77A5"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintBrown
+  name: reagent-name-brown-paint
+  color: "#513921"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintWhite
+  name: reagent-name-white-paint
+  color: "#F2F2F2"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintGrey
+  name: reagent-name-grey-paint
+  color: "#828282"
+
+- type: reagent
+  parent: BasePaint
+  id: PaintGrey
+  name: reagent-name-black-paint
+  color: "#191919"

@@ -1,0 +1,179 @@
+- type: entity
+  id: BaseWallpaperStructure
+  parent: BaseStructure
+  name: wallpaper
+  suffix: Structure
+  description: A way to protect from asbestos.
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Occluder
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 10
+        mask:
+        - FullTileMask
+        layer:
+        - Opaque
+  - type: Tag
+    tags:
+    - Wallpaper
+    - WallpaperStructure
+  - type: Appearance
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wallpaper
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 15
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    sprite: _gaggle/Structures/Decoration/wallpaper.rsi
+  - type: Flammable
+    fireSpread: true
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 1
+  - type: FireVisuals
+    sprite: Effects/fire.rsi
+    normalState: "1"
+  - type: Construction
+    graph: Wallpaper
+
+- type: entity
+  id: WallpaperStructureBlank
+  parent: BaseWallpaperStructure
+  name: blank wallpaper
+  suffix: Structure
+  description: So bland.
+  components:
+  - type: Sprite
+    state: blank
+  - type: Construction
+    graph: Wallpaper
+    node: WallpaperStructureBlank
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 15
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          WallpaperItemBlank:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: WallpaperStructureOld
+  parent: BaseWallpaperStructure
+  name: old wallpaper
+  suffix: Structure
+  description: This was definitely a way to protect from asbestos.
+  components:
+  - type: Sprite
+    state: old
+  - type: Construction
+    graph: Wallpaper
+    node: WallpaperStructureOld
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 15
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          WallpaperItemOld:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: WallpaperStructureOldFake
+  parent: BaseWallpaperStructure
+  name: fake old wallpaper
+  suffix: Structure
+  description: Definitely can't collect asbestos anymore.
+  components:
+  - type: Sprite
+    state: old-fake
+  - type: Construction
+    graph: Wallpaper
+    node: WallpaperStructureOldFake
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 15
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          WallpaperItemOldFake:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]

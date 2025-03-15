@@ -1,0 +1,183 @@
+- type: entity
+  parent: Bucket
+  id: BucketPaint
+  name: paint bucket
+  suffix: Empty
+  description: You can tell by the splotches!
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Tools/Painting/paintbucket.rsi
+    layers:
+      - state: bucket
+      - map: ["enum.SolutionContainerLayers.Fill"]
+        state: fill-1
+        visible: false
+
+- type: entity
+  parent: BucketPaintRed
+  suffix: Red
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintRed: 250
+
+- type: entity
+  parent: BucketPaintOrange
+  suffix: Orange
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintOrange: 250
+
+- type: entity
+  parent: BucketPaintYellow
+  suffix: Yellow
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintYellow: 250
+
+- type: entity
+  parent: BucketPaintGreen
+  suffix: Green
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintGreen: 250
+
+- type: entity
+  parent: BucketPaintCyan
+  suffix: Cyan
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintCyan: 250
+
+- type: entity
+  parent: BucketPaintBlue
+  suffix: Blue
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintBlue: 250
+
+- type: entity
+  parent: BucketPaintPurple
+  suffix: Purple
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintBlue: 250
+
+- type: entity
+  parent: BucketPaintMagenta
+  suffix: Magenta
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintMagenta: 250
+
+- type: entity
+  parent: BucketPaintPink
+  suffix: Pink
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintPink: 250
+
+- type: entity
+  parent: BucketPaintBrown
+  suffix: Brown
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintBrown: 250
+
+- type: entity
+  parent: BucketPaintWhite
+  suffix: White
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintWhite: 250
+
+- type: entity
+  parent: BucketPaintGrey
+  suffix: Grey
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PainGrey: 250
+
+- type: entity
+  parent: BucketPaintBlack
+  suffix: Black
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        reagents:
+          PaintBlack: 250
+
+- type: entity
+  parent: BaseItem
+  id: PaintRoller
+  description: A roller specifically made for dousing in paint to spread on sufaces..
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Tools/Painting/paintroller.rsi
+    layers:
+      - state: icon
+      - map: ["enum.SolutionContainerLayers.Fill"]
+        state: fill-1
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill-
+    inHandsFillBaseName: fill-
+    inHandsMaxFillLevels: 2
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 4
+  - type: Item
+    size: Small
+  - type: Absorbent
+  - type: SolutionContainerManager
+    solution:
+      absorbed:
+        maxVol: 100
+  - type: UseDelay
+    delay: 1
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 10
+  - type: Tag
+    tags:
+      - PaintRoller
+      - Painter

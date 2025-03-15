@@ -1,0 +1,183 @@
+- type: reaction
+  id: PaintMixOrange
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintRed:
+      amount: 1
+    PaintYellow:
+      amount: 1
+  products:
+    PaintOrange: 2
+
+- type: reaction
+  id: PaintMixPurple
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintRed:
+      amount: 1
+    PaintBlue:
+      amount: 1
+  products:
+    PaintPurple: 2
+
+- type: reaction
+  id: PaintMixGreen
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintYellow:
+      amount: 1
+    PaintBlue:
+      amount: 1
+  products:
+    PaintGreen: 2
+
+- type: reaction
+  id: PaintMixGrey
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintWhite:
+      amount: 1
+    PaintBlack:
+      amount: 1
+  products:
+    PaintGrey: 2
+
+- type: reaction
+  id: PaintMixBrown1
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintOrange:
+      amount: 1
+    PaintBlack:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixBrown2
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintRed:
+      amount: 1
+    PaintGreen:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixBrown3
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintYellow:
+      amount: 1
+    PaintBlue:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixBrown4
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintOrange:
+      amount: 1
+    PaintBlue:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixBrown5
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintRed:
+      amount: 1
+    PaintYellow:
+      amount: 1
+    PaintBlue:
+      amount: 1
+  products:
+    PaintBrown: 3
+
+- type: reaction
+  id: PaintMixBrown6
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintPurple:
+      amount: 1
+    PaintYellow:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixBrown7
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintMagenta:
+      amount: 1
+    PaintYellow:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixBrown8
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintPink:
+      amount: 1
+    PaintYellow:
+      amount: 1
+    PaintBlue:
+      amount: 1
+  products:
+    PaintBrown: 3
+
+- type: reaction
+  id: PaintMixBrown9
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintPink:
+      amount: 1
+    PaintGreen:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixBrown10
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintOrange:
+      amount: 1
+    PaintGreen:
+      amount: 1
+  products:
+    PaintBrown: 2
+
+- type: reaction
+  id: PaintMixMagenta
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintPurple:
+      amount: 1
+    PaintRed:
+      amount: 1
+  products:
+    PaintMagenta: 2
