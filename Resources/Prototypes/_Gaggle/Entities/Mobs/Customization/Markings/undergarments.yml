@@ -2,7 +2,7 @@
   id: UndergarmentMaleBriefs
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_briefs
@@ -11,7 +11,7 @@
   id: UndergarmentMaleBoxers
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_boxers
@@ -20,7 +20,7 @@
   id: UndergarmentMaleBoxersStriped
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_boxers
@@ -31,7 +31,7 @@
   id: UndergarmentMaleBoxersHearts
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_boxers
@@ -43,7 +43,7 @@
   id: UndergarmentMaleMidway
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_midway
@@ -52,6 +52,7 @@
   id: UndergarmentMaleLongJohns
   bodyPart: Undergarments
   markingCategory: Undergarments
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_longjohns
@@ -60,7 +61,7 @@
   id: UndergarmentMaleShirt
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_shirt
@@ -69,7 +70,7 @@
   id: UndergarmentMaleShirtShortSleeved
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_shortsleeve
@@ -78,7 +79,7 @@
   id: UndergarmentMaleTankTop
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_tank
@@ -87,7 +88,7 @@
   id: UndergarmentMaleTankTopAlt
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: male_tank_alt
@@ -96,7 +97,7 @@
   id: UndergarmentFemaleBikini
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_bikini
@@ -105,7 +106,7 @@
   id: UndergarmentFemaleBralette
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_bralette
@@ -114,7 +115,7 @@
   id: UndergarmentFemaleSportswear
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_sport
@@ -123,7 +124,7 @@
   id: UndergarmentFemaleSportsBra
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_sportsbra
@@ -132,7 +133,7 @@
   id: UndergarmentFemaleSportsBraAlt
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_sportsbra_alt
@@ -141,7 +142,7 @@
   id: UndergarmentFemaleSwimTwoPiece
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_swim_twopiece
@@ -150,7 +151,7 @@
   id: UndergarmentFemaleShirt
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_shirt
@@ -159,7 +160,7 @@
   id: UndergarmentFemaleShirtShortSleeved
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_shortsleeve
@@ -168,7 +169,7 @@
   id: UndergarmentFemaleTankTop
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_tank
@@ -177,7 +178,7 @@
   id: UndergarmentFemaleTankTopAlt
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_tank_alt
@@ -186,7 +187,7 @@
   id: UndergarmentFemaleTop
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_top
@@ -195,7 +196,7 @@
   id: UndergarmentFemaleBottom
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: female_bottom
@@ -204,7 +205,7 @@
   id: UndergarmentSocks
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks
@@ -213,7 +214,7 @@
   id: UndergarmentSocksShort
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks_short
@@ -222,7 +223,7 @@
   id: UndergarmentSocksKnee
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks_knee
@@ -231,7 +232,7 @@
   id: UndergarmentSocksThigh
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks_thigh
@@ -240,7 +241,7 @@
   id: UndergarmentSocksKneeStriped
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks_knee
@@ -251,7 +252,7 @@
   id: UndergarmentSocksThighStriped
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks_thigh
@@ -262,7 +263,7 @@
   id: UndergarmentSocksThinKnee
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks_thin_knee
@@ -271,7 +272,7 @@
   id: UndergarmentSocksThinThigh
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: socks_thin_thigh
@@ -280,7 +281,7 @@
   id: UndergarmentPantyhose
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: pantyhose
@@ -289,7 +290,7 @@
   id: UndergarmentFishnetKnee
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: fishnet_knee
@@ -298,7 +299,7 @@
   id: UndergarmentFishnetThigh
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: fishnet_thigh
@@ -307,7 +308,7 @@
   id: UndergarmentFishnetFull
   bodyPart: Undergarments
   markingCategory: Undergarments
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal]
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Vulpkanin, Rodentia, Reptilian, Ethereal, SlimePerson, Gingerbread]
   sprites:
     - sprite: _gaggle/Mobs/Customization/undergarments.rsi
       state: fishnet_full
