@@ -1,0 +1,7 @@
+- type: microwaveMealRecipe
+  id: RecipeBunThin
+  name: thin bun recipe
+  result: FoodBreadBunThin
+  time: 5
+  solids:
+    FoodDoughThin: 1

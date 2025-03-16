@@ -15,6 +15,9 @@
             prefixCreator: '14'
         - type: StationJobs
           availableJobs:
+            #centcomm
+            NanotrasenRepresentative: [ 1, 1 ]
+            BlueshieldOfficer: [ 1, 1 ]
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]

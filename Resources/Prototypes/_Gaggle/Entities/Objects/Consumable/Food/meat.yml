@@ -1,0 +1,224 @@
+- type: entity
+  name: raw pork
+  parent: FoodMeatRawBase
+  id: FoodMeatPork
+  description: A slab of pork meat.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+    state: pork
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
+        - ReagentId: Fat
+          Quantity: 9
+  - type: SliceableFood
+    count: 3
+    slice: FoodMeatPorkchop
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: MeatPork
+    node: start
+    defaultTarget: cooked pork
+  - type: FoodSequenceElement
+    sprite:
+      sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+      state: pork
+    entries:
+      burger:
+        name: raw pork
+      taco:
+        name: raw pork
+
+- type: entity
+  name: cooked pork
+  parent: FoodMeatBase
+  id: FoodMeatPorkCooked
+  description: A cooked slab of pork.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+    state: pork-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: SliceableFood
+    count: 3
+    slice: FoodMeatPorkchopCooked
+  - type: Construction
+    graph: MeatPork
+    node: cooked pork
+  - type: FoodSequenceElement
+    sprite:
+      sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+      state: pork-cooked
+    entries:
+      burger:
+        name: pork
+      taco:
+        name: pork
+      skewer:
+        name: pork
+        sprite:
+          sprite: Objects/Consumable/Food/skewer.rsi
+          state: skewer-meat
+
+- type: entity
+  name: raw porkchop
+  parent: FoodMeatRawBase
+  id: FoodMeatPorkchop
+  description: A cut piece of pork.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+    state: porkchop
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: Fat
+          Quantity: 2
+  - type: Tag
+    tags:
+    - Raw
+    - Cutlet
+    - Meat
+  - type: Construction
+    graph: MeatPorkchop
+    node: start
+    defaultTarget: cooked porkchop
+  - type: FoodSequenceElement
+    sprite:
+      sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+      state: porkchop
+    entries:
+      burger:
+        name: raw porkchop
+      taco:
+        name: raw porkchop
+
+- type: entity
+  name: cooked porkchop
+  parent: FoodMeatBase
+  id: FoodMeatPorkchopCooked
+  description: A cooked piece of pork.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+    state: porkchop-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 2
+  - type: Tag
+    tags:
+    - Cooked
+    - Cutlet
+    - Meat
+  - type: Construction
+    graph: MeatPorkchop
+    node: cooked porkchop
+  - type: FoodSequenceElement
+    sprite:
+      sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+      state: porkchop-cooked
+    entries:
+      burger:
+        name: porkchop
+      taco:
+        name: porkchop
+      skewer:
+        name: porkchop
+        sprite:
+          sprite: Objects/Consumable/Food/skewer.rsi
+          state: skewer-meat
+
+- type: entity #glizzy!
+  name: raw sausage
+  parent: FoodMeatRawBase
+  id: FoodMeatSausage
+  description: Minced pork mixed with spices.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+    state: sausage
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 4
+        - ReagentId: Fat
+          Quantity: 3
+  - type: Construction
+    graph: MeatSausage
+    node: start
+    defaultTarget: cooked sausage
+  - type: FoodSequenceElement
+    sprite:
+      sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+      state: sausage
+    entries:
+      burger:
+        name: raw sausage
+      taco:
+        name: raw sausage
+
+- type: entity
+  name: cooked sausage
+  parent: FoodMeatBase
+  id: FoodMeatSausageCooked
+  description: Glizzyyy.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+    state: sausage-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Protein
+          Quantity: 3
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - FoodMeatSausageCooked
+  - type: Construction
+    graph: MeatSausage
+    node: cooked sausage
+  - type: FoodSequenceElement
+    sprite:
+      sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+      state: sausage-cooked
+    entries:
+      burger:
+        name: sausage
+      taco:
+        name: sausage
+      skewer:
+        name: sausage
+        sprite:
+          sprite: _gaggle/Objects/Consumable/Food/skewer.rsi
+          state: skewer-sausage

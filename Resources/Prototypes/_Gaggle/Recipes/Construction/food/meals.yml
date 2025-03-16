@@ -1,0 +1,17 @@
+- type: constructionGraph
+  id: FoodHotDog
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: hot dog
+      steps:
+      - tag: FoodMeatSausageCooked
+        name: cooked sausage
+        icon:
+          sprite: _gaggle/Objects/Consumable/Food/meat.rsi
+          state: sausage-cooked
+        doAfter: 0.5
+
+  - node: hot dog
+    entity: FoodHotDog

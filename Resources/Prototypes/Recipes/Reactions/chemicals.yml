@@ -362,7 +362,7 @@
     Water:
       amount: 1
   products:
-    ChloralHydrate: 3 # DeltaV: make chloral hydrate less outrageously expensive
+    ChloralHydrate: 1
 
 - type: reaction
   id: Pax
