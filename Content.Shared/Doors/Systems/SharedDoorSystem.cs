@@ -149,7 +149,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
         RaiseLocalEvent(ent, new DoorStateChangedEvent(door.State));
     }
 
-    public bool SetState(EntityUid uid, DoorState state, DoorComponent? door = null)
+    protected bool SetState(EntityUid uid, DoorState state, DoorComponent? door = null)
     {
         if (!Resolve(uid, ref door))
             return false;

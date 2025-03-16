@@ -9,6 +9,5 @@
         <tabs:AudioTab Name="AudioTab" />
         <tabs:AccessibilityTab Name="AccessibilityTab" />
         <tabs:NetworkTab Name="NetworkTab" />
-        <tabs:AdminOptionsTab Name="AdminOptionsTab" />
     </TabContainer>
 </DefaultWindow>

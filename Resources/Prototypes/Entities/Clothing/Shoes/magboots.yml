@@ -34,7 +34,6 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-    - Magboots # Funky
 
 - type: entity
   parent: [ClothingShoesBootsMagBase]
