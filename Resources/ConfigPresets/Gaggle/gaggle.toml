@@ -1,5 +1,5 @@
 [game]
-name             = "[100% FREE LAG] Google's Gaggle Land"
+hostname         = "[100% FREE LAG] Google's Gaggle Land"
 desc             = "The gaggle land. Where we go. Have fun yeah."
 lobbyenabled     = true
 role_timers      = false
