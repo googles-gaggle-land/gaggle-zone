@@ -95,19 +95,15 @@
       - map: [ "gloves" ]
       - map: [ "shoes" ]
       - map: [ "ears" ]
-<<<<<<< HEAD
       - map: [ "outerClothing" ]
       - map: [ "culteyes" ] # funky cult
         sprite: "_Funkystation/BloodCult/Effects/culteyes.rsi"
         state: "moth"
         shader: unshaded
         visible: false
-=======
->>>>>>> 881ba33cac (Merge Upstream 14 March 25 (#520))
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "id" ]
-      - map: [ "outerClothing" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
       - map: [ "back" ]
       - map: [ "neck" ]
