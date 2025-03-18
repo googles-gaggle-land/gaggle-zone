@@ -71,7 +71,15 @@
       - FoodSoupBungo
       - FoodMealCornInButter
       - FoodSoupStew
+<<<<<<< HEAD
       - FoodHotDog # gaggle
+=======
+      - FoodMealBigLollipop #impstation edit
+      - FoodMealBigLollipop #impstation edit
+      - FoodMealFruitLollipop #imp
+      - FoodMealClothLollipop #imp
+      - FoodMealMeatLollipop #imp
+>>>>>>> funkystation/master
     chance: 0.8
     offset: 0.0
     #rare
@@ -95,4 +103,5 @@
       - FoodSoupEyeball
       - FoodSoupElectron
       - FoodNoodlesCopy
+      - FoodMealCultLollipop # imp
     rareChance: 0.05
