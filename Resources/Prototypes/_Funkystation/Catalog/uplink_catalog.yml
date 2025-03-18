@@ -47,15 +47,3 @@
     whitelist:
     - Bartender
     - Zookeeper
-
-- type: listing
-  id: UplinkBowlerHatRazor
-  name: uplink-syndicate-bowler-hat-razor-name
-  description: uplink-syndicate-bowler-hat-razor-desc
-  icon: { sprite:  Clothing/Head/Hats/bowler_hat.rsi, state: icon}
-  productEntity: ClothingHeadHatBowlerHatRazor
-  cost:
-    Telecrystal: 7
-  categories:
-  - UplinkWeaponry
-  saleLimit: 1

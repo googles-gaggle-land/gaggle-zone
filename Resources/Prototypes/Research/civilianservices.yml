@@ -71,9 +71,6 @@
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
     - JukeboxCircuitBoard
-    - BoomboxRed
-    - BoomboxGreen
-    - BoomboxBlue
 
 - type: technology
   id: RoboticCleanliness

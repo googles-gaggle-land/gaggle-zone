@@ -3,9 +3,7 @@ using System.Linq;
 using Content.Server.Antag.Components;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Objectives;
-using Content.Shared.Antag;
 using Content.Shared.Chat;
-using Content.Shared.GameTicking.Components;
 using Content.Shared.Mind;
 using Content.Shared.Preferences;
 using JetBrains.Annotations;
@@ -25,8 +23,8 @@ public sealed partial class AntagSelectionSystem
     {
         definition = null;
 
-        var totalTargetCount = GetTargetAntagCount(ent, players);
-        var mindCount = ent.Comp.AssignedMinds.Count;
+        var totalTargetCount = GetTargetAntagCount(ent);
+        var mindCount = ent.Comp.SelectedMinds.Count;
         if (mindCount >= totalTargetCount)
             return false;
 
@@ -130,7 +128,7 @@ public sealed partial class AntagSelectionSystem
             return new List<(EntityUid, SessionData, string)>();
 
         var output = new List<(EntityUid, SessionData, string)>();
-        foreach (var (mind, name) in ent.Comp.AssignedMinds)
+        foreach (var (mind, name) in ent.Comp.SelectedMinds)
         {
             if (!TryComp<MindComponent>(mind, out var mindComp) || mindComp.OriginalOwnerUserId == null)
                 continue;
@@ -152,7 +150,7 @@ public sealed partial class AntagSelectionSystem
             return new();
 
         var output = new List<Entity<MindComponent>>();
-        foreach (var (mind, _) in ent.Comp.AssignedMinds)
+        foreach (var (mind, _) in ent.Comp.SelectedMinds)
         {
             if (!TryComp<MindComponent>(mind, out var mindComp) || mindComp.OriginalOwnerUserId == null)
                 continue;
@@ -170,7 +168,7 @@ public sealed partial class AntagSelectionSystem
         if (!Resolve(ent, ref ent.Comp, false))
             return new();
 
-        return ent.Comp.AssignedMinds.Select(p => p.Item1).ToList();
+        return ent.Comp.SelectedMinds.Select(p => p.Item1).ToList();
     }
 
     /// <summary>
@@ -262,7 +260,7 @@ public sealed partial class AntagSelectionSystem
         if (!Resolve(ent, ref ent.Comp, false))
             return false;
 
-        return GetAliveAntagCount(ent) == ent.Comp.AssignedMinds.Count;
+        return GetAliveAntagCount(ent) == ent.Comp.SelectedMinds.Count;
     }
 
     /// <summary>
@@ -367,66 +365,8 @@ public sealed partial class AntagSelectionSystem
         var ruleEnt = GameTicker.AddGameRule(id);
         RemComp<LoadMapRuleComponent>(ruleEnt);
         var antag = Comp<AntagSelectionComponent>(ruleEnt);
-        antag.AssignmentComplete = true; // don't do normal selection.
+        antag.SelectionsComplete = true; // don't do normal selection.
         GameTicker.StartGameRule(ruleEnt);
         return (ruleEnt, antag);
-    }
-
-    /// <summary>
-    /// Get all sessions that have been preselected for antag.
-    /// </summary>
-    public HashSet<ICommonSession> GetPreSelectedAntagSessions(AntagSelectionComponent? except = null)
-    {
-        var result = new HashSet<ICommonSession>();
-        var query = QueryAllRules();
-        while (query.MoveNext(out var uid, out var comp, out _))
-        {
-            if (HasComp<EndedGameRuleComponent>(uid))
-                continue;
-
-            if (comp == except)
-                continue;
-
-            if (!comp.PreSelectionsComplete)
-                continue;
-
-            foreach (var def in comp.Definitions)
-            {
-                result.UnionWith(comp.PreSelectedSessions);
-            }
-        }
-
-        return result;
-    }
-
-    /// <summary>
-    /// Get all sessions that have been preselected for antag and are exclusive, i.e. should not be paired with other antags.
-    /// </summary>
-    public HashSet<ICommonSession> GetPreSelectedExclusiveAntagSessions(AntagSelectionComponent? except = null)
-    {
-        var result = new HashSet<ICommonSession>();
-        var query = QueryAllRules();
-        while (query.MoveNext(out var uid, out var comp, out _))
-        {
-            if (HasComp<EndedGameRuleComponent>(uid))
-                continue;
-
-            if (comp == except)
-                continue;
-
-            if (!comp.PreSelectionsComplete)
-                continue;
-
-            foreach (var def in comp.Definitions)
-            {
-                if (def.MultiAntagSetting == AntagAcceptability.None)
-                {
-                    result.UnionWith(comp.PreSelectedSessions);
-                    break;
-                }
-            }
-        }
-
-        return result;
     }
 }
