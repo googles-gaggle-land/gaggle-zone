@@ -1078,17 +1078,11 @@
       - !type:SatiateThirst
         factor: 3
     Medicine:
-<<<<<<< HEAD
-      effects:
-      - !type:DeCultify  # funky
-        amount: 2.5
-=======
       effects: # imp edit
       - !type:CleanseCult
         conditions:
         - !type:ReagentThreshold
           min: 10
->>>>>>> funkystation/master
       - !type:HealthChange
         conditions:
         - !type:TotalDamage
