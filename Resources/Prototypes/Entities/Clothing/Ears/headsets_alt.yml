@@ -159,7 +159,7 @@
 
 # Goobstation start
 - type: entity
-  parent: [ClothingHeadsetAlt, BaseSecurityContraband]
+  parent: [ClothingHeadsetAlt, BaseRestrictedContraband]
   id: ClothingHeadsetAltSecurityRegular
   name: security over-ear headset
   components:

@@ -298,7 +298,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 }
                 else
                 {
-                    OpenStorageUI(uid, args.User, component, false);
+                    OpenStorageUI(uid, args.User, component);
                 }
             }
         };
@@ -429,7 +429,7 @@ public abstract class SharedStorageSystem : EntitySystem
         }
         else
         {
-            OpenStorageUI(uid, args.User, storageComp, false);
+            OpenStorageUI(uid, args.User, storageComp);
         }
 
         args.Handled = true;
@@ -532,9 +532,10 @@ public abstract class SharedStorageSystem : EntitySystem
             {
                 var parent = transformOwner.ParentUid;
 
-                var position = TransformSystem.ToCoordinates(
+                var position = EntityCoordinates.FromMap(
                     parent.IsValid() ? parent : uid,
-                    TransformSystem.GetMapCoordinates(transformEnt)
+                    TransformSystem.GetMapCoordinates(transformEnt),
+                    TransformSystem
                 );
 
                 args.Handled = true;
@@ -584,9 +585,10 @@ public abstract class SharedStorageSystem : EntitySystem
                 continue;
             }
 
-            var position = TransformSystem.ToCoordinates(
+            var position = EntityCoordinates.FromMap(
                 xform.ParentUid.IsValid() ? xform.ParentUid : uid,
-                new MapCoordinates(TransformSystem.GetWorldPosition(targetXform), targetXform.MapID)
+                new MapCoordinates(TransformSystem.GetWorldPosition(targetXform), targetXform.MapID),
+                TransformSystem
             );
 
             var angle = targetXform.LocalRotation;
