@@ -3,8 +3,7 @@
 - type: latheRecipe
   abstract: true
   id: BaseWeaponRecipe
-  categories:
-  - Weapons
+  category: Weapons
   completetime: 2
   materials:
     Steel: 300
@@ -19,8 +18,7 @@
 - type: latheRecipe
   abstract: true
   id: BaseAmmoRecipe
-  categories:
-  - Ammo
+  category: Ammo
   completetime: 5
 
 - type: latheRecipe

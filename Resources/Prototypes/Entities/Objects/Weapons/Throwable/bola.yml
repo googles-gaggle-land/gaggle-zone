@@ -2,7 +2,7 @@
 
 - type: entity
   name: bola
-  parent: [BaseItem, BaseSecurityContraband]
+  parent: [BaseItem, BaseRestrictedContraband]
   id: BaseBola
   description: Linked together with some spare cuffs and metal.
   abstract: true
