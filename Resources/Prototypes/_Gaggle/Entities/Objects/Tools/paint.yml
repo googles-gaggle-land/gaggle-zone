@@ -2,150 +2,189 @@
   parent: Bucket
   id: BucketPaint
   name: paint bucket
-  suffix: Empty
   description: You can tell by the splotches!
   components:
   - type: Sprite
     sprite: _gaggle/Objects/Tools/Painting/paintbucket.rsi
     layers:
-      - state: bucket
+      - state: icon
       - map: ["enum.SolutionContainerLayers.Fill"]
         state: fill-1
         visible: false
 
 - type: entity
-  parent: BucketPaintRed
+  parent: BucketPaint
+  id: BucketPaintRed
   suffix: Red
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintRed: 250
+        - ReagentId: PaintRed
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintOrange
+  parent: BucketPaint
+  id: BucketPaintOrange
   suffix: Orange
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintOrange: 250
+        - ReagentId: PaintOrange
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintYellow
+  parent: BucketPaint
+  id: BucketPaintYellow
   suffix: Yellow
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintYellow: 250
+        - ReagentId: PaintYellow
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintGreen
+  parent: BucketPaint
+  id: BucketPaintGreen
   suffix: Green
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintGreen: 250
+        - ReagentId: PaintGreen
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintCyan
+  parent: BucketPaint
+  id: BucketPaintCyan
   suffix: Cyan
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintCyan: 250
+        - ReagentId: PaintCyan
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintBlue
+  parent: BucketPaint
+  id: BucketPaintBlue
   suffix: Blue
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintBlue: 250
+        - ReagentId: PaintBlue
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintPurple
+  parent: BucketPaint
+  id: BucketPaintPurple
   suffix: Purple
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintBlue: 250
+        - ReagentId: PaintPurple
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintMagenta
+  parent: BucketPaint
+  id: BucketPaintMagenta
   suffix: Magenta
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintMagenta: 250
+        - ReagentId: PaintMagenta
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintPink
+  parent: BucketPaint
+  id: BucketPaintPink
   suffix: Pink
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintPink: 250
+        - ReagentId: PaintPink
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintBrown
+  parent: BucketPaint
+  id: BucketPaintBrown
   suffix: Brown
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintBrown: 250
+        - ReagentId: PaintBrown
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintWhite
+  parent: BucketPaint
+  id: BucketPaintWhite
   suffix: White
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintWhite: 250
+        - ReagentId: PaintWhite
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintGrey
+  parent: BucketPaint
+  id: BucketPaintGrey
   suffix: Grey
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PainGrey: 250
+        - ReagentId: PaintGrey
+          Quantity: 250
 
 - type: entity
-  parent: BucketPaintBlack
+  parent: BucketPaint
+  id: BucketPaintBlack
   suffix: Black
   components:
   - type: SolutionContainerManager
     solutions:
       bucket:
+        maxVol: 250
         reagents:
-          PaintBlack: 250
+        - ReagentId: PaintBlack
+          Quantity: 250
 
 - type: entity
   parent: BaseItem
   id: PaintRoller
+  name: paint roller
   description: A roller specifically made for dousing in paint to spread on sufaces..
   components:
   - type: Sprite
@@ -162,11 +201,13 @@
     inHandsFillBaseName: fill-
     inHandsMaxFillLevels: 2
   - type: MeleeWeapon
+    wideAnimationRotation: 180
     damage:
       types:
-        Blunt: 4
+        Blunt: 3
   - type: Item
     size: Small
+  #- type: DrywallPainter
   - type: Absorbent
   - type: SolutionContainerManager
     solution:

@@ -2,7 +2,7 @@
   id: BasePaint
   name: reagent-name-paint
   group: Others
-  name: reagent-desc-paint
+  desc: reagent-desc-paint
   flavor: bitter
   color: "#000000"
   recognizable: true
@@ -95,6 +95,6 @@
 
 - type: reagent
   parent: BasePaint
-  id: PaintGrey
+  id: PaintBlack
   name: reagent-name-black-paint
   color: "#191919"

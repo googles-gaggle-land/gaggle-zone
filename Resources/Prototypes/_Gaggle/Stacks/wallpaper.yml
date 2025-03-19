@@ -5,7 +5,7 @@
   maxCount: 15
 
 - type: stack
-  id: WallpaperBlank
+  id: WallpaperOld
   name: old wallpaper
   spawn: WallpaperItemOld
   maxCount: 15

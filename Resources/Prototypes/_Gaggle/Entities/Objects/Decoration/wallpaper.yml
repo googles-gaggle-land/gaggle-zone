@@ -1,4 +1,4 @@
-- type: Entity
+- type: entity
   id: BaseWallpaperItem
   parent: BaseItem
   name: wallpaper
@@ -38,7 +38,7 @@
   - type: Sprite
     sprite: _gaggle/Objects/Decoration/wallpaper.rsi
 
-- type: Entity
+- type: entity
   id: WallpaperItemBlank
   parent: BaseWallpaperItem
   name: blank wallpaper
@@ -54,7 +54,7 @@
     graph: Wallpaper
     node: WallpaperItemBlank
 
-- type: Entity
+- type: entity
   id: WallpaperItemOld
   parent: BaseWallpaperItem
   name: old wallpaper
@@ -70,7 +70,7 @@
     graph: Wallpaper
     node: WallpaperItemOld
 
-- type: Entity
+- type: entity
   id: WallpaperItemOldFake
   parent: BaseWallpaperItem
   name: fake old wallpaper

@@ -9,3 +9,6 @@
 
 - type: Tag
   id: Painter
+
+- type: Tag
+  id: PaintRoller
