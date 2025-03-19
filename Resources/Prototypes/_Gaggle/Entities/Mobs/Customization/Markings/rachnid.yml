@@ -190,7 +190,7 @@
     state: queen
     
 - type: marking
-  id: RachnidMarkingSpinneretCerberusOver
+  id: RachnidMarkingSpinneretQueenOver
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Rachnid]
