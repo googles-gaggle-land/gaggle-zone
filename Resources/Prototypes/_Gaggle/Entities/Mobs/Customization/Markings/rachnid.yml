@@ -216,4 +216,4 @@
   speciesRestriction: [Rachnid]
   sprites:
   - sprite: _gaggle/Mobs/Customization/Rachnid/spider_legs.rsi
-    state: secondary_carapace
+    state: carapace_over
