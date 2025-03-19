@@ -1,0 +1,119 @@
+# TODO: Add descriptions (many)
+# TODO BODY: Part damage
+- type: entity
+  id: PartLeonid
+  parent: [BaseItem, BasePart]
+  name: "leonid body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: TorsoLeonid
+  name: "leonid torso"
+  parent: [PartLeonid, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "torso_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  id: HeadLeonid
+  name: "leonid head"
+  parent: [PartLeonid, BaseHead]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "head_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: LeftArmLeonid
+  name: "left reptilian arm"
+  parent: [PartLeonid, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmLeonid
+  name: "right reptilian arm"
+  parent: [PartLeonid, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandLeonid
+  name: "left reptilian hand"
+  parent: [PartLeonid, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandLeonid
+  name: "right reptilian hand"
+  parent: [PartLeonid, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegLeonid
+  name: "left reptilian leg"
+  parent: [PartLeonid, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegLeonid
+  name: "right reptilian leg"
+  parent: [PartLeonid, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootLeonid
+  name: "left reptilian foot"
+  parent: [PartLeonid, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootLeonid
+  name: "right reptilian foot"
+  parent: [PartLeonid, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: "r_foot"

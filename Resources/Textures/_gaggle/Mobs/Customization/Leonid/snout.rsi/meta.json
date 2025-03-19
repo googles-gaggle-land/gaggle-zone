@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by miapyxel",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "small",
+      "directions": 4
+    },
+    {
+      "name": "small-nose",
+      "directions": 4
+    },
+    {
+      "name": "whiskers",
+      "directions": 4
+    }
+  ]
+}
