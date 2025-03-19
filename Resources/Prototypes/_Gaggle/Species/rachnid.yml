@@ -21,7 +21,7 @@
     Undergarments: MobHumanoidAnyMarking
     Chest: MobRachnidTorso
     Tail: MobHumanoidAnyMarking
-    Eyes: MobArachnidEyes
+    Eyes: MobRachnidEyes
     LArm: MobRachnidLArm
     RArm: MobRachnidRArm
     LHand: MobRachnidLHand
@@ -58,6 +58,12 @@
       points: 2 # imp 2<8
       required: true
       defaultMarkings: [ "RachnidMarkingLHand", "RachnidMarkingRHand" ]
+
+- type: humanoidBaseSprite
+  id: MobRachnidEyes
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Rachnid/parts.rsi
+    state: eyes
 
 - type: humanoidBaseSprite
   id: MobRachnidHead

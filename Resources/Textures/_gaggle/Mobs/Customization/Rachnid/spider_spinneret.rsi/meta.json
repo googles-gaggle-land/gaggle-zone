@@ -24,10 +24,6 @@
       "directions": 4
     },
     {
-      "name": "folds",
-      "directions": 4
-    },
-    {
       "name": "queen",
       "directions": 4
     },
