@@ -116,7 +116,7 @@
         shader: unshaded
         visible: false
   - type: Inventory
-    templateId: arachnid
+    templateId: rachnid
 
 
 - type: entity

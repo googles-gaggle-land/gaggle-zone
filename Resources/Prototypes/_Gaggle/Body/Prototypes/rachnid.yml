@@ -16,7 +16,7 @@
         heart: OrganArachnidHeart
         lungs: OrganAnimalLungs
         stomach: OrganArachnidStomach
-        liver: OrganRachnidLiver
+        liver: OrganArachnidLiver
         kidneys: OrganArachnidKidneys
       connections:
       - right arm
