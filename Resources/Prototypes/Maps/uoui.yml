@@ -18,6 +18,7 @@
             #centcomm
             NanotrasenRepresentative: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
+            InternalAffairsAgent: [ 1, 1 ]
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -37,6 +38,7 @@
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
+            Psychologist: [ 1, 1 ]
             MedicalDoctor: [ 3, 3 ]
             MedicalIntern: [ 3, 3 ]
             #science
