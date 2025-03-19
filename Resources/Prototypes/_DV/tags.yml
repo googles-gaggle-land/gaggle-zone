@@ -11,6 +11,3 @@
 
 - type: Tag
   id: PreventLabel
-
-- type: Tag
-  id: PermissibleForSurgery # Can be worn on the body during surgery
