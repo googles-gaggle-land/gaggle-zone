@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/shiptest-ss13/Shiptest created by everypercent",
+  "copyright": "https://github.com/shiptest-ss13/Shiptest/tree/41e4acebd276652c5e82fd1e09b30d3f6d58b159",
   "size": {
     "x": 32,
     "y": 32
@@ -16,6 +16,10 @@
     },
     {
       "name": "head_m",
+      "directions": 4
+    },
+    {
+      "name": "eyes",
       "directions": 4
     },
     {
@@ -56,14 +60,6 @@
     },
     {
       "name": "torso_m",
-      "directions": 4
-    },
-    {
-      "name": "eyes",
-      "directions": 4
-    },
-    {
-      "name": "template",
       "directions": 4
     }
   ]
