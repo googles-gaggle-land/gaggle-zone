@@ -1,5 +1,4 @@
 species-name-rachnid = Rachnid
-namepreset-firstquotelast = {$first}'{$last}
 
 marking-RachnidMarkingHead = Head Plating
 marking-RachnidMarkingChest = Chest Plating
