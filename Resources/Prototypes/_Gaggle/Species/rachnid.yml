@@ -18,11 +18,8 @@
   id: MobRachnidSprites
   sprites:
     Head: MobRachnidHead
-    Snout: MobHumanoidAnyMarking
     Undergarments: MobHumanoidAnyMarking
     Chest: MobRachnidTorso
-    HeadTop: MobHumanoidAnyMarking
-    HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
     Eyes: MobArachnidEyes
     LArm: MobRachnidLArm
@@ -38,22 +35,29 @@
   id: MobRachnidMarkingLimits
   onlyWhitelisted: true
   points:
+    Head:
+      points: 1
+      required: true
+      defaultMarkings: [ "RachnidMarkingHead" ]
     Tail:
       points: 4
       required: true
       defaultMarkings: [ "RachnidMarkingCarapace", "RachnidMarkingCarapaceOver", "RachnidMarkingSpinneretCerberus", "RachnidMarkingSpinneretCerberusOver" ]
     Undergarments: # google's gaggle land
       points: 4
-      required: true
+      required: false
     Chest:
       points: 1
       required: true
+      defaultMarkings: [ "RachnidMarkingChest" ]
     Legs:
-      points: 2 # imp 2<8
+      points: 4 # imp 2<8
       required: true
+      defaultMarkings: [ "RachnidMarkingLLeg", "RachnidMarkingLFoot", "RachnidMarkingRLeg", "RachnidMarkingRFoot" ]
     Arms:
-      points: 2 # imp 2<8
+      points: 4 # imp 2<8
       required: true
+      defaultMarkings: [ "RachnidMarkingLArm", "RachnidMarkingLHand", "RachnidMarkingRArm", "RachnidMarkingRHand" ]
 
 - type: humanoidBaseSprite
   id: MobRachnidHead
