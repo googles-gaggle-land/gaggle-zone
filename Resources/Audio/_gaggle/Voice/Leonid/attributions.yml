@@ -1,0 +1,13 @@
+- files:
+  - leonid_scream.ogg
+  license: "CC-BY-4.0"
+  copyright: "Taken from https://freesound.org/. Convert from MP3 to OGG"
+  source: "https://freesound.org/people/AUDACITIER/sounds/634660/"
+
+- files:
+  - leonid_meow1.ogg
+  - leonid_meow2.ogg
+  - leonid_meow3.ogg
+  license: "CC0-1.0"
+  copyright: "Taken from https://freesound.org/. Convert from WAV to OGG, spliced"
+  source: "https://freesound.org/people/KatarzynaPe/sounds/527443/"
