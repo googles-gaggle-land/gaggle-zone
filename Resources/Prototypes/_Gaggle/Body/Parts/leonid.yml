@@ -48,7 +48,7 @@
 
 - type: entity
   id: LeftArmLeonid
-  name: "left reptilian arm"
+  name: "left leonid arm"
   parent: [PartLeonid, BaseLeftArm]
   components:
   - type: Sprite
@@ -57,7 +57,7 @@
 
 - type: entity
   id: RightArmLeonid
-  name: "right reptilian arm"
+  name: "right leonid arm"
   parent: [PartLeonid, BaseRightArm]
   components:
   - type: Sprite
@@ -66,7 +66,7 @@
 
 - type: entity
   id: LeftHandLeonid
-  name: "left reptilian hand"
+  name: "left leonid hand"
   parent: [PartLeonid, BaseLeftHand]
   components:
   - type: Sprite
@@ -75,7 +75,7 @@
 
 - type: entity
   id: RightHandLeonid
-  name: "right reptilian hand"
+  name: "right leonid hand"
   parent: [PartLeonid, BaseRightHand]
   components:
   - type: Sprite
@@ -84,7 +84,7 @@
 
 - type: entity
   id: LeftLegLeonid
-  name: "left reptilian leg"
+  name: "left leonid leg"
   parent: [PartLeonid, BaseLeftLeg]
   components:
   - type: Sprite
@@ -93,7 +93,7 @@
 
 - type: entity
   id: RightLegLeonid
-  name: "right reptilian leg"
+  name: "right leonid leg"
   parent: [PartLeonid, BaseRightLeg]
   components:
   - type: Sprite
@@ -102,7 +102,7 @@
 
 - type: entity
   id: LeftFootLeonid
-  name: "left reptilian foot"
+  name: "left leonid foot"
   parent: [PartLeonid, BaseLeftFoot]
   components:
   - type: Sprite
@@ -111,7 +111,7 @@
 
 - type: entity
   id: RightFootLeonid
-  name: "right reptilian foot"
+  name: "right leonid foot"
   parent: [PartLeonid, BaseRightFoot]
   components:
   - type: Sprite

@@ -24,11 +24,11 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: FoodMeatLizard
+    - id: FoodMeatHuman # TODO change this to something else?
       amount: 5
-  - type: LizardAccent
   - type: Speech
     speechVerb: Leonid
+    speechSounds: Leonid
   - type: Vocal
     sounds:
       Male: MaleLeonid
@@ -86,7 +86,7 @@
     - map: [ "pocket2" ]
     - map: [ "clownedon" ] # Dynamically generated
       sprite: "_DV/Effects/creampie.rsi"
-      state: "creampie_vulpkanin"
+      state: "creampie_vulpkanin" # TODO change this from _vulpkanin to _leonid or something else
       visible: false
     - map: [ "culthalo" ] # funky cult
       sprite: "_Funkystation/BloodCult/Effects/halo.rsi"
@@ -125,6 +125,12 @@
           32:
             sprite: Mobs/Species/Human/displacement.rsi
             state: jumpsuit-female
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - LeonidEmotes
 
 
 - type: entity
@@ -135,15 +141,3 @@
   components:
   - type: HumanoidAppearance
     species: Leonid
-    hideLayersOnEquip:
-    - Snout
-    - HeadTop
-    - HeadSide
-  - type: Inventory
-    speciesId: leonid
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
