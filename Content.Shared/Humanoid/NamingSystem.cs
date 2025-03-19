@@ -38,6 +38,9 @@ namespace Content.Shared.Humanoid
                 case SpeciesNaming.FirstDashLast: // Goobstation
                     return Loc.GetString("namepreset-firstdashlast",
                         ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto)));
+                case SpeciesNaming.FirstQuoteLast: // Gaggle
+                    return Loc.GetString("namepreset-firstquotelast",
+                        ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto)));
                 case SpeciesNaming.LastFirst: // DeltaV: Rodentia name scheme
                     return Loc.GetString("namepreset-lastfirst",
                         ("last", GetLastName(speciesProto)), ("first", GetFirstName(speciesProto, gender)));
