@@ -8,9 +8,10 @@
   markingLimits: MobRachnidMarkingLimits
   dollPrototype: MobRachnidDummy
   skinColoration: Hues
-  maleFirstNames: names_arachnid_first
-  femaleFirstNames: names_arachnid_first
-  lastNames: names_arachnid_last
+  naming: FirstQuoteLast
+  maleFirstNames: names_rachnid_first
+  femaleFirstNames: names_rachnid_first
+  lastNames: names_rachnid_last
   sexes:
   - Unsexed
 
