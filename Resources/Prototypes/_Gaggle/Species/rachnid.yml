@@ -55,9 +55,9 @@
       required: true
       defaultMarkings: [ "RachnidMarkingLLeg", "RachnidMarkingLFoot", "RachnidMarkingRLeg", "RachnidMarkingRFoot" ]
     Arms:
-      points: 4 # imp 2<8
+      points: 2 # imp 2<8
       required: true
-      defaultMarkings: [ "RachnidMarkingLArm", "RachnidMarkingLHand", "RachnidMarkingRArm", "RachnidMarkingRHand" ]
+      defaultMarkings: [ "RachnidMarkingLHand", "RachnidMarkingRHand" ]
 
 - type: humanoidBaseSprite
   id: MobRachnidHead

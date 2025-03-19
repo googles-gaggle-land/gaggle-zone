@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "chest_over",
+      "name": "torso_over",
       "directions": 4
     },
     {

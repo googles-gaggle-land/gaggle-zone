@@ -28,20 +28,6 @@
     state: torso_over
 
 - type: marking
-  id: RachnidMarkingLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [Rachnid]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
-  sprites:
-  - sprite: _gaggle/Mobs/Customization/Rachnid/spider_parts.rsi
-    state: l_arm_over
-
-- type: marking
   id: RachnidMarkingLHand
   bodyPart: LHand
   markingCategory: Arms
@@ -83,21 +69,6 @@
   sprites:
   - sprite: _gaggle/Mobs/Customization/Rachnid/spider_parts.rsi
     state: l_foot_over
-
-- type: marking
-  id: RachnidMarkingRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [Rachnid]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
-  sprites:
-  - sprite: _gaggle/Mobs/Customization/Rachnid/spider_parts.rsi
-    state: r_arm_over
-
 
 - type: marking
   id: RachnidMarkingRHand
