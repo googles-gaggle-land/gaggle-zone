@@ -42,7 +42,7 @@
     Tail:
       points: 1
       required: true
-      defaultMarkings: [ LeonidTailBasic ]
+      defaultMarkings: [ LeonidTail ]
     Snout:
       points: 2
       required: true
@@ -53,7 +53,7 @@
     HeadTop:
       points: 1
       required: true
-      defaultMarkings: [ LeonidEarsBasic ]
+      defaultMarkings: [ LeonidEars ]
     HeadSide:
       points: 1
       required: false

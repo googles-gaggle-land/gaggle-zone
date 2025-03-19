@@ -1,6 +1,6 @@
 # ears
 - type: marking
-  id: LeonidSnoutSmall
+  id: LeonidEars
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Leonid]
@@ -42,7 +42,7 @@
 
 # tails
 - type: marking
-  id: LeonidTailBasic
+  id: LeonidTail
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Leonid]
