@@ -17,6 +17,7 @@
   id: MobLeonidSprites
   sprites:
     Head: MobLeonidHead
+    Hair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Undergarments: MobHumanoidAnyMarking
     Chest: MobLeonidTorso
