@@ -456,6 +456,83 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientHOPLocked
+  suffix: Ancient, HOP, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfPersonnel ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCaptainLocked
+  suffix: Ancient, Captain, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMDirLocked
+  suffix: Ancient, Medical Director, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefMedicalOfficer ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientRDirLocked
+  suffix: Ancient, Research Director, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearchDirector ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientHOSLockedGlass
+  suffix: Ancient, HeadOfSecurity, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfSecurity ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCELocked
+  suffix: Ancient, Chief Engineer, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefEngineer ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientQMLocked
+  suffix: Ancient, Quartermaster, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsQuartermaster ]
     
 - type: entity
   parent: Airlock
@@ -477,7 +554,7 @@
     sprite: _gaggle/Structures/Doors/airlock_science.rsi
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsScience ]
+      board: [ DoorElectronicsResearch ]
     
 - type: entity
   parent: Airlock
@@ -622,7 +699,7 @@
     sprite: _gaggle/Structures/Doors/airlock_maint_rnd.rsi
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsScience ]
+      board: [ DoorElectronicsResearch ]
 
 - type: entity
   parent: Airlock
@@ -682,6 +759,83 @@
     
 - type: entity
   parent: AirlockGlass
+  id: AirlockAncientHOPLockedGlass
+  suffix: Ancient, HOP, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfPersonnel ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCaptainLockedGlass
+  suffix: Ancient, Captain, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientMDirLockedGlass
+  suffix: Ancient, Medical Director, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefMedicalOfficer ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientRDirLockedGlass
+  suffix: Ancient, Research Director, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearchDirector ]    
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCELockedGlass
+  suffix: Ancient, Chief Engineer, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefEngineer ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientHOSLockedGlass
+  suffix: Ancient, HeadOfSecurity, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfSecurity ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientQMLockedGlass
+  suffix: Ancient, Quartermaster, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsQuartermaster ]
+
+- type: entity
+  parent: AirlockGlass
   id: AirlockAncientEngineeringGlassLocked
   suffix: Ancient, Engineering, Glass, Locked
   components:
@@ -700,7 +854,7 @@
     sprite: _gaggle/Structures/Doors/airlock_science_glass.rsi
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsScience ]
+      board: [ DoorElectronicsResearch ]
     
 - type: entity
   parent: AirlockGlass

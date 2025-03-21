@@ -38,6 +38,32 @@
   tileRipResistance: 4500
 
 - type: tile
+  id: FloorWoodAncient
+  name: tiles-wood-floor
+  sprite: /Textures/_gaggle/Tiles/wood.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+  tileRipResistance: 4500
+
+- type: tile
+  id: FloorReinforcedAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/reinforced.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 20000
+  tileRipResistance: 4500
+
+- type: tile
   id: PlatingAncient
   name: tiles-plating
   sprite: /Textures/_gaggle/Tiles/plating.png

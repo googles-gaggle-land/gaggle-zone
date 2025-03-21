@@ -30,3 +30,68 @@
     tags:
     - LightBulb
     - Trash
+    
+    
+- type: entity
+  id: AncientPoweredlight
+  suffix: Ancient
+  description: "A light fixture. Draws power and produces light when equipped with a light tube."
+  parent: PoweredlightEmpty
+  components:
+  - type: Sprite
+    state: base
+  - type: PointLight
+    enabled: true
+  - type: PoweredLight
+    hasLampOnSpawn: AncientLightTube
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -15
+    range: 2
+    sound:
+      path: /Audio/Ambience/Objects/light_hum.ogg
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 2
+    popupText: powered-light-component-burn-hand
+    
+- type: entity
+  id: PoweredlightAncient
+  description: "A light fixture. Draws power and produces light when equipped with a light tube."
+  suffix: Ancient
+  parent: Poweredlight
+  components:
+  - type: PoweredLight
+    hasLampOnSpawn: LedLightTube
+  - type: PointLight
+    radius: 15
+    energy: 1
+    softness: 0
+    color: "#FFFFFF"
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 2 # LEDs don't get as hot
+    popupText: powered-light-component-burn-hand
+
+- type: entity
+  id: PoweredSmallLightAncient
+  suffix: Ancient
+  parent: PoweredSmallLightEmpty
+  components:
+  - type: Sprite
+    state: base
+  - type: PointLight
+    enabled: true
+    radius: 10
+    energy: 1
+    softness: 0
+    color: "#FFFFFF"
+  - type: PoweredLight
+    hasLampOnSpawn: LedLightBulb
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 2
+    popupText: powered-light-component-burn-hand
