@@ -8,12 +8,7 @@
   "copyright": "by gtheglorious",
   "states": [
     {
-      "name": "icon",
-      "delays": [
-        [
-          1
-        ]
-      ]
+      "name": "icon"
     },
     {
       "name": "darcy_dead",

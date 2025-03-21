@@ -1,0 +1,51 @@
+- type: tile
+  id: FloorSteelAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/steel.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+
+- type: tile
+  id: FloorWhiteAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/white.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+  
+- type: tile
+  id: FloorDarkAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/dark.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+
+- type: tile
+  id: PlatingAncient
+  name: tiles-plating
+  sprite: /Textures/_gaggle/Tiles/plating.png
+  baseTurf: Lattice
+  isSubfloor: true
+  # Goobstation - Fireaxe plating prying
+  deconstructTools: [ Axing ]
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  heatCapacity: 10000
