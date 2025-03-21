@@ -1910,8 +1910,6 @@ Entries:
         APC. 
   id: 239
   time: '2025-03-13T23:16:08.0000000+00:00'
-<<<<<<< HEAD
-=======
 - author: ' correspond, sowelipililimute'
   changes:
     - type: Tweak
@@ -2004,4 +2002,3 @@ Entries:
       message: Most Maps now have departmental Communication Consoles.
   id: 252
   time: '2025-03-18T21:18:35.0000000+00:00'
->>>>>>> funkystation/master

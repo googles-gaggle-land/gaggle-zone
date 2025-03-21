@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by miapyxel",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "basic",
+      "directions": 4
+    },
+    {
+      "name": "basic-tip",
+      "directions": 4
+    },
+    {
+      "name": "lion",
+      "directions": 4
+    },
+    {
+      "name": "lion-tip",
+      "directions": 4
+    }
+  ]
+}
