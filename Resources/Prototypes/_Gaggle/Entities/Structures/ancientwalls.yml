@@ -373,7 +373,7 @@
     sprite: _gaggle/Structures/Doors/airlock_external.rsi
     
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientCommandGlass
   suffix: Ancient, Command, Glass
   components:
@@ -381,7 +381,7 @@
     sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
     
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientEngineeringGlass
   suffix: Ancient, Engineering, Glass
   components:
@@ -389,7 +389,7 @@
     sprite: _gaggle/Structures/Doors/airlock_engineering_glass.rsi
 
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientScienceGlass
   suffix: Ancient, Science, Glass
   components:
@@ -405,7 +405,7 @@
     sprite: _gaggle/Structures/Doors/airlock_medical_glass.rsi
     
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientSecurityGlass
   suffix: Ancient, Security, Glass
   components:
@@ -413,7 +413,7 @@
     sprite: _gaggle/Structures/Doors/airlock_security_glass.rsi
  
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientCargoGlass
   suffix: Ancient, Cargo, Glass
   components:
@@ -470,7 +470,7 @@
 
 - type: entity
   parent: Airlock
-  id: AirlockAncientScience
+  id: AirlockAncientScienceLocked
   suffix: Ancient, Science, Locked
   components:
   - type: Sprite
@@ -670,7 +670,7 @@
       board: [ DoorElectronicsExternal ]
     
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientCommandGlassLocked
   suffix: Ancient, Command, Glass, Locked
   components:
@@ -681,7 +681,7 @@
       board: [ DoorElectronicsCommand ]
     
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientEngineeringGlassLocked
   suffix: Ancient, Engineering, Glass, Locked
   components:
@@ -692,7 +692,7 @@
       board: [ DoorElectronicsEngineering ]
 
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientScienceGlassLocked
   suffix: Ancient, Science, Glass, Locked
   components:
@@ -703,7 +703,7 @@
       board: [ DoorElectronicsScience ]
     
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientMedicalGlassLocked
   suffix: Ancient, Medical, Glass, Locked
   components:
@@ -714,7 +714,7 @@
       board: [ DoorElectronicsMedical ]
     
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientSecurityGlassLocked
   suffix: Ancient, Security, Glass, Locked
   components:
@@ -725,7 +725,7 @@
       board: [ DoorElectronicsSecurity ]
  
 - type: entity
-  parent: Airlock
+  parent: AirlockGlass
   id: AirlockAncientCargoGlassLocked
   suffix: Ancient, Cargo, Glass, Locked
   components:
