@@ -141,3 +141,11 @@
   components:
   - type: HumanoidAppearance
     species: Leonid
+  - type: Inventory
+    speciesId: leonid
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female

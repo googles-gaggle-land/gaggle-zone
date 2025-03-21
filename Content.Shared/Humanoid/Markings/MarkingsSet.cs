@@ -284,7 +284,7 @@ public sealed partial class MarkingSet
             }
 
             var index = 0;
-            while (points.Points > 0 || index < points.DefaultMarkings.Count)
+            while (points.Points > 0 && index < points.DefaultMarkings.Count) // gaggle fix, how was `||` there for that amount of time instead of `&&` ????????
             {
                 if (markingManager.Markings.TryGetValue(points.DefaultMarkings[index], out var prototype))
                 {

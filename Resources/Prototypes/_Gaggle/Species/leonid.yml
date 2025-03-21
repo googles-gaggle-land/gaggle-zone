@@ -8,6 +8,10 @@
   markingLimits: MobLeonidMarkingLimits
   dollPrototype: MobLeonidDummy
   skinColoration: Hues
+  minAge: 18
+  youngAge: 28
+  oldAge: 50
+  maxAge: 75
 
 - type: speciesBaseSprites
   id: MobLeonidSprites
@@ -22,7 +26,7 @@
     Eyes: MobHumanoidEyes
     LArm: MobLeonidLArm
     RArm: MobLeonidRArm
-    LHand: MobLeonidHand
+    LHand: MobLeonidLHand
     RHand: MobLeonidRHand
     LLeg: MobLeonidLLeg
     RLeg: MobLeonidRLeg
@@ -34,7 +38,7 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 0
+      points: 1
       required: false
     FacialHair:
       points: 0
@@ -44,14 +48,14 @@
       required: true
       defaultMarkings: [ LeonidTail ]
     Snout:
-      points: 2
+      points: 3
       required: true
       defaultMarkings: [ LeonidSnoutSmall ]
     Undergarments: # google's gaggle land
       points: 4
       required: false
     HeadTop:
-      points: 1
+      points: 2
       required: true
       defaultMarkings: [ LeonidEars ]
     HeadSide:

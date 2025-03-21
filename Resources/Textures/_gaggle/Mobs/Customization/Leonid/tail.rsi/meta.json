@@ -10,6 +10,18 @@
     {
       "name": "basic",
       "directions": 4
+    },
+    {
+      "name": "basic-tip",
+      "directions": 4
+    },
+    {
+      "name": "lion",
+      "directions": 4
+    },
+    {
+      "name": "lion-tip",
+      "directions": 4
     }
   ]
 }

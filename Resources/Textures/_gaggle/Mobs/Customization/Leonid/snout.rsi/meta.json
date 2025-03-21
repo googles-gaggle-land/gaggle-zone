@@ -18,6 +18,18 @@
     {
       "name": "whiskers",
       "directions": 4
+    },
+    {
+      "name": "small_line",
+      "directions": 4
+    },
+    {
+      "name": "spots-left",
+      "directions": 4
+    },
+    {
+      "name": "spots-right",
+      "directions": 4
     }
   ]
 }
