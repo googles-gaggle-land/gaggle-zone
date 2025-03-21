@@ -1,0 +1,32 @@
+- type: entity
+  parent: BaseLightTube
+  name: light tube
+  suffix: Ancient
+  description: That's a light fixture.
+  id: AncientLightTube
+  components:
+  - type: LightBulb
+    color: "#FFFFFF"
+    lightEnergy: 4.5
+    lightRadius: 12
+    lightSoftness: 0.5
+    BurningTemperature: 350
+    PowerUse: 100
+    
+- type: entity
+  parent: BaseLightbulb
+  name: incandescent light bulb
+  suffix: Ancient
+  id: AncientLightBulb
+  description: A light bulb.
+  components:
+  - type: LightBulb
+    bulb: Bulb
+    color: "#FFFFFF" # 4000K color temp
+    lightEnergy: 1.0
+    lightRadius: 6
+    lightSoftness: 1.1
+  - type: Tag
+    tags:
+    - LightBulb
+    - Trash
