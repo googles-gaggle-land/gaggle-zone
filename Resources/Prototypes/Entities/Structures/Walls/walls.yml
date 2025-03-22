@@ -689,14 +689,14 @@
     - Diagonal
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
     state: state0
 
 # Riveting
@@ -832,14 +832,14 @@
     - Diagonal
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle_diagonal.rsi
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -1057,14 +1057,14 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
     state: state0
 
 - type: entity
