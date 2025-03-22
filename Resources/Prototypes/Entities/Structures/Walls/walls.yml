@@ -938,7 +938,7 @@
     node: shuttleWall
   - type: IconSmooth
     key: walls
-    base: state
+    base: solid
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -995,7 +995,7 @@
     node: shuttleInteriorWall
   - type: IconSmooth
     key: walls
-    base: state
+    base: solid
   - type: Reflect
     reflectProb: 1
 
