@@ -583,10 +583,9 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced.rsi
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
-    state: rgeneric
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced.rsi
   - type: Construction
     graph: Girder
     node: reinforcedWall
@@ -617,7 +616,7 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: walls
-    base: reinf_over
+    base: reinf
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -642,16 +641,15 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
-    state: rgeneric
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_rust.rsi
   - type: Construction
     graph: Girder
     node: reinforcedWallRust
   - type: IconSmooth
     key: walls
-    base: reinf_over
+    base: reinf
   - type: Destructible
     thresholds:
     - trigger:
@@ -1010,13 +1008,13 @@
     tags:
       - Wall
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid.rsi
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid.rsi
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1075,9 +1073,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_rust.rsi
     state: full
   - type: Construction
     graph: Girder
