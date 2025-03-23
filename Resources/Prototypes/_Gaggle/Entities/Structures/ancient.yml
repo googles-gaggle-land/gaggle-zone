@@ -1,0 +1,890 @@
+- type: entity
+  parent: BaseWall
+  id: WallReinforcedAncient
+  name: reinforced wall
+  suffix: Ancient
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Walls/solid.rsi
+  - type: Icon
+    sprite: _gaggle/Structures/Walls/solid.rsi
+    state: rgeneric
+  - type: Construction
+    graph: Girder
+    node: reinforcedWall
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    base: reinf_over
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ReinforcedWallVisuals.DeconstructionStage:
+        ReinforcedWallVisualLayers.Deconstruction:
+          -1: { visible: false }
+          0: { state: reinf_construct-0, visible: true}
+          1: { state: reinf_construct-1, visible: true}
+          2: { state: reinf_construct-2, visible: true}
+          3: { state: reinf_construct-3, visible: true}
+          4: { state: reinf_construct-4, visible: true}
+          5: { state: reinf_construct-5, visible: true}
+  - type: ReinforcedWallReplacementMarker
+  - type: StaticPrice
+    price: 250
+  - type: RadiationBlocker
+    resistance: 5
+
+- type: entity
+  id: WallLowAncient
+  parent: BaseWall
+  name: low wall
+  suffix: Ancient
+  description: Goes up to about your waist.
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    netsync: false
+    color: "#889192"
+    sprite: _gaggle/Structures/Walls/low_wall.rsi
+  - type: Icon
+    sprite: _gaggle/Structures/Walls/low_wall.rsi
+    state: metal
+  - type: WallReplacementMarker
+  - type: Airtight
+    deleted: true
+  - type: RequireProjectileTarget # Goobstation - Crawling
+    ignoreThrow: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: # tables should collide with other tables
+        - TableMask
+        layer:
+        - TableLayer
+        - BulletImpassable # Goobstation - Crawling
+  - type: RadiationBlocker
+    enabled: false
+  - type: Occluder
+    enabled: false
+  - type: Climbable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 4
+  - type: Clickable
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHull
+  - type: Construction
+    graph: Girder
+    node: wall
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    base: solid
+    
+- type: entity
+  parent: BaseWall
+  id: WallSolidAncient
+  name: solid wall
+  suffix: Ancient
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    netsync: false
+    color: "#889192"
+    sprite: _gaggle/Structures/Walls/solid.rsi
+  - type: WallReplacementMarker
+  - type: Construction
+    graph: Girder
+    node: wall
+  - type: Icon
+    sprite: _gaggle/Structures/Walls/solid.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    base: solid
+    
+- type: entity
+  parent: Window
+  id: AncientWindow
+  name: window
+  suffix: Ancient
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _gaggle/Structures/Windows/window.rsi
+  - type: Icon
+    sprite: _gaggle/Structures/Windows/window.rsi
+    
+- type: entity
+  id: ReinforcedWindowAncient
+  name: reinforced window
+  parent: ReinforcedWindow
+  suffix: Ancient
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _gaggle/Structures/Windows/rwindow.rsi
+  - type: Icon
+    sprite: _gaggle/Structures/Windows/rwindow.rsi
+    
+    
+#the doors
+#there are a LOT of doors, good god
+##unlocked
+###unlocked airlocks
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncient
+  suffix: Ancient, Common
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_basic.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCommand
+  suffix: Ancient, Command
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientEngineering
+  suffix: Ancient, Engineering
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_engineering.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientScience
+  suffix: Ancient, Science
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_science.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMedical
+  suffix: Ancient, Medical
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_medical.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientSecurity
+  suffix: Ancient, Security
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_security.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaints
+  suffix: Ancient, Maintenance
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint.rsi
+ 
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCargo
+  suffix: Ancient, Cargo
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_cargo.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientFreezer
+  suffix: Ancient, Kitchen, Freezer
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_freezer.rsi
+
+###unlocked maints (interior)
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsInterior
+  suffix: Ancient, Maintenance, Interior
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_int.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsCommon
+  suffix: Ancient, Maintenance, Common
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_common.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsCommand
+  suffix: Ancient, Maintenance, Command
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_command.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsCargo
+  suffix: Ancient, Maintenance, Cargo
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_cargo.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsEngineering
+  suffix: Ancient, Maintenance, Engineering
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_engi.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsMedical
+  suffix: Ancient, Maintenance, Medical
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_med.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsScience
+  suffix: Ancient, Maintenance, Science
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_rnd.rsi
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsSecurity
+  suffix: Ancient, Maintenance, Security
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_sec.rsi
+
+###unlocked glass airlocks
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientGlass
+  suffix: Ancient, Common, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_glass.rsi
+    
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalGlassAncient
+  suffix: External, Ancient, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_external.rsi
+    
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCommandGlass
+  suffix: Ancient, Command, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+    
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientEngineeringGlass
+  suffix: Ancient, Engineering, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_engineering_glass.rsi
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientScienceGlass
+  suffix: Ancient, Science, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_science_glass.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMedicalGlass
+  suffix: Ancient, Medical, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_medical_glass.rsi
+    
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientSecurityGlass
+  suffix: Ancient, Security, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_security_glass.rsi
+ 
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCargoGlass
+  suffix: Ancient, Cargo, Glass
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_cargo_glass.rsi
+    
+    
+##locked
+###locked airlocks
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientServiceLocked
+  suffix: Ancient, Service, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_basic.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsService ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientJanitorLocked
+  suffix: Ancient, Janitor, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_basic.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJanitor ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCommandLocked
+  suffix: Ancient, Command, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientHOPLocked
+  suffix: Ancient, HOP, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfPersonnel ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCaptainLocked
+  suffix: Ancient, Captain, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMDirLocked
+  suffix: Ancient, Medical Director, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefMedicalOfficer ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientRDirLocked
+  suffix: Ancient, Research Director, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearchDirector ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientHOSLockedGlass
+  suffix: Ancient, HeadOfSecurity, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfSecurity ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCELocked
+  suffix: Ancient, Chief Engineer, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefEngineer ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientQMLocked
+  suffix: Ancient, Quartermaster, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsQuartermaster ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientEngineeringLocked
+  suffix: Ancient, Engineering, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_engineering.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsEngineering ]
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientScienceLocked
+  suffix: Ancient, Science, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_science.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearch ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMedicalLocked
+  suffix: Ancient, Medical, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_medical.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientSecurityLocked
+  suffix: Ancient, Security, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_security.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsLocked
+  suffix: Ancient, Maintenance, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMaintenance ]
+ 
+- type: entity
+  parent: Airlock
+  id: AirlockAncientCargoLocked
+  suffix: Ancient, Cargo, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_cargo.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCargo ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientFreezerLocked
+  suffix: Ancient, Kitchen, Freezer, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_freezer.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsKitchen ]
+
+###locked maints (interior)
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsInteriorLocked
+  suffix: Ancient, Maintenance, Interior, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_int.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMaintenance ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsServiceLocked
+  suffix: Ancient, Maintenance, Service, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_common.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsService ]
+      
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsJanitorLocked
+  suffix: Ancient, Maintenance, Janitor, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_common.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJanitor ]
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsCommandLocked
+  suffix: Ancient, Maintenance, Command, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_command.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsCargoLocked
+  suffix: Ancient, Maintenance, Cargo, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_cargo.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCargo ]
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsEngineeringLocked
+  suffix: Ancient, Maintenance, Engineering, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_engi.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsEngineering ]
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsMedicalLocked
+  suffix: Ancient, Maintenance, Medical, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_med.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsScienceLocked
+  suffix: Ancient, Maintenance, Science, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_rnd.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearch ]
+
+- type: entity
+  parent: Airlock
+  id: AirlockAncientMaintsSecurityLocked
+  suffix: Ancient, Maintenance, Security, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_maint_sec.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
+###locked glass airlocks
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientServiceGlassLocked
+  suffix: Ancient, Service, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsService ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientJanitorGlassLocked
+  suffix: Ancient, Janitor, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJanitor ]
+    
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalGlassAncientLocked
+  suffix: External, Ancient, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_external.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExternal ]
+    
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCommandGlassLocked
+  suffix: Ancient, Command, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+    
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientHOPLockedGlass
+  suffix: Ancient, HOP, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfPersonnel ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCaptainLockedGlass
+  suffix: Ancient, Captain, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientMDirLockedGlass
+  suffix: Ancient, Medical Director, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefMedicalOfficer ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientRDirLockedGlass
+  suffix: Ancient, Research Director, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearchDirector ]    
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCELockedGlass
+  suffix: Ancient, Chief Engineer, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsChiefEngineer ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientHOSLockedGlass
+  suffix: Ancient, HeadOfSecurity, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsHeadOfSecurity ]
+      
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientQMLockedGlass
+  suffix: Ancient, Quartermaster, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsQuartermaster ]
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientEngineeringGlassLocked
+  suffix: Ancient, Engineering, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_engineering_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsEngineering ]
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientScienceGlassLocked
+  suffix: Ancient, Science, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_science_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsResearch ]
+    
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientMedicalGlassLocked
+  suffix: Ancient, Medical, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_medical_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsMedical ]
+    
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientSecurityGlassLocked
+  suffix: Ancient, Security, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_security_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+ 
+- type: entity
+  parent: AirlockGlass
+  id: AirlockAncientCargoGlassLocked
+  suffix: Ancient, Cargo, Glass, Locked
+  components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Doors/airlock_cargo_glass.rsi
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCargo ]

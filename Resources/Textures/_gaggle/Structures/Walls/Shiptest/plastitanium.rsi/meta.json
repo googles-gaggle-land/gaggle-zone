@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/shiptest-ss13/Shiptest/tree/362b1af41363c637bc7ef03eb2660640012e2260",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "reinf0",
+            "directions": 4
+        },
+        {
+            "name": "reinf1",
+            "directions": 4
+        },
+        {
+            "name": "reinf2",
+            "directions": 4
+        },
+        {
+            "name": "reinf3",
+            "directions": 4
+        },
+        {
+            "name": "reinf4",
+            "directions": 4
+        },
+        {
+            "name": "reinf5",
+            "directions": 4
+        },
+        {
+            "name": "reinf6",
+            "directions": 4
+        },
+        {
+            "name": "reinf7",
+            "directions": 4
+        }
+    ]
+}

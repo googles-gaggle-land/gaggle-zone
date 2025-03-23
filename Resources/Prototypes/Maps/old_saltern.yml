@@ -1,0 +1,58 @@
+- type: gameMap
+  id: OldSaltern
+  mapName: 'Ancient Saltern'
+  mapPath: /Maps/_gaggle/salternold.yml
+  minPlayers: 0
+  maxPlayers: 35
+  fallback: false
+  stations:
+    Saltern:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Saltern {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            #service
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 2 ]
+            Chef: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            ServiceWorker: [ 2, 2 ]
+            #engineering
+            ChiefEngineer: [ 1, 1 ]
+            StationEngineer: [ 4, 4 ]
+            TechnicalAssistant: [ 4, 4 ]
+            #medical
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 3, 3 ]
+            MedicalIntern: [ 4, 4 ]
+            #science
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 2, 2 ]
+            #security
+            HeadOfSecurity: [ 1, 1 ]
+            SecurityOfficer: [ 4, 4 ]
+            SecurityCadet: [ 4, 4 ]
+            #supply
+            SalvageSpecialist: [ 1, 3 ]
+            CargoTechnician: [ 2, 2 ]
+            #civillian
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+
+        # Goobstation blob-config-start SMALL+
+        - type: StationBlobConfig
+          stageBegin: 25
+          stageCritical: 350
+          stageTheEnd: 700
+        # Goobstation blob-config-end

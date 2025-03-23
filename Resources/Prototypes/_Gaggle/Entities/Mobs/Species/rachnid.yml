@@ -126,6 +126,7 @@
   components:
   - type: HumanoidAppearance
     species: Rachnid
-
+  - type: Inventory
+    templateId: rachnid
 
 #>88w88<
