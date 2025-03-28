@@ -1,4 +1,4 @@
-﻿guide-entry-blood-cult = Blood Cult
+guide-entry-blood-cult = Blood Cult
 
 guide-entry-command-sop = Command SOP
 guide-entry-security-sop = Security SOP
@@ -17,3 +17,5 @@ guide-entry-alertlevel-red = Red Alert
 guide-entry-alertlevel-violet = Violet Alert
 guide-entry-alertlevel-gamma = Gamma Alert
 guide-entry-alertlevel-delta = Delta Alert
+
+guide-entry-reactions = Reactions
