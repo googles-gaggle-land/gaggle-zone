@@ -1,22 +1,32 @@
 - type: entity
-  id: BloodCult
   parent: BaseGameRule
+  id: CalmCosmicCult
   components:
+  - type: CosmicCultRule
   - type: GameRule
-    minPlayers: 20
-  - type: BloodCultRule
+    minPlayers: 25
+    delay:
+      min: 60
+      max: 120
+  - type: AntagObjectives
+    objectives:
+    - CosmicFinalityObjective
+    - CosmicMonumentObjective
+    - CosmicEntropyObjective
   - type: AntagSelection
-    selectionTime: BeforeJobs
     definitions:
-    - prefRoles: [ BloodCultist ]
+    - prefRoles: [ CosmicAntagCultist ]
+      min: 1
       max: 3
-      playerRatio: 15
-      startingGear: BloodCultistGear
-      briefing:
-        text: cult-start-briefing
-        color: CornflowerBlue
-        sound: "/Audio/_Funkystation/Ambience/Antag/cultist_start.ogg"
+      playerRatio: 10
+      blacklist:
+        components:
+        - AntagImmune
+        - BibleUser
       components:
-      - type: BloodCultist
+      - type: CosmicCult
       mindRoles:
-      - MindRoleCultist
+      - MindRoleCosmicCult
+  - type: Tag
+    tags:
+      - RoundstartAntag
