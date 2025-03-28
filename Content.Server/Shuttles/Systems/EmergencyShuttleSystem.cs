@@ -438,10 +438,9 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         {
             while (query.MoveNext(out var uid, out _))
             {
-                _chatSystem.DispatchStationAnnouncement(uid, ev.CancelMessage, Loc.GetString("Station"), false);
+                _chatSystem.DispatchStationAnnouncement(uid, ev.CancelMessage);
             }
 
-            _roundEnd.CancelRoundEndCountdown(null, false, false);
             return;
         }
 

@@ -37,14 +37,6 @@ public sealed class BlobFactorySystem : EntitySystem
         {
             blobbernautComponent.Factory = null;
         }
-
-        foreach (EntityUid blobPod in component.BlobPods)
-        {
-            if (TryComp<BlobPodComponent>(blobPod, out var blobPodComponent))
-            {
-                blobPodComponent.Factory = null;
-            }
-        }
     }
 
     private void OnProduceBlobbernaut(EntityUid uid, BlobFactoryComponent component, ProduceBlobbernautEvent args)
@@ -160,7 +152,6 @@ public sealed class BlobFactorySystem : EntitySystem
         component.BlobPods.Add(pod);
         var blobPod = EnsureComp<BlobPodComponent>(pod);
         blobPod.Core = blobTileComponent.Core.Value;
-        blobPod.Factory = uid;
         FillSmokeGas((pod,blobPod), blobCoreComponent.CurrentChem);
 
         //smokeOnTrigger.SmokeColor = blobCoreComponent.ChemСolors[blobCoreComponent.CurrentChem];

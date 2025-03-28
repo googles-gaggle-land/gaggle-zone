@@ -42,8 +42,6 @@
     - BZ
     - Healium
     - Nitrium
-    - Pluoxium
-    - Hydrogen
 
 # use this to prevent overriding filters with hardcoded defaults
 - type: entity

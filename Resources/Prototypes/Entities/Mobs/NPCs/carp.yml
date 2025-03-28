@@ -96,8 +96,6 @@
       isToggle: true
       color: "#808080"
       playSoundOn: false
-    - type: CombatPower # Funky
-      factor: 8 # / 2 = times stronger than an unarmed crew member
 
 - type: entity
   parent: BaseMobCarp
@@ -263,9 +261,6 @@
         - id: MaterialToothSharkminnow1
           amount: 1
           maxAmount: 3
-        - id: MaterialChitinSharkminnow1 # Funky
-          amount: 1
-          maxAmount: 4
     - type: MeleeWeapon
       damage:
         types:

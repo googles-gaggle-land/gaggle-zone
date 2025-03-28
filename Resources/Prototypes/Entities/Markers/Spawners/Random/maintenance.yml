@@ -296,9 +296,6 @@
       - id: SpectralLocator
       - id: LidSalami
         weight: 0.05
-      - id: BoomboxSlav
-      - id: BoomboxPink
-      - id: BoomboxPurple
 
 - type: entity
   name: Maint Loot Spawner

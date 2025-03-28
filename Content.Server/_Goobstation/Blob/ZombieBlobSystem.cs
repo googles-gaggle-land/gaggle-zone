@@ -1,5 +1,4 @@
-﻿using Content.Server._Goobstation.Blob.Components;
-using Content.Server.Atmos;
+﻿using Content.Server.Atmos;
 using Content.Server.Atmos.Components;
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
@@ -203,15 +202,6 @@ public sealed class ZombieBlobSystem : SharedZombieBlobSystem
         }
         */
         _trigger.Trigger(component.BlobPodUid);
-        if (TryComp<BlobPodComponent>(component.BlobPodUid, out var podComp))
-        {
-            if (podComp.Factory != null && TryComp<BlobFactoryComponent>(podComp.Factory, out var factoryComp))
-            {
-                factoryComp.BlobPods.Remove(component.BlobPodUid);
-                factoryComp.SpawnedCount -= 1;
-            }
-        }
-
         QueueDel(component.BlobPodUid);
 
         EnsureComp<NpcFactionMemberComponent>(uid);

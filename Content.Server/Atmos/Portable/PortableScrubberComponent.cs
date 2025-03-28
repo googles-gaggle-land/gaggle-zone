@@ -33,7 +33,6 @@ namespace Content.Server.Atmos.Portable
             Gas.BZ, // Assmos - /tg/ gases
             Gas.Healium, // Assmos - /tg/ gases
             Gas.Nitrium, // Assmos - /tg/ gases
-            Gas.Hydrogen, // Assmos - /tg/ gases
         };
 
         [ViewVariables(VVAccess.ReadWrite)]

@@ -87,16 +87,4 @@ public sealed partial class StationEventComponent : Component
     /// </summary>
     [DataField]
     public bool OccursDuringRoundEnd = true;
-
-    // Goobstation start
-    /// <summary>
-    ///  Expected Chaos changes when this event occurs.
-    ///  Used by the GameDirector, which picks an event expected to make the desired chaos changes.
-    /// </summary>
-    [DataField("chaos")]
-    public ChaosMetrics Chaos = new ChaosMetrics();
-    // Goobstation end
-
-    [DataField("maxChaos")]
-    public ChaosMetrics MaxChaos = new ChaosMetrics();
 }

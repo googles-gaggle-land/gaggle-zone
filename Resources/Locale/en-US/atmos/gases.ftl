@@ -11,5 +11,4 @@ gas-bz-abbreviation = bz
 gas-healium-abbreviation = he
 gas-nitrium-abbreviation = nit
 gas-pluoxium-abbreviation = plox
-gas-hydrogen-abbreviation = H₂
 gas-unknown-abbreviation = X

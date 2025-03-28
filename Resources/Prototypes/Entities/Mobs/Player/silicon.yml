@@ -529,8 +529,6 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHyper
-  - type: CombatPower # Goobstation
-    factor: 16 # / 2 = times more powerful than an unarmed crew-member
 
 - type: entity
   id: PlayerBorgSyndicateAssaultGhostRole
@@ -564,8 +562,6 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellHyper
-  - type: CombatPower # Goobstation
-    factor: 12 # / 2 = times more powerful than an unarmed crew-member
 
 - type: entity
   id: PlayerBorgSyndicateSaboteurGhostRole
@@ -616,8 +612,6 @@
         startingItem: PowerCellHigh
   - type: RandomMetadata
     nameSegments: [names_borg]
-  - type: CombatPower # Goobstation
-    factor: 10 # / 2 = times more powerful than an unarmed crew-member
 
 - type: entity
   id: PlayerBorgDerelictGhostRole

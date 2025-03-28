@@ -24,9 +24,8 @@
       prob: 0.5
     - id: SubWizard
       prob: 0.05
-    # TODO: figure out what is causing store issues
-    #- id: Heretic # goob edit
-    #  prob: 0.4 # funkystation - 20% of rounds can have a heretic as a treat
+    - id: Heretic # goob edit
+      prob: 0.4 # funkystation - 20% of rounds can have a heretic as a treat
 
 - type: entity
   parent: BaseGameRule
@@ -166,9 +165,6 @@
         - Syndicate
       mindRoles:
       - MindRoleNukeops
-  - type: Tag
-    tags:
-    - ExtremeAntag # Funky
 
 - type: entity
   abstract: true
@@ -241,9 +237,6 @@
       - type: HeadRevolutionary
       mindRoles:
       - MindRoleHeadRevolutionary
-  - type: Tag
-    tags:
-    - ExtremeAntag # Funky
 
 - type: entity
   id: Sandbox
@@ -306,9 +299,6 @@
         - names_wizard_last
       mindRoles:
       - MindRoleWizard
-  - type: Tag
-    tags:
-    - ExtremeAntag # Funky
 
 - type: entity
   id: Zombie
@@ -340,7 +330,6 @@
       - type: InitialInfected
       mindRoles:
       - MindRoleInitialInfected
-
 
 # event schedulers
 

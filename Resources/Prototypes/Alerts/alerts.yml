@@ -7,7 +7,6 @@
     - alertType: ChangelingBiomass # goobstation - changelings
     - category: Health
     - category: Stamina
-    - alertType: CosmicEntropy # impstation - cosmic cult
     - alertType: ChangelingChemicals # goobstation - changelings
     - alertType: SuitPower
     - category: Internals

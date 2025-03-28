@@ -79,7 +79,7 @@
     - secret2
   name: gamemode-dynamic-title
   description: gamemode-dynamic-description
-  showInVote: false
+  showInVote: true
   rules:
     - Dynamic
     - BasicStationEventSchedulerNoAntag

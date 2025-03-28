@@ -503,7 +503,7 @@
       
 - type: entity
   parent: Airlock
-  id: AirlockAncientHOSLocked
+  id: AirlockAncientHOSLockedGlass
   suffix: Ancient, HeadOfSecurity, Locked
   components:
   - type: Sprite

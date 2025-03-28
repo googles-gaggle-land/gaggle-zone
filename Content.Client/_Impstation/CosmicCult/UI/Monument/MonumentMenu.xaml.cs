@@ -14,7 +14,6 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Timing;
 
 namespace Content.Client._Impstation.CosmicCult.UI.Monument;
 [GenerateTypedNameReferences]
@@ -39,8 +38,6 @@ public sealed partial class MonumentMenu : FancyWindow
 
     public Action<ProtoId<InfluencePrototype>>? OnGainButtonPressed;
 
-    private int _influenceCount = default;
-
     public MonumentMenu()
     {
         RobustXamlLoader.Load(this);
@@ -59,25 +56,6 @@ public sealed partial class MonumentMenu : FancyWindow
         SelectGlyphButton.OnPressed += _ => OnSelectGlyphButtonPressed?.Invoke(_selectedGlyphProtoId);
     }
 
-    /// <remarks>
-    /// This is here due to a wierd thing that would happpen when MonumentTier2 or MonumentTier3 would get called from CosmicCultRuleSystem where the BUI state would get processed by the client before the component state.
-    /// This fixes it by simply brute-force refreshing the UI if the relevant fields in the comp change. not super clean but It Works:tm:.
-    /// </remarks>
-    protected override void FrameUpdate(FrameEventArgs args)
-    {
-        if (!_entityManager.TryGetComponent<CosmicCultComponent>(_playerManager.LocalEntity, out var cultComp))
-            return;
-
-        //rebuild the list of unlocked influences if the count changes between frames
-        if (cultComp.UnlockedInfluences.Count != _influenceCount)
-        {
-            UpdateInfluences();
-        }
-
-        //update this every frame because why not
-        AvailableEntropy.Text = Loc.GetString("monument-interface-entropy-value", ("infused", cultComp.EntropyBudget.ToString()));
-    }
-
     public void UpdateState(MonumentBuiState state)
     {
         _selectedGlyphProtoId = state.SelectedGlyph;
@@ -92,7 +70,7 @@ public sealed partial class MonumentMenu : FancyWindow
         UpdateBar(state);
         UpdateEntropy(state);
         UpdateGlyphs();
-        UpdateInfluences();
+        UpdateInfluences(state);
     }
 
     // Update all the entropy fields
@@ -161,14 +139,14 @@ public sealed partial class MonumentMenu : FancyWindow
     }
 
     // Update all the influence thingies
-    private void UpdateInfluences()
+    private void UpdateInfluences(MonumentBuiState state)
     {
         InfluencesContainer.RemoveAllChildren();
 
         var influenceUIBoxes = new List<InfluenceUIBox>();
         foreach (var influence in _influencePrototypes)
         {
-            var uiBoxState = GetUIBoxStateForInfluence(influence);
+            var uiBoxState = GetUIBoxStateForInfluence(influence, state);
             var influenceBox = new InfluenceUIBox(influence, uiBoxState);
             influenceUIBoxes.Add(influenceBox);
             influenceBox.OnGainButtonPressed += () => OnGainButtonPressed?.Invoke(influence.ID);
@@ -184,14 +162,9 @@ public sealed partial class MonumentMenu : FancyWindow
         {
             InfluencesContainer.AddChild(box);
         }
-
-        //I probably shouldn't be doing so many duplicate tryComps, but I can't think of a good way to have individual "no cult comp" responses w/ only getting it in one place
-        //not a massive issue since this doesn't run often but eh, it's kinda wierd
-        if (_entityManager.TryGetComponent<CosmicCultComponent>(_playerManager.LocalEntity, out var cultComp)) //this feels wrong but seems to be the correct way to do this?
-            _influenceCount = cultComp.UnlockedInfluences.Count; //early return with locked if there's somehow no cult comp
     }
 
-    private InfluenceUIBox.InfluenceUIBoxState GetUIBoxStateForInfluence(InfluencePrototype influence)
+    private InfluenceUIBox.InfluenceUIBoxState GetUIBoxStateForInfluence(InfluencePrototype influence, MonumentBuiState state)
     {
         if (!_entityManager.TryGetComponent<CosmicCultComponent>(_playerManager.LocalEntity, out var cultComp)) //this feels wrong but seems to be the correct way to do this?
             return InfluenceUIBox.InfluenceUIBoxState.Locked; //early return with locked if there's somehow no cult comp

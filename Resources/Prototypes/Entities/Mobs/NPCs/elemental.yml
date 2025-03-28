@@ -101,8 +101,6 @@
       - SimpleHostile
   - type: Damageable
     damageContainer: StructuralInorganic
-  - type: CombatPower # Goobstation
-    factor: 8 # / 2 = times more powerful than an unarmed crew-member
 
 - type: entity
   parent: MobOreCrab
@@ -300,8 +298,6 @@
     solution: bloodstream
   - type: DrainableSolution
     solution: bloodstream
-  - type: CombatPower # Goobstation
-    factor: 12 # / 2 = times more powerful than an unarmed crew-member
 
 - type: entity
   name: Reagent Slime Spawner
@@ -366,8 +362,6 @@
   - type: MeleeChemicalInjector
     solution: bloodstream
     transferAmount: 1
-  - type: CombatPower # Goobstation
-    factor: 16 # / 2 = times more powerful than an unarmed crew-member
 
 - type: entity
   id: ReagentSlimeNocturine
@@ -388,8 +382,6 @@
   - type: MeleeChemicalInjector
     solution: bloodstream
     transferAmount: 3
-  - type: CombatPower # Goobstation
-    factor: 16 # / 2 = times more powerful than an unarmed crew-member
 
 - type: entity
   id: ReagentSlimeTHC
