@@ -28,12 +28,6 @@
   id: AppraisalTool
 
 - type: Tag
-  id: ArachneWeb
-
-- type: Tag
-  id: ArtifactFragment
-
-- type: Tag
   id: Arrow
 
 - type: Tag
@@ -579,9 +573,6 @@
   id: Fruit
 
 - type: Tag
-  id: FullBodyOuter
-
-- type: Tag
   id: Galaxythistle
 
 - type: Tag # goob edit
@@ -962,9 +953,6 @@
 
 - type: Tag
   id: Ointment
-
-- type: Tag
-  id: Oneirophage
 
 - type: Tag
   id: Ore

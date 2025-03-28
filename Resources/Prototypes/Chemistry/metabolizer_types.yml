@@ -43,8 +43,4 @@
 
 - type: metabolizerType
   id: Arachnid
-  name: arachnid
-
-- type: metabolizerType
-  id: Vampiric
-  name: vampiric
+  name: metabolizer-type-arachnid
