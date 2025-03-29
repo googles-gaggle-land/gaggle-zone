@@ -1,2 +1,17 @@
 - type: Tag
+  id: Wallpaper
+
+- type: Tag
+  id: WallpaperItem
+  
+- type: Tag
+  id: WallpaperStructure
+
+- type: Tag
+  id: Painter
+
+- type: Tag
+  id: PaintRoller
+
+- type: Tag
   id: FoodMeatSausageCooked
