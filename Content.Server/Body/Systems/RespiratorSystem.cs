@@ -23,6 +23,8 @@ using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Content.Shared._Impstation.CosmicCult.Components;
+using Content.Shared.Movement.Pulling.Components; // Goobstation
+using Content.Shared.Movement.Pulling.Systems; // Goobstation
 
 
 namespace Content.Server.Body.Systems;

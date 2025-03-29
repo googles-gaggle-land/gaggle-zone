@@ -140,6 +140,8 @@ namespace Content.Shared.Hands
         }
     }
 
+    // Goobstation start
+    // Added virtual items for grab intent, this is heavily edited please do not bulldoze.
     /// <summary>
     ///     Raised directed on both the blocking entity and user when
     ///     a virtual hand item is deleted.
@@ -148,11 +150,13 @@ namespace Content.Shared.Hands
     {
         public EntityUid BlockingEntity;
         public EntityUid User;
+        public EntityUid VirtualItem;
 
-        public VirtualItemDeletedEvent(EntityUid blockingEntity, EntityUid user)
+        public VirtualItemDeletedEvent(EntityUid blockingEntity, EntityUid user, EntityUid virtualItem)
         {
             BlockingEntity = blockingEntity;
             User = user;
+            VirtualItem = virtualItem;
         }
     }
 
@@ -175,6 +179,27 @@ namespace Content.Shared.Hands
             Direction = direction;
         }
     }
+
+    /// <summary>
+    ///     Raised directed on both the blocking entity and user when
+    ///     user tries to drop it by keybind.
+    ///     Cancellable.
+    /// </summary>
+    public sealed class VirtualItemDropAttemptEvent : CancellableEntityEventArgs
+    {
+        public EntityUid BlockingEntity;
+        public EntityUid User;
+        public EntityUid VirtualItem;
+        public bool Throw;
+        public VirtualItemDropAttemptEvent(EntityUid blockingEntity, EntityUid user, EntityUid virtualItem, bool thrown)
+        {
+            BlockingEntity = blockingEntity;
+            User = user;
+            VirtualItem = virtualItem;
+            Throw = thrown;
+        }
+    }
+    // Goobstation end
 
     /// <summary>
     ///     Raised when putting an entity into a hand slot
