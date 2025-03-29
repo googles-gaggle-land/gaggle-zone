@@ -11,7 +11,6 @@ changeling-absorb-fail-unabsorbable = The target is not absorbable.
 changeling-absorb-end-self = Another organic absorbed. You are evolving.
 changeling-absorb-end-self-ling = Another changeling absorbed. You are evolving more rapidly.
 changeling-absorb-onexamine = [color=red]The body feels hollow.[/color]
-changeling-absorb-fail-nograb = You arent grabbing hard enough.
 
 changeling-convert-start = {CAPITALIZE(THE($user))} is trying to sting {CAPITALIZE(THE($target))}!
 changeling-convert-fail-incapacitated = You can't infect this person, they're not incapacitated.

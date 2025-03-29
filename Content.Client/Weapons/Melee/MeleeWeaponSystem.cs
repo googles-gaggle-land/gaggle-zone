@@ -119,7 +119,6 @@ public sealed partial class MeleeWeaponSystem : SharedMeleeWeaponSystem
                 gunBoundToAlt &= wield.Wielded;
             }
         }
-        //Logger.Debug($"gunBoundToUse: {gunBoundToUse}, gunBoundToAlt: {gunBoundToAlt}"); Goobstation edit spamming console
         //End Frontier
 
         var mousePos = _eyeManager.PixelToMap(_inputManager.MouseScreenPosition);
