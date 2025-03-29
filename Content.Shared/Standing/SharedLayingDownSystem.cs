@@ -1,17 +1,21 @@
-using Content.Shared._Shitmed.Body.Organ; // Shitmed Change
-using Content.Shared.Body.Components; // Shitmed Change
+using Content.Shared.ActionBlocker;
+using Content.Shared.CCVar;
 using Content.Shared.DoAfter;
 using Content.Shared.Gravity;
 using Content.Shared.Input;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Systems;
+using Content.Shared.Body.Components;
+using Content.Shared._Shitmed.Body.Organ;
 using Content.Shared.Standing;
+using Content.Shared.Popups;
 using Content.Shared.Stunnable;
+using Robust.Shared.Configuration;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._White.Standing;
+namespace Content.Shared.Standing;
 
 public abstract class SharedLayingDownSystem : EntitySystem
 {
@@ -19,6 +23,10 @@ public abstract class SharedLayingDownSystem : EntitySystem
     [Dependency] private readonly StandingStateSystem _standing = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedGravitySystem _gravity = default!;
+    [Dependency] private readonly IConfigurationManager _config = default!;
+    [Dependency] private readonly SharedPopupSystem _popups = default!;
+    [Dependency] private readonly MovementSpeedModifierSystem _speed = default!;
+    [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
 
     public override void Initialize()
     {
@@ -42,12 +50,11 @@ public abstract class SharedLayingDownSystem : EntitySystem
 
     private void ToggleStanding(ICommonSession? session)
     {
-        if (session?.AttachedEntity == null ||
-            !HasComp<LayingDownComponent>(session.AttachedEntity) ||
-            _gravity.IsWeightless(session.AttachedEntity.Value))
-        {
+        if (session is not { AttachedEntity: { Valid: true } uid } _
+            || !Exists(uid)
+            || !HasComp<LayingDownComponent>(session.AttachedEntity)
+            || _gravity.IsWeightless(session.AttachedEntity.Value))
             return;
-        }
 
         RaiseNetworkEvent(new ChangeLayingDownEvent());
     }
@@ -58,20 +65,14 @@ public abstract class SharedLayingDownSystem : EntitySystem
             return;
 
         var uid = args.SenderSession.AttachedEntity.Value;
-
-        // TODO: Wizard
-        //if (HasComp<FrozenComponent>(uid))
-        //   return;
-
-        if (!TryComp(uid, out StandingStateComponent? standing) ||
-            !TryComp(uid, out LayingDownComponent? layingDown))
-        {
+        if (!TryComp(uid, out StandingStateComponent? standing)
+            || !TryComp(uid, out LayingDownComponent? layingDown))
             return;
-        }
 
         RaiseNetworkEvent(new CheckAutoGetUpEvent(GetNetEntity(uid)));
 
-        if (HasComp<KnockedDownComponent>(uid) || !_mobState.IsAlive(uid))
+        if (HasComp<KnockedDownComponent>(uid)
+            || !_mobState.IsAlive(uid))
             return;
 
         if (_standing.IsDown(uid, standing))
@@ -82,22 +83,22 @@ public abstract class SharedLayingDownSystem : EntitySystem
 
     private void OnStandingUpDoAfter(EntityUid uid, StandingStateComponent component, StandingUpDoAfterEvent args)
     {
-        if (args.Handled || args.Cancelled || HasComp<KnockedDownComponent>(uid) ||
-            _mobState.IsIncapacitated(uid) || !_standing.Stand(uid))
-        {
+        if (args.Handled || args.Cancelled
+            || HasComp<KnockedDownComponent>(uid)
+            || _mobState.IsIncapacitated(uid)
+            || !_standing.Stand(uid))
             component.CurrentState = StandingState.Lying;
-            return;
-        }
 
         component.CurrentState = StandingState.Standing;
     }
 
     private void OnRefreshMovementSpeed(EntityUid uid, LayingDownComponent component, RefreshMovementSpeedModifiersEvent args)
     {
-        if (_standing.IsDown(uid))
-            args.ModifySpeed(component.SpeedModify, component.SpeedModify);
-        else
-            args.ModifySpeed(1f, 1f);
+        if (!_standing.IsDown(uid))
+            return;
+
+        var modifier = component.LyingSpeedModifier * (component.IsCrawlingUnder ? component.CrawlingUnderSpeedModifier : 1);
+        args.ModifySpeed(modifier, modifier);
     }
 
     private void OnParentChanged(EntityUid uid, LayingDownComponent component, EntParentChangedMessage args)
@@ -106,24 +107,21 @@ public abstract class SharedLayingDownSystem : EntitySystem
         if (!TryComp<StandingStateComponent>(uid, out var standingState)
             || standingState.CurrentState is StandingState.Standing
             || Transform(uid).GridUid != null)
-        {
             return;
-        }
 
         _standing.Stand(uid, standingState);
     }
 
     public bool TryStandUp(EntityUid uid, LayingDownComponent? layingDown = null, StandingStateComponent? standingState = null)
     {
-        if (!Resolve(uid, ref standingState, false) ||
-            !Resolve(uid, ref layingDown, false) ||
-            standingState.CurrentState is not StandingState.Lying ||
-            !_mobState.IsAlive(uid) ||
-            TerminatingOrDeleted(uid) ||
-            // Shitmed Change
-            !TryComp<BodyComponent>(uid, out var body) ||
-            body.LegEntities.Count == 0 ||
-            HasComp<DebrainedComponent>(uid))
+        if (!Resolve(uid, ref standingState, false)
+            || !Resolve(uid, ref layingDown, false)
+            || standingState.CurrentState is not StandingState.Lying
+            || !_mobState.IsAlive(uid)
+            || TerminatingOrDeleted(uid)
+            || !TryComp<BodyComponent>(uid, out var body)
+            || body.LegEntities.Count < body.RequiredLegs
+            || HasComp<DebrainedComponent>(uid))
             return false;
 
         var args = new DoAfterArgs(EntityManager, uid, layingDown.StandingUpTime, new StandingUpDoAfterEvent(), uid)
@@ -136,14 +134,15 @@ public abstract class SharedLayingDownSystem : EntitySystem
             return false;
 
         standingState.CurrentState = StandingState.GettingUp;
+        layingDown.IsCrawlingUnder = false;
         return true;
     }
 
     public bool TryLieDown(EntityUid uid, LayingDownComponent? layingDown = null, StandingStateComponent? standingState = null, DropHeldItemsBehavior behavior = DropHeldItemsBehavior.NoDrop)
     {
-        if (!Resolve(uid, ref standingState, false) ||
-            !Resolve(uid, ref layingDown, false) ||
-            standingState.CurrentState is not StandingState.Standing)
+        if (!Resolve(uid, ref standingState, false)
+            || !Resolve(uid, ref layingDown, false)
+            || standingState.CurrentState is not StandingState.Standing)
         {
             if (behavior == DropHeldItemsBehavior.AlwaysDrop)
                 RaiseLocalEvent(uid, new DropHandItemsEvent());
@@ -151,7 +150,7 @@ public abstract class SharedLayingDownSystem : EntitySystem
             return false;
         }
 
-        _standing.Down(uid, true, behavior != DropHeldItemsBehavior.NoDrop, false, standingState);
+        _standing.Down(uid, true, behavior != DropHeldItemsBehavior.NoDrop);
         return true;
     }
 }
@@ -159,6 +158,7 @@ public abstract class SharedLayingDownSystem : EntitySystem
 [Serializable, NetSerializable]
 public sealed partial class StandingUpDoAfterEvent : SimpleDoAfterEvent;
 
+[Serializable, NetSerializable]
 public enum DropHeldItemsBehavior : byte
 {
     NoDrop,

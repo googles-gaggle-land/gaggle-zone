@@ -1,5 +1,5 @@
 using Content.Shared._White;
-using Content.Shared._White.Standing;
+using Content.Shared.Standing;
 using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
 
