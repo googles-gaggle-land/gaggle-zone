@@ -11,3 +11,12 @@
 
 - type: Tag
   id: PreventLabel
+
+- type: Tag
+  id: BeltSlotNotBelt
+
+- type: Tag
+  id: ForensicBeltEquip
+
+- type: Tag
+  id: SecDogWearable
