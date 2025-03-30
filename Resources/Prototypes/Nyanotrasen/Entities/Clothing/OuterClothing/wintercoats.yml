@@ -42,11 +42,6 @@
     - type: ToggleableClothing #DeltaV - fixing the fact that it has no hood
       clothingPrototype: ClothingHeadHatHoodWinterMailCarrier
       slot: head
-    - type: ContainerContainer
-      containers:
-        toggleable-clothing: !type:Container {}
-        storagebase: !type:Container
-          ents: []
     - type: Sprite
       sprite: Nyanotrasen/Clothing/OuterClothing/WinterCoats/mail_winter_coat.rsi
     - type: Clothing

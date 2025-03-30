@@ -90,7 +90,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyPrison
+      #- EncryptionKeyPrison
       - EncryptionKeyCommon
   - type: Sprite
     sprite: _DV/Clothing/Ears/Headsets/prisoner.rsi
@@ -106,7 +106,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyPrison
+      #- EncryptionKeyPrison
       - EncryptionKeyCommon
       - EncryptionKeySecurity
   - type: Sprite
