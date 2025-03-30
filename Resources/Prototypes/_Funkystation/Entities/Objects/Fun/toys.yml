@@ -527,6 +527,27 @@
   - type: Speech
     speechVerb: Moth
 
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieElanorLastname
+  name: cheif medical officer vulpkanin plushie
+  components:
+  - type: Sprite
+    state: plushie_elanorlastname
+  - type: Speech
+    speechVerb: Moth
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieSalRose
+  name: psychologist felinid plushie
+  components:
+  - type: Sprite
+    state: plushie_salrose
+  - type: Speech
+    speechVerb: Moth
+
+
 # stowaway toys (self insert ripoff :godo:)
 
 - type: entity

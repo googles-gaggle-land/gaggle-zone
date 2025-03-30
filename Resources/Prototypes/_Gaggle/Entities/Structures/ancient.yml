@@ -137,7 +137,7 @@
   - type: IconSmooth
     key: walls
     base: solid
-    
+
 - type: entity
   parent: BaseWall
   id: WallSolidAncient
@@ -186,7 +186,7 @@
   - type: IconSmooth
     key: walls
     base: solid
-    
+
 - type: entity
   parent: Window
   id: AncientWindow
@@ -198,7 +198,31 @@
     sprite: _gaggle/Structures/Windows/window.rsi
   - type: Icon
     sprite: _gaggle/Structures/Windows/window.rsi
-    
+
+- type: entity
+  id: UraniumWindowAncient
+  name: uranium window
+  parent: Window
+  suffix: Ancient
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _gaggle/Structures/Windows/uraniumwindow.rsi
+  - type: Icon
+    sprite: _gaggle/Structures/Windows/uraniumwindow.rsi
+
+- type: entity
+  id: PlasmaWindowAncient
+  name: plasma window
+  parent: Window
+  suffix: Ancient
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _gaggle/Structures/Windows/plasmawindow.rsi
+  - type: Icon
+    sprite: _gaggle/Structures/Windows/plasmawindow.rsi
+
 - type: entity
   id: ReinforcedWindowAncient
   name: reinforced window
@@ -210,8 +234,8 @@
     sprite: _gaggle/Structures/Windows/rwindow.rsi
   - type: Icon
     sprite: _gaggle/Structures/Windows/rwindow.rsi
-    
-    
+
+
 #the doors
 #there are a LOT of doors, good god
 ##unlocked
@@ -224,7 +248,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_basic.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientCommand
@@ -232,7 +256,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_command.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientEngineering
@@ -248,7 +272,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_science.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMedical
@@ -256,7 +280,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_medical.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientSecurity
@@ -264,7 +288,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_security.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMaints
@@ -272,7 +296,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_maint.rsi
- 
+
 - type: entity
   parent: Airlock
   id: AirlockAncientCargo
@@ -280,7 +304,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_cargo.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientFreezer
@@ -298,7 +322,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_maint_int.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMaintsCommon
@@ -314,7 +338,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_maint_command.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMaintsCargo
@@ -363,7 +387,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_glass.rsi
-    
+
 - type: entity
   parent: AirlockExternalGlass
   id: AirlockExternalGlassAncient
@@ -371,7 +395,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_external.rsi
-    
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientCommandGlass
@@ -379,7 +403,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
-    
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientEngineeringGlass
@@ -395,7 +419,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_science_glass.rsi
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMedicalGlass
@@ -403,7 +427,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_medical_glass.rsi
-    
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientSecurityGlass
@@ -411,7 +435,7 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_security_glass.rsi
- 
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientCargoGlass
@@ -419,8 +443,8 @@
   components:
   - type: Sprite
     sprite: _gaggle/Structures/Doors/airlock_cargo_glass.rsi
-    
-    
+
+
 ##locked
 ###locked airlocks
 
@@ -434,7 +458,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsService ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientJanitorLocked
@@ -445,7 +469,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJanitor ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientCommandLocked
@@ -456,7 +480,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientHOPLocked
@@ -467,7 +491,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHeadOfPersonnel ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientCaptainLocked
@@ -478,7 +502,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCaptain ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMDirLocked
@@ -489,7 +513,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsChiefMedicalOfficer ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientRDirLocked
@@ -500,7 +524,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsResearchDirector ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientHOSLockedGlass
@@ -511,7 +535,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHeadOfSecurity ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientCELocked
@@ -522,7 +546,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsChiefEngineer ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientQMLocked
@@ -533,7 +557,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsQuartermaster ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientEngineeringLocked
@@ -555,7 +579,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsResearch ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMedicalLocked
@@ -566,7 +590,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMedical ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientSecurityLocked
@@ -577,7 +601,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurity ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMaintsLocked
@@ -588,7 +612,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMaintenance ]
- 
+
 - type: entity
   parent: Airlock
   id: AirlockAncientCargoLocked
@@ -599,7 +623,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCargo ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientFreezerLocked
@@ -623,7 +647,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMaintenance ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMaintsServiceLocked
@@ -634,7 +658,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsService ]
-      
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMaintsJanitorLocked
@@ -656,7 +680,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
-    
+
 - type: entity
   parent: Airlock
   id: AirlockAncientMaintsCargoLocked
@@ -723,7 +747,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsService ]
-      
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientJanitorGlassLocked
@@ -734,7 +758,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJanitor ]
-    
+
 - type: entity
   parent: AirlockExternalGlass
   id: AirlockExternalGlassAncientLocked
@@ -745,7 +769,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsExternal ]
-    
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientCommandGlassLocked
@@ -756,7 +780,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCommand ]
-    
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientHOPLockedGlass
@@ -767,7 +791,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHeadOfPersonnel ]
-      
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientCaptainLockedGlass
@@ -778,7 +802,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCaptain ]
-      
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientMDirLockedGlass
@@ -789,7 +813,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsChiefMedicalOfficer ]
-      
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientRDirLockedGlass
@@ -799,8 +823,8 @@
     sprite: _gaggle/Structures/Doors/airlock_command_glass.rsi
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsResearchDirector ]    
-      
+      board: [ DoorElectronicsResearchDirector ]
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientCELockedGlass
@@ -811,7 +835,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsChiefEngineer ]
-      
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientHOSLockedGlass
@@ -822,7 +846,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHeadOfSecurity ]
-      
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientQMLockedGlass
@@ -855,7 +879,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsResearch ]
-    
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientMedicalGlassLocked
@@ -866,7 +890,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMedical ]
-    
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientSecurityGlassLocked
@@ -877,7 +901,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurity ]
- 
+
 - type: entity
   parent: AirlockGlass
   id: AirlockAncientCargoGlassLocked
