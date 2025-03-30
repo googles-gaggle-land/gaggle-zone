@@ -20,7 +20,7 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Containers;
-using Content.Shared._White.Standing;
+using Content.Shared.Standing;
 using Content.Shared.Speech.EntitySystems;
 using Content.Shared.Jittering;
 

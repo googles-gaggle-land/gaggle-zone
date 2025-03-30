@@ -41,6 +41,9 @@
       methods: [Touch]
       effects:
       - !type:WashCreamPieReaction
+  - type: BloodSucker
+    webRequired: false # Spiders can be vampires as a treat.
+  - type: Cocooner
   # Damage (Self)
   - type: Bloodstream
     bloodReagent: CopperBlood
@@ -124,6 +127,8 @@
         state: "halo"
         shader: unshaded
         visible: false
+  - type: Spider
+  - type: IgnoreSpiderWeb
   - type: Inventory
     templateId: arachnid
 

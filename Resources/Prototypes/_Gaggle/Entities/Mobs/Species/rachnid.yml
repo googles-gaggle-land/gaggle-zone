@@ -115,6 +115,11 @@
         state: "halo"
         shader: unshaded
         visible: false
+  - type: Spider
+  - type: IgnoreSpiderWeb
+  - type: BloodSucker
+    webRequired: false
+  - type: Cocooner
   - type: Inventory
     templateId: rachnid
 
