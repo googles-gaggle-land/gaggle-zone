@@ -2,7 +2,7 @@
   id: GaggleExtraJumpsuits
   name: loadout-group-extra-jumpsuits
   minLimit: 0
-  maxLimit: 1
+  maxLimit: 3
   loadouts:
   # jumpsuits
   - AmishSuit
@@ -121,6 +121,6 @@
   id: GaggleExtraClothesOuterClothing
   name: loadout-group-extra-outerclothing
   minLimit: 0
-  maxLimit: 1
+  maxLimit: 3
   loadouts:
   - JacketDenim
