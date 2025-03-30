@@ -322,6 +322,8 @@
         orGroup: GiftPool
       - id: ClothingUniformOveralls
         orGroup: GiftPool
+      - id: ClothingUniformOverallsRed
+        orGroup: GiftPool
       - id: ClothingUniformJumpskirtDetectiveGrey
         orGroup: GiftPool
       - id: ClothingUniformJumpskirtColorMaroon

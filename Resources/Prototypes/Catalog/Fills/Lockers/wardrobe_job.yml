@@ -112,6 +112,7 @@
        - id: ClothingOuterApronBotanist
        - id: ClothingUniformJumpskirtHydroponics
        - id: ClothingUniformOveralls
+       - id: ClothingUniformOverallsRed
        - id: ClothingHeadHatTrucker #the hat itself is a subtle joke
          prob: 0.15
        - id: ClothingHandsGlovesLeather

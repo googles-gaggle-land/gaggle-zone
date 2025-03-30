@@ -116,6 +116,12 @@
   - SchoolgirlBlack
   - SchoolgirlBlue
   - SchoolgirlRed
+  # turtleneck dresses
+  - ClothingUniformJumpskirtRedTurtleneckDress
+  - ClothingUniformJumpskirtGreenTurtleneckDress
+  - ClothingUniformJumpskirtBlueTurtleneckDress
+  - ClothingUniformJumpskirtYellowTurtleneckDress
+  - ClothingUniformJumpskirtPurpleTurtleneckDress
 
 - type: loadoutGroup
   id: GaggleExtraClothesOuterClothing

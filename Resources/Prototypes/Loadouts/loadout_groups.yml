@@ -52,6 +52,29 @@
   - TowelColorSilver
   - TowelColorWhite
   - TowelColorYellow
+  # gaggle hats
+  # Party Hats
+  - ClothingHeadHatPartyRed
+  - ClothingHeadHatPartyGreen
+  - ClothingHeadHatPartyBlue
+  - ClothingHeadHatPartyYellow
+  # Top hats
+  - ClothingHeadHatBeaverHat
+  - ClothingHeadHatMagician
+  - ClothingHeadHatTophat
+  # Joshua's Beloved (cowboy hats)
+  - ClothingHeadHatCowboyBlack
+  - ClothingHeadHatCowboyBrown
+  - ClothingHeadHatCowboyGrey
+  - ClothingHeadHatCowboyRed
+  - ClothingHeadHatCowboyWhite
+  - ClothingHeadHatCowboyBountyHunter
+  - ClothingHeadAreopagite
+  # Miscellaneous
+  - ClothingHeadHatWitch1
+  - ClothingHeadHatPirate
+  - ClothingHeadPaperSack
+  - ClothingHeadPaperSackSmile
 
 - type: loadoutGroup
   id: Glasses

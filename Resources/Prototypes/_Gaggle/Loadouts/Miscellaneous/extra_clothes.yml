@@ -750,6 +750,33 @@
   id: BartenderJumpsuitGrey
   equipment:
     jumpsuit: ClothingUniformJumpsuitBartenderGrey
+    
+- type: loadout
+  id: ClothingUniformJumpskirtRedTurtleneckDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtRedTurtleneckDress
+        
+- type: loadout
+  id: ClothingUniformJumpskirtGreenTurtleneckDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtGreenTurtleneckDress
+        
+- type: loadout
+  id: ClothingUniformJumpskirtBlueTurtleneckDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBlueTurtleneckDress
+        
+- type: loadout
+  id: ClothingUniformJumpskirtYellowTurtleneckDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtYellowTurtleneckDress
+        
+- type: loadout
+  id: ClothingUniformJumpskirtPurpleTurtleneckDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtPurpleTurtleneckDress
+    
+
 
 
 
