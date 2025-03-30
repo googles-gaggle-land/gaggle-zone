@@ -671,13 +671,24 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformOveralls
-  name: overalls
-  description: Great for working outdoors.
+  name: green overalls
+  description: Great for working outdoors, or with pipes.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/overalls.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/overalls.rsi
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformOverallsRed
+  name: red overalls
+  description: Great for working outdoors, or with pipes.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Clothing/red_overalls.rsi
+  - type: Clothing
+    sprite: _gaggle/Clothing/red_overalls.rsi
 
 - type: entity
   parent: ClothingUniformBase

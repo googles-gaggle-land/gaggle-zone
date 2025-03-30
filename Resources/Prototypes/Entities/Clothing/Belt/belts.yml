@@ -691,15 +691,15 @@
     sprite: Clothing/Belt/suspenders_red.rsi
     quickEquip: true
 
-- type: entity
-  parent: ClothingBeltSuspendersRed
-  id: ClothingBeltSuspendersBlack
-  name: black suspenders
-  components:
-  - type: Sprite
-    sprite: Clothing/Belt/suspenders_black.rsi
-  - type: Clothing
-    sprite: Clothing/Belt/suspenders_black.rsi
+#- type: entity # GO TO Resources\Prototypes\_DV\Entities\Clothing\Belt\belts.yml
+#  parent: ClothingBeltSuspendersRed
+#  id: ClothingBeltSuspendersBlack
+#  name: black suspenders
+#  components:
+#  - type: Sprite
+#    sprite: Clothing/Belt/suspenders_black.rsi
+#  - type: Clothing
+#    sprite: Clothing/Belt/suspenders_black.rsi
 
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseMagicalContraband ]
