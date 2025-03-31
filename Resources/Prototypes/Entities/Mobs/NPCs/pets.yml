@@ -452,7 +452,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Critical
+      225: Dead
+  - type: Inventory
+    templateId: pet
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno

@@ -62,6 +62,14 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: HTN
+    rootTask:
+      task: RuminantHostileCompound
+  - type: Grammar
+    attributes:
+      gender: epicene
   - type: Sprite
     sprite: Mobs/Aliens/Argocyte/argocyte_common.rsi
   - type: SolutionContainerManager
