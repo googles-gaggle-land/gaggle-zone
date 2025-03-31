@@ -10,7 +10,9 @@
   - Survival
   - Trinkets
   - GaggleExtraJumpsuits
-  - GaggleExtraClothesOuterClothing 
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes 
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -27,6 +29,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Silicons
@@ -57,6 +61,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -72,6 +78,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -85,6 +93,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -101,6 +111,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -114,6 +126,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -128,6 +142,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -148,6 +164,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -164,6 +182,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - JanitorPlunger
   - GroupSpeciesBreathTool
 
@@ -180,6 +200,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -197,6 +219,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
 
 - type: roleLoadout
   id: JobMime
@@ -213,6 +237,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
 
 - type: roleLoadout
   id: JobMusician
@@ -226,6 +252,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - Instruments
   - GroupSpeciesBreathTool
 
@@ -245,6 +273,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -261,6 +291,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -275,6 +307,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Engineering
@@ -292,6 +326,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -304,6 +340,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -320,6 +358,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -335,6 +375,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Science
@@ -354,6 +396,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -373,6 +417,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -386,6 +432,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Security
@@ -403,6 +451,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -420,6 +470,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -438,6 +490,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -454,6 +508,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -467,6 +523,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolSecurity
 
 # Medical
@@ -487,6 +545,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -506,6 +566,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -519,6 +581,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -535,6 +599,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -553,6 +619,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 # Wildcards
@@ -566,6 +634,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -580,6 +650,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 
@@ -594,6 +666,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -608,6 +682,8 @@
   - Trinkets
   - GaggleExtraJumpsuits
   - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Event-restricted roles
