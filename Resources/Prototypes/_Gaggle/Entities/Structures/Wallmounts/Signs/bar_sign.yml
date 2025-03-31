@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseBarSign
+  id: BarSignGooglesGaggleGinMill
+  name: "Google's Gaggle Gin mill"
+  description: Oh so alcohol! So funny! Thank you!
+  components:
+  - type: BarSign
+    current: GooglesGaggleGinMill
+  - type: Sprite
+    sprite: _gaggle/Structures/Wallmounts/barsign.rsi

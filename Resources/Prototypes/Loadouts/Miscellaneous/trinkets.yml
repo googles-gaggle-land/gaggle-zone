@@ -41,11 +41,11 @@
     back:
     - PlushieSpaceLizard
 
-- type: loadout
-  id: PlushieCirno
-  storage:
-    back:
-    - PlushieCirno
+#- type: loadout
+#  id: PlushieCirno
+#  storage:
+#    back:
+#    - PlushieCirno
 
 # Smokeables
 - type: loadout
