@@ -185,7 +185,7 @@
   parent: BaseItem
   id: PaintRoller
   name: paint roller
-  description: A roller specifically made for dousing in paint to spread on sufaces..
+  description: A roller specifically made for dousing in paint to spread on surfaces.
   components:
   - type: Sprite
     sprite: _gaggle/Objects/Tools/Painting/paintroller.rsi
@@ -207,11 +207,10 @@
         Blunt: 3
   - type: Item
     size: Small
-  #- type: DrywallPainter
-  - type: Absorbent
+  - type: PaintAbsorbent
   - type: SolutionContainerManager
     solution:
-      absorbed:
+      paint:
         maxVol: 100
   - type: UseDelay
     delay: 1

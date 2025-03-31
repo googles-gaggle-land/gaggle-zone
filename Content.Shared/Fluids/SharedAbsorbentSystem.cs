@@ -37,7 +37,7 @@ public abstract class SharedAbsorbentSystem : EntitySystem
     }
 
     [Serializable, NetSerializable]
-    protected sealed class AbsorbentComponentState : ComponentState
+    public sealed class AbsorbentComponentState : ComponentState
     {
         public Dictionary<Color, float> Progress;
 
