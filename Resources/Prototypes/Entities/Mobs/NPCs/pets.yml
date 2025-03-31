@@ -452,12 +452,14 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
+      125: Critical
       225: Dead
   - type: Access
     tags:
-    Medical
-    Maintenance
+    - Medical
+    - Maintenance
+  - type: Puller
+    NeedsHands: false
   - type: Inventory
     templateId: pet
   - type: Butcherable
