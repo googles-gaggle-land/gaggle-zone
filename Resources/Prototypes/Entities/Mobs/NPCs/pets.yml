@@ -464,6 +464,7 @@
     tags:
     - CannotSuicide
     - VimPilot
+    - DoorBumpOpener
   - type: StealTarget
     stealGroup: AnimalCookie
 

@@ -219,7 +219,7 @@
 - type: entity
   parent: BookBase
   id: BookArgocyte
-  name: argocytes: common fauna of exoplanets
+  name: argocytes - common fauna of exoplanets
   description: The book is in extremely good condition, it likely has never been read before, or at least not much.
   components:
     - type: Sprite
