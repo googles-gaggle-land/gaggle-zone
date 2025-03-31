@@ -427,6 +427,47 @@
     speechSounds: Dog
 
 - type: entity
+  name: Cookie
+  parent: BaseMobArgocytePassive
+  id: MobArgocytePassiveCookie
+  description: You don't actually feel that uneasy looking at this thing... Maybe it belongs in Psychology after all?
+  components:
+  - type: InteractionPopup
+    successChance: 1.0 # Cookie is in Psychology, it should be able to handle pets.
+    interactSuccessString: petting-success-cookie
+    interactFailureString: petting-failure-cookie
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/snake_hiss.ogg
+  - type: Sprite
+    layers:
+    - state: molder
+      map: ["enum.DamageStateVisualLayers.Base"]
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: molder
+      Dead:
+        Base: molder_dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
+  - type: MovementSpeedModifier
+    baseSprintSpeed : 4
+    baseWalkSpeed : 3.5
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - VimPilot
+  - type: StealTarget
+    stealGroup: AnimalCookie
+
+- type: entity
   name: Morty
   parent: MobPossum
   id: MobPossumMorty
