@@ -373,6 +373,13 @@
     state: walter
 
 - type: stealTargetGroup
+  id: AnimalCookie
+  name: steal-target-groups-animal-cookie
+  sprite:
+    sprite: Mobs/Aliens/Argocyte/argocyte_common.rsi
+    state: molder
+
+- type: stealTargetGroup
   id: AnimalMorty
   name: steal-target-groups-animal-morty
   sprite:

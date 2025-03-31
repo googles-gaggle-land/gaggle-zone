@@ -9,6 +9,7 @@ using Content.Shared._Shitmed.Body.Events; // Shitmed Change
 using Content.Shared.CombatMode;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Explosion;
+using Content.Shared.Hands;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Input;
@@ -215,6 +216,21 @@ namespace Content.Server.Hands.Systems
                 hands.ActiveHandEntity is not { } throwEnt ||
                 !_actionBlockerSystem.CanThrow(player, throwEnt))
                 return false;
+            // Goobstation start added throwing for grabbed mobs, mnoved direction.
+            var direction = _transformSystem.ToMapCoordinates(coordinates).Position - _transformSystem.GetWorldPosition(player);
+
+            if (TryComp<VirtualItemComponent>(throwEnt, out var virt))
+            {
+                var userEv = new VirtualItemThrownEvent(virt.BlockingEntity, player, throwEnt, direction);
+                RaiseLocalEvent(player, userEv);
+
+                var targEv = new VirtualItemThrownEvent(virt.BlockingEntity, player, throwEnt, direction);
+                RaiseLocalEvent(virt.BlockingEntity, targEv);
+
+                if (userEv.Cancelled || targEv.Cancelled)
+                    return false;
+            }
+            // Goobstation end
 
             if (_timing.CurTime < hands.NextThrowTime)
                 return false;
@@ -230,7 +246,6 @@ namespace Content.Server.Hands.Systems
                 throwEnt = splitStack.Value;
             }
 
-            var direction = _transformSystem.ToMapCoordinates(coordinates).Position - _transformSystem.GetWorldPosition(player);
             if (direction == Vector2.Zero)
                 return true;
 

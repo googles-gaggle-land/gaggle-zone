@@ -4,6 +4,7 @@
   id: PlushieDawn #AAAAAAAA!!!!
   name: weird thing
   description: I am Dawn Leander
+  abstract: true
   components:
   - type: Sprite
     state: plushie_dawn
@@ -38,6 +39,7 @@
   id: PlushieCirno
   name: cirno plushie
   description: For when the Scarlet police arrive.
+  abstract: true
   components:
   - type: Sprite
     sprite: _Funkystation/Objects/Fun/toys.rsi

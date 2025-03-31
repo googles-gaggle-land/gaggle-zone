@@ -130,4 +130,5 @@ public enum SpeciesNaming : byte
     TheFirstofLast,
     LastFirst, // DeltaV
     FirstDashLast, // Goobstation
+	FirstQuoteLast,
 }

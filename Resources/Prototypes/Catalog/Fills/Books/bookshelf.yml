@@ -23,6 +23,7 @@
       - id: BookSpaceEncyclopedia
       - id: BookSpaceLaw
       - id: BookTheBookOfControl
+      - id: BookCosmicCult
     # Handwritten books
     - !type:GroupSelector
       rolls: !type:RangeNumberSelector
@@ -48,6 +49,7 @@
       - id: BookNames
       - id: BookNarsieLegend
       - id: BookPossum
+      - id: BookArgocyte
       - id: BookRufus
       - id: BookSlothClownMMD
       - id: BookSlothClownPranks

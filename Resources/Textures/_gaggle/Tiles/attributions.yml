@@ -1,0 +1,7 @@
+# Attempted to keep the files in alphabetical order so its easier to audit.
+# Finding individual authors is an unfeasible task. If you can reference the author please do so.
+
+- files: ["tech_maint.png", "steel.png", "plating.png", "white.png", "dark.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "CEV-Eris commit 28e589f0ff72a009adf17db767e90be39054f0f2"
+  source: "https://github.com/discordia-space/CEV-Eris/"

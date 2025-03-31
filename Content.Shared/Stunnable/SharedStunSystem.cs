@@ -20,7 +20,7 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Containers;
-using Content.Shared._White.Standing;
+using Content.Shared.Standing;
 using Content.Shared.Speech.EntitySystems;
 using Content.Shared.Jittering;
 
@@ -125,7 +125,7 @@ public abstract class SharedStunSystem : EntitySystem
     private void OnStunOnContactStartup(Entity<StunOnContactComponent> ent, ref ComponentStartup args)
     {
         if (TryComp<PhysicsComponent>(ent, out var body))
-            _broadphase.RegenerateContacts(ent, body);
+            _broadphase.RegenerateContacts((ent, body));
     }
 
     private void OnStunOnContactCollide(Entity<StunOnContactComponent> ent, ref StartCollideEvent args)

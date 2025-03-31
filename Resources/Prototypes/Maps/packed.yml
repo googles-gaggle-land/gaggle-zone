@@ -17,6 +17,9 @@
           emergencyShuttlePath: /Maps/Shuttles/emergency_crimson.yml
         - type: StationJobs
           availableJobs:
+            #centcomm
+            NanotrasenRepresentative: [ 1, 1 ]
+            BlueshieldOfficer: [ 1, 1 ]
             #service
             # Goobstation - TODO: add bso and ntr
             Captain: [ 1, 1 ]
@@ -40,6 +43,7 @@
             MedicalDoctor: [ 3, 3 ]
             MedicalIntern: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
+            Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 3, 3 ]

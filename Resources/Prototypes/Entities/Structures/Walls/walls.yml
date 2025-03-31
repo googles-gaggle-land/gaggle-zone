@@ -21,6 +21,7 @@
   - type: Tag
     tags:
     - Wall
+  - type: IsRoof
   - type: Sprite
     drawdepth: Walls
   - type: Icon
@@ -453,12 +454,12 @@
       tags:
         - Wall
     - type: Sprite
-      sprite: Structures/Walls/plastitanium.rsi
+      sprite: _gaggle/Structures/Walls/Shiptest/plastitanium.rsi
     - type: Icon
-      sprite: Structures/Walls/plastitanium.rsi
+      sprite: _gaggle/Structures/Walls/Shiptest/plastitanium.rsi
     - type: IconSmooth
       key: walls
-      base: plastitanium
+      base: reinf
 
 - type: entity
   parent: WallPlastitaniumIndestructible
@@ -543,7 +544,7 @@
   - type: Tag
     tags:
     - Wall
-    - Diagonal    
+    - Diagonal
   - type: Sprite
     drawdepth: Walls
     sprite: Structures/Walls/plastitanium_diagonal.rsi
@@ -582,10 +583,9 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced.rsi
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
-    state: rgeneric
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced.rsi
   - type: Construction
     graph: Girder
     node: reinforcedWall
@@ -616,7 +616,7 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: walls
-    base: reinf_over
+    base: reinf
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -641,16 +641,15 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
-    state: rgeneric
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_rust.rsi
   - type: Construction
     graph: Girder
     node: reinforcedWallRust
   - type: IconSmooth
     key: walls
-    base: reinf_over
+    base: reinf
   - type: Destructible
     thresholds:
     - trigger:
@@ -690,14 +689,14 @@
     - Diagonal
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
     state: state0
 
 # Riveting
@@ -833,14 +832,14 @@
     - Diagonal
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle_diagonal.rsi
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -930,16 +929,16 @@
   - type: RadiationBlocker
     resistance: 5
   - type: Sprite
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
   - type: Icon
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
     state: full
   - type: Construction
     graph: Girder
     node: shuttleWall
   - type: IconSmooth
     key: walls
-    base: state
+    base: solid
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -988,15 +987,15 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Sprite
-    sprite: Structures/Walls/shuttleinterior.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
   - type: Icon
-    sprite: Structures/Walls/shuttleinterior.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/shuttle.rsi
   - type: Construction
     graph: Girder
     node: shuttleInteriorWall
   - type: IconSmooth
     key: walls
-    base: state
+    base: solid
   - type: Reflect
     reflectProb: 1
 
@@ -1009,13 +1008,13 @@
     tags:
       - Wall
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid.rsi
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid.rsi
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1058,14 +1057,14 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
     state: state0
 
 - type: entity
@@ -1074,9 +1073,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _gaggle/Structures/Walls/Shiptest/solid_rust.rsi
     state: full
   - type: Construction
     graph: Girder

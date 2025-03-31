@@ -24,6 +24,11 @@
   id: BotanistOveralls
   equipment:
     jumpsuit: ClothingUniformOveralls
+    
+- type: loadout
+  id: BotanistOverallsRed
+  equipment:
+    jumpsuit: ClothingUniformOverallsRed
 
 # Back
 - type: loadout

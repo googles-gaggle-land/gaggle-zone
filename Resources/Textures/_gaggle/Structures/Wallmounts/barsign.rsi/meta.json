@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "size": {
+    "x": 64,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by miapyxel for google's gaggle land",
+  "states": [
+    {
+      "name": "googlesgaggleginmill",
+      "delays": [
+        [
+          0.5,
+          1.25
+        ]
+      ]
+    }
+  ]
+}

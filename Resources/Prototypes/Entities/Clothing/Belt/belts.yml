@@ -460,7 +460,7 @@
   - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseRestrictedContraband] # Goobstation
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSecurityContraband]
   id: ClothingBeltSecurity
   name: security belt
   description: Can hold security gear like handcuffs and flashes.
@@ -692,18 +692,18 @@
     sprite: Clothing/Belt/suspenders_red.rsi
     quickEquip: true
 
-- type: entity
-  parent: ClothingBeltSuspendersRed
-  id: ClothingBeltSuspendersBlack
-  name: black suspenders
-  components:
-  - type: Sprite
-    sprite: Clothing/Belt/suspenders_black.rsi
-  - type: Clothing
-    sprite: Clothing/Belt/suspenders_black.rsi
+#- type: entity # GO TO Resources\Prototypes\_DV\Entities\Clothing\Belt\belts.yml
+#  parent: ClothingBeltSuspendersRed
+#  id: ClothingBeltSuspendersBlack
+#  name: black suspenders
+#  components:
+#  - type: Sprite
+#    sprite: Clothing/Belt/suspenders_black.rsi
+#  - type: Clothing
+#    sprite: Clothing/Belt/suspenders_black.rsi
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: [ ClothingBeltStorageBase, BaseMagicalContraband ]
   id: ClothingBeltWand
   name: wand belt
   description: A belt designed to hold various rods of power. A veritable fanny pack of exotic magic.

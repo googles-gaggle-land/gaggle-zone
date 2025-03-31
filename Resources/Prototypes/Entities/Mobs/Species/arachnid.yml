@@ -41,6 +41,9 @@
       methods: [Touch]
       effects:
       - !type:WashCreamPieReaction
+  - type: BloodSucker
+    webRequired: false # Spiders can be vampires as a treat.
+  - type: Cocooner
   # Damage (Self)
   - type: Bloodstream
     bloodReagent: CopperBlood
@@ -100,8 +103,8 @@
       - map: [ "belt" ]
       - map: [ "id" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] # Mentioned in moth code: This needs renaming lol.
-      - map: [ "neck" ]
       - map: [ "back" ]
+      - map: [ "neck" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ] # Do these need to be here? (arachnid hair arachnid hair)
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
@@ -124,6 +127,8 @@
         state: "halo"
         shader: unshaded
         visible: false
+  - type: Spider
+  - type: IgnoreSpiderWeb
   - type: Inventory
     templateId: arachnid
 

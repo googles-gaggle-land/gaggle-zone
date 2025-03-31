@@ -789,10 +789,11 @@ namespace Content.Shared.Cuffs
         private sealed partial class UnCuffDoAfterEvent : SimpleDoAfterEvent
         {
         }
-
-        [Serializable, NetSerializable]
-        private sealed partial class AddCuffDoAfterEvent : SimpleDoAfterEvent
-        {
-        }
+		
     }
+}
+
+[Serializable, NetSerializable]
+public sealed partial class AddCuffDoAfterEvent : SimpleDoAfterEvent // Goob Edit moved out of class made public
+{
 }
