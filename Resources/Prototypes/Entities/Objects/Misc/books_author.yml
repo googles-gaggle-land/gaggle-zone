@@ -209,12 +209,34 @@
       - state: paper
       - state: cover_old
         color: "#a3bfae"
-      - state: icon_possum
+      - state: book_icon
       - state: detail_bookmark
         color: "#2b593d"
       - state: overlay_blood
     - type: Paper
       content: book-text-possum
+      
+- type: entity
+  parent: BookBase
+  id: BookArgocyte
+  name: argocytes: common fauna of exoplanets
+  description: The book is in extremely good condition, it likely has never been read before, or at least not much.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/books.rsi
+      layers:
+      - state: paper
+      - state: cover_base
+        color: "#1d662c"
+      - state: decor_spine
+        color: "#2a8c58"
+      - state: icon_glow
+        color: "#b9edc4"
+      - state: icon_tree
+      - state: detail_bookmark
+        color: "#61363d"
+    - type: Paper
+      content: book-text-argocyte
 
 - type: entity
   parent: BookBase
