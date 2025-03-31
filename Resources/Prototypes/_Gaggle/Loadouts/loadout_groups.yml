@@ -4,6 +4,15 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  # casual color
+  - JumpsuitCasualRed
+  - JumpsuitCasualGreen
+  - JumpsuitCasualBlue
+  - JumpsuitCasualPurple
+  - JumpskirtCasualRed
+  - JumpskirtCasualGreen
+  - JumpskirtCasualBlue
+  - JumpskirtCasualPurple
   # jumpsuits
   - AmishSuit
   - AristocraticSuit
@@ -129,4 +138,51 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  - FlannelRed
+  - FlannelBlue
+  - FlannelGreen
+  - HoodieBlack
+  - HoodieGrey
   - JacketDenim
+
+- type: loadoutGroup
+  id: GaggleExtraClothesShoes
+  name: loadout-group-extra-shoes
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - ShoesBootsCowboyBrown
+  - ShoesBootsCowboyWhite
+  - ShoesBootsCowboyBlack
+  - ShoesBootsCowboyFancy
+  - ShoesBootsFishing
+  - ShoesBootsHighheels
+  - ShoesBootsLaceup
+  - ShoesBootsMantis
+  #- ShoesColorable # for the future... >:)
+  - RedShoes
+  - OrangeShoes
+  - YellowShoes
+  - GreenShoes
+  - BlueShoes
+  - PurpleShoes
+  - BrownShoes
+  - WhiteShoes
+  - BlackShoes
+  - ShoesFlippers
+  - ShoesGeta
+  - ShoesLeather
+  - ShoesLeatherWhite
+  - ShoesSlippers
+  - ShoesTourist
+
+- type: loadoutGroup
+  id: GaggleExtraClothesBelt
+  name: loadout-group-extra-belt
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  #- BeltColorable
+  - BeltUtility
+  - BeltSuspendersRed
+  - BeltSuspendersBlack
