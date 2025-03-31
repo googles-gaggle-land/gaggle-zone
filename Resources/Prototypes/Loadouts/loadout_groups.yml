@@ -1329,6 +1329,7 @@
   loadouts:
   - WhiteShoes
   - MedicalWinterBoots
+  - ShoesEnclosed
 
 - type: loadoutGroup
   id: MedicalDoctorPDA

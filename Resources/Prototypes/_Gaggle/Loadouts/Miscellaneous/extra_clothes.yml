@@ -532,7 +532,7 @@
 - type: loadout
   id: JacketDenim
   equipment:
-    jumpsuit: ClothingOuterDenimJacket
+    outerClothing: ClothingOuterDenimJacket
 
 # -------------------------------------------------------------------------------
 # Resources\Prototypes\_DV\Entities\Clothing\Uniforms\jumpsuits.yml
@@ -776,9 +776,385 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtPurpleTurtleneckDress
     
+# -------------------------------------------------------------------------------
+# Resources/Prototypes/Entities/Clothing/OuterClothing/misc.yml
+# -------------------------------------------------------------------------------
 
+- type: loadout
+  id: FlannelRed
+  equipment:
+    outerClothing: ClothingOuterFlannelRed
 
+- type: loadout
+  id: FlannelBlue
+  equipment:
+    outerClothing: ClothingOuterFlannelBlue
 
+- type: loadout
+  id: FlannelGreen
+  equipment:
+    outerClothing: ClothingOuterFlannelGreen
 
+- type: loadout
+  id: HoodieBlack
+  equipment:
+    outerClothing: ClothingOuterHoodieBlack
 
+- type: loadout
+  id: HoodieGrey
+  equipment:
+    outerClothing: ClothingOuterHoodieGrey
 
+# -------------------------------------------------------------------------------
+# Resources\Prototypes\_DV\Entities\Clothing\Shoes\specific.yml
+# -------------------------------------------------------------------------------
+
+- type: loadout
+  id: ShoesEnclosed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ChemistGlovesTimer
+  equipment:
+    shoes: ClothingShoesEnclosedChem
+
+# -------------------------------------------------------------------------------
+# Resources\Prototypes\_DV\Entities\Clothing\Shoes\misc.yml
+# -------------------------------------------------------------------------------
+
+- type: loadout
+  id: ShoesLeatherWhite
+  equipment:
+    shoes: ClothingShoesMiscWhite
+
+- type: loadout
+  id: ShoesBootsFishing
+  equipment:
+    shoes: ClothingShoesBootsFishing
+
+# -------------------------------------------------------------------------------
+# Resources\Prototypes\Entities\Clothing\Shoes\boots.yml
+# -------------------------------------------------------------------------------
+
+- type: loadout
+  id: ShoesBootsCowboyBrown
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+
+- type: loadout
+  id: ShoesBootsCowboyWhite
+  equipment:
+    shoes: ClothingShoesBootsCowboyWhite
+
+- type: loadout
+  id: ShoesBootsCowboyBlack
+  equipment:
+    shoes: ClothingShoesBootsCowboyBlack
+
+- type: loadout
+  id: ShoesBootsCowboyFancy
+  equipment:
+    shoes: ClothingShoesBootsCowboyFancy
+
+- type: loadout
+  id: ShoesBootsHighheels
+  equipment:
+    shoes: ClothingShoesHighheelBoots
+
+- type: loadout
+  id: ShoesBootsLaceup
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+# -------------------------------------------------------------------------------
+# Resources\Prototypes\Entities\Clothing\Shoes\color.yml
+# -------------------------------------------------------------------------------
+
+- type: loadout
+  id: RedShoes
+  equipment:
+    shoes: ClothingShoesColorRed
+
+- type: loadout
+  id: OrangeShoes
+  equipment:
+    shoes: ClothingShoesColorOrange
+
+- type: loadout
+  id: YellowShoes
+  equipment:
+    shoes: ClothingShoesColorYellow
+
+- type: loadout
+  id: GreenShoes
+  equipment:
+    shoes: ClothingShoesColorGreen
+
+- type: loadout
+  id: PurpleShoes
+  equipment:
+    shoes: ClothingShoesColorPurple
+
+- type: loadout
+  id: ShoesFlippers
+  equipment:
+    shoes: ClothingShoesFlippers
+
+- type: loadout
+  id: ShoesLeather
+  equipment:
+    shoes: ClothingShoesLeather
+
+- type: loadout
+  id: ShoesSlippers
+  equipment:
+    shoes: ClothingShoesSlippers
+
+- type: loadout
+  id: ShoesTourist
+  equipment:
+    shoes: ClothingShoesTourist
+
+# -------------------------------------------------------------------------------
+# Resources\Prototypes\Entities\Clothing\Uniforms\jumpsuits.yml
+# Resources\Prototypes\Entities\Clothing\Uniforms\jumpskirts.yml
+# -------------------------------------------------------------------------------
+
+- type: loadout
+  id: JumpsuitCasualRed
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCasualRed
+
+- type: loadout
+  id: JumpsuitCasualGreen
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCasualGreen
+
+- type: loadout
+  id: JumpsuitCasualBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCasualBlue
+
+- type: loadout
+  id: JumpsuitCasualPurple
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCasualPurple
+
+- type: loadout
+  id: JumpskirtCasualRed
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCasualRed
+
+- type: loadout
+  id: JumpskirtCasualGreen
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCasualGreen
+
+- type: loadout
+  id: JumpskirtCasualBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCasualBlue
+
+- type: loadout
+  id: JumpskirtCasualPurple
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCasualPurple
+
+# -------------------------------------------------------------------------------
+# Resources\Prototypes\Nyanotrasen\Entities\Clothing\Shoes\boots.yml
+# Resources\Prototypes\Nyanotrasen\Entities\Clothing\Shoes\misc.yml
+# -------------------------------------------------------------------------------
+
+- type: loadout
+  id: ShoesBootsMantis
+  equipment:
+    jumpsuit: ClothingShoesBootsMantis
+
+- type: loadout
+  id: ShoesGeta
+  equipment:
+    jumpsuit: ClothingShoesGeta
+
+# GOD FUCK THE CONVENTION I HAVE SEPERATING THESE it's annoying to deal with ngl sorry
+
+#
+# Belts
+#
+
+- type: loadout
+  id: BeltUtility
+  equipment:
+    belt: ClothingBeltUtility
+
+- type: loadout
+  id: BeltSuspendersRed
+  equipment:
+    belt: ClothingBeltSuspendersRed
+
+- type: loadout
+  id: BeltSuspendersBlack
+  equipment:
+    belt: ClothingBeltSuspendersBlack
+
+#
+# colored jumpsuits / jumpskirts
+#
+
+- type: loadout
+  id: JumpsuitRed
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorRed
+
+- type: loadout
+  id: JumpsuitOrange
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorOrange
+
+- type: loadout
+  id: JumpsuitYellow
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorYellow
+
+- type: loadout
+  id: JumpsuitGreen
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGreen
+
+- type: loadout
+  id: JumpsuitTeal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorTeal
+
+- type: loadout
+  id: JumpsuitBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBlue
+
+- type: loadout
+  id: JumpsuitPurple
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorPurple
+
+- type: loadout
+  id: JumpsuitPink
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorPink
+
+- type: loadout
+  id: JumpsuitLightBrown
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorLightBrown
+
+- type: loadout
+  id: JumpsuitMaroon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorMaroon
+
+- type: loadout
+  id: JumpsuitBrown
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+
+- type: loadout
+  id: JumpsuitDarkGreen
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorDarkGreen
+
+- type: loadout
+  id: JumpsuitDarkBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorDarkBlue
+
+- type: loadout
+  id: JumpsuitWhite
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorWhite
+
+- type: loadout
+  id: JumpsuitGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+
+- type: loadout
+  id: JumpsuitBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBlack
+
+- type: loadout
+  id: JumpskirtRed
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorRed
+
+- type: loadout
+  id: JumpskirtOrange
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorOrange
+
+- type: loadout
+  id: JumpskirtYellow
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorYellow
+
+- type: loadout
+  id: JumpskirtGreen
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorGreen
+
+- type: loadout
+  id: JumpskirtTeal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorTeal
+
+- type: loadout
+  id: JumpskirtBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorBlue
+
+- type: loadout
+  id: JumpskirtPurple
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorPurple
+
+- type: loadout
+  id: JumpskirtPink
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorPink
+
+- type: loadout
+  id: JumpskirtLightBrown
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorLightBrown
+
+- type: loadout
+  id: JumpskirtMaroon
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorMaroon
+
+- type: loadout
+  id: JumpskirtBrown
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorBrown
+
+- type: loadout
+  id: JumpskirtDarkGreen
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorDarkGreen
+
+- type: loadout
+  id: JumpskirtDarkBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorDarkBlue
+
+- type: loadout
+  id: JumpskirtWhite
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorWhite
+
+- type: loadout
+  id: JumpskirtGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorGrey
+
+- type: loadout
+  id: JumpskirtBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorBlack
