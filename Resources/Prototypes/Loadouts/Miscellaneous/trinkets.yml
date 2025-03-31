@@ -187,6 +187,12 @@
     back:
     - ClothingNeckGoldAutismPin
 
+- type: loadout
+  id: ClothingNeckGagglePin
+  storage:
+    back:
+    - ClothingNeckGagglePin
+
 # Playing Cards (GoobStation)
 - type: loadout
   id: CardBoxBlack

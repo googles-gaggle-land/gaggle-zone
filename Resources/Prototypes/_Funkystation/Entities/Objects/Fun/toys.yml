@@ -547,6 +547,26 @@
   - type: Speech
     speechVerb: Moth
 
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieSyndeyKnapp
+  name: harpy cheif medical officer plushie
+  components:
+  - type: Sprite
+    state: plushie_sydneyknapp
+  - type: Speech
+    speechVerb: Moth
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieMarinGoodwinter
+  name: janitor vulpkanin plushie
+  components:
+  - type: Sprite
+    state: plushie_maringoodwinter
+  - type: Speech
+    speechVerb: Moth
+
 
 # stowaway toys (self insert ripoff :godo:)
 
