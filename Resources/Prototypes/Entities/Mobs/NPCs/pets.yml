@@ -454,6 +454,10 @@
       0: Alive
       100: Critical
       225: Dead
+  - type: Access
+    tags:
+    Medical
+    Maintenance
   - type: Inventory
     templateId: pet
   - type: Butcherable
