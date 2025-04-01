@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadHatCowboyBrown
+  id: ClothingHeadHatPropellerHead
+  name: propeller hat
+  description: "Wheee, zoomies!"
+  components:
+    - type: Sprite
+      sprite: _gaggle\Clothing\propellerhat.rsi
+    - type: Clothing
+      sprite: _gaggle\Clothing\propellerhat.rsi
