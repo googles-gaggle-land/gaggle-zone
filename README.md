@@ -4,18 +4,18 @@ This is a fork of Funky Station, which in itself is a fork of Goob Station. To p
 
 If you want to host or create content for SS14, or for Funky / Goob Station, go to the [Space Station 14 repository](https://github.com/space-wizards/space-station-14), or the [Funky Station](https://github.com/funky-station/funky-station) / [Goob Station](https://github.com/Goob-Station/Goob-Station) repositories.
 
-## Links
-
-[Funky Station Discord Server](https://discord.gg/5FqgaAA2qF)
-
 ## Documentation/Wiki
 
 The Goob Station [docs site](https://docs.goobstation.com/) has documentation on GS14's content, engine, game design, and more. It also has lots of resources for new contributors to the project.
 
 ## Contributing
 
-We welcome everyone to contribute to our fork. Please join our Discord for collaborating!
-We recommend you read the contribution guidelines. [Contribution Guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html)
+We welcome everyone to contribute to our fork, but the actual target audience is very specific. As such, it is unlikely you will see much benefit from using this as a base for any work you do.
+Seriously, don't spend your time on this if you aren't part of the whole thing. Or do, I'm not your dad.
+The contribution guidelines are as follows:
+1. It needs to not crash the server and make me cry. Oh, and work too, that also.
+2. It needs to be fun(NY). While we aren't a "yeah throw random goofy shit in" fork, we also aren't a "KEEP IT IN UNIVERSE OR PERISH" fork.
+3. It needs to be fair. No making a PR to give your character 30000 health and a gibstick. That's kinda weird.
 
 ## Building
 
