@@ -280,6 +280,18 @@
   - type: SiliconLawProvider
     laws: NutimovLawset
 
+- type: entity
+  id: NiceymovCircuitBoard
+  parent: BaseElectronics
+  name: law board (Niceymov)
+  description: A lawset scientifically proven to promote niceys and good vibes among the crew.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: NiceymovLawset
+
 # Items
 - type: entity
   id: Intellicard
