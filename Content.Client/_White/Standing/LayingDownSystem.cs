@@ -1,4 +1,4 @@
-using Content.Shared.Standing;
+using Content.Shared._White.Standing;
 using Content.Shared.Buckle;
 using Content.Shared.Rotation;
 using Content.Shared.Standing;
