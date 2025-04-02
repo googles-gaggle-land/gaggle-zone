@@ -3,7 +3,7 @@ reagent-desc-paint = A mixture made for applying on objects to recolor.
 
 reagent-name-white-paint = white paint
 reagent-name-grey-paint = grey paint
-reagent-name-black-paint = white paint
+reagent-name-black-paint = black paint
 
 reagent-name-red-paint = red paint
 reagent-name-yellow-paint = yellow paint

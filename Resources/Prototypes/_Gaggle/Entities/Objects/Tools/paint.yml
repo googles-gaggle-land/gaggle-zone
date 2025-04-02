@@ -11,6 +11,8 @@
       - map: ["enum.SolutionContainerLayers.Fill"]
         state: fill-1
         visible: false
+  - type: Clothing
+    sprite: _gaggle/Objects/Tools/Painting/paintbucket.rsi
 
 - type: entity
   parent: BucketPaint
@@ -214,11 +216,13 @@
         maxVol: 100
   - type: Spillable
     spillWhenThrown: false
+    solution: paint
   - type: UseDelay
     delay: 1
   - type: PhysicalComposition
     materialComposition:
       Plastic: 10
+      Cloth: 4
   - type: Tag
     tags:
       - PaintRoller

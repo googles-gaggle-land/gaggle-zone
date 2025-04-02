@@ -1,7 +1,7 @@
 - type: reagent
   id: BasePaint
   name: reagent-name-paint
-  group: Others
+  group: Other
   desc: reagent-desc-paint
   flavor: bitter
   color: "#000000"
@@ -16,19 +16,12 @@
         - !type:HealthChange
           damage:
             types:
-              Poison: 1.5
-        - !type:Jitter
-          time: 1
-          frequency: 4
-          conditions:
-          - !type:ReagentThreshold
-            reagent: BasePaint
-            min: 6
+              Poison: 0.75
   plantMetabolism:
     - !type:PlantAdjustHealth
-      amount: -1.5
+      amount: -0.6
     - !type:PlantAdjustNutrition
-      amount: -0.3
+      amount: -0.15
 
 - type: reagent
   parent: BasePaint
