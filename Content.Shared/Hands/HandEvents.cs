@@ -157,26 +157,6 @@ namespace Content.Shared.Hands
     }
 
     /// <summary>
-    ///     Raised directed on both the blocking entity and user when
-    ///     a virtual hand item is thrown (at least attempted to).
-    ///     Cancellable.
-    /// </summary>
-    public sealed class VirtualItemThrownEvent : CancellableEntityEventArgs
-    {
-        public EntityUid BlockingEntity;
-        public EntityUid User;
-        public EntityUid VirtualItem;
-        public Vector2 Direction;
-        public VirtualItemThrownEvent(EntityUid blockingEntity, EntityUid user, EntityUid virtualItem, Vector2 direction)
-        {
-            BlockingEntity = blockingEntity;
-            User = user;
-            VirtualItem = virtualItem;
-            Direction = direction;
-        }
-    }
-
-    /// <summary>
     ///     Raised when putting an entity into a hand slot
     /// </summary>
     [PublicAPI]

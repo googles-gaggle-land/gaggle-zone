@@ -1,7 +1,3 @@
-using Content.Shared._EinsteinEngines.Contests; // Goobstation - Grab Intent
-using System.Diagnostics.CodeAnalysis;
-using System.Numerics; // Goobstation - Grab Intent
-using Content.Shared._White.Grab; // Goobstation
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Alert;
@@ -92,8 +88,7 @@ public sealed class PullingSystem : EntitySystem
 
         if (TryComp<PullableComponent>(component.Pulling, out var comp) && (args.State == MobState.Critical || args.State == MobState.Dead))
         {
-            if(_netManager.IsServer)
-                StopPulling((EntityUid) ent.Comp.Pulling, comp);
+            TryStopPull(component.Pulling.Value, comp);
         }
     }
 
@@ -184,9 +179,7 @@ public sealed class PullingSystem : EntitySystem
         component.NextThrow += args.PausedTime;
     }
 
-
-    // Goobstation - Grab Intent
-    private void OnVirtualItemDeleted(Entity<PullerComponent> ent, ref VirtualItemDeletedEvent args)
+    private void OnVirtualItemDeleted(EntityUid uid, PullerComponent component, VirtualItemDeletedEvent args)
     {
         // If client deletes the virtual hand then stop the pull.
         if (component.Pulling == null)
@@ -237,53 +230,13 @@ public sealed class PullingSystem : EntitySystem
     {
         if (TryComp<HeldSpeedModifierComponent>(component.Pulling, out var heldMoveSpeed) && component.Pulling.HasValue)
         {
-            var (walkMod, sprintMod) = (args.WalkSpeedModifier, args.SprintSpeedModifier);
-
-            switch (component.GrabStage)
-            {
-                case GrabStage.No:
-                    args.ModifySpeed(walkMod, sprintMod);
-                    break;
-                case GrabStage.Soft:
-                    var softSpeedMod = component.SoftGrabSpeedModifier;
-                    args.ModifySpeed(walkMod * softSpeedMod, sprintMod * softSpeedMod);
-                    break;
-                case GrabStage.Hard:
-                    var hardSpeedMod = component.HardGrabSpeedModifier;
-                    args.ModifySpeed(walkMod * hardSpeedMod, sprintMod * hardSpeedMod);
-                    break;
-                case GrabStage.Suffocate:
-                    var chokeSpeedMod = component.ChokeGrabSpeedModifier;
-                    args.ModifySpeed(walkMod * chokeSpeedMod, sprintMod * chokeSpeedMod);
-                    break;
-                default:
-                    args.ModifySpeed(walkMod, sprintMod);
-                    break;
-            }
+            var (walkMod, sprintMod) =
+                _clothingMoveSpeed.GetHeldMovementSpeedModifiers(component.Pulling.Value, heldMoveSpeed);
+            args.ModifySpeed(walkMod, sprintMod);
             return;
         }
 
-        switch (component.GrabStage)
-        {
-            case GrabStage.No:
-                args.ModifySpeed(component.WalkSpeedModifier, component.SprintSpeedModifier);
-                break;
-            case GrabStage.Soft:
-                var softSpeedMod = component.SoftGrabSpeedModifier;
-                args.ModifySpeed(component.WalkSpeedModifier * softSpeedMod, component.SprintSpeedModifier * softSpeedMod);
-                break;
-            case GrabStage.Hard:
-                var hardSpeedMod = component.HardGrabSpeedModifier;
-                args.ModifySpeed(component.WalkSpeedModifier * hardSpeedMod, component.SprintSpeedModifier * hardSpeedMod);
-                break;
-            case GrabStage.Suffocate:
-                var chokeSpeedMod = component.ChokeGrabSpeedModifier;
-                args.ModifySpeed(component.WalkSpeedModifier * chokeSpeedMod, component.SprintSpeedModifier * chokeSpeedMod);
-                break;
-            default:
-                args.ModifySpeed(component.WalkSpeedModifier, component.SprintSpeedModifier);
-                break;
-        }
+        args.ModifySpeed(component.WalkSpeedModifier, component.SprintSpeedModifier);
     }
 
     private void OnPullableMoveInput(EntityUid uid, PullableComponent component, ref MoveInputEvent args)
@@ -590,276 +543,4 @@ public sealed class PullingSystem : EntitySystem
         StopPulling(pullableUid, pullable);
         return true;
     }
-
-    /// <summary>
-    /// Trying to grab the target
-    /// </summary>
-    /// <param name="pullable">Target that would be grabbed</param>
-    /// <param name="puller">Performer of the grab</param>
-    /// <param name="ignoreCombatMode">If true, will ignore disabled combat mode</param>
-    /// <exception cref="ArgumentOutOfRangeException"></exception>
-    /// <returns></returns>
-    public bool TryGrab(Entity<PullableComponent?> pullable, Entity<PullerComponent?> puller, bool ignoreCombatMode = false)
-    {
-        if (!Resolve(pullable.Owner, ref pullable.Comp))
-            return false;
-
-        if (!Resolve(puller.Owner, ref puller.Comp))
-            return false;
-
-        // prevent you from grabbing someone else while being grabbed
-        if (TryComp<PullableComponent>(puller.Owner, out var pullerAsPullable) && pullerAsPullable.Puller != null)
-            return false;
-
-        if (pullable.Comp.Puller != puller.Owner ||
-            puller.Comp.Pulling != pullable.Owner)
-            return false;
-
-        if (puller.Comp.NextStageChange > _timing.CurTime)
-            return true;
-
-        // You can't choke crates
-        if (!HasComp<MobStateComponent>(pullable))
-            return false;
-
-        // Delay to avoid spamming
-        puller.Comp.NextStageChange = _timing.CurTime + puller.Comp.StageChangeCooldown;
-        Dirty(puller);
-
-        // Don't grab without grab intent
-        if (!ignoreCombatMode)
-            if (!_combatMode.IsInCombatMode(puller.Owner))
-                return false;
-
-        // It's blocking stage update, maybe better UX?
-        if (puller.Comp.GrabStage == GrabStage.Suffocate)
-        {
-            _stamina.TakeStaminaDamage(pullable, puller.Comp.SuffocateGrabStaminaDamage);
-
-            Dirty(pullable);
-            Dirty(puller);
-            return true;
-        }
-
-        // Update stage
-        // TODO: Change grab stage direction
-        var nextStageAddition = puller.Comp.GrabStageDirection switch
-        {
-            GrabStageDirection.Increase => 1,
-            GrabStageDirection.Decrease => -1,
-            _ => throw new ArgumentOutOfRangeException(),
-        };
-
-        var newStage = puller.Comp.GrabStage + nextStageAddition;
-
-        if (!TrySetGrabStages((puller.Owner, puller.Comp), (pullable.Owner, pullable.Comp), newStage))
-            return false;
-
-        _color.RaiseEffect(Color.Yellow, new List<EntityUid> { pullable }, Filter.Pvs(pullable, entityManager: EntityManager));
-        return true;
-    }
-
-    private bool TrySetGrabStages(Entity<PullerComponent> puller, Entity<PullableComponent> pullable, GrabStage stage)
-    {
-        puller.Comp.GrabStage = stage;
-        pullable.Comp.GrabStage = stage;
-
-        if (!TryUpdateGrabVirtualItems(puller, pullable))
-            return false;
-
-        var filter = Filter.Empty()
-            .AddPlayersByPvs(Transform(puller).Coordinates)
-            .RemovePlayerByAttachedEntity(puller.Owner)
-            .RemovePlayerByAttachedEntity(pullable.Owner);
-
-        var popupType = stage switch
-        {
-            GrabStage.No => PopupType.Small,
-            GrabStage.Soft => PopupType.Small,
-            GrabStage.Hard => PopupType.MediumCaution,
-            GrabStage.Suffocate => PopupType.LargeCaution,
-            _ => throw new ArgumentOutOfRangeException()
-        };
-
-        var massModifier = _contests.MassContest(puller, pullable);
-        pullable.Comp.GrabEscapeChance = Math.Clamp(puller.Comp.EscapeChances[stage] / massModifier, 0f, 1f);
-
-        _alertsSystem.ShowAlert(puller, puller.Comp.PullingAlert, puller.Comp.PullingAlertSeverity[stage]);
-        _alertsSystem.ShowAlert(pullable, pullable.Comp.PulledAlert, pullable.Comp.PulledAlertAlertSeverity[stage]);
-
-        _blocker.UpdateCanMove(pullable);
-        _modifierSystem.RefreshMovementSpeedModifiers(puller);
-
-        // I'm lazy to write client code
-        if (!_netManager.IsServer)
-            return true;
-
-        _popup.PopupEntity(Loc.GetString($"popup-grab-{puller.Comp.GrabStage.ToString().ToLower()}-target", ("puller", Identity.Entity(puller, EntityManager))), pullable, pullable, popupType);
-        _popup.PopupEntity(Loc.GetString($"popup-grab-{puller.Comp.GrabStage.ToString().ToLower()}-self", ("target", Identity.Entity(pullable, EntityManager))), pullable, puller, PopupType.Medium);
-        _popup.PopupEntity(Loc.GetString($"popup-grab-{puller.Comp.GrabStage.ToString().ToLower()}-others", ("target", Identity.Entity(pullable, EntityManager)), ("puller", Identity.Entity(puller, EntityManager))), pullable, filter, true, popupType);
-
-        _audio.PlayPvs(new SoundPathSpecifier("/Audio/Effects/thudswoosh.ogg"), pullable);
-
-        Dirty(pullable);
-        Dirty(puller);
-
-        return true;
-    }
-
-    private bool TryUpdateGrabVirtualItems(Entity<PullerComponent> puller, Entity<PullableComponent> pullable)
-    {
-        // Updating virtual items
-        var virtualItemsCount = puller.Comp.GrabVirtualItems.Count;
-
-        var newVirtualItemsCount = puller.Comp.NeedsHands ? 0 : 1;
-        if (puller.Comp.GrabVirtualItemStageCount.TryGetValue(puller.Comp.GrabStage, out var count))
-            newVirtualItemsCount += count;
-
-        if (virtualItemsCount == newVirtualItemsCount)
-            return true;
-        var delta = newVirtualItemsCount - virtualItemsCount;
-
-        // Adding new virtual items
-        if (delta > 0)
-        {
-            for (var i = 0; i < delta; i++)
-            {
-                var emptyHand = _handsSystem.TryGetEmptyHand(puller, out _);
-                if (!emptyHand)
-                {
-                    if (_netManager.IsServer)
-                        _popup.PopupEntity(Loc.GetString("popup-grab-need-hand"), puller, puller, PopupType.Medium);
-
-                    return false;
-                }
-
-                if (!_virtualSystem.TrySpawnVirtualItemInHand(pullable, puller.Owner, out var item, true))
-                {
-                    // I'm lazy write client code
-                    if (_netManager.IsServer)
-                        _popup.PopupEntity(Loc.GetString("popup-grab-need-hand"), puller, puller, PopupType.Medium);
-
-                    return false;
-                }
-
-                puller.Comp.GrabVirtualItems.Add(item.Value);
-            }
-        }
-
-        if (delta >= 0)
-            return true;
-        for (var i = 0; i < Math.Abs(delta); i++)
-        {
-            if (i >= puller.Comp.GrabVirtualItems.Count)
-                break;
-
-            var item = puller.Comp.GrabVirtualItems[i];
-            puller.Comp.GrabVirtualItems.Remove(item);
-            if(TryComp<VirtualItemComponent>(item, out var virtualItemComponent))
-                _virtualSystem.DeleteVirtualItem((item,virtualItemComponent), puller);
-        }
-
-        return true;
-    }
-
-    /// <summary>
-    /// Attempts to release entity from grab
-    /// </summary>
-    /// <param name="playerPullable">Grabbed entity</param>
-    /// <returns></returns>
-    public bool AttemptGrabRelease(Entity<PullableComponent?> pullable)
-    {
-        if (!Resolve(pullable.Owner, ref pullable.Comp))
-            return false;
-
-        if (_timing.CurTime < pullable.Comp.NextEscapeAttempt)  // No autoclickers! Mwa-ha-ha
-            return false;
-
-        if (_random.Prob(pullable.Comp.GrabEscapeChance))
-            return true;
-
-        pullable.Comp.NextEscapeAttempt = _timing.CurTime.Add(TimeSpan.FromSeconds(3));
-        Dirty(pullable.Owner, pullable.Comp);
-        return false;
-    }
-
-    private void OnGrabbedMoveAttempt(EntityUid uid, PullableComponent component, UpdateCanMoveEvent args)
-    {
-        if (component.GrabStage == GrabStage.No)
-            return;
-
-        args.Cancel();
-
-    }
-
-    private void OnGrabbedSpeakAttempt(EntityUid uid, PullableComponent component, SpeakAttemptEvent args)
-    {
-        if (component.GrabStage != GrabStage.Suffocate)
-            return;
-
-        _popup.PopupEntity(Loc.GetString("popup-grabbed-cant-speak"), uid, uid, PopupType.MediumCaution);   // You cant speak while someone is choking you
-
-        args.Cancel();
-    }
-
-    /// <summary>
-    /// Tries to lower grab stage for target or release it
-    /// </summary>
-    /// <param name="pullable">Grabbed entity</param>
-    /// <param name="puller">Performer</param>
-    /// <param name="ignoreCombatMode">If true, will NOT release target if combat mode is off</param>
-    /// <returns></returns>
-    public bool TryLowerGrabStage(Entity<PullableComponent?> pullable, Entity<PullerComponent?> puller, bool ignoreCombatMode = false)
-    {
-        if (!Resolve(pullable.Owner, ref pullable.Comp))
-            return false;
-
-        if (!Resolve(puller.Owner, ref puller.Comp))
-            return false;
-
-        if (pullable.Comp.Puller != puller.Owner ||
-            puller.Comp.Pulling != pullable.Owner)
-            return false;
-
-        if (_timing.CurTime < puller.Comp.NextStageChange)
-            return true;
-
-        pullable.Comp.NextEscapeAttempt = _timing.CurTime.Add(TimeSpan.FromSeconds(1f));
-        Dirty(pullable);
-        Dirty(puller);
-
-        if (!ignoreCombatMode && _combatMode.IsInCombatMode(puller.Owner))
-        {
-            TryStopPull(pullable, pullable.Comp, ignoreGrab: true);
-            return true;
-        }
-
-        if (puller.Comp.GrabStage == GrabStage.No)
-        {
-            TryStopPull(pullable, pullable.Comp, ignoreGrab: true);
-            return true;
-        }
-
-        var newStage = puller.Comp.GrabStage - 1;
-        TrySetGrabStages((puller.Owner, puller.Comp), (pullable.Owner, pullable.Comp), newStage);
-        return true;
-    }
 }
-
-public enum GrabStage
-{
-    No = 0,
-    Soft = 1,
-    Hard = 2,
-    Suffocate = 3,
-}
-
-public enum GrabStageDirection
-{
-    Increase,
-    Decrease,
-}
-
-// Goobstation - Grab Intent
-
-// Goobstation
