@@ -1,6 +1,5 @@
 using System.Linq;
 using Robust.Shared.GameStates;
-using Robust.Shared.Serialization;
 using Content.Shared.Fluids;
 
 namespace Content.Shared.Gaggle.Painting;
@@ -28,6 +27,13 @@ public abstract class SharedPaintingSystem : EntitySystem
         "PaintWhite",
         "PaintGrey",
         "PaintBlack"
+    };
+    
+    /// <summary>
+    /// All reagents that can be removed from a bucket to clean off an entity with the PaintAbsorbent component.
+    /// </summary>
+    public static readonly string[] PaintCleanReagents = {
+        "Water"
     };
 
     public override void Initialize()

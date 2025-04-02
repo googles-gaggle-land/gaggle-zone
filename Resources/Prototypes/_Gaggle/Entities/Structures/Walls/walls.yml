@@ -2,12 +2,22 @@
   parent: BaseWall
   id: WallDrywall
   name: drywall
+  description: Keeps the asbestos in and the greytide out.
   components:
   - type: Tag
     tags:
       - Wall
+  - type: Appearance
   - type: Sprite
     sprite: _gaggle/Structures/Walls/drywall.rsi
+    state: drywall
+    layers:
+      - state: drywall
+      - map: ["enum.SolutionContainerLayers.Fill"]
+        state: fill-3
+        visible: false
+  - type: Damageable
+    damageModifierSet: Drywall
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
@@ -22,7 +32,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 300
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -31,7 +41,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -40,12 +50,15 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: IconSmooth
-    key: walls
-    base: drywall
+  #- type: IconSmooth
+  #  key: walls
+  #  base: drywall
   - type: Paintable
-  - type: SolutionContainerManager
+  - type: SolutionContainerVisuals
+    solutionName: paint
     maxFillLevels: 3
     fillBaseName: fill-
-    inHandsFillBaseName: fill-
-    inHandsMaxFillLevels: 2
+  - type: SolutionContainerManager
+    solution:
+      paint:
+        maxVol: 30

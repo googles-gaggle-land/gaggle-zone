@@ -212,6 +212,8 @@
     solution:
       paint:
         maxVol: 100
+  - type: Spillable
+    spillWhenThrown: false
   - type: UseDelay
     delay: 1
   - type: PhysicalComposition

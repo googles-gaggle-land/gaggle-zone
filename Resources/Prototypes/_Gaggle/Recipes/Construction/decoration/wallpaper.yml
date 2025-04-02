@@ -1,0 +1,71 @@
+- type: construction
+  name: drywall
+  id: Drywall
+  graph: Girder
+  startNode: start
+  targetNode: drywall
+  category: construction-category-structures
+  description: Keeps the asbestos in and the greytide out.
+  icon:
+    sprite: _gaggle/Structures/Walls/drywall.rsi
+    state: drywall
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: blank wallpaper
+  id: WallpaperBlank
+  graph: Wallpaper
+  startNode: start
+  targetNode: WallpaperStructureBlank
+  category: construction-category-decoration
+  description: So bland.
+  icon:
+    sprite: _gaggle/Structures/Decoration/wallpaper.rsi
+    state: blank
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:WallmountCondition
+
+- type: construction
+  name: old wallpaper
+  id: WallpaperOld
+  graph: Wallpaper
+  startNode: start
+  targetNode: WallpaperStructureOld
+  category: construction-category-decoration
+  description: This was definitely a way to protect from asbestos.
+  icon:
+    sprite: _gaggle/Structures/Decoration/wallpaper.rsi
+    state: old
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:WallmountCondition
+
+- type: construction
+  name: old wallpaper
+  id: WallpaperOldFake
+  graph: Wallpaper
+  startNode: start
+  targetNode: WallpaperStructureOldFake
+  category: construction-category-decoration
+  description: Definitely can't collect asbestos anymore.
+  icon:
+    sprite: _gaggle/Structures/Decoration/wallpaper.rsi
+    state: old-fake
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:WallmountCondition

@@ -1,0 +1,6 @@
+- type: stack
+  id: Drywall
+  name: drywall
+  icon: { sprite: /Textures/_gaggle/Objects/Materials/Sheets/metal.rsi, state: steel }
+  spawn: SheetDrywall1
+  maxCount: 30

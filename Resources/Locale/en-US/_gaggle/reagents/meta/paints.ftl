@@ -1,5 +1,5 @@
 reagent-name-paint = paint
-reagent-desc-paint = A mixture made for applying on objects
+reagent-desc-paint = A mixture made for applying on objects to recolor.
 
 reagent-name-white-paint = white paint
 reagent-name-grey-paint = grey paint

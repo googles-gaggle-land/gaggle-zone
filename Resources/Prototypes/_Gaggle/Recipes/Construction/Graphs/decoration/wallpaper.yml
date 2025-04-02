@@ -1,0 +1,41 @@
+- type: constructionGraph
+  id: Wallpaper
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WallpaperStructureBlank
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - tag: WallpaperItemBlank
+              doAfter: 1
+              name: blank wallpaper
+              icon:
+                sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+                state: blank
+        
+        - to: WallpaperStructureOld
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - tag: WallpaperItemOld
+              doAfter: 1
+              name: old wallpaper
+              icon:
+                sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+                state: old
+        
+        - to: WallpaperStructureOldFake
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - tag: WallpaperItemOldFake
+              doAfter: 1
+              name: fake old wallpaper
+              icon:
+                sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+                state: old-fake
+    
+    - node: WallpaperStructureBlank
+      entity: FoodHotDog

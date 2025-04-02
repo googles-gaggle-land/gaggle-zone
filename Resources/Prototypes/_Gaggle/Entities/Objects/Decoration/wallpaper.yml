@@ -6,6 +6,8 @@
   description: Used to decorate walls to allow for a more comfortable room.
   abstract: true
   components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Decoration/wallpaper.rsi
   - type: Item
     size: Normal
   - type: Damageable
@@ -35,8 +37,6 @@
     tags:
     - Wallpaper
     - WallpaperItem
-  - type: Sprite
-    sprite: _gaggle/Objects/Decoration/wallpaper.rsi
 
 - type: entity
   id: WallpaperItemBlank
@@ -45,14 +45,18 @@
   suffix: Item
   description: Can be used to put designs on.
   components:
+  - type: Stack
+    stackType: WallpaperBlank
   - type: Item
     size: Normal
   - type: Sprite
     sprite: _gaggle/Objects/Decoration/wallpaper.rsi
     state: blank
-  - type: Construction
-    graph: Wallpaper
-    node: WallpaperItemBlank
+  - type: Tag
+    tags:
+    - Wallpaper
+    - WallpaperItem
+    - WallpaperItemBlank
 
 - type: entity
   id: WallpaperItemOld
@@ -61,14 +65,18 @@
   suffix: Item
   description: The most comfortable possible.
   components:
+  - type: Stack
+    stackType: WallpaperOld
   - type: Item
     size: Normal
   - type: Sprite
     sprite: _gaggle/Objects/Decoration/wallpaper.rsi
     state: old
-  - type: Construction
-    graph: Wallpaper
-    node: WallpaperItemOld
+  - type: Tag
+    tags:
+    - Wallpaper
+    - WallpaperItem
+    - WallpaperItemOld
 
 - type: entity
   id: WallpaperItemOldFake
@@ -77,11 +85,15 @@
   suffix: Item
   description: It works for now.
   components:
+  - type: Stack
+    stackType: WallpaperOldFake
   - type: Item
     size: Normal
   - type: Sprite
     sprite: _gaggle/Objects/Decoration/wallpaper.rsi
     state: old-fake
-  - type: Construction
-    graph: Wallpaper
-    node: WallpaperItemOldFake
+  - type: Tag
+    tags:
+    - Wallpaper
+    - WallpaperItem
+    - WallpaperItemOldFake

@@ -18,3 +18,12 @@
 
 - type: Tag
   id: Armor # need this or else crash
+
+- type: Tag
+  id: WallpaperItemBlank
+
+- type: Tag
+  id: WallpaperItemOld
+
+- type: Tag
+  id: WallpaperItemOldFake

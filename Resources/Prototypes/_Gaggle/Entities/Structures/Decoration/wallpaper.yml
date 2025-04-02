@@ -8,6 +8,8 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Sprite
+    sprite: _gaggle/Structures/Decoration/wallpaper.rsi
   - type: Occluder
   - type: Fixtures
     fixtures:
@@ -50,8 +52,6 @@
         acts: ["Destruction"]
   - type: WallMount
     arc: 360
-  - type: Sprite
-    sprite: _gaggle/Structures/Decoration/wallpaper.rsi
   - type: Flammable
     fireSpread: true
     alwaysCombustible: true
