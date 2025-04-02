@@ -221,8 +221,8 @@
     delay: 1
   - type: PhysicalComposition
     materialComposition:
-      Plastic: 10
-      Cloth: 4
+      Plastic: 50
+      Cloth: 50
   - type: Tag
     tags:
       - PaintRoller
