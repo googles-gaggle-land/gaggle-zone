@@ -52,18 +52,18 @@
   - type: Sprite
     sprite: _gaggle/Objects/Decoration/wallpaper.rsi
     state: blank
-  - type: Tag
-    tags:
-    - Wallpaper
-    - WallpaperItem
-    - WallpaperItemBlank
+  #- type: Tag
+  #  tags:
+  #  - Wallpaper
+  #  - WallpaperItem
+  #  - WallpaperItemBlank
 
 - type: entity
   id: WallpaperItemOld
   parent: BaseWallpaperItem
   name: old wallpaper
   suffix: Item
-  description: The most comfortable possible.
+  description: The most comfortable wallpaper possible.
   components:
   - type: Stack
     stackType: WallpaperOld
@@ -72,11 +72,11 @@
   - type: Sprite
     sprite: _gaggle/Objects/Decoration/wallpaper.rsi
     state: old
-  - type: Tag
-    tags:
-    - Wallpaper
-    - WallpaperItem
-    - WallpaperItemOld
+  #- type: Tag
+  #  tags:
+  #  - Wallpaper
+  #  - WallpaperItem
+  #  - WallpaperItemOld
 
 - type: entity
   id: WallpaperItemOldFake
@@ -92,8 +92,8 @@
   - type: Sprite
     sprite: _gaggle/Objects/Decoration/wallpaper.rsi
     state: old-fake
-  - type: Tag
-    tags:
-    - Wallpaper
-    - WallpaperItem
-    - WallpaperItemOldFake
+  #- type: Tag
+  #  tags:
+  #  - Wallpaper
+  #  - WallpaperItem
+  #  - WallpaperItemOldFake

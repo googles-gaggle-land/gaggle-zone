@@ -198,7 +198,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 3
     fillBaseName: fill-
-    inHandsFillBaseName: fill-
+    inHandsFillBaseName: -fill-
     inHandsMaxFillLevels: 2
   - type: MeleeWeapon
     wideAnimationRotation: 180

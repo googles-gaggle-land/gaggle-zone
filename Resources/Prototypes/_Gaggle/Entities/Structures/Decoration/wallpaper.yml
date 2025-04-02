@@ -35,7 +35,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 15
+        damage: 25
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -54,7 +54,7 @@
     arc: 360
   - type: Flammable
     fireSpread: true
-    alwaysCombustible: true
+    alwaysCombustible: false
     damage:
       types:
         Heat: 1
@@ -74,14 +74,13 @@
   - type: Sprite
     state: blank
   - type: Construction
-    graph: Wallpaper
-    node: WallpaperStructureBlank
+    node: blank wallpaper
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 15
+        damage: 25
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -112,14 +111,13 @@
   - type: Sprite
     state: old
   - type: Construction
-    graph: Wallpaper
-    node: WallpaperStructureOld
+    node: old wallpaper
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 15
+        damage: 25
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -150,14 +148,13 @@
   - type: Sprite
     state: old-fake
   - type: Construction
-    graph: Wallpaper
-    node: WallpaperStructureOldFake
+    node: fake old wallpaper
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 15
+        damage: 25
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:

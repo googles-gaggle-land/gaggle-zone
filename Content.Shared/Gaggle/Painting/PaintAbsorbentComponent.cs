@@ -39,8 +39,14 @@ public sealed partial class PaintAbsorbentComponent : Component, IAbsorbentProgr
         Params = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation),
     };
 
-    [DataField("transferSound")]
-    public SoundSpecifier TransferSound = new SoundPathSpecifier("/Audio/_gaggle/Effects/paint.ogg")
+    [DataField("paintSound")]
+    public SoundSpecifier PaintSound = new SoundPathSpecifier("/Audio/_gaggle/Effects/paint.ogg")
+    {
+        Params = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(-3f),
+    };
+
+    [DataField("cleanSound")]
+    public SoundSpecifier CleanSound = new SoundPathSpecifier("/Audio/Effects/Fluids/slosh.ogg")
     {
         Params = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(-3f),
     };

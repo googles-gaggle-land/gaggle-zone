@@ -35,6 +35,18 @@
     PaintGreen: 2
 
 - type: reaction
+  id: PaintMixCyan
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    PaintGreen:
+      amount: 1
+    PaintBlue:
+      amount: 1
+  products:
+    PaintMixCyan: 2
+
+- type: reaction
   id: PaintMixGrey
   requiredMixerCategories:
   - Stir

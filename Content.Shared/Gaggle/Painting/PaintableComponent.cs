@@ -14,6 +14,12 @@ public sealed partial class PaintableComponent : Component
     /// </summary>
     [DataField("solution")]
     public string SolutionName {get; set;} = "paint";
+    
+    /// <summary>
+    ///     Whether or not this can be painted on
+    /// </summary>
+    [DataField("canPaint")]
+    public bool CanPaint {get; set;} = true;
 
     /// <summary>
     ///     How much solution we can transfer in one interaction.

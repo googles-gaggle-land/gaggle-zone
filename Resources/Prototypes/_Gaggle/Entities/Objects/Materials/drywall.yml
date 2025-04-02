@@ -77,7 +77,7 @@
   - type: Sprite
     state: drywall
   - type: Stack
-    stackType: Steel
+    stackType: Drywall
     count: 10
 
 - type: entity
@@ -88,7 +88,7 @@
   - type: Sprite
     state: drywall
   - type: Stack
-    stackType: Steel
+    stackType: Drywall
     count: 1
 
 - type: entity

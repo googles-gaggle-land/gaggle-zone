@@ -21,7 +21,7 @@
   id: WallpaperBlank
   graph: Wallpaper
   startNode: start
-  targetNode: WallpaperStructureBlank
+  targetNode: blank wallpaper
   category: construction-category-decoration
   description: So bland.
   icon:
@@ -30,7 +30,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
-  canBuildInImpassable: false
+  canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition
 
@@ -39,7 +39,7 @@
   id: WallpaperOld
   graph: Wallpaper
   startNode: start
-  targetNode: WallpaperStructureOld
+  targetNode: old wallpaper
   category: construction-category-decoration
   description: This was definitely a way to protect from asbestos.
   icon:
@@ -48,7 +48,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
-  canBuildInImpassable: false
+  canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition
 
@@ -57,7 +57,7 @@
   id: WallpaperOldFake
   graph: Wallpaper
   startNode: start
-  targetNode: WallpaperStructureOldFake
+  targetNode: fake old wallpaper
   category: construction-category-decoration
   description: Definitely can't collect asbestos anymore.
   icon:
@@ -66,6 +66,6 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
-  canBuildInImpassable: false
+  canBuildInImpassable: true
   conditions:
     - !type:WallmountCondition

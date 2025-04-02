@@ -13,7 +13,7 @@
   coefficients:
     Blunt: 0.1
     Slash: 1.5
-    Piercing: 0.1
+    Piercing: 0.5
     Heat: 1.5
 
 - type: damageModifierSet

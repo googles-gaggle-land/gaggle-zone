@@ -4,38 +4,32 @@
   graph:
     - node: start
       edges:
-        - to: WallpaperStructureBlank
+        - to: blank wallpaper
           completed:
             - !type:SnapToGrid { }
           steps:
-            - tag: WallpaperItemBlank
+            - material: WallpaperBlank
               doAfter: 1
-              name: blank wallpaper
-              icon:
-                sprite: _gaggle/Objects/Decoration/wallpaper.rsi
-                state: blank
         
-        - to: WallpaperStructureOld
+        - to: old wallpaper
           completed:
             - !type:SnapToGrid { }
           steps:
-            - tag: WallpaperItemOld
+            - material: WallpaperOld
               doAfter: 1
-              name: old wallpaper
-              icon:
-                sprite: _gaggle/Objects/Decoration/wallpaper.rsi
-                state: old
         
-        - to: WallpaperStructureOldFake
+        - to: fake old wallpaper
           completed:
             - !type:SnapToGrid { }
           steps:
-            - tag: WallpaperItemOldFake
+            - material: WallpaperOldFake
               doAfter: 1
-              name: fake old wallpaper
-              icon:
-                sprite: _gaggle/Objects/Decoration/wallpaper.rsi
-                state: old-fake
     
-    - node: WallpaperStructureBlank
-      entity: FoodHotDog
+    - node: blank wallpaper
+      entity: WallpaperStructureBlank
+    
+    - node: old wallpaper
+      entity: WallpaperStructureOld
+    
+    - node: fake old wallpaper
+      entity: WallpaperStructureOldFake

@@ -6,11 +6,11 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Interaction;
 using Content.Shared.Timing;
 using Content.Shared.Weapons.Melee;
+using Content.Shared.Gaggle.Painting;
+using Content.Shared.Nutrition.Components;
 using Robust.Server.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Shared.Gaggle.Painting;
-using Content.Shared.Nutrition.Components;
 
 namespace Content.Server.Gaggle.Painting;
 
@@ -117,7 +117,6 @@ public sealed class PaintingSystem : SharedPaintingSystem
 
     private void PaintAbsorbentHandle(EntityUid user, EntityUid target, EntityUid used, PaintAbsorbentComponent component)
     {
-        DebugLog($"used EntityUid: {used}");
         if (!_solutionContainerSystem.TryGetSolution(used, component.SolutionName, out var absorberSoln))
             return;
 
@@ -132,12 +131,6 @@ public sealed class PaintingSystem : SharedPaintingSystem
             if (!TryPaint(user, used, target, component, useDelay, absorberSoln.Value))
                 return;
         }
-    }
-
-    private void DebugLog(string message)
-    {
-        if (_paintingSawmill is not null)
-            _paintingSawmill.Debug(message);
     }
 
     private bool TryTakePaint(EntityUid user, EntityUid used, EntityUid target, PaintAbsorbentComponent component, UseDelayComponent? useDelay, Entity<SolutionComponent> absorberSoln)
@@ -184,6 +177,10 @@ public sealed class PaintingSystem : SharedPaintingSystem
                 
                 _solutionContainerSystem.UpdateChemicals(absorberSoln);
                 _solutionContainerSystem.UpdateChemicals((Entity<SolutionComponent>)refillableSoln);
+
+                _audio.PlayPvs(component.CleanSound, target);
+                if (useDelay != null)
+                    _useDelay.TryResetDelay((used, useDelay));
                 return true;
             }
             else if (refillableSolution.Volume <= 0)
@@ -214,9 +211,9 @@ public sealed class PaintingSystem : SharedPaintingSystem
     private bool TryPaint(EntityUid user, EntityUid used, EntityUid target, PaintAbsorbentComponent component, UseDelayComponent? useDelay, Entity<SolutionComponent> absorberSoln)
     {
         if (!TryComp<PaintableComponent>(target,out var paintable))
-        {
             return false;
-        }
+        if (!paintable.CanPaint)
+            return false;
         
         if (!_solutionContainerSystem.ResolveSolution(target,paintable.SolutionName,ref paintable.Solution,out var paintableSolution))
         {
@@ -224,17 +221,10 @@ public sealed class PaintingSystem : SharedPaintingSystem
                 _paintingSawmill.Warning($"Unable to resolve {paintable.SolutionName} solution for Entity {target}");
             return false;
         }
-        DebugLog($"Paintable solution {paintable.SolutionName} resolved");
         
         var transferAmount = component.PaintAmount < paintableSolution.AvailableVolume ?
             component.PaintAmount :
             paintableSolution.AvailableVolume;
-        
-        DebugLog($"PaintAbsorbentComponent.PaintAmount: {component.PaintAmount}");
-        DebugLog($"paintableSolution.AvailableVolume: {paintableSolution.AvailableVolume}");
-        DebugLog($"paintableSolution.MaxVolume: {paintableSolution.MaxVolume}");
-        DebugLog($"paintableSolution.Volume: {paintableSolution.Volume}");
-        DebugLog($"Transfer amount: {transferAmount}");
         
         var paintedSolution = _solutionContainerSystem.SplitSolution(absorberSoln, transferAmount);
         if (paintedSolution.Volume <= 0)
@@ -250,7 +240,7 @@ public sealed class PaintingSystem : SharedPaintingSystem
         _solutionContainerSystem.UpdateChemicals((Entity<SolutionComponent>)paintable.Solution);
         
         // audio
-        _audio.PlayPvs(component.TransferSound, target);
+        _audio.PlayPvs(component.PaintSound, target);
         if (useDelay != null)
             _useDelay.TryResetDelay((used, useDelay));
         
