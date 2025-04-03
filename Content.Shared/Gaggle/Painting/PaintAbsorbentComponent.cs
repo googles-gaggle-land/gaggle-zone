@@ -26,6 +26,13 @@ public sealed partial class PaintAbsorbentComponent : Component, IAbsorbentProgr
     /// </summary>
     [DataField("paintAmount")]
     public FixedPoint2 PaintAmount = FixedPoint2.New(10);
+    
+    /// <summary>
+    ///     Maximum volume for solution
+    /// </summary>
+    [DataField("maxVol")]
+    // TO DO gaggle - fix this bandaid fix
+    public int MaxVolume {get; set;} = 100;
 
     /// <summary>
     /// How much paint is picked up from a bucket.

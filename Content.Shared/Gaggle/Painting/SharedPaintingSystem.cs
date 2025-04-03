@@ -1,5 +1,6 @@
 using System.Linq;
 using Robust.Shared.GameStates;
+using Robust.Shared.Serialization;
 using Content.Shared.Fluids;
 
 namespace Content.Shared.Gaggle.Painting;
@@ -45,7 +46,7 @@ public abstract class SharedPaintingSystem : EntitySystem
 
     private void OnAbsorbentHandleState(EntityUid uid, PaintAbsorbentComponent component, ref ComponentHandleState args)
     {
-        if (args.Current is not SharedAbsorbentSystem.AbsorbentComponentState state)
+        if (args.Current is not PaintAbsorbentComponentState state)
             return;
 
         if (component.Progress.OrderBy(x => x.Key.ToArgb()).SequenceEqual(state.Progress))
@@ -60,6 +61,17 @@ public abstract class SharedPaintingSystem : EntitySystem
 
     private void OnAbsorbentGetState(EntityUid uid, PaintAbsorbentComponent component, ref ComponentGetState args)
     {
-        args.State = new SharedAbsorbentSystem.AbsorbentComponentState(component.Progress);
+        args.State = new PaintAbsorbentComponentState(component.Progress);
+    }
+
+    [Serializable, NetSerializable]
+    protected sealed class PaintAbsorbentComponentState : ComponentState
+    {
+        public Dictionary<Color, float> Progress;
+
+        public PaintAbsorbentComponentState(Dictionary<Color, float> progress)
+        {
+            Progress = progress;
+        }
     }
 }

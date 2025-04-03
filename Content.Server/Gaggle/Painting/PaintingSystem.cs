@@ -27,8 +27,8 @@ public sealed class PaintingSystem : SharedPaintingSystem
 
     private ISawmill? _paintingSawmill = null;
 
-    public static readonly float PaintableVolume = 30;
-    public static readonly float PainterVolume = 100;
+    //public static readonly float PaintableVolume = 30;
+    //public static readonly float PainterVolume = 100;
 
     public override void Initialize()
     {
@@ -47,14 +47,14 @@ public sealed class PaintingSystem : SharedPaintingSystem
     // absorbent stuff i copied
     private void OnAbsorbentInit(EntityUid uid, PaintAbsorbentComponent component, ComponentInit args)
     {
-        _solutionContainerSystem.EnsureSolution(uid, component.SolutionName, out _, FixedPoint2.New(PainterVolume));
+        _solutionContainerSystem.EnsureSolution(uid, component.SolutionName, out _, FixedPoint2.New(component.MaxVolume));
 
         UpdateAbsorbent(uid, component);
     }
 
     private void OnPaintableInit(EntityUid uid, PaintableComponent component, ComponentInit args)
     {
-        _solutionContainerSystem.EnsureSolution(uid, component.SolutionName, out _, FixedPoint2.New(PaintableVolume));
+        _solutionContainerSystem.EnsureSolution(uid, component.SolutionName, out _, FixedPoint2.New(component.MaxVolume));
     }
 
     private void OnAbsorbentSolutionChange(EntityUid uid, PaintAbsorbentComponent component, ref SolutionContainerChangedEvent args)

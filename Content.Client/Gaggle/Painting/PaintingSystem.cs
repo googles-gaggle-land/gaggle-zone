@@ -1,6 +1,5 @@
 using Content.Client.Fluids.UI;
 using Content.Client.Items;
-using Content.Shared.Fluids;
 using Content.Shared.Gaggle.Painting;
 
 namespace Content.Client.Gaggle.Painting;
