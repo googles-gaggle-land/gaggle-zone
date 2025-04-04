@@ -23,7 +23,7 @@
     Ethylredoxrazine: 3
     
 - type: reaction
-  id: EthylredoxrazineFunky
+  id: Ethylredoxrazine
   reactants:
     Oxygen:
       amount: 1

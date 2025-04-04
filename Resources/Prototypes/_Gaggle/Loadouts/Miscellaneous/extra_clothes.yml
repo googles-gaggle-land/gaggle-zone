@@ -469,11 +469,6 @@
   equipment:
     jumpsuit: ClothingHeadCourier
 
-- type: loadout
-  id: CourierCapFlipped
-  equipment:
-    jumpsuit: ClothingHeadCourierFlipped
-
 # -------------------------------------------------------------------------------
 # Resources\Prototypes\_DV\Entities\Clothing\Hands\gloves.yml
 # -------------------------------------------------------------------------------
