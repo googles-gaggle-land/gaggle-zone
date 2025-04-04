@@ -726,6 +726,7 @@
 
 #shuttle walls
 - type: entity
+  parent: WallShuttle
   id: WallShuttleDiagonal
   name: shuttle wall
   suffix: Diagonal
