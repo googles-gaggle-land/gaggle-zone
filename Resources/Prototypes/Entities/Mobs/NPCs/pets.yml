@@ -911,3 +911,31 @@
   #  - type: AlwaysRevolutionaryConvertible
   - type: StealTarget
     stealGroup: AnimalTropico
+
+- type: entity
+  name: Freddy
+  parent: MobKoiSpotted
+  id: MobKoiFreddy
+  description: Freddy the Fish has been sent here all the way from Space Station 13. The last Psychology pet didn't work out, so Central Command decided this was a great replacement.
+  components:
+  #  - type: GhostRole
+  #    prob: 1
+  #    makeSentient: true
+  #    allowSpeech: true
+  #    allowMovement: true
+  #    name: ghost-role-information-tropico-name
+  #    description: ghost-role-information-tropico-description
+  #    rules: ghost-role-information-nonantagonist-rules
+  #  - type: GhostTakeoverAvailable
+  - type: Tag
+    tags:
+    - VimPilot
+    - CannotSuicide
+    - DoorBumpOpener
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  #  - type: AlwaysRevolutionaryConvertible
+  - type: StealTarget
+    stealGroup: AnimalFreddy

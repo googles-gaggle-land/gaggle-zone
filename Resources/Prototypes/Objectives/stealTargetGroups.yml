@@ -407,4 +407,9 @@
     sprite: Mobs/Animals/crab.rsi
     state: crab
 
-
+- type: stealTargetGroup
+  id: AnimalFreddy
+  name: steal-target-groups-animal-freddy
+  sprite:
+    sprite: _gaggle/Mobs/Animals/space_koi.rsi
+    state: koi2
