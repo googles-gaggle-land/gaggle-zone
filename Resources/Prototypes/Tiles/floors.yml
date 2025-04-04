@@ -1,13 +1,7 @@
 - type: tile
   id: FloorSteel
   name: tiles-steel-floor
-  sprite: /Textures/Tiles/steel.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/tiled_gray.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -128,13 +122,7 @@
 - type: tile
   id: FloorSteelMono
   name: tiles-steel-floor-mono
-  sprite: /Textures/Tiles/steel_mono.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/monotile_gray.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -230,13 +218,7 @@
 - type: tile
   id: FloorPlastic
   name: tiles-plastic-floor
-  sprite: /Textures/Tiles/plastic.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/tile_full.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -270,13 +252,7 @@
 - type: tile
   id: FloorWhite
   name: tiles-white-floor
-  sprite: /Textures/Tiles/white.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/tiled_light.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -359,13 +335,7 @@
 - type: tile
   id: FloorWhiteMono
   name: tiles-white-floor-mono
-  sprite: /Textures/Tiles/white_mono.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/monotile_light.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -435,13 +405,7 @@
 - type: tile
   id: FloorWhitePlastic
   name: tiles-plastic-white-floor
-  sprite: /Textures/Tiles/white_plastic.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/tile_fulllight.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -454,13 +418,7 @@
 - type: tile
   id: FloorDark
   name: tiles-dark-floor
-  sprite: /Textures/Tiles/dark.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/tiled_dark.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -543,13 +501,7 @@
 - type: tile
   id: FloorDarkMono
   name: tiles-dark-floor-mono
-  sprite: /Textures/Tiles/dark_mono.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/monotile_dark.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -619,13 +571,7 @@
 - type: tile
   id: FloorDarkPlastic
   name: tiles-plastic-dark-floor
-  sprite: /Textures/Tiles/dark_plastic.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  sprite: /Textures/_gaggle/Tiles/tile_fulldark.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
