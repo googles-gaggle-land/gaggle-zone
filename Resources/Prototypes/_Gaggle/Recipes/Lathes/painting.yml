@@ -1,0 +1,14 @@
+- type: latheRecipe
+  id: BucketPaint
+  result: BucketPaint
+  completetime: 2
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: PaintRoller
+  result: PaintRoller
+  completetime: 2
+  materials:
+    Plastic: 100
+    Cloth: 100

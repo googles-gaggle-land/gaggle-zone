@@ -1,0 +1,17 @@
+- type: stack
+  id: WallpaperBlank
+  name: blank wallpaper
+  spawn: WallpaperItemBlank
+  maxCount: 30
+
+- type: stack
+  id: WallpaperOld
+  name: old wallpaper
+  spawn: WallpaperItemOld
+  maxCount: 30
+
+- type: stack
+  id: WallpaperOldFake
+  name: fake old wallpaper
+  spawn: WallpaperItemOldFake
+  maxCount: 30

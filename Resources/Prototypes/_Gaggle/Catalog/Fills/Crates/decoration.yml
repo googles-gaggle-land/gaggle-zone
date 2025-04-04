@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateDecorationWallpaperBlank
+  parent: CrateGenericSteel
+  name: blank wallpaper crate
+  description: 90 sheets of blank wallpaper.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WallpaperItemBlank
+        amount: 3

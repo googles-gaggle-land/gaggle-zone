@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateMaterialDrywall
+  parent: CrateGenericSteel
+  name: drywall sheet crate
+  description: 90 sheets of drywall. Now asbestos free!
+  components:
+  - type: StorageFill
+    contents:
+      - id: SheetDrywall
+        amount: 3

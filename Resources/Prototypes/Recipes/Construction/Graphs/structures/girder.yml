@@ -162,6 +162,31 @@
             - material: Steel
               amount: 2
               doAfter: 1
+        
+        - to: drywall # gaggle
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: Drywall
+              amount: 3
+              doAfter: 3
+            - tool: Screwing
+              doAfter: 1
+
+    - node: drywall # gaggle
+      entity: WallDrywall
+      edges:
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetDrywall1
+              amount: 3
+          steps:
+            - tool: Screwing
+              doAfter: 8
 
     - node: wall
       entity: WallSolid

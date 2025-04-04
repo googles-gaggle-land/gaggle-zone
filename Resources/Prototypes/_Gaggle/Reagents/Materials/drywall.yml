@@ -1,0 +1,6 @@
+- type: material
+  id: Drywall
+  stackEntity: SheetDrywall1
+  name: materials-drywall
+  icon: { sprite: Textures/_gaggle/Objects/Materials/Sheets/drywall.rsi, state: drywall }
+  price: 0.05 # $5 for 1 unit
