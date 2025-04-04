@@ -1,0 +1,35 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterSuitXeno
+  name: xeno suit
+  description: A special suit that makes you look just like a xeno, if your eyesight is bad.
+  components:
+  - type: AllowSuitStorage
+  - type: Sprite
+    sprite: _gaggle/Clothing/xeno.rsi
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _gaggle/Clothing/xeno.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodXeno
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodXeno
+  categories: [ HideSpawnMenu ]
+  name: xeno hood
+  description: A gnarly hat in the style of a xeno.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Clothing/xeno.rsi
+    state: helmicon
+  - type: Clothing
+    sprite: _gaggle/Clothing/xeno.rsi
+    state: helm
+  - type: HideLayerClothing
+    slots:
+    - Hair
