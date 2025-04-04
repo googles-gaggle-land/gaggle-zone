@@ -231,6 +231,12 @@
   id: FloorPlastic
   name: tiles-plastic-floor
   sprite: /Textures/_gaggle/Tiles/tile_full.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
