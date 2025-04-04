@@ -2,6 +2,12 @@
   id: FloorSteel
   name: tiles-steel-floor
   sprite: /Textures/_gaggle/Tiles/tiled_gray.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -253,6 +259,12 @@
   id: FloorWhite
   name: tiles-white-floor
   sprite: /Textures/_gaggle/Tiles/tiled_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -419,6 +431,12 @@
   id: FloorDark
   name: tiles-dark-floor
   sprite: /Textures/_gaggle/Tiles/tiled_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
