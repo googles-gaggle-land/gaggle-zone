@@ -18,8 +18,8 @@
       "directions": 4
     },
     {
-      "name": "helm",
+      "name": "equipped-HELMET",
       "directions": 4
-    },
+    }
   ]
 }

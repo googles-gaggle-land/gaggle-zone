@@ -7,6 +7,7 @@
   - type: AllowSuitStorage
   - type: Sprite
     sprite: _gaggle/Clothing/xeno.rsi
+    state: icon
   - type: Item
     size: Normal
   - type: Clothing
