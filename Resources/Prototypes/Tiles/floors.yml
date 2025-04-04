@@ -129,6 +129,12 @@
   id: FloorSteelMono
   name: tiles-steel-floor-mono
   sprite: /Textures/_gaggle/Tiles/monotile_gray.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -348,6 +354,12 @@
   id: FloorWhiteMono
   name: tiles-white-floor-mono
   sprite: /Textures/_gaggle/Tiles/monotile_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -418,6 +430,12 @@
   id: FloorWhitePlastic
   name: tiles-plastic-white-floor
   sprite: /Textures/_gaggle/Tiles/tile_fulllight.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -520,6 +538,12 @@
   id: FloorDarkMono
   name: tiles-dark-floor-mono
   sprite: /Textures/_gaggle/Tiles/monotile_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -590,6 +614,12 @@
   id: FloorDarkPlastic
   name: tiles-plastic-dark-floor
   sprite: /Textures/_gaggle/Tiles/tile_fulldark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
