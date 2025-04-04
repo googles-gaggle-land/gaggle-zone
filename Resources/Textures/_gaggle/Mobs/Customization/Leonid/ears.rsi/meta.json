@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by miapyxel",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "basic",
+      "directions": 4
+    },
+    {
+      "name": "basic-inner",
+      "directions": 4
+    },
+    {
+      "name": "basic_left",
+      "directions": 4
+    },
+    {
+      "name": "basic_left-inner",
+      "directions": 4
+    },
+    {
+      "name": "basic_right",
+      "directions": 4
+    },
+    {
+      "name": "basic_right-inner",
+      "directions": 4
+    }
+  ]
+}
