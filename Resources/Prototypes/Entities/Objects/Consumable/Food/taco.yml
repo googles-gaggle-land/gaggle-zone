@@ -86,7 +86,7 @@
   - type: FlavorProfile
     flavors:
       - bread
-      - meaty, with a complext flavour
+      - meaty
   - type: Item
     storedRotation: -90
   - type: Food
@@ -159,7 +159,7 @@
   name: chicken taco
   parent: FoodMealBase
   id: FoodChickenTacoSupreme
-  description: A taco shell, easy to hold, but falls on its side when put down.
+  description: A chicken taco with a little more effort.
   components:
   - type: Tag
     tags:
@@ -200,7 +200,7 @@
   name: fish taco
   parent: FoodMealBase
   id: FoodFishTaco
-  description: A taco shell, easy to hold, but falls on its side when put down.
+  description: A fish taco with a great flavour.
   components:
   - type: Tag
     tags:
