@@ -2208,57 +2208,78 @@
 
 - type: microwaveMealRecipe
   id: RecipeBeefTaco
-  name: taco shell recipe
-  result: FoodTacoShell
-  time: 5
+  name: beef taco recipe
+  result: FoodBeefTaco
+  time: 10
   group: Breads
   solids:
-    FoodDoughTortillaFlat: 1
+    FoodTacoShell: 1
+    FoodMeatCutlet: 1
+    FoodCheeseSlice: 1
 
 - type: microwaveMealRecipe
   id: RecipeBeefTacoSupreme
-  name: taco shell recipe
-  result: FoodTacoShell
-  time: 5
+  name: beef taco supreme recipe
+  result: FoodBeefTacoSupreme
+  time: 10
   group: Breads
   solids:
-    FoodDoughTortillaFlat: 1
+    FoodTacoShell: 1
+    FoodMeatCutlet: 1
+    FoodCheeseSlice: 1
+    FoodTomato: 1
+    FoodCabbage: 1
+    FoodOnionSlice: 2
 
 - type: microwaveMealRecipe
   id: RecipeChickenTaco
-  name: taco shell recipe
-  result: FoodTacoShell
-  time: 5
+  name: chicken taco
+  result: FoodTacoChicken
+  time: 10
   group: Breads
   solids:
-    FoodDoughTortillaFlat: 1
+    FoodTacoShell: 1
+    FoodMeatChickenCutlet: 1
+    FoodCheeseSlice: 1
 
 - type: microwaveMealRecipe
   id: RecipeChickenTacoSupreme
-  name: taco shell recipe
-  result: FoodTacoShell
-  time: 5
+  name: chicken taco supreme
+  result: FoodTacoChickenSupreme
+  time: 10
   group: Breads
   solids:
-    FoodDoughTortillaFlat: 1
+    FoodTacoShell: 1
+    FoodMeatChickenCutlet: 1
+    FoodCheeseSlice: 1
+    FoodTomato: 1
+    FoodCabbage: 1
+    FoodOnionSlice: 2
 
 - type: microwaveMealRecipe
   id: RecipeFishTaco
-  name: taco shell recipe
-  result: FoodTacoShell
-  time: 5
+  name: fish taco recipe
+  result: FoodTacoFish
+  time: 10
   group: Breads
   solids:
-    FoodDoughTortillaFlat: 1 #for SOME reason taco variants don't exist, this is where it ends
+    FoodTacoShell: 1
+    FoodMeatFish: 1
+    FoodCheeseSlice: 1
+    FoodTomato: 1
+    FoodCabbage: 1
+    FoodOnionSlice: 2 #for SOME reason taco variants don't exist, this is where it ends
 
 - type: microwaveMealRecipe
   id: RecipeRatTaco
-  name: taco shell recipe
-  result: FoodTacoShell
-  time: 5
+  name: rat taco recipe
+  result: FoodTacoRat
+  time: 10
   group: Breads
   solids:
-    FoodDoughTortillaFlat: 1
+    FoodTacoShell: 1
+    FoodCheeseSlice: 1
+    FoodMeatRat: 1
 
 
 - type: microwaveMealRecipe
