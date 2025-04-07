@@ -2207,6 +2207,61 @@
     FoodDoughTortillaFlat: 1 # one third of a standard bread dough recipe
 
 - type: microwaveMealRecipe
+  id: RecipeBeefTaco
+  name: taco shell recipe
+  result: FoodTacoShell
+  time: 5
+  group: Breads
+  solids:
+    FoodDoughTortillaFlat: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBeefTacoSupreme
+  name: taco shell recipe
+  result: FoodTacoShell
+  time: 5
+  group: Breads
+  solids:
+    FoodDoughTortillaFlat: 1
+
+- type: microwaveMealRecipe
+  id: RecipeChickenTaco
+  name: taco shell recipe
+  result: FoodTacoShell
+  time: 5
+  group: Breads
+  solids:
+    FoodDoughTortillaFlat: 1
+
+- type: microwaveMealRecipe
+  id: RecipeChickenTacoSupreme
+  name: taco shell recipe
+  result: FoodTacoShell
+  time: 5
+  group: Breads
+  solids:
+    FoodDoughTortillaFlat: 1
+
+- type: microwaveMealRecipe
+  id: RecipeFishTaco
+  name: taco shell recipe
+  result: FoodTacoShell
+  time: 5
+  group: Breads
+  solids:
+    FoodDoughTortillaFlat: 1 #for SOME reason taco variants don't exist, this is where it ends
+
+- type: microwaveMealRecipe
+  id: RecipeRatTaco
+  name: taco shell recipe
+  result: FoodTacoShell
+  time: 5
+  group: Breads
+  solids:
+    FoodDoughTortillaFlat: 1
+
+
+- type: microwaveMealRecipe
   id: RecipeCroissant
   name: croissant recipe
   result: FoodBakedCroissant

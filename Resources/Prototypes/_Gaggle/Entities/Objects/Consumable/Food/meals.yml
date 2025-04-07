@@ -1,9 +1,14 @@
 - type: entity
   name: hot dog
-  parent: FoodMealBase
+  parent: FoodMeatBase
   id: FoodHotDog
   description: A staple of cookouts.
   components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
   - type: FlavorProfile
     flavors:
       - bread

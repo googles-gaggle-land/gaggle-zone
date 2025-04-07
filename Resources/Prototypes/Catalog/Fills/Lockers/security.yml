@@ -23,6 +23,7 @@
       - id: NitrogenTankFilled
       - id: HoloprojectorSecurity
       - id: BookSpaceLaw
+      - id: ClothingNeckShockCollar
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
@@ -50,6 +51,7 @@
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
       - id: BookSpaceLaw
+      - id: ClothingNeckShockCollar
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller

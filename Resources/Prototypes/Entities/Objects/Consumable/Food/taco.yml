@@ -11,7 +11,7 @@
   - type: Food
     transferAmount: 3
   - type: Sprite
-    sprite: Objects/Consumable/Food/taco.rsi
+    sprite: Objects\Consumable\Food\taco.rsi
     layers:
     - state: tacoshell_back
     - map: ["foodSequenceLayers"]
@@ -24,6 +24,30 @@
         reagents:
         - ReagentId: Nutriment
           Quantity: 6.66
+
+- type: entity
+  name: beef taco
+  parent: FoodMealBase
+  id: FoodBeefTaco
+  description: A taco shell, easy to hold, but falls on its side when put down.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: beef_taco
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+
   - type: FoodSequenceStartPoint
     key: taco
     maxLayers: 3
@@ -34,3 +58,118 @@
     nameGeneration: food-sequence-taco-gen
     contentSeparator: ", "
   - type: Appearance
+
+- type: entity
+  name: beef taco supreme
+  parent: FoodMealBase
+  id: FoodBeefTacoSupreme
+  description: A taco shell, easy to hold, but falls on its side when put down.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects\Consumable\Food\taco.rsi
+    layers:
+    - state: beef_taco_supreme
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+
+- type: entity
+  name: taco shell
+  parent: FoodMealBase
+  id: FoodChickenTaco
+  description: A taco shell, easy to hold, but falls on its side when put down.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: chicken_taco
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+
+- type: entity
+  name: chicken taco
+  parent: FoodMealBase
+  id: FoodChickenTacoSupreme
+  description: A taco shell, easy to hold, but falls on its side when put down.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: chicken_taco_supreme
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+
+- type: entity
+  name: fish taco
+  parent: FoodMealBase
+  id: FoodFishTaco
+  description: A taco shell, easy to hold, but falls on its side when put down.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: fish_taco
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+
+- type: entity
+  name: rat taco
+  parent: FoodMealBase
+  id: FoodRatTaco
+  description: A taco shell, easy to hold, but falls on its side when put down.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: rat_taco
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
