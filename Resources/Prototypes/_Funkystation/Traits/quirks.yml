@@ -16,7 +16,7 @@
         Airloss: -0.1
         Toxin: -0.1
         Genetic: -0.1
-        
+
 - type: trait
   id: NaturalResiliance
   name: trait-natural-resiliance-name
@@ -42,7 +42,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Bloodloss: 4.0 
+        Bloodloss: 4.0
   speciesRestrictions:
   - IPC
 
@@ -79,7 +79,7 @@
   name: trait-temperature-tolerance-name
   description: trait-temperature-tolerance-desc
   category: Quirks
-  cost: 2 
+  cost: 2
   components:
   - type: Temperature
     atmosTemperatureTransferEfficiency: 0.1
@@ -99,6 +99,16 @@
         Blunt: 1.1
         Slash: 1.2 # wide swing murder :godo:
         Heat: 1.1
+
+- type: trait
+  id: Singer
+  name: trait-singer
+  description: trait-singer-desc
+  category: Quirks
+  cost: 5 #feels right, it's just fun!
+  components:
+  - type: ActionHarpyPlayMidi
+
 
 - type: trait
   id: StrengthenedImmunity
