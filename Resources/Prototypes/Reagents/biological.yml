@@ -69,6 +69,7 @@
   physicalDesc: reagent-physical-desc-viscous
   slippery: false
   viscosity: 0.25
+  specificHeat: 232
   tileReactions:
     - !type:SpillTileReaction
   metabolisms:

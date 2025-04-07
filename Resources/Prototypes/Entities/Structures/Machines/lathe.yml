@@ -155,6 +155,8 @@
     - DimLightBulb
     - WarmLightBulb
     - Bucket
+    - BucketPaint
+    - PaintRoller
     - DrinkMug
     - DrinkMugMetal
     - DrinkGlass

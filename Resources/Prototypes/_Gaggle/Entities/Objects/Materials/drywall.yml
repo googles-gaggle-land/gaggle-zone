@@ -1,0 +1,101 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: SheetDrywallBase
+  description: A sheet of drywall, used to put onto girders.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Materials/Sheets/drywall.rsi
+  - type: Item
+    sprite: _gaggle/Objects/Materials/Sheets/drywall.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Drywall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionContainerManager
+    solutions:
+      drywall:
+        canReact: false
+  - type: GuideHelp
+    guides:
+    - ExpandingRepairingStation
+
+- type: entity
+  parent: SheetDrywallBase
+  id: SheetDrywall
+  name: drywall sheet
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Drywall: 100
+  - type: Stack
+    stackType: Drywall
+    baseLayer: base
+    layerStates:
+    - drywall
+    - drywall_2
+    - drywall_3
+  - type: Sprite
+    state: drywall_3
+    layers:
+    - state: drywall_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: drywall
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: drywall
+  #- type: SolutionContainerManager # TBA
+  #  solutions:
+      #drywall:
+      #  reagents:
+      #  - ReagentId: Iron
+      #    Quantity: 9
+      #  - ReagentId: Carbon
+      #    Quantity: 1
+
+- type: entity
+  parent: SheetDrywall
+  id: SheetDrywall10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: drywall
+  - type: Stack
+    stackType: Drywall
+    count: 10
+
+- type: entity
+  parent: SheetDrywall
+  id: SheetDrywall1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: drywall
+  - type: Stack
+    stackType: Drywall
+    count: 1
+
+- type: entity
+  parent: SheetDrywall
+  id: SheetDrywallLingering0
+  suffix: Lingering, 0
+  components:
+  - type: Stack
+    lingering: true
+    count: 0

@@ -5,15 +5,20 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared.Fluids;
 
+public partial interface IAbsorbentProgress
+{
+    public Dictionary<Color, float> Progress {get; set;}
+}
+
 /// <summary>
 /// For entities that can clean up puddles
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-public sealed partial class AbsorbentComponent : Component
+public sealed partial class AbsorbentComponent : Component, IAbsorbentProgress
 {
     public const string SolutionName = "absorbed";
 
-    public Dictionary<Color, float> Progress = new();
+    public Dictionary<Color, float> Progress {get; set;} = new();
 
     /// <summary>
     /// How much solution we can transfer in one interaction.

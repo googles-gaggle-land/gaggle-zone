@@ -1,0 +1,99 @@
+- type: entity
+  id: BaseWallpaperItem
+  parent: BaseItem
+  name: wallpaper
+  suffix: Item
+  description: Used to decorate walls to allow for a more comfortable room.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+  - type: Item
+    size: Normal
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wallpaper
+  - type: Flammable
+    fireSpread: true
+    alwaysCombustible: true
+    damage:
+      types:
+        Heat: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 15
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+            Ash:
+              min: 1
+              max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - Wallpaper
+    - WallpaperItem
+
+- type: entity
+  id: WallpaperItemBlank
+  parent: BaseWallpaperItem
+  name: blank wallpaper
+  suffix: Item
+  description: Can be used to put designs on.
+  components:
+  - type: Stack
+    stackType: WallpaperBlank
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+    state: blank
+  #- type: Tag
+  #  tags:
+  #  - Wallpaper
+  #  - WallpaperItem
+  #  - WallpaperItemBlank
+
+- type: entity
+  id: WallpaperItemOld
+  parent: BaseWallpaperItem
+  name: old wallpaper
+  suffix: Item
+  description: The most comfortable wallpaper possible.
+  components:
+  - type: Stack
+    stackType: WallpaperOld
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+    state: old
+  #- type: Tag
+  #  tags:
+  #  - Wallpaper
+  #  - WallpaperItem
+  #  - WallpaperItemOld
+
+- type: entity
+  id: WallpaperItemOldFake
+  parent: BaseWallpaperItem
+  name: fake old wallpaper
+  suffix: Item
+  description: It works for now.
+  components:
+  - type: Stack
+    stackType: WallpaperOldFake
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+    state: old-fake
+  #- type: Tag
+  #  tags:
+  #  - Wallpaper
+  #  - WallpaperItem
+  #  - WallpaperItemOldFake

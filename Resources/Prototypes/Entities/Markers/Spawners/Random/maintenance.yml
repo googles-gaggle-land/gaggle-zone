@@ -218,6 +218,8 @@
           weight: 0.25
         - id: MaterialWoodPlank10
           weight: 0.25
+        - id: SheetDrywall10 # gaggle
+          weight: 0.25
       - id: Plunger
       - id: PowerCellMedium
       - id: PowerCellSmall
@@ -251,6 +253,7 @@
           weight: 1
         - id: ClothingHandsGlovesConducting
           weight: 0.1
+      - id: PaintRoller # gaggle
       # Uncommon Group
     - !type:GroupSelector
       weight: 23
@@ -278,6 +281,29 @@
         children:
         - id: DrinkSpaceGlue
         - id: DrinkSpaceLube
+      - !type:GroupSelector # gaggle
+        children:
+        - id: BucketPaint
+        - !type:GroupSelector
+          children:
+          - id: BucketPaintRed
+          - id: BucketPaintYellow
+          - id: BucketPaintBlue
+          - id: BucketPaintOrange
+            weight: 0.8
+          - id: BucketPaintGreen
+            weight: 0.8
+          - id: BucketPaintPurple
+            weight: 0.8
+          - id: BucketPaintBrown
+            weight: 0.8
+          - id: BucketPaintMagenta
+            weight: 0.7
+          - id: BucketPaintCyan
+            weight: 0.7
+          - id: BucketPaintWhite
+          - id: BucketPaintGrey
+          - id: BucketPaintBlack
       # Rare Group
     - !type:GroupSelector
       weight: 2

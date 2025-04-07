@@ -1,0 +1,9 @@
+- type: reaction
+  id: GypsumPlaster
+  reactants:
+    Gypsum:
+      amount: 10
+    Water:
+      amount: 7
+  products:
+    GypsumPlaster: 2
