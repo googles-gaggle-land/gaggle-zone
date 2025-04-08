@@ -1111,6 +1111,9 @@
     - ClothingUniformJumpskirtMedicalDoctor
     - ClothingUniformJumpsuitSeniorPhysician
     - ClothingUniformJumpskirtSeniorPhysician
+    - ClothingUniformSkirtMailCarrier
+    - ClothingUniformMailCarrier
+    - ClothingHeadMailCarrier
     - ClothingUniformJumpsuitMime
     - ClothingUniformJumpskirtMime
     - ClothingUniformJumpsuitMusician
@@ -1165,6 +1168,7 @@
     - ClothingOuterWinterAtmos
     - ClothingOuterWinterEngi
     - ClothingOuterWinterCargo
+    - ClothingOuterWinterCoatMail
     - ClothingOuterWinterMiner
     - ClothingOuterWinterMed
     - ClothingOuterWinterPara
