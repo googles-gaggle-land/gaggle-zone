@@ -170,6 +170,12 @@
     - ClothingNeckGenderqueerPin
 
 - type: loadout
+  id: ClothingNeckGagglePin
+  storage:
+    back:
+    - ClothingNeckGagglePin
+
+- type: loadout
   id: ClothingNeckTransPin
   storage:
     back:
@@ -188,13 +194,6 @@
     - ClothingNeckGoldAutismPin
 
 # Start Gaggle
-- type: loadout
-  id: ClothingNeckGagglePin
-  storage:
-    back:
-    - ClothingNeckGagglePin
-
-
 # Party Hats
 - type: loadout
   id: ClothingHeadHatPartyRed
