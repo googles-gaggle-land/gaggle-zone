@@ -403,18 +403,6 @@
   id: ClothingUniformJumpskirtSeniorPhysician
   result: ClothingUniformJumpskirtSeniorPhysician
 
-## Mailperssonnnn :3 -nyanotrasen
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformMailCarrier
-  result: ClothingUniformMailCarrier
-
-- type: latheRecipe
-  parent: BaseJumpsuitRecipe
-  id: ClothingUniformSkirtMailCarrier
-  result: ClothingUniformSkirtMailCarrier
-
 ## Mime
 
 - type: latheRecipe
@@ -723,8 +711,8 @@
 
 - type: latheRecipe
   parent: BaseCoatRecipe
-  id: ClothingOuterWinterCoatMail
-  result: ClothingOuterWinterCoatMail #from nyanotrasen
+  id: ClothingOuterWinterClown
+  result: ClothingOuterWinterClown
 
 - type: latheRecipe
   parent: BaseCoatRecipe
@@ -877,8 +865,6 @@
   id: ClothingHeadHatQMsoft
   result: ClothingHeadHatQMsoft
 
-
-
 - type: latheRecipe
   parent: BaseCommandHatRecipe
   id: ClothingHeadHatBeretRND
@@ -905,11 +891,6 @@
   parent: BaseHatRecipe
   id: ClothingHeadHatBeretMedic
   result: ClothingHeadHatBeretMedic
-
-- type: latheRecipe
-  parent: BaseHatRecipe
-  id: ClothingHeadMailCarrier
-  result: ClothingHeadMailCarrier
 
 - type: latheRecipe
   parent: BaseHatRecipe
@@ -1012,3 +993,25 @@
   parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedPurple
   result: ClothingNeckScarfStripedPurple
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe #i put id steel sheet and the game thought i was smoking something
+  id: ClothingUniformMailCarrier
+  result: ClothingUniformMailCarrier
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: ClothingUniformSkirtMailCarrier
+  result: ClothingUniformSkirtMailCarrier
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: ClothingHeadMailCarrier
+  result: ClothingHeadMailCarrier
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: ClothingOuterWinterCoatMail
+  result: ClothingOuterWinterCoatMail
+
+
