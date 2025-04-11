@@ -122,9 +122,6 @@
 
 - type: Tag
   id: IndustrialMech
-
-- type: Tag
-  id: CombatMech
 # TODO: Make medical mech, I will.
 
 - type: Tag
@@ -135,9 +132,6 @@
   
 - type: Tag
   id: Clarke
-
-- type: Tag
-  id: Durand
 
 - type: Tag
   id: Gygax
