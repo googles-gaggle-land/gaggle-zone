@@ -587,22 +587,22 @@
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitBotanistSyndicate
   result: ClothingUniformJumpsuitBotanistSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitBartenderSyndicate
   result: ClothingUniformJumpsuitBartenderSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitLibrarianSyndicate
   result: ClothingUniformJumpsuitLibrarianSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitScientistSyndicate
   result: ClothingUniformJumpsuitScientistSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitScientistWhiteSyndicate
@@ -614,37 +614,37 @@
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitGCMSyndicate
   result: ClothingUniformJumpsuitGCMSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitCCRSyndicate
   result: ClothingUniformJumpsuitCCRSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitIMDSyndicate
   result: ClothingUniformJumpsuitIMDSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitWSMSyndicate
   result: ClothingUniformJumpsuitWSMSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitHRDSyndicate
   result: ClothingUniformJumpsuitHRDSyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitCHESyndicate
   result: ClothingUniformJumpsuitCHESyndicate
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitHCRSyndicate
   result: ClothingUniformJumpsuitHCRSyndicate
-  
+
 # end of funkystation specific syndie wear
 
 - type: latheRecipe
@@ -993,3 +993,25 @@
   parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedPurple
   result: ClothingNeckScarfStripedPurple
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe #i put id steel sheet and the game thought i was smoking something
+  id: ClothingUniformMailCarrier
+  result: ClothingUniformMailCarrier
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: ClothingUniformSkirtMailCarrier
+  result: ClothingUniformSkirtMailCarrier
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: ClothingHeadMailCarrier
+  result: ClothingHeadMailCarrier
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: ClothingOuterWinterCoatMail
+  result: ClothingOuterWinterCoatMail
+
+

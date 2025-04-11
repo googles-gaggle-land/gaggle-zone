@@ -15,13 +15,15 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakBoat
-  name: NanoTrasen boat cloak
+  name: captain's nautical cloak
+  ##NanoTrasen boat cloak -> captain's nautical cloak
   description: A regal blue durathread boat cloak with a red felt lining and gold trim. Somehow, it's even more expensive than it looks.
   components:
   - type: Sprite
     sprite: _DV/Clothing/Neck/Cloaks/boatcloak.rsi
   - type: Clothing
-    sprite: _DV/Clothing/Neck/Cloaks/boatcloak.rsi    
+    sprite: _DV/Clothing/Neck/Cloaks/boatcloak.rsi
+    #also remake the sprite!!
 
 - type: entity
   parent: ClothingNeckBase
@@ -30,9 +32,9 @@
   description: Worn by dangerous people who've deconstructed stations with ease.
   components:
   - type: Sprite
-    sprite: _DV/Clothing/Neck/Cloaks/salvage.rsi 
+    sprite: _DV/Clothing/Neck/Cloaks/salvage.rsi
   - type: Clothing
-    sprite: _DV/Clothing/Neck/Cloaks/salvage.rsi  
+    sprite: _DV/Clothing/Neck/Cloaks/salvage.rsi
 
 - type: entity
   parent: ClothingNeckBase

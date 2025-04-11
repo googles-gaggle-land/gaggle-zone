@@ -170,6 +170,12 @@
     - ClothingNeckGenderqueerPin
 
 - type: loadout
+  id: ClothingNeckGagglePin
+  storage:
+    back:
+    - ClothingNeckGagglePin
+
+- type: loadout
   id: ClothingNeckTransPin
   storage:
     back:
@@ -194,19 +200,19 @@
   storage:
     back:
     - ClothingHeadHatPartyRed
-    
+
 - type: loadout
   id: ClothingHeadHatPartyGreen
   storage:
     back:
     - ClothingHeadHatPartyGreen
-    
+
 - type: loadout
   id: ClothingHeadHatPartyBlue
   storage:
     back:
     - ClothingHeadHatPartyBlue
-    
+
 - type: loadout
   id: ClothingHeadHatPartyYellow
   storage:
@@ -224,7 +230,7 @@
   storage:
     back:
     - ClothingHeadHatTophat
-    
+
 - type: loadout
   id: ClothingHeadHatMagician
   storage:
@@ -236,68 +242,68 @@
   storage:
     back:
     - ClothingHeadHatCowboyBlack
-    
+
 - type: loadout
   id: ClothingHeadHatCowboyBrown
   storage:
     back:
     - ClothingHeadHatCowboyBrown
-    
+
 - type: loadout
   id: ClothingHeadHatCowboyGrey
   storage:
     back:
     - ClothingHeadHatCowboyGrey
-    
+
 - type: loadout
   id: ClothingHeadHatCowboyRed
   storage:
     back:
     - ClothingHeadHatCowboyRed
-    
+
 - type: loadout
   id: ClothingHeadHatCowboyWhite
   storage:
     back:
     - ClothingHeadHatCowboyWhite
-    
+
 - type: loadout
   id: ClothingHeadHatCowboyBountyHunter
   storage:
     back:
     - ClothingHeadHatCowboyBountyHunter
-    
+
 - type: loadout
   id: ClothingHeadAreopagite
   storage:
     back:
     - ClothingHeadAreopagite
 #Miscellaneous
-    
+
 - type: loadout
   id: ClothingHeadHatWitch1
   storage:
     back:
     - ClothingHeadHatWitch1
-    
+
 - type: loadout
   id: ClothingHeadHatPirate
   storage:
     back:
     - ClothingHeadHatPirate
-    
+
 - type: loadout
   id: ClothingHeadPaperSack
   storage:
     back:
     - ClothingHeadPaperSack
-    
+
 - type: loadout
   id: ClothingHeadPaperSackSmile
   storage:
     back:
     - ClothingHeadPaperSackSmile
-    
+
 # Gaggle end
 
 # Playing Cards (GoobStation)

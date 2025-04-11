@@ -642,6 +642,38 @@
   - type: Speech
     speechVerb: Vulpkanin
 
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieCassius
+  name: chemist felinid plushie
+  components:
+  - type: Sprite
+    state: plushie_cassius
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieGoodwin
+  name: musician felinid plushie
+  components:
+  - type: Sprite
+    state: plushie_goodwin
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieLucerne
+  name: bartender vulpkanin (two) plushie
+  components:
+  - type: Sprite
+    state: plushie_lucerne
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieSneakyNoodle
+  name: assistant rodentia plushie
+  components:
+  - type: Sprite
+    state: plushie_sneakynoodle
+
 
 # stowaway toys (self insert ripoff :godo:)
 

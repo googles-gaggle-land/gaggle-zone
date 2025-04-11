@@ -12,6 +12,7 @@
       - id: ClothingHandsGlovesCaptain
       - id: ClothingOuterWinterCap
       - id: ClothingNeckCloakCap
+      - id: ClothingNeckCloakBoat
 
 - type: entity
   id: DresserChiefEngineerFilled

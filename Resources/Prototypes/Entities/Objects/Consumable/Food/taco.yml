@@ -6,6 +6,45 @@
   id: FoodTacoShell
   description: A taco shell, easy to hold, but falls on its side when put down.
   components:
+  - type: Tag
+    tags:
+    - Cooked
+  - type: FlavorProfile
+    flavors:
+      - bread
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects\Consumable\Food\taco.rsi
+    layers:
+    - state: tacoshell_forward
+    - map: ["foodSequenceLayers"]
+    - state: tacoshell_forward
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+
+- type: entity
+  name: beef taco
+  parent: FoodMealBase
+  id: FoodBeefTaco
+  description: A beef taco, quick'n' dirty.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - beefy
   - type: Item
     storedRotation: -90
   - type: Food
@@ -13,9 +52,213 @@
   - type: Sprite
     sprite: Objects/Consumable/Food/taco.rsi
     layers:
-    - state: tacoshell_back
-    - map: ["foodSequenceLayers"]
-    - state: tacoshell_forward
+    - state: beef_taco
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+
+  - type: FoodSequenceStartPoint
+    key: taco
+    maxLayers: 3
+    startPosition: -0.2, 0
+    offset: 0.1, 0
+    minLayerOffset: 0, 0
+    maxLayerOffset: 0, 0.05
+    nameGeneration: food-sequence-taco-gen
+    contentSeparator: ", "
+  - type: Appearance
+
+- type: entity
+  name: beef taco supreme
+  parent: FoodMealBase
+  id: FoodBeefTacoSupreme
+  description: A beef taco with a little more effort.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - meaty
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects\Consumable\Food\taco.rsi
+    layers:
+    - state: beef_taco_supreme
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+  - type: FoodSequenceStartPoint
+    key: taco
+    maxLayers: 3
+    startPosition: -0.2, 0
+    offset: 0.1, 0
+    minLayerOffset: 0, 0
+    maxLayerOffset: 0, 0.05
+    nameGeneration: food-sequence-taco-gen
+    contentSeparator: ", "
+  - type: Appearance
+
+- type: entity
+  name: chicken taco
+  parent: FoodMealBase
+  id: FoodChickenTaco
+  description: A chicken taco, quick'n' dirty.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - chicken
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: chicken_taco
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+  - type: FoodSequenceStartPoint
+    key: taco
+    maxLayers: 3
+    startPosition: -0.2, 0
+    offset: 0.1, 0
+    minLayerOffset: 0, 0
+    maxLayerOffset: 0, 0.05
+    nameGeneration: food-sequence-taco-gen
+    contentSeparator: ", "
+  - type: Appearance
+
+- type: entity
+  name: chicken taco
+  parent: FoodMealBase
+  id: FoodChickenTacoSupreme
+  description: A chicken taco with a little more effort.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - chicken
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: chicken_taco_supreme
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+  - type: FoodSequenceStartPoint
+    key: taco
+    maxLayers: 3
+    startPosition: -0.2, 0
+    offset: 0.1, 0
+    minLayerOffset: 0, 0
+    maxLayerOffset: 0, 0.05
+    nameGeneration: food-sequence-taco-gen
+    contentSeparator: ", "
+  - type: Appearance
+
+- type: entity
+  name: fish taco
+  parent: FoodMealBase
+  id: FoodFishTaco
+  description: A fish taco with a great flavour.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - fishy
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: fish_taco
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        canReact: false # Dont want cause reactions inside tacos after merging ingredients
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6.66
+  - type: FoodSequenceStartPoint
+    key: taco
+    maxLayers: 3
+    startPosition: -0.2, 0
+    offset: 0.1, 0
+    minLayerOffset: 0, 0
+    maxLayerOffset: 0, 0.05
+    nameGeneration: food-sequence-taco-gen
+    contentSeparator: ", "
+  - type: Appearance
+
+- type: entity
+  name: rat taco
+  parent: FoodMealBase
+  id: FoodRatTaco
+  description: A rat taco, "rattaco?", either way it's not just quick'n' dirty, it's REAL dirty.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - rat
+  - type: Item
+    storedRotation: -90
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: Objects/Consumable/Food/taco.rsi
+    layers:
+    - state: rat_taco
   - type: SolutionContainerManager
     solutions:
       food:

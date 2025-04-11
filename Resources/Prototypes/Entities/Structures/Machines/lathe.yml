@@ -1216,6 +1216,10 @@
     - BedsheetNT
     - BedsheetRainbow
     - BedsheetBrigmedic
+    - ClothingUniformMailCarrier
+    - ClothingUniformSkirtMailCarrier
+    - ClothingHeadMailCarrier
+    - ClothingOuterWinterCoatMail
   - type: EmagLatheRecipes
     emagStaticRecipes:
     # Clothing

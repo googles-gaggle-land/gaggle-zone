@@ -182,7 +182,7 @@
   id: LivestockSnake
   icon:
     sprite: Mobs/Animals/snake.rsi
-    state: snake
+    state: icon
   product: CrateNPCSnake
   cost: 3000
   category: cargoproduct-category-name-livestock
