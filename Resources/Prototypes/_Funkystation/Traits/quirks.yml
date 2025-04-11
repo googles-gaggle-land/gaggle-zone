@@ -101,13 +101,24 @@
         Heat: 1.1
 
 - type: trait
-  id: Singer
-  name: trait-singer
+  id: SingerTrait
+  name: trait-singer-name
   description: trait-singer-desc
   category: Quirks
   cost: 5 #feels right, it's just fun!
   components:
-  - type: ActionHarpyPlayMidi
+  - type: HarpySinger
+  - type: UserInterface
+    interfaces:
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface
+      enum.VoiceMaskUIKey.Key:
+        type: VoiceMaskBoundUserInterface
+      enum.HumanoidMarkingModifierKey.Key:
+        type: HumanoidMarkingModifierBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+
 
 
 - type: trait
