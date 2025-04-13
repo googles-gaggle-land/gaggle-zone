@@ -39,3 +39,9 @@
   name: Marty Robbins - El Paso
   path:
     path: /Audio/Jukebox/elpaso.ogg
+
+- type: jukebox #gaggle, WILL REMOVE IF ASKED
+  id: JingleJangle
+  name: Kay Kayser - [I Got Spurs That] Jingle, Jangle, Jingle
+  path:
+    path: /Audio/Jukebox/jingle_jangle.ogg
