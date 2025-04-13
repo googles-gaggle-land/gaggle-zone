@@ -244,7 +244,7 @@
     checkCanInteract: false
     icon: _DV/Interface/Actions/harpy_sing.png
     event: !type:OpenUiActionEvent
-      key: enum.InstrumentUiKey.Key
+      key: enum.InstrumentUiKey.Key #saveys!
 
 - type: entity
   id: ActionSyrinxChangeVoiceMask

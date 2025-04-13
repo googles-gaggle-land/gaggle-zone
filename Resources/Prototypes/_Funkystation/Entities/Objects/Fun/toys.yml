@@ -642,6 +642,101 @@
   - type: Speech
     speechVerb: Vulpkanin
 
+#woah
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieCassius
+  name: chemist felinid plushie
+  components:
+  - type: Sprite
+    state: plushie_cassius
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: Food
+    useSound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: Speech
+    speechVerb: Vulpkanin
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieGoodwin
+  name: musician felinid plushie
+  components:
+  - type: Sprite
+    state: plushie_goodwin
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow3.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow3.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow3.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow3.ogg
+  - type: Food
+    useSound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow3.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow3.ogg
+  - type: UseDelay
+    delay: 5
+  - type: Speech
+    speechVerb: Felinid
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieLucerne
+  name: bartender vulpkanin plushie
+  components:
+  - type: Sprite
+    state: plushie_lucerne
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: Food
+    useSound:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_DV/Voice/Vulpkanin/dog_bark1.ogg
+  - type: Speech
+    speechVerb: Vulpkanin
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieSneakyNoodle
+  name: assistant rodentia plushie
+  components:
+  - type: Sprite
+    state: plushie_sneakynoodle
+
 
 # stowaway toys (self insert ripoff :godo:)
 
