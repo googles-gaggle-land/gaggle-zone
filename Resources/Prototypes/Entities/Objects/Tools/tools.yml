@@ -398,6 +398,7 @@
     - VentPassive
     - MixerGas
     - Radiator
+    - BendedRadiator
     - SignalValve
     - CanisterPort
     - FilterGas

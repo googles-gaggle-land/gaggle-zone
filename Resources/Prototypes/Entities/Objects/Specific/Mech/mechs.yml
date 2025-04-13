@@ -154,6 +154,9 @@
     layers:
     - map: [ "enum.MechVisualLayers.Base" ]
       state: ripley
+    - map: ["enum.PaperLabelVisuals.Layer"]
+      sprite: Structures/Storage/Crates/labels.rsi
+      state: paper
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
