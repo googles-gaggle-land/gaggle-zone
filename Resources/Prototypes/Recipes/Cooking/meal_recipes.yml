@@ -2209,7 +2209,7 @@
 - type: microwaveMealRecipe
   id: RecipeBeefTaco
   name: beef taco recipe
-  result: FoodBeefTaco
+  result: FoodTacoBeef
   time: 10
   group: Breads
   solids:
@@ -2220,7 +2220,7 @@
 - type: microwaveMealRecipe
   id: RecipeBeefTacoSupreme
   name: beef taco supreme recipe
-  result: FoodBeefTacoSupreme
+  result: FoodTacoBeefSupreme
   time: 10
   group: Breads
   solids:

@@ -34,7 +34,7 @@
 - type: entity
   name: beef taco
   parent: FoodMealBase
-  id: FoodBeefTaco
+  id: FoodTacoBeef
   description: A beef taco, quick'n' dirty.
   components:
   - type: Tag
@@ -76,7 +76,7 @@
 - type: entity
   name: beef taco supreme
   parent: FoodMealBase
-  id: FoodBeefTacoSupreme
+  id: FoodTacoBeefSupreme
   description: A beef taco with a little more effort.
   components:
   - type: Tag
@@ -117,7 +117,7 @@
 - type: entity
   name: chicken taco
   parent: FoodMealBase
-  id: FoodChickenTaco
+  id: FoodTacoChicken
   description: A chicken taco, quick'n' dirty.
   components:
   - type: Tag
@@ -156,9 +156,9 @@
   - type: Appearance
 
 - type: entity
-  name: chicken taco
+  name: chicken taco supreme
   parent: FoodMealBase
-  id: FoodChickenTacoSupreme
+  id: FoodTacoChickenSupreme
   description: A chicken taco with a little more effort.
   components:
   - type: Tag
@@ -199,7 +199,7 @@
 - type: entity
   name: fish taco
   parent: FoodMealBase
-  id: FoodFishTaco
+  id: FoodTacoFish
   description: A fish taco with a great flavour.
   components:
   - type: Tag
@@ -240,7 +240,7 @@
 - type: entity
   name: rat taco
   parent: FoodMealBase
-  id: FoodRatTaco
+  id: FoodTacoRat
   description: A rat taco, "rattaco?", either way it's not just quick'n' dirty, it's REAL dirty.
   components:
   - type: Tag
