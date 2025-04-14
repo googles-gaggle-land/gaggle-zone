@@ -1,0 +1,8 @@
+# Attempted to keep the files in alphabetical order so its easier to audit.
+# Finding individual authors is an unfeasible task. If you can reference the author please do so.
+
+  
+- files: ["dark.png", "darkchunky.png", "darkpattern.png", "darkplain.png", "light.png", "lightdiag.png", "lighthatched.png", "lightpattern.png", "lightplain.png"]
+  license: "AGPL-3.0"
+  copyright: "Shiptest commit 4744768b3098b1a10ad60ed4fbeb4f14ba4d6fe8"
+  source: "https://github.com/shiptest-ss13/Shiptest"

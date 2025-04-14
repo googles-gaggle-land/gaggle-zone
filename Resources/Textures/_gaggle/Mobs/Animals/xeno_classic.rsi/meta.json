@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "license": "AGPL-3.0",
+  "copyright": "Taken from /VG/Station, commit 9261eb51a73cc1ab34a374fd3a7adaadc750e6da https://github.com/vgstation-coders/vgstation13",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "standing",
+      "directions": 4
+    },
+    {
+      "name": "unconscious"
+    },
+    {
+      "name": "dead"
+    }
+  ]
+}

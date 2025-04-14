@@ -310,6 +310,22 @@
   - GaggleExtraClothesBelt
   - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
+  
+- type: roleLoadout
+  id: JobShaftMiner
+  groups:
+  - GroupTankHarness
+  - SalvageSpecialistBackpack
+  - SalvageSpecialistOuterClothing
+  - SalvageSpecialistShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
+  - GroupSpeciesBreathTool
 
 # Engineering
 - type: roleLoadout

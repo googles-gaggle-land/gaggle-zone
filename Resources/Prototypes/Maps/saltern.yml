@@ -4,7 +4,6 @@
   mapPath: /Maps/_Funkystation/saltern.yml # Funkystation - Robotics(Based on Goob Variant)
   minPlayers: 0
   maxPlayers: 35
-  fallback: true
   stations:
     Saltern:
       stationProto: StandardNanotrasenStation

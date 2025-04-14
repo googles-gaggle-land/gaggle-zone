@@ -5,9 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/reinforced_window.rsi
   - type: Icon
-    sprite: Structures/Windows/reinforced_window.rsi
+    sprite: _gaggle/Structures/Windows/Shiptest/reinforced_window.rsi
   - type: Repairable
     fuelCost: 10
     doAfterDelay: 2
@@ -124,42 +124,3 @@
     mode: SnapgridCenter
     snap:
     - Window
-  components:
-  - type: Sprite
-    drawdepth: WallTops
-    sprite: Structures/Windows/reinforced_window_diagonal.rsi
-    state: state0
-  - type: Tag
-    tags:
-    - Diagonal
-  - type: IconSmooth
-    mode: Diagonal
-    key: windows
-    base: state
-  - type: Icon
-    sprite: Structures/Windows/reinforced_window_diagonal.rsi
-    state: state0
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PolygonShape
-            vertices:
-            - "-0.5,-0.5"
-            - "0.5,0.5"
-            - "0.5,-0.5"
-        mask:
-        - FullTileMask
-        layer:
-        - GlassLayer
-  - type: Airtight
-    noAirWhenFullyAirBlocked: false
-    airBlockedDirection:
-    - South
-    - East
-  - type: DamageVisuals
-    damageOverlay:
-      sprite: Structures/Windows/cracks_diagonal.rsi
-  - type: Construction
-    graph: WindowDiagonal
-    node: reinforcedWindowDiagonal

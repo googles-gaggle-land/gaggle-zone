@@ -58,6 +58,13 @@
           mask:
             - ItemMask
     - type: Rotatable
+    - type: PhysicalComposition #Goobstation - Recycle update
+      materialComposition:
+        Steel: 12
+        Wood: 25
+    - type: Tag
+      tags:
+        - DroneUsable # Goobstation
 
 - type: entity
   name: mousetrap
