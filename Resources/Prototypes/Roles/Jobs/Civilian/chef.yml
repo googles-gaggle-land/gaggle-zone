@@ -16,7 +16,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: ProfessionalChef #Nyano - End Summary.
+    #- type: ProfessionalChef #Nyano - End Summary, game seems to be yelling about this
     - type: GrantCqc # Goobstation - Martial Arts
       isBlocked: true # Goobstation - Martial Arts
 
