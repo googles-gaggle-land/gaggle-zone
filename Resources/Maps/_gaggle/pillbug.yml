@@ -4,7 +4,7 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/14/2025 20:53:02
+  time: 04/14/2025 21:22:43
   entityCount: 6452
 maps:
 - 1
@@ -1746,7 +1746,7 @@ entities:
       pos: -23.5,-11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -6879.283
+      secondsUntilStateChange: -8635.123
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1758,7 +1758,7 @@ entities:
       pos: -29.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -890.85657
+      secondsUntilStateChange: -2646.6963
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1769,7 +1769,7 @@ entities:
       pos: -29.5,-30.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -892.32324
+      secondsUntilStateChange: -2648.163
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2425,8 +2425,6 @@ entities:
       pos: -17.5,-25.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 3203
 - proto: AltarToolbox
@@ -25353,7 +25351,7 @@ entities:
       parent: 2
 - proto: LockerCaptainFilledNoLaser
   entities:
-  - uid: 3948
+  - uid: 4052
     components:
     - type: Transform
       pos: 4.5,4.5
@@ -26911,7 +26909,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 17.5,4.5
       parent: 2
-  - uid: 4052
+  - uid: 3948
     components:
     - type: Transform
       rot: 3.141592653589793 rad
