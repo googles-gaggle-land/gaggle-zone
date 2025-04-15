@@ -64,6 +64,8 @@
         - StationAi
       mindRoles:
       - MindRoleMalfunction
+      
+- type: entity
   id: Obsessed
   parent: BaseGameRule
   components:
