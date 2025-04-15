@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "spike"
+    },
+    {
+      "name": "spikebloody"
+    },
+    {
+      "name": "rolling_pin"
+    },
+    {
+      "name": "spoon"
+    },
+    {
+      "name": "fork"
+    },
+    {
+      "name": "knife"
+    },
+    {
+      "name": "cleaver"
+    },
+    {
+      "name": "mw"
+    },
+    {
+      "name": "mwo"
+    },
+    {
+      "name": "mw1"
+    },
+    {
+      "name": "mw0"
+    },
+    {
+      "name": "mwb"
+    },
+    {
+      "name": "mwbloody"
+    },
+    {
+      "name": "mwbloodyo"
+    },
+    {
+      "name": "mwbloody1"
+    },
+    {
+      "name": "mwbloody0"
+    },
+    {
+      "name": "grinder"
+    },
+    {
+      "name": "grbloody"
+    },
+    {
+      "name": "grjam"
+    },
+    {
+      "name": "gruse"
+    },
+    {
+      "name": "gridle"
+    },
+    {
+      "name": "fridge"
+    },
+    {
+      "name": "fridgeopen"
+    },
+    {
+      "name": "fridgeg"
+    },
+    {
+      "name": "fridger"
+    },
+    {
+      "name": "glass_empty"
+    },
+    {
+      "name": "glass_clear"
+    },
+    {
+      "name": "glass_white"
+    },
+    {
+      "name": "glass_yellow"
+    },
+    {
+      "name": "glass_brown"
+    }
+  ]
+}

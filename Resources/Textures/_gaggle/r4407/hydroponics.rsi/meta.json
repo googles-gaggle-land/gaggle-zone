@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "hydrotray"
+    },
+    {
+      "name": "tomatoes1"
+    },
+    {
+      "name": "tomatoes2"
+    },
+    {
+      "name": "tomatoes3"
+    },
+    {
+      "name": "tomatoes4"
+    },
+    {
+      "name": "tomatoes5"
+    },
+    {
+      "name": "tomatoes6"
+    },
+    {
+      "name": "grapes1"
+    },
+    {
+      "name": "grapes2"
+    },
+    {
+      "name": "grapes3"
+    },
+    {
+      "name": "grapes4"
+    },
+    {
+      "name": "grapes5"
+    },
+    {
+      "name": "grapes6"
+    }
+  ]
+}
