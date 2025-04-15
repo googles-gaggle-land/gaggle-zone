@@ -2,10 +2,12 @@
   name: terror spider
   parent: [ SimpleMobBase, MobCombat ]
   id: MobTerrorSpider
-  description: a deadly hybrid of a giant spider and xenomorph.
+  description: A deadly hybrid of a giant spider and xenomorph. You should probably run... Or shoot it.
   abstract: true
   components:
   - type: NightVision
+  - type: Cocooner
+  - type: BloodSucker
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -261,6 +263,7 @@
 
 - type: entity
   name: princess of terror
+  description: This is the thing that makes the terror spiders. You should probably kill it.
   parent: MobTerrorSpider
   id: MobTerrorPrincess
   components:
