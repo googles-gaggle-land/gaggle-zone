@@ -2,11 +2,13 @@
   id: RoundEnd
   files:
   - /Audio/Announcements/RoundEnd/apc_destroyed.ogg
-  - /Audio/Announcements/RoundEnd/disappointed.ogg
+  - /Audio/Announcements/RoundEnd/NewRound.ogg
   - /Audio/Announcements/RoundEnd/notevenpaidforthis.ogg
-  - /Audio/Announcements/RoundEnd/stalemate.ogg
+  - /Audio/Announcements/RoundEnd/NewRound4.ogg
+  - /Audio/Announcements/RoundEnd/amazingmission.ogg
+  - /Audio/Announcements/RoundEnd/missioncompleteandhow.ogg
 
 - type: soundCollection
   id: PowerOn
   files:
-  - /Audio/Announcements/power_on.ogg
+  - /Audio/Announcements/attention.ogg

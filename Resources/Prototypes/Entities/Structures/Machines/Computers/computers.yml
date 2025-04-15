@@ -93,7 +93,7 @@
 - type: entity
   parent: BaseComputer
   id: ComputerEmergencyShuttle
-  name: emergency shuttle console
+  name: escape shuttle console
   description: Handles authorization to early launch the shuttle.
   components:
   - type: AccessReader
