@@ -303,27 +303,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
 
         while (query.MoveNext(out var update))
         {
-            var newLaws = lawset;
-
-            if (_mind.TryGetMind(update, out var _, out var mind))
-            {
-                var ev = new GetSiliconLawsEvent(update);
-
-                foreach (var role in mind.MindRoles)
-                {
-                    RaiseLocalEvent(role, ref ev);
-
-                    if (ev.Handled)
-                        break;
-                }
-
-                foreach (var law in ev.PriorityLaws)
-                {
-                    newLaws.Add(law);
-                }
-            }
-
-            SetLaws(newLaws, update, provider.LawUploadSound);
+            SetLaws(lawset, update, provider.LawUploadSound);
         }
     }
 }
