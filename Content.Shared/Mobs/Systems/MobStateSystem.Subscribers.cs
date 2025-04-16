@@ -16,6 +16,7 @@ using Content.Shared.Speech;
 using Content.Shared.Standing;
 using Content.Shared.Strip.Components;
 using Content.Shared.Throwing;
+using Content.Shared.Wieldable;
 
 namespace Content.Shared.Mobs.Systems;
 
@@ -45,6 +46,7 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
+        SubscribeLocalEvent<MobStateComponent, WieldAttemptEvent>(OnWieldAttempt);
 
         SubscribeLocalEvent<MobStateComponent, UnbuckleAttemptEvent>(OnUnbuckleAttempt);
     }
@@ -247,6 +249,20 @@ public partial class MobStateSystem
     {
         args.Cancelled = true;
     }
+
+    private void OnWieldAttempt(EntityUid user, MobStateComponent component, WieldAttemptEvent args)
+    {
+        switch (component.CurrentState)
+        {
+            case MobState.Dead:
+            case MobState.Critical:
+            case MobState.SoftCritical:
+            case MobState.HardCritical:
+                args.Cancel(); // can't call CheckActSoftCrit because it's not a `CancellableEntityEventArgs` for some reason. why literally why
+                break;
+        }
+    }
+
 
     #endregion
 }
