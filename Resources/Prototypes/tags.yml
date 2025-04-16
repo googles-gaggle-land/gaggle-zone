@@ -160,6 +160,12 @@
   id: Bread
 
 - type: Tag
+  id: BreadEmergency
+
+- type: Tag
+  id: BreathMask
+
+- type: Tag
   id: Briefcase
 
 - type: Tag
@@ -507,6 +513,15 @@
   id: EmagImmune
 
 - type: Tag
+  id: EmergencyMedipen
+
+- type: Tag
+  id: EmergencyNitrogenTank
+
+- type: Tag
+  id: EmergencyOxygenTank
+
+- type: Tag
   id: EmitterBolt
 
 - type: Tag
@@ -514,6 +529,9 @@
 
 - type: Tag
   id: ExplosivePassable
+
+- type: Tag
+  id: ExtendedEmergencyOxygenTank
 
 - type: Tag # goob edit
   id: Eyes
@@ -1160,6 +1178,9 @@
   id: SecurityHelmet
 
 - type: Tag
+  id: SecurityBreathMask
+
+- type: Tag
   id: SecwayKeys
 
 - type: Tag
@@ -1282,6 +1303,9 @@
   id: Syndicate
 
 - type: Tag
+  id: SyndicateBreathMask
+
+- type: Tag
   id: SyndicateSegwayKeys
 
 - type: Tag
@@ -1289,6 +1313,9 @@
 
 - type: Tag
   id: SyringeGunAmmo
+
+- type: Tag
+  id: SpaceMedipen
 
 - type: Tag
   id: Spellbook
