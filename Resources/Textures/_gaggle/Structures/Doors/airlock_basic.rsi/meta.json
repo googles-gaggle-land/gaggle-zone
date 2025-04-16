@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/2b969adc2dfd3e9621bf3597c5cbffeb3ac8c9f0/icons/obj/doors/doorint.dmi",
+    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/2b969adc2dfd3e9621bf3597c5cbffeb3ac8c9f0/icons/obj/doors/Dooreng.dmi",
     "states": [
         {
             "name": "closed",
@@ -18,6 +18,14 @@
         },
         {
             "name": "closed_unlit",
+            "directions": 1
+        },
+        {
+            "name": "emergency_unlit",
+            "directions": 1
+        },
+        {
+            "name": "bolted_unlit",
             "directions": 1
         },
         {
@@ -76,13 +84,13 @@
             "delays": [
                 [
                     0.2,
+                    0.2,
                     0.1,
                     0.1,
                     0.1,
                     0.1,
                     0.1,
-                    0.1,
-                    0.4
+                    0.3
                 ]
             ]
         },

@@ -9,7 +9,6 @@
       - id: WeaponEnergyShotgun
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
-      - id: ClothingHandsGlovesKravMaga # Goobstation - Martial Arts
       - id: Flash
       - id: ClothingEyesGlassesSecurity
       - id: ClothingHandsGlovesCombat
@@ -23,6 +22,7 @@
       - id: NitrogenTankFilled
       - id: HoloprojectorSecurity
       - id: BookSpaceLaw
+      - id: ClothingNeckShockCollar
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
@@ -39,7 +39,6 @@
       - id: WeaponEnergyShotgun # Goobstation
       - id: WeaponDisabler
       - id: ClothingBeltSecurityFilled
-      - id: ClothingHandsGlovesKravMaga # Goobstation - Martial Arts
       - id: Flash
       - id: ClothingEyesGlassesSecurity
       - id: ClothingHandsGlovesCombat
@@ -50,6 +49,7 @@
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
       - id: BookSpaceLaw
+      - id: ClothingNeckShockCollar
       - id: ClothingBackpackElectropack
         amount: 2
       - id: RemoteSignaller
@@ -71,7 +71,6 @@
       - id: ClothingHeadHelmetBasic
       - id: ClothingOuterArmorBasic
       - id: ClothingBeltSecurityFilled
-      - id: ClothingBeltCorporateJudo # Goobstation - Martial Arts
       - id: Flash
         prob: 0.5
       - id: ClothingEyesGlassesSecurity

@@ -1,0 +1,29 @@
+- type: job
+  id: ShaftMiner
+  name: job-name-shaftminer
+  description: job-description-shaftminer
+  playTimeTracker: JobShaftMiner
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 3600 #1 hr
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
+  icon: "JobIconShaftMiner"
+  startingGear: ShaftMinerGear
+  supervisors: job-supervisors-qm
+  access:
+  - Cargo
+  - Salvage
+  - Maintenance
+  - External
+
+- type: startingGear
+  id: ShaftMinerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitExplorerSuit
+    id: MinerPDA
+    ears: ClothingHeadsetMining
+  #storage:
+    #back:
+    #- Stuff

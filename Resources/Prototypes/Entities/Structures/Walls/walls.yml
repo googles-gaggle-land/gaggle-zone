@@ -493,40 +493,6 @@
     mode: SnapgridCenter
     snap:
     - Wall
-  components:
-  - type: Sprite
-    drawdepth: Walls
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
-    state: state0
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 2000
-      behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-        - !type:PlaySoundBehavior
-          sound:
-            collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
 
 - type: entity
   id: WallPlastitaniumDiagonalIndestructible
@@ -537,45 +503,6 @@
     mode: SnapgridCenter
     snap:
     - Wall
-  components:
-  - type: Transform
-    anchored: true
-  - type: Clickable
-  - type: Tag
-    tags:
-    - Wall
-    - Diagonal
-  - type: Sprite
-    drawdepth: Walls
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
-    state: state0
-  - type: Physics
-    bodyType: Static
-  - type: Airtight
-    noAirWhenFullyAirBlocked: false
-    airBlockedDirection:
-    - South
-    - East
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PolygonShape
-            vertices:
-            - "-0.5,-0.5"
-            - "0.5,0.5"
-            - "0.5,-0.5"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
 
 - type: entity
   parent: BaseWall
@@ -683,21 +610,6 @@
     mode: SnapgridCenter
     snap:
     - Wall
-  components:
-  - type: Tag
-    tags:
-    - Diagonal
-  - type: Sprite
-    drawdepth: Walls
-    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: _gaggle/Structures/Walls/Shiptest/reinforced_diagonal.rsi
-    state: state0
 
 # Riveting
 - type: entity
@@ -814,6 +726,7 @@
 
 #shuttle walls
 - type: entity
+  parent: WallShuttle
   id: WallShuttleDiagonal
   name: shuttle wall
   suffix: Diagonal
@@ -822,76 +735,6 @@
     mode: SnapgridCenter
     snap:
     - Wall
-  components:
-  - type: Transform
-    anchored: true
-  - type: Clickable
-  - type: Tag
-    tags:
-    - Wall
-    - Diagonal
-  - type: Sprite
-    drawdepth: Walls
-    sprite: _gaggle/Structures/Walls/Shiptest/shuttle_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: _gaggle/Structures/Walls/Shiptest/shuttle_diagonal.rsi
-    state: state0
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallic
-  - type: Physics
-    bodyType: Static
-  - type: Reflect
-    reflectProb: 1
-  - type: Pullable
-  - type: Airtight
-    noAirWhenFullyAirBlocked: false
-    airBlockedDirection:
-    - South
-    - East
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PolygonShape
-            vertices:
-            - "-0.5,-0.5"
-            - "0.5,0.5"
-            - "0.5,-0.5"
-        mask:
-        - FullTileMask
-        layer:
-        - WallLayer
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 600
-      behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-        - !type:PlaySoundBehavior
-          sound:
-            collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 300
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: Construction
-    graph: Girder
-    node: diagonalshuttleWall
 
 - type: entity
   parent: BaseWall
@@ -1050,22 +893,6 @@
   id: WallSolidDiagonal
   name: solid wall
   suffix: diagonal
-  placement:
-    mode: SnapgridCenter
-    snap:
-    - Wall
-  components:
-  - type: Sprite
-    drawdepth: Walls
-    sprite: _gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
-    state: state0
-  - type: IconSmooth
-    mode: Diagonal
-    key: walls
-    base: state
-  - type: Icon
-    sprite: _gaggle/Structures/Walls/Shiptest/solid_diagonal.rsi
-    state: state0
 
 - type: entity
   parent: WallSolid

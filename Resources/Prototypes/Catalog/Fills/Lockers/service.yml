@@ -120,6 +120,7 @@
   - type: StorageFill
     contents:
       - id: ClothingUniformOveralls
+      - id: ClothingUniformOverallsRed
       - id: ClothingHeadHatTrucker
         prob: 0.3
       - id: GatfruitSeeds

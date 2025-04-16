@@ -322,6 +322,8 @@
         orGroup: GiftPool
       - id: ClothingUniformOveralls
         orGroup: GiftPool
+      - id: ClothingUniformOverallsRed
+        orGroup: GiftPool
       - id: ClothingUniformJumpskirtDetectiveGrey
         orGroup: GiftPool
       - id: ClothingUniformJumpskirtColorMaroon
@@ -370,10 +372,10 @@
         orGroup: GiftPool
       - id: RGBStaff
         orGroup: GiftPool
-      - id: PlushieDawn
-        orGroup: GiftPool
-      - id: PlushieCirno
-        orGroup: GiftPool
+      #- id: PlushieDawn
+      #  orGroup: GiftPool
+      #- id: PlushieCirno
+      #  orGroup: GiftPool
     sound:
       path: /Audio/Effects/unwrap.ogg
 

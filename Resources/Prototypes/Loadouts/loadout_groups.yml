@@ -10,7 +10,7 @@
   - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
-  - PlushieCirno
+  #- PlushieCirno
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -33,6 +33,7 @@
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
+  - ClothingNeckGagglePin #gaggle
   - CardBoxBlack # goobstation
   - CardBoxNanotrasen # goobstation
   - TowelColorBlack
@@ -52,6 +53,29 @@
   - TowelColorSilver
   - TowelColorWhite
   - TowelColorYellow
+  # gaggle hats
+  # Party Hats
+  - ClothingHeadHatPartyRed
+  - ClothingHeadHatPartyGreen
+  - ClothingHeadHatPartyBlue
+  - ClothingHeadHatPartyYellow
+  # Top hats
+  - ClothingHeadHatBeaverHat
+  - ClothingHeadHatMagician
+  - ClothingHeadHatTophat
+  # Joshua's Beloved (cowboy hats)
+  - ClothingHeadHatCowboyBlack
+  - ClothingHeadHatCowboyBrown
+  - ClothingHeadHatCowboyGrey
+  - ClothingHeadHatCowboyRed
+  - ClothingHeadHatCowboyWhite
+  - ClothingHeadHatCowboyBountyHunter
+  - ClothingHeadAreopagite
+  # Miscellaneous
+  - ClothingHeadHatWitch1
+  - ClothingHeadHatPirate
+  - ClothingHeadPaperSack
+  - ClothingHeadPaperSackSmile
 
 - type: loadoutGroup
   id: Glasses
@@ -245,6 +269,7 @@
   - BartenderJumpsuit
   - BartenderJumpskirt
   - BartenderJumpsuitPurple
+  - BartenderJumpsuitGrey # gaggle
   - ClothingUniformNightclubSuit #imp
   - ClothingUniformNightclubSuitSkirt #imp
   - ClothingUniformSeniorBartender #imp
@@ -314,6 +339,8 @@
   - LawyerJumpskirtRed
   - LawyerJumpsuitGood
   - LawyerJumpskirtGood
+  - LawyerGalaxyRed # gaggle
+  - LawyerGalaxyBlue # gaggle
   - ClothingUniformCreamSuit #imp
   - ClothingUniformCreamSuitSkirt #imp
 
@@ -673,6 +700,8 @@
   loadouts:
   - CargoTechnicianHead
   - CargoTechnicianHeadMail # Goob/DeltaV - Mail
+  - CourierCap # gaggle
+  - CourierCapFlipped # gaggle
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit
@@ -682,6 +711,8 @@
   - CargoTechnicianJumpskirt
   - CargoTechnicianJumpsuitMail # Goob/DeltaV - Mail
   - CargoTechnicianJumpskirtMail # Goob/DeltaV - Mail
+  - CourierJumpsuit # gaggle
+  - CourierJumpskirt # gaggle
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -1088,6 +1119,8 @@
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
   - SecurityJumpskirtGrey
+  - SecurityFormalJumpsuit # gaggle
+  - SecuritySummerJumpsuit # gaggle
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
   - TrooperUniform
@@ -1247,9 +1280,14 @@
   - MedicalBeret
   - SeniorPhysicianBeret
   - MedicalHeadMirror
+  - PinkSurgeryCap # gaggle
   - BlueSurgeryCap
+  - CyanSurgeryCap # gaggle
   - GreenSurgeryCap
   - PurpleSurgeryCap
+  - BlackSurgeryCap # gaggle
+  - WhiteSurgeryCap # gaggle
+  - RainbowSurgeryCap # gaggle
   - NurseHat
 
 - type: loadoutGroup
@@ -1260,9 +1298,14 @@
   - MedicalDoctorJumpskirt
   - SeniorPhysicianJumpsuit
   - SeniorPhysicianJumpskirt
+  - MedicalPinkScrubs # gaggle
   - MedicalBlueScrubs
+  - MedicalCyanScrubs # gaggle
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  - MedicalBlackScrubs # gaggle
+  - MedicalWhiteScrubs # gaggle
+  - MedicalRainbowScrubs # gaggle
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1287,6 +1330,7 @@
   loadouts:
   - WhiteShoes
   - MedicalWinterBoots
+  - ShoesEnclosed
 
 - type: loadoutGroup
   id: MedicalDoctorPDA
@@ -1302,6 +1346,7 @@
   loadouts:
   - LatexGloves
   - NitrileGloves
+  - ChemistGloves
 
 - type: loadoutGroup
   id: MedicalMask
@@ -1323,6 +1368,7 @@
   loadouts:
   - ChemistJumpsuit
   - ChemistJumpskirt
+  - ChemistFormalShirt # gaggle
 
 - type: loadoutGroup
   id: ChemistOuterClothing

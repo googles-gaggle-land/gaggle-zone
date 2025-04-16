@@ -1,4 +1,9 @@
-- files: ["ion_storm.ogg", "announce.ogg", "attention.ogg", "intercept.ogg", "power_off.ogg", "power_on.ogg", "shuttle_dock.ogg", "shuttlecalled.ogg", "shuttlerecall.ogg", "welcome.ogg", "outbreak5.ogg", "outbreak7.ogg", "aliens.ogg", "meteors.ogg"]
+- files: ["ion_storm.ogg", "intercept.ogg", "power_off.ogg", "power_on.ogg", "welcome.ogg", "outbreak5.ogg", "outbreak7.ogg", "aliens.ogg", "meteors.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "Taken from monkestation"
   source: "https://github.com/Monkestation/Monkestation2.0/tree/ba6900310fb0a5739a64bb60763c088232f5d321"
+  
+- files: ["shuttle_dock.ogg", "shuttlecalled.ogg", "shuttlerecall.ogg", "announce.ogg", "attention.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from goonstation"
+  source: "https://github.com/goonstation/goonstation"

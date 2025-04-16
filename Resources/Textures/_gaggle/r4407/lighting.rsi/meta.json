@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tube1",
+      "directions": 4
+    },
+    {
+      "name": "tube0",
+      "directions": 4
+    },
+    {
+      "name": "tube-empty",
+      "directions": 4
+    },
+    {
+      "name": "tube-burned",
+      "directions": 4
+    },
+    {
+      "name": "tube-broken",
+      "directions": 4
+    },
+    {
+      "name": "bulb1",
+      "directions": 4
+    },
+    {
+      "name": "bulb0",
+      "directions": 4
+    },
+    {
+      "name": "bulb-broken",
+      "directions": 4
+    },
+    {
+      "name": "bulb-empty",
+      "directions": 4
+    },
+    {
+      "name": "bulb-burned",
+      "directions": 4
+    },
+    {
+      "name": "ltube"
+    },
+    {
+      "name": "ltube-burned"
+    },
+    {
+      "name": "ltube-broken"
+    },
+    {
+      "name": "lbulb"
+    },
+    {
+      "name": "lbulb-burned"
+    },
+    {
+      "name": "lbulb-broken"
+    },
+    {
+      "name": "lamp1"
+    },
+    {
+      "name": "lamp0"
+    },
+    {
+      "name": "lamp-burned"
+    },
+    {
+      "name": "lamp-broken"
+    },
+    {
+      "name": "lamp-empty"
+    },
+    {
+      "name": "green-empty"
+    },
+    {
+      "name": "green0"
+    },
+    {
+      "name": "green1"
+    },
+    {
+      "name": "green-burned"
+    },
+    {
+      "name": "green-broken"
+    }
+  ]
+}

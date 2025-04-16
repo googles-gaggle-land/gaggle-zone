@@ -52,7 +52,7 @@ holopad-general-disposals = General - Disposals
 holopad-general-eva = General - EVA Storage
 holopad-general-lounge = General - Lounge
 holopad-general-arcade = General - Arcade
-holopad-general-evac = General - Evac
+holopad-general-evac = General - Escape Shuttle
 holopad-general-arrivals = General - Arrivals
 
 # Command
@@ -126,7 +126,7 @@ holopad-security-lawyer = Security - Lawyer
 holopad-security-armory = Security - Armory
 holopad-security-locker-room = Security - Locker Room
 holopad-security-brig-med = Security - Brig Med
-holopad-security-evac-checkpoint = Security - Evac Checkpoint
+holopad-security-evac-checkpoint = Security - Escape Shuttle Checkpoint
 holopad-security-arrivals-checkpoint = Security - Arrivals Checkpoint
 
 # Service
@@ -158,7 +158,7 @@ holopad-station-bridge = Station - Bridge
 holopad-station-cargo-bay = Station - Cargo Bay
 
 # CentComm
-holopad-centcomm-evac = CentComm - Evacuation Shuttle
+holopad-centcomm-evac = CentComm - Escape Shuttle
 
 # Holopad actions
 activate-holopad-projector-verb = Activate holopad projector

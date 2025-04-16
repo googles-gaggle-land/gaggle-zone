@@ -10230,13 +10230,6 @@ entities:
     - type: Physics
       angularDamping: 0
       linearDamping: 0
-- proto: PlushieCirno
-  entities:
-  - uid: 2431
-    components:
-    - type: Transform
-      pos: -8.537612,-3.376341
-      parent: 1
 - proto: PlushieHolocarp
   entities:
   - uid: 2442

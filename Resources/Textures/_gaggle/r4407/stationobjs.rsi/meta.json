@@ -1,0 +1,694 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "injector",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "injector-p",
+      "directions": 4
+    },
+    {
+      "name": "igniter1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "igniter0"
+    },
+    {
+      "name": "template"
+    },
+    {
+      "name": "mass_driver",
+      "directions": 4
+    },
+    {
+      "name": "mass_driver1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "begin"
+    },
+    {
+      "name": "paper_bin1"
+    },
+    {
+      "name": "paper_binb",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "paper_bin"
+    },
+    {
+      "name": "morgue_temp"
+    },
+    {
+      "name": "morgue1old"
+    },
+    {
+      "name": "morgue2old"
+    },
+    {
+      "name": "morgue0old"
+    },
+    {
+      "name": "morguetOLD"
+    },
+    {
+      "name": "blank"
+    },
+    {
+      "name": "autolathe"
+    },
+    {
+      "name": "autolathef"
+    },
+    {
+      "name": "autolathe1"
+    },
+    {
+      "name": "autolathe_c",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "autolathe_o",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "barrier",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "sec_lock"
+    },
+    {
+      "name": "holo_console0"
+    },
+    {
+      "name": "holo_console1",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "hologram0"
+    },
+    {
+      "name": "hologram1",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "nuclearbomb1"
+    },
+    {
+      "name": "nuclearbomb2",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "nuclearbomb3",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "nuclearbomb0"
+    },
+    {
+      "name": "nuclearbombc",
+      "delays": [
+        [
+          1,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "doorctrl0"
+    },
+    {
+      "name": "doorctrl1",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "doorctrl-p"
+    },
+    {
+      "name": "gsensor1"
+    },
+    {
+      "name": "gsensor0"
+    },
+    {
+      "name": "coffin_closed"
+    },
+    {
+      "name": "coffin_opened"
+    },
+    {
+      "name": "premium_coffin_closed"
+    },
+    {
+      "name": "premium_coffin_opened"
+    },
+    {
+      "name": "filter_control",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "filter_control1",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "filter_control0",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "filter_control-nopower"
+    },
+    {
+      "name": "filter_control-o2"
+    },
+    {
+      "name": "filter_control-n2"
+    },
+    {
+      "name": "filter_control-co2"
+    },
+    {
+      "name": "filter_control-tox"
+    },
+    {
+      "name": "filter_control10"
+    },
+    {
+      "name": "filter_control00"
+    },
+    {
+      "name": "filter_control-unlocked",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "filter_control-wirecut",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "portalB",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "portal1B"
+    },
+    {
+      "name": "tele1",
+      "delays": [
+        [
+          0.1,
+          0.4,
+          0.1,
+          0.2,
+          0.2,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "tele0"
+    },
+    {
+      "name": "controller",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "controller-p"
+    },
+    {
+      "name": "trashcan"
+    },
+    {
+      "name": "trashcan1"
+    },
+    {
+      "name": "trashmelt",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "telescreen"
+    },
+    {
+      "name": "crematold"
+    },
+    {
+      "name": "crema1old"
+    },
+    {
+      "name": "crema2old"
+    },
+    {
+      "name": "crema0old"
+    },
+    {
+      "name": "mflash1",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mflash_flash",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mflash1-p"
+    },
+    {
+      "name": "wooden_tv_unpowered"
+    },
+    {
+      "name": "wooden_tv"
+    },
+    {
+      "name": "wooden_tv_broken"
+    },
+    {
+      "name": "pflash1"
+    },
+    {
+      "name": "pflash_flash",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "pflash1-p"
+    },
+    {
+      "name": "pflash-s"
+    },
+    {
+      "name": "nboard00"
+    },
+    {
+      "name": "nboard01"
+    },
+    {
+      "name": "nboard02"
+    },
+    {
+      "name": "nboard03"
+    },
+    {
+      "name": "nboard04"
+    },
+    {
+      "name": "nboard05"
+    },
+    {
+      "name": "deskclutter"
+    },
+    {
+      "name": "plasticflaps"
+    },
+    {
+      "name": "morgue1"
+    },
+    {
+      "name": "morgue0"
+    },
+    {
+      "name": "morguet"
+    },
+    {
+      "name": "crema1"
+    },
+    {
+      "name": "crema2"
+    },
+    {
+      "name": "crema0"
+    },
+    {
+      "name": "cremat"
+    },
+    {
+      "name": "crema_active"
+    },
+    {
+      "name": "morgue2"
+    },
+    {
+      "name": "migniter"
+    },
+    {
+      "name": "migniter-p"
+    },
+    {
+      "name": "migniter-d"
+    },
+    {
+      "name": "migniter-b"
+    },
+    {
+      "name": "migniter-spark",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "portal",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "portal1"
+    },
+    {
+      "name": "recharger0",
+      "delays": [
+        [
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "recharger1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "recharger2",
+      "delays": [
+        [
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "glassbox0"
+    },
+    {
+      "name": "glassbox1"
+    },
+    {
+      "name": "glassboxb1"
+    },
+    {
+      "name": "glassboxb0"
+    },
+    {
+      "name": "doortimer0"
+    },
+    {
+      "name": "doortimer2",
+      "delays": [
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "doortimer-p"
+    },
+    {
+      "name": "doortimer1",
+      "delays": [
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "doortimer-b"
+    }
+  ]
+}

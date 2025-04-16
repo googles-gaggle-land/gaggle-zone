@@ -6,9 +6,9 @@ comms-console-menu-announcement-button-tooltip = Send your message as a station-
 comms-console-menu-broadcast-button = Broadcast
 comms-console-menu-broadcast-button-tooltip = Broadcast your message to wall-mounted screens around the station. Note: They fit only ten characters!
 comms-console-menu-alert-level-button-tooltip = Change the station alert level. Applies immediately on selecting.
-comms-console-menu-call-shuttle = Call emergency shuttle
-comms-console-menu-recall-shuttle = Recall emergency shuttle
-comms-console-menu-emergency-shuttle-button-tooltip = Calls or recalls the emergency shuttle. You can only recall when there's enough time left.
+comms-console-menu-call-shuttle = Call escape shuttle
+comms-console-menu-recall-shuttle = Recall escape shuttle
+comms-console-menu-emergency-shuttle-button-tooltip = Calls or recalls the escape shuttle. You can only recall when there's enough time left.
 comms-console-menu-time-remaining = Time remaining: {$time}
 
 # Popup

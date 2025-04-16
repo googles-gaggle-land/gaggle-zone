@@ -63,6 +63,19 @@
       - MobCorgiMouse
 
 - type: entity
+  name: Argocyte Cookie Spawner
+  id: SpawnMobArgocyteCookie
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobArgocytePassiveCookie
+
+- type: entity
   name: Possum Morty Spawner
   id: SpawnMobPossumMorty
   parent: MarkerBase

@@ -50,6 +50,64 @@
   - type: Climbing
   - type: NameIdentifier
     group: GenericNumber
+    
+- type: entity
+  save: false
+  parent: [ SimpleMobBase, StripableInventoryBase ]
+  id: BaseMobArgocytePassive
+  suffix: AI
+  description: A not-so-dangerous alien found on exoplanet colonies, known for their propensity for munching on ruins.
+  abstract: true
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: HTN
+    rootTask:
+      task: RuminantHostileCompound
+  - type: Grammar
+    attributes:
+      gender: epicene
+  - type: Sprite
+    sprite: Mobs/Aliens/Argocyte/argocyte_common.rsi
+  - type: SolutionContainerManager
+  - type: ReplacementAccent
+    accent: xeno
+  - type: Bloodstream
+    bloodReagent: FerrochromicAcid
+    bloodMaxVolume: 75 #we don't want the map to become pools of blood
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: Insulated
+  - type: CombatMode
+  - type: MeleeWeapon
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Slash: 5
+  - type: Body
+    prototype: Animal
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+    damage:
+      types:
+        Heat: 9
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: Climbing
+  - type: NameIdentifier
+    group: GenericNumber
 
 - type: entity
   parent: BaseMobArgocyte

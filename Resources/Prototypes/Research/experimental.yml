@@ -12,6 +12,7 @@
   recipeUnlocks:
   - ProximitySensor
   - ExosuitFabricatorMachineCircuitboard
+  - Drone # Goobstation
 
 - type: technology
   id: BasicAnomalousResearch

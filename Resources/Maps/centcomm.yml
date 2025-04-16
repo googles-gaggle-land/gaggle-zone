@@ -11427,13 +11427,6 @@ entities:
     - type: Transform
       pos: -4.460025,12.39564
       parent: 1
-- proto: PlushieCirno
-  entities:
-  - uid: 1786
-    components:
-    - type: Transform
-      pos: -6.5009766,9.487164
-      parent: 1
 - proto: PlushieCynsKatyns
   entities:
   - uid: 1787
@@ -11444,13 +11437,6 @@ entities:
     - type: Physics
       angularDamping: 0
       linearDamping: 0
-- proto: PlushieDawn
-  entities:
-  - uid: 1788
-    components:
-    - type: Transform
-      pos: -38.500492,6.4525943
-      parent: 1
 - proto: PlushieFelixKay
   entities:
   - uid: 1789

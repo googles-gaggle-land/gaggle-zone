@@ -23,6 +23,7 @@
       - id: BookSpaceEncyclopedia
       - id: BookSpaceLaw
       - id: BookTheBookOfControl
+      - id: BookCosmicCult
     # Handwritten books
     - !type:GroupSelector
       rolls: !type:RangeNumberSelector
@@ -48,6 +49,7 @@
       - id: BookNames
       - id: BookNarsieLegend
       - id: BookPossum
+      - id: BookArgocyte
       - id: BookRufus
       - id: BookSlothClownMMD
       - id: BookSlothClownPranks
@@ -58,13 +60,6 @@
       - id: BookTruth
       - id: BookWatched
       - id: BookWorld
-    # Impstation begin
-    - !type:GroupSelector
-      rolls: !type:RangeNumberSelector
-        range: 0, 2
-      children:
-      - id: BookCosmicCult
-    # Impstation end
 
 - type: entity
   id: BookshelfFilled

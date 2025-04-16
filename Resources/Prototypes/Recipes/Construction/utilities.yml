@@ -373,7 +373,7 @@
   startNode: start
   targetNode: sensor
   category: construction-category-structures
-  description: Reports on the status of the gas within the attached pipe network. 
+  description: Reports on the status of the gas within the attached pipe network.
   icon:
     sprite: Structures/Piping/Atmospherics/gas_pipe_sensor.rsi
     state: icon
@@ -699,8 +699,8 @@
 
 - type: construction
   id: HeatExchangerBend
-  name: radiator bend
   description: Transfers heat between the pipe and its surroundings.
+  name: bended radiator
   graph: GasBinary
   startNode: start
   targetNode: bendradiator

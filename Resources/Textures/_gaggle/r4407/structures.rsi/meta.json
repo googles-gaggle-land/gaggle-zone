@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "girder"
+    },
+    {
+      "name": "displaced"
+    },
+    {
+      "name": "reinforced"
+    },
+    {
+      "name": "grille"
+    },
+    {
+      "name": "brokengrille"
+    },
+    {
+      "name": "lattice"
+    },
+    {
+      "name": "window",
+      "directions": 8
+    },
+    {
+      "name": "rwindow",
+      "directions": 8
+    },
+    {
+      "name": "unwall",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ungirder",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "unr_girder",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "r_girder"
+    },
+    {
+      "name": "tabledir",
+      "directions": 8
+    },
+    {
+      "name": "table"
+    },
+    {
+      "name": "woodentable",
+      "directions": 8
+    },
+    {
+      "name": "reinf_table"
+    },
+    {
+      "name": "reinf_tabledir",
+      "directions": 8
+    }
+  ]
+}

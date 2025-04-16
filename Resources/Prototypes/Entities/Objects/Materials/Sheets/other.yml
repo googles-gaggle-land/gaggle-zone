@@ -12,6 +12,7 @@
   - type: Tag
     tags:
     - Sheet
+    - DroneUsable # Goobstation
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -142,6 +143,7 @@
     tags:
     - Plastic
     - Sheet
+    - DroneUsable # Goobstation
   - type: Material
   - type: PhysicalComposition
     materialComposition:
@@ -266,6 +268,7 @@
     - type: Tag
       tags:
       - Sheet
+      - DroneUsable # Goobstation
     - type: Material
     - type: PhysicalComposition
       materialComposition:

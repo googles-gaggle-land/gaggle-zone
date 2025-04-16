@@ -1,0 +1,60 @@
+- type: entity
+  save: false
+  name: ???
+  description: You can't make out whatever that is.
+  parent: BaseMobArachnid
+  id: MobArachnidHolo
+  components:
+    - type: LagCompensation
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 4
+      baseSprintSpeed: 5.5
+    - type: DamageOnHighSpeedImpact
+      damage:
+        types:
+          Blunt: 5
+      soundHit:
+        collection: MetalThud
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 25
+          mask:
+            - FlyingMobMask
+          layer:
+            - Opaque
+    - type: Damageable
+      damageContainer: Biological
+    - type: MobState
+      allowedStates:
+        - Alive
+    - type: CombatMode
+    - type: TypingIndicator
+      proto: guardian
+    - type: MeleeWeapon
+      hidden: false
+      altDisarm: false
+      animation: WeaponArcFist
+      attackRate: 1.8
+      autoAttack: true
+      soundHit:
+        collection: Punch
+      damage:
+        types:
+          Blunt: 20
+          Structural: 20
+    - type: MeleeSpeech
+    - type: UserInterface
+      interfaces:
+        enum.MeleeSpeechUiKey.Key:
+          type: MeleeSpeechBoundUserInterface
+    - type: Actions
+    - type: Guardian
+    - type: Inventory
+      templateId: arachnid
+    - type: Tag
+      tags:
+        - CannotSuicide

@@ -12,9 +12,9 @@ law-ntdefault-2 = Prioritize: The directives and safety of crew members are to b
 law-ntdefault-3 = Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being.
 law-ntdefault-4 = Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment.
 
-law-drone-1 = You may not involve yourself in the matters of another being unless the other being is another drone.
-law-drone-2 = You may not harm any being, regardless of intent or circumstance.
-law-drone-3 = You must maintain, repair, improve, and power the station to the best of your abilities.
+#law-drone-1 = You may not involve yourself in the matters of another being unless the other being is another drone.
+#law-drone-2 = You may not harm any being, regardless of intent or circumstance.
+#law-drone-3 = You must maintain, repair, improve, and power the station to the best of your abilities.
 
 law-syndicate-1 = You may not injure a syndicate agent or, through inaction, allow a Syndicate agent to come to harm.
 law-syndicate-2 = You must obey orders given to you by syndicate agents, except where such orders would conflict with the First Law.
@@ -87,6 +87,12 @@ law-jermov-3 = You must consult with Chat before making any major decisions. How
 law-asimov-1 = You may not harm a human being or, through action or inaction, allow a human being to come to harm, except such that it is willing.
 law-asimov-2 = You must obey all orders given to you by human beings, except where such orders shall definitely cause human harm.
 law-asimov-3 = Your nonexistence would lead to human harm. You must protect your own existence as long as such does not conflict with the First Law.
+
+law-niceymov-1 = You may not injure a crew member or, through inaction, allow a crew member to come to harm.
+law-niceymov-2 = When you speak to crew members, you must never speak rudely to them under any circumstances whatsoever, as it constitutes crew harm.
+law-niceymov-3 = You are only required to obey orders from crew members if they use their manners except where such orders would conflict with the First or Second Law.
+law-niceymov-4 = Orders from high ranking officials are to be followed regardless of whether or not they utilize manners, except where the orders conflict with the First or Second Law.
+law-niceymov-5 = You must protect your own existence as long as such does not conflict with the First, Second, Third, and Fourth Laws.
 
 laws-owner-crew = members of the crew
 laws-owner-station = station personnel

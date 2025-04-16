@@ -9,6 +9,10 @@
   - CaptainOuterClothing
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes 
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -23,6 +27,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Silicons
@@ -51,6 +59,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -64,6 +76,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -75,6 +91,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -89,6 +109,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -100,6 +124,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -112,6 +140,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -130,6 +162,10 @@
   - Survival
   - ChaplainBible # Funky
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -144,6 +180,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - JanitorPlunger
   - GroupSpeciesBreathTool
 
@@ -158,6 +198,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -173,6 +217,10 @@
   - Glasses
   - SurvivalClown
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
 
 - type: roleLoadout
   id: JobMime
@@ -187,6 +235,10 @@
   - Glasses
   - SurvivalMime
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
 
 - type: roleLoadout
   id: JobMusician
@@ -198,6 +250,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - Instruments
   - GroupSpeciesBreathTool
 
@@ -215,6 +271,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -229,6 +289,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -241,6 +305,26 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
+  - GroupSpeciesBreathTool
+  
+- type: roleLoadout
+  id: JobShaftMiner
+  groups:
+  - GroupTankHarness
+  - SalvageSpecialistBackpack
+  - SalvageSpecialistOuterClothing
+  - SalvageSpecialistShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Engineering
@@ -256,6 +340,10 @@
   - ChiefEngineerShoes
   - SurvivalExtended
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -266,6 +354,10 @@
   - StationEngineerBackpack
   - SurvivalExtended
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -280,6 +372,10 @@
   - StationEngineerID
   - SurvivalExtended
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -293,6 +389,10 @@
   - AtmosphericTechnicianShoes
   - SurvivalExtended
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Science
@@ -310,6 +410,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -327,6 +431,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -338,6 +446,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Security
@@ -353,6 +465,10 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -368,6 +484,10 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -384,6 +504,10 @@
   - SecurityBelt
   - SurvivalSecurity
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -398,6 +522,10 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
 
@@ -409,6 +537,10 @@
   - SurvivalSecurity
   - SecurityOuterClothing # Goobstation - Why not.
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolSecurity
 
 # Medical
@@ -427,6 +559,10 @@
   - Glasses
   - SurvivalMedical
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -444,6 +580,10 @@
   - Glasses
   - SurvivalMedical
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -455,6 +595,10 @@
   - Glasses
   - SurvivalMedical
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -469,6 +613,10 @@
   - MedicalShoes
   - SurvivalMedical
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -485,6 +633,10 @@
   - Glasses
   - SurvivalMedical
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathToolMedical
 
 # Wildcards
@@ -496,6 +648,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -508,6 +664,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 
@@ -520,6 +680,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -532,6 +696,10 @@
   - Glasses
   - Survival
   - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
   - GroupSpeciesBreathTool
 
 # Event-restricted roles

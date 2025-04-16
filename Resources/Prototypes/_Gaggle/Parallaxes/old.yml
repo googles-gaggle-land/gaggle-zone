@@ -31,3 +31,31 @@
         slowness: 0.5
   layersLQUseHQ: false
 
+# r4407
+
+- type: parallax
+  id: r4407
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_gaggle/r4407/Parallax/layer4.png"
+      slowness: 0.98
+      scale: 1,1
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_gaggle/r4407/Parallax/layer3.png"
+      slowness: 0.95
+      scale: "2, 2"
+      scrolling: "0.1, -0.05"
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_gaggle/r4407/Parallax/layer2.png"
+      slowness: 0.92
+      scale: "2, 2"
+      scrolling: "0.1, -0.05"
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_gaggle/r4407/Parallax/layer1.png"
+      slowness: 0.88
+      scale: "2, 2"
+      scrolling: "0.1, -0.05"

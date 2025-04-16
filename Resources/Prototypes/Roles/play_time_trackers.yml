@@ -120,6 +120,9 @@
 
 - type: playTimeTracker
   id: JobSalvageSpecialist
+  
+- type: playTimeTracker
+  id: JobShaftMiner
 
 - type: playTimeTracker
   id: JobScientist

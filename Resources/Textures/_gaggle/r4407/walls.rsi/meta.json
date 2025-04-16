@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "r_wall"
+    },
+    {
+      "name": "r_wall-1"
+    },
+    {
+      "name": "r_wall-2"
+    },
+    {
+      "name": "r_wall-3"
+    },
+    {
+      "name": "r_wall-4"
+    },
+    {
+      "name": "r_wall-5"
+    },
+    {
+      "name": "r_wall-6"
+    },
+    {
+      "name": "gradient"
+    },
+    {
+      "name": "riveted"
+    },
+    {
+      "name": "burning",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "hull4"
+    },
+    {
+      "name": "hull3"
+    },
+    {
+      "name": "hull2"
+    },
+    {
+      "name": "hull1"
+    },
+    {
+      "name": "hull0"
+    },
+    {
+      "name": "thermited",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "oldwallweld",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "oldwalldent",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

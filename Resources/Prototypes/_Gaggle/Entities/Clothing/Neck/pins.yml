@@ -1,0 +1,11 @@
+
+- type: entity
+  parent: ClothingNeckPinBase
+  id: ClothingNeckGagglePin
+  name: smiley pin
+  description: For when the face above isn't smiling.
+  components:
+  - type: Sprite
+    state: gaggle
+  - type: Clothing
+    equippedPrefix: gaggle

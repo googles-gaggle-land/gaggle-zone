@@ -215,9 +215,9 @@
   description: A dapper suit with a vest and a red tie, sleeves rolled up to show your forearms.
   components:
   - type: Sprite
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/detectivealt.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/detectivealt.rsi
   - type: Clothing
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/detectivealt.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/detectivealt.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -226,9 +226,9 @@
   description: A nice and tidy grey uniform. Shame about the bar, though.
   components:
   - type: Sprite
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/bartenderalt.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/bartenderalt.rsi
   - type: Clothing
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/bartenderalt.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/bartenderalt.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -248,9 +248,9 @@
   description: Oh, I'm goin' down this road feelin' bad... Lord, I'm goin' down this road feelin' bad...
   components:
   - type: Sprite
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/caravaneer.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/caravaneer.rsi
   - type: Clothing
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/caravaneer.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/caravaneer.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -281,9 +281,9 @@
   description: A long-sleeve camouflage shirt paired with a classic pair of jeans.
   components:
   - type: Sprite
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/fudd.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/fudd.rsi
   - type: Clothing
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/fudd.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/fudd.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -303,9 +303,9 @@
   description: A replica of vintage Solarian combat uniforms, for LARPing purposes.
   components:
   - type: Sprite
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/desertbdu.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/desertbdu.rsi
   - type: Clothing
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/desertbdu.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/desertbdu.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -314,9 +314,9 @@
   description: Overalls that make you look like a lumberjack.
   components:
   - type: Sprite
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/lumberjack.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/lumberjack.rsi
   - type: Clothing
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/lumberjack.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/lumberjack.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -336,9 +336,9 @@
   description: Sometimes all you need is a tried but true combo, grey and olive.
   components:
   - type: Sprite
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/rangerv3.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/rangerv3.rsi
   - type: Clothing
-    sprite: _Nuclear14/_EinsteinEngines/Clothing/Uniforms/FalloutSuits/rangerv3.rsi
+    sprite: _Nuclear14/Clothing/Uniforms/FalloutSuits/rangerv3.rsi
 
 - type: entity
   parent: ClothingUniformBase

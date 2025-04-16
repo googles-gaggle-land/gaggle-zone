@@ -20,7 +20,7 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Containers;
-using Content.Shared.Standing;
+using Content.Shared._White.Standing;
 using Content.Shared.Speech.EntitySystems;
 using Content.Shared.Jittering;
 
@@ -97,14 +97,12 @@ public abstract class SharedStunSystem : EntitySystem
         switch (args.NewMobState)
         {
             case MobState.Alive:
+            case MobState.SoftCritical:
                 {
                     break;
                 }
             case MobState.Critical:
-                {
-                    _statusEffect.TryRemoveStatusEffect(uid, "Stun");
-                    break;
-                }
+            case MobState.HardCritical:
             case MobState.Dead:
                 {
                     _statusEffect.TryRemoveStatusEffect(uid, "Stun");

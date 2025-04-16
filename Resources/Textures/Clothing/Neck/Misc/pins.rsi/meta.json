@@ -111,6 +111,13 @@
         {
             "name": "gender-equipped-NECK",
             "directions": 4
+        },
+        {
+            "name": "gaggle"
+        },
+        {
+            "name": "gaggle-equipped-NECK",
+            "directions": 4
         }
     ]
 }

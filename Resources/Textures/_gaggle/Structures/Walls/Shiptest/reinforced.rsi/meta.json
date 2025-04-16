@@ -1,7 +1,7 @@
 {
     "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/shiptest-ss13/Shiptest/tree/362b1af41363c637bc7ef03eb2660640012e2260",
+    "license": "AGPL-3.0",
+    "copyright": "Taken from https://github.com/shiptest-ss13/Shiptest/ at commit 362b1af41363c637bc7ef03eb2660640012e2260",
     "size": {
         "x": 32,
         "y": 32

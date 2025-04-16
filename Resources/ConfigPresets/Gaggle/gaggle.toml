@@ -17,7 +17,7 @@ ipintel_enabled = false
 ipintel_contact_email = "telecommunications@spacestation14.com"
 
 [infolinks]
-github     = "https://github.com/space-wizards/space-station-14"
+github     = "https://github.com/googles-gaggle-land/gaggle-zone"
 
 [net]
 max_connections = 1024
