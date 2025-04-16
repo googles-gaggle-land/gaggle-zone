@@ -36,18 +36,6 @@ public record struct GetSiliconLawsEvent(EntityUid Entity)
     public bool Handled = false;
 }
 
-[ByRefEvent]
-public record struct UpdatedSiliconLawsEvent(EntityUid Entity)
-{
-    public EntityUid Entity = Entity;
-
-    public SiliconLawset Laws = new();
-
-    public List<SiliconLaw> PriorityLaws = new();
-
-    public bool Handled = false;
-}
-
 public sealed partial class ToggleLawsScreenEvent : InstantActionEvent
 {
 
