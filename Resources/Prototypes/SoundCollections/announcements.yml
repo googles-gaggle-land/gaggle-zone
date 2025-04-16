@@ -7,6 +7,7 @@
   - /Audio/Announcements/RoundEnd/NewRound4.ogg
   - /Audio/Announcements/RoundEnd/amazingmission.ogg
   - /Audio/Announcements/RoundEnd/missioncompleteandhow.ogg
+  - /Audio/Announcements/RoundEnd/newroundai.ogg
 
 - type: soundCollection
   id: PowerOn
