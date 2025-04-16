@@ -16,6 +16,8 @@ using Content.Shared.Speech;
 using Content.Shared.Standing;
 using Content.Shared.Strip.Components;
 using Content.Shared.Throwing;
+using Content.Shared.Weapons.Melee;
+using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Wieldable;
 
 namespace Content.Shared.Mobs.Systems;
@@ -46,7 +48,7 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
-        SubscribeLocalEvent<MobStateComponent, WieldAttemptEvent>(OnWieldAttempt);
+        SubscribeLocalEvent<MobStateComponent, UserWieldAttemptEvent>(OnWieldAttempt);
 
         SubscribeLocalEvent<MobStateComponent, UnbuckleAttemptEvent>(OnUnbuckleAttempt);
     }
@@ -202,7 +204,7 @@ public partial class MobStateSystem
                 }
 
                 // Can't carry items that are too heavy
-                if (_item.GetItemSizeWeight(itemComp.Size) >= 8)
+                if (_item.GetItemSizeWeight(itemComp.Size) >= 32)
                     args.Cancel();
 
                 break;
@@ -227,14 +229,14 @@ public partial class MobStateSystem
     {
         // is this a self-equip, or are they being stripped?
         if (args.Equipee == target)
-            CheckAct(target, component, args);
+            CheckActSoftCrit(target, component, args);
     }
 
     private void OnUnequipAttempt(EntityUid target, MobStateComponent component, IsUnequippingAttemptEvent args)
     {
         // is this a self-equip, or are they being stripped?
         if (args.Unequipee == target)
-            CheckAct(target, component, args);
+            CheckActSoftCrit(target, component, args);
     }
 
     private void OnCombatModeShouldHandInteract(EntityUid uid, MobStateComponent component, ref CombatModeShouldHandInteractEvent args)
@@ -250,7 +252,7 @@ public partial class MobStateSystem
         args.Cancelled = true;
     }
 
-    private void OnWieldAttempt(EntityUid user, MobStateComponent component, WieldAttemptEvent args)
+    private void OnWieldAttempt(EntityUid user, MobStateComponent component, ref UserWieldAttemptEvent args)
     {
         switch (component.CurrentState)
         {
@@ -262,7 +264,6 @@ public partial class MobStateSystem
                 break;
         }
     }
-
 
     #endregion
 }
