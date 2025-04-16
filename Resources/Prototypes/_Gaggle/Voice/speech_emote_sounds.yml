@@ -33,8 +33,14 @@
       collection: MaleDeathGasp
     Meow:
       collection: LeonidMeows
+    Mew:
+      collection: LeonidMeows
     Hiss:
       collection: LeonidHisses
+    Purr:
+      collection: LeonidPurrs
+    Growl:
+      collection: LeonidGrowls
 
 - type: emoteSounds
   id: FemaleLeonid
@@ -71,5 +77,11 @@
       collection: FemaleDeathGasp
     Meow:
       collection: LeonidMeows
+    Mew:
+      collection: LeonidMeows
     Hiss:
       collection: LeonidHisses
+    Purr:
+      collection: LeonidPurrs
+    Growl:
+      collection: LeonidGrowls

@@ -36,7 +36,6 @@
 
 - type: markingPoints
   id: MobLeonidMarkingLimits
-  onlyWhitelisted: true
   points:
     Hair:
       points: 1
@@ -49,14 +48,14 @@
       required: true
       defaultMarkings: [ LeonidTail ]
     Snout:
-      points: 3
+      points: 1
       required: true
       defaultMarkings: [ LeonidSnoutSmall ]
     Undergarments: # google's gaggle land
       points: 4
       required: false
     HeadTop:
-      points: 2
+      points: 1
       required: true
       defaultMarkings: [ LeonidEars ]
     HeadSide:

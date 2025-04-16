@@ -16,3 +16,16 @@
   - leonid_hiss.ogg
   license: "CC0-1.0"
   copyright: "Taken from https://freesound.org/. Convert from WAV to OGG, spliced"
+  source: "https://freesound.org/people/Sadiquecat/sounds/750495/"
+
+- files:
+  - leonid_growl.ogg
+  license: "CC0-1.0"
+  copyright: "Taken from https://freesound.org/. Convert from WAV to OGG, spliced"
+  source: "https://freesound.org/people/Zabuhailo/sounds/146967/"
+
+- files:
+  - leonid_purr.ogg
+  license: "CC0-1.0"
+  copyright: "Taken from https://freesound.org/. Convert from WAV to OGG, sped up"
+  source: "https://freesound.org/people/fthgurdy/sounds/528949/"

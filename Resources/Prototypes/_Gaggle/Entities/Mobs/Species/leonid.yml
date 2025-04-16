@@ -8,6 +8,7 @@
   - type: HumanoidAppearance
     species: Leonid
     hideLayersOnEquip:
+    - Hair
     - Snout
     - HeadTop
     - HeadSide
@@ -101,9 +102,9 @@
     damage:
       types:
         Slash: 5
-  - type: Temperature # TODO change Leonid temperature thresholds
-    heatDamageThreshold: 400
-    coldDamageThreshold: 285
+  - type: Temperature
+    heatDamageThreshold: 325
+    coldDamageThreshold: 255
     currentTemperature: 310.15
     specificHeat: 42
     coldDamage:
@@ -112,11 +113,11 @@
     heatDamage:
       types:
         Heat : 1.5 #per second, scales with temperature & other constants
-  - type: TemperatureSpeed # TODO change Leonid temperature speeds
+  - type: TemperatureSpeed
     thresholds:
-      301: 0.8
-      295: 0.6
-      285: 0.4
+      295: 0.8
+      280: 0.6
+      255: 0.4
   - type: Inventory
     speciesId: leonid
     femaleDisplacements:
