@@ -247,6 +247,13 @@ public abstract class SharedWieldableSystem : EntitySystem
 
         if (attemptEv.Cancelled)
             return false;
+        
+        // gaggle!
+        var userAttemptEv = new UserWieldAttemptEvent(used);
+        RaiseLocalEvent(user, ref userAttemptEv);
+
+        if (userAttemptEv.Cancelled)
+            return false;
 
         if (TryComp<ItemComponent>(used, out var item))
         {
