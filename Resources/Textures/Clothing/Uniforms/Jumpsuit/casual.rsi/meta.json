@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by nmajask (github) for ss14, based on sprites by Tokiko (github)",
+  "copyright": "Made by nmajask (github) for ss14, based on sprites by Tokiko (github). leonid variant by miapyxel",
   "size": {
     "x": 32,
     "y": 32
@@ -38,6 +38,10 @@
     },
     {
       "name": "equipped-INNERCLOTHING-shirt-monkey",
+      "directions": 4
+    },
+    {
+      "name": "equipped-INNERCLOTHING-jumpsuit-leonid",
       "directions": 4
     },
     {

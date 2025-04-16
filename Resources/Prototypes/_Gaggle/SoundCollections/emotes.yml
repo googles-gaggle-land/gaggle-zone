@@ -1,0 +1,16 @@
+- type: soundCollection
+  id: LeonidMeows
+  files:
+    - /Audio/_gaggle/Voice/Leonid/leonid_meow1.ogg
+    - /Audio/_gaggle/Voice/Leonid/leonid_meow2.ogg
+    - /Audio/_gaggle/Voice/Leonid/leonid_meow3.ogg
+
+- type: soundCollection
+  id: LeonidScreams
+  files:
+    - /Audio/_gaggle/Voice/Leonid/leonid_scream.ogg
+
+- type: soundCollection
+  id: LeonidHisses
+  files:
+    - /Audio/_gaggle/Voice/Leonid/leonid_hiss.ogg

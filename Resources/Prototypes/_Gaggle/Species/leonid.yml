@@ -1,0 +1,157 @@
+- type: species
+  id: Leonid
+  name: species-name-leonid
+  roundStart: true
+  prototype: MobLeonid
+  sprites: MobLeonidSprites
+  defaultSkinTone: "#EA8648"
+  markingLimits: MobLeonidMarkingLimits
+  dollPrototype: MobLeonidDummy
+  skinColoration: Hues
+  minAge: 18
+  youngAge: 28
+  oldAge: 50
+  maxAge: 75
+
+- type: speciesBaseSprites
+  id: MobLeonidSprites
+  sprites:
+    Head: MobLeonidHead
+    Hair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
+    Chest: MobLeonidTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobHumanoidEyes
+    LArm: MobLeonidLArm
+    RArm: MobLeonidRArm
+    LHand: MobLeonidLHand
+    RHand: MobLeonidRHand
+    LLeg: MobLeonidLLeg
+    RLeg: MobLeonidRLeg
+    LFoot: MobLeonidLFoot
+    RFoot: MobLeonidRFoot
+
+- type: markingPoints
+  id: MobLeonidMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ LeonidTail ]
+    Snout:
+      points: 3
+      required: true
+      defaultMarkings: [ LeonidSnoutSmall ]
+    Undergarments: # google's gaggle land
+      points: 4
+      required: false
+    HeadTop:
+      points: 2
+      required: true
+      defaultMarkings: [ LeonidEars ]
+    HeadSide:
+      points: 1
+      required: false
+    Chest:
+      points: 4 # imp 3<4
+      required: false
+    Legs:
+      points: 8 # imp 2<8
+      required: false
+    Arms:
+      points: 8 # imp 2<8
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobLeonidHead
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobLeonidHeadMale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobLeonidHeadFemale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobLeonidTorso
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobLeonidTorsoMale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobLeonidTorsoFemale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobLeonidLLeg
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobLeonidLHand
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobLeonidLArm
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobLeonidLFoot
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobLeonidRLeg
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobLeonidRHand
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobLeonidRArm
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobLeonidRFoot
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: r_foot
