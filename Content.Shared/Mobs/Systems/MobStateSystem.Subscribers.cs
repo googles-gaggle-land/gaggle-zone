@@ -11,35 +11,37 @@ using Content.Shared.Item;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Movement.Events;
 using Content.Shared.Pointing;
+using Content.Shared.Popups;
 using Content.Shared.Pulling.Events;
 using Content.Shared.Speech;
 using Content.Shared.Standing;
 using Content.Shared.Strip.Components;
 using Content.Shared.Throwing;
-using Robust.Shared.Physics.Components;
 
 namespace Content.Shared.Mobs.Systems;
 
 public partial class MobStateSystem
 {
+    [Dependency] protected readonly SharedItemSystem _item = default!;
+
     //General purpose event subscriptions. If you can avoid it register these events inside their own systems
     private void SubscribeEvents()
     {
         SubscribeLocalEvent<MobStateComponent, BeforeGettingStrippedEvent>(OnGettingStripped);
         SubscribeLocalEvent<MobStateComponent, ChangeDirectionAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, UseAttemptEvent>(CheckAct);
-        SubscribeLocalEvent<MobStateComponent, AttackAttemptEvent>(CheckAct);
+        SubscribeLocalEvent<MobStateComponent, AttackAttemptEvent>(OnAttackAttempt);
         SubscribeLocalEvent<MobStateComponent, ConsciousAttemptEvent>(CheckConcious);
         SubscribeLocalEvent<MobStateComponent, ThrowAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, SpeakAttemptEvent>(OnSpeakAttempt);
         SubscribeLocalEvent<MobStateComponent, IsEquippingAttemptEvent>(OnEquipAttempt);
-        SubscribeLocalEvent<MobStateComponent, EmoteAttemptEvent>(CheckAct);
+        SubscribeLocalEvent<MobStateComponent, EmoteAttemptEvent>(CheckActSoftCrit);
         SubscribeLocalEvent<MobStateComponent, IsUnequippingAttemptEvent>(OnUnequipAttempt);
         SubscribeLocalEvent<MobStateComponent, DropAttemptEvent>(CheckAct);
-        SubscribeLocalEvent<MobStateComponent, PickupAttemptEvent>(CheckAct);
+        SubscribeLocalEvent<MobStateComponent, PickupAttemptEvent>(OnPickupAttempt);
         SubscribeLocalEvent<MobStateComponent, StartPullAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, UpdateCanMoveEvent>(CheckAct);
-        SubscribeLocalEvent<MobStateComponent, StandAttemptEvent>(CheckAct);
+        SubscribeLocalEvent<MobStateComponent, StandAttemptEvent>(CheckActSoftCrit);
         SubscribeLocalEvent<MobStateComponent, PointAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
@@ -56,13 +58,24 @@ public partial class MobStateSystem
             args.Cancelled = true;
     }
 
+    // gaggle!
+    private void OnAttackAttempt(Entity<MobStateComponent> ent, ref AttackAttemptEvent args)
+    {
+        if (args.Disarm)
+        {
+            args.Cancel();
+            return;
+        }
+
+        CheckAct(ent.Owner, ent.Comp, args);
+    }
+
     private void CheckConcious(Entity<MobStateComponent> ent, ref ConsciousAttemptEvent args)
     {
         switch (ent.Comp.CurrentState)
         {
             case MobState.Dead:
             case MobState.Critical:
-            case MobState.SoftCritical:
             case MobState.HardCritical:
                 args.Cancelled = true;
                 break;
@@ -163,6 +176,46 @@ public partial class MobStateSystem
         {
             case MobState.Dead:
             case MobState.Critical:
+            case MobState.HardCritical:
+                args.Cancel();
+                break;
+        }
+    }
+
+    // gaggle !
+    private void OnPickupAttempt(EntityUid target, MobStateComponent component, PickupAttemptEvent args)
+    {
+        switch (component.CurrentState)
+        {
+            case MobState.Dead:
+            case MobState.Critical:
+            case MobState.HardCritical:
+                args.Cancel();
+                break;
+            case MobState.SoftCritical:
+                if (!TryComp(args.Item, out ItemComponent? itemComp))
+                {
+                    // i dont think i need this but whatever!!
+                    args.Cancel();
+                    break;
+                }
+
+                // Can't carry items that are too heavy
+                if (_item.GetItemSizeWeight(itemComp.Size) >= 8)
+                    args.Cancel();
+
+                break;
+        }
+    }
+
+    // gaggle !
+    private void CheckActSoftCrit(EntityUid target, MobStateComponent component, CancellableEntityEventArgs args)
+    {
+        switch (component.CurrentState)
+        {
+            case MobState.Dead:
+            case MobState.Critical:
+            case MobState.SoftCritical:
             case MobState.HardCritical:
                 args.Cancel();
                 break;
