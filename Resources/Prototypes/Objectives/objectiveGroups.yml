@@ -121,11 +121,4 @@
   id: ThiefObjectiveGroupEscape
   weights:
     EscapeThiefShuttleObjective: 1
-
-- type: weightedRandom
-  id: MalfunctionObjectiveGroupKill
-  weights:
-    MalfunctionKillRandomPersonObjective: 1
-    MalfunctionKillRandomHeadObjective: 0.25
-
 #Changeling, crew, wizard, when you code it...

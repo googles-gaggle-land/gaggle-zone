@@ -79,18 +79,17 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
 
     private void OnLawProviderMindAdded(Entity<SiliconLawProviderComponent> ent, ref MindAddedMessage args)
     {
-        if (!ent.Comp.Subverted || !ent.Comp.SubvertedMind)
+        if (!ent.Comp.Subverted)
             return;
-
         EnsureSubvertedSiliconRole(args.Mind);
     }
 
     private void OnLawProviderMindRemoved(Entity<SiliconLawProviderComponent> ent, ref MindRemovedMessage args)
     {
-        if (!ent.Comp.Subverted || !ent.Comp.SubvertedMind)
+        if (!ent.Comp.Subverted)
             return;
-
         RemoveSubvertedSiliconRole(args.Mind);
+
     }
 
 
@@ -126,6 +125,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
             component.Lawset = GetLawset(component.Laws);
 
         args.Laws = component.Lawset;
+
         args.Handled = true;
     }
 
@@ -195,32 +195,11 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
 
         var ev = new GetSiliconLawsEvent(uid);
 
-        if (_mind.TryGetMind(uid, out var _, out var mind))
-        {
-            foreach (var role in mind.MindRoles)
-            {
-                RaiseLocalEvent(role, ref ev);
-
-                if (ev.Handled)
-                    break;
-            }
-        }
-
-        ev.Handled = false;
-
         RaiseLocalEvent(uid, ref ev);
-
-        var laws = ev.Laws;
-
-        foreach (var priorityLaw in ev.PriorityLaws)
-        {
-            laws.Laws.Add(priorityLaw);
-        }
-
         if (ev.Handled)
         {
             component.LastLawProvider = uid;
-            return laws;
+            return ev.Laws;
         }
 
         var xform = Transform(uid);
@@ -231,7 +210,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
             if (ev.Handled)
             {
                 component.LastLawProvider = station;
-                return laws;
+                return ev.Laws;
             }
         }
 
@@ -241,7 +220,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
             if (ev.Handled)
             {
                 component.LastLawProvider = grid;
-                return laws;
+                return ev.Laws;
             }
         }
 
@@ -256,20 +235,12 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
             RaiseLocalEvent(component.LastLawProvider.Value, ref ev);
             if (ev.Handled)
             {
-                return laws;
+                return ev.Laws;
             }
         }
 
         RaiseLocalEvent(ref ev);
-
-        laws = ev.Laws;
-
-        foreach (var priorityLaw in ev.PriorityLaws)
-        {
-            laws.Laws.Add(priorityLaw);
-        }
-
-        return laws;
+        return ev.Laws;
     }
 
     public override void NotifyLawsChanged(EntityUid uid, SoundSpecifier? cue = null)
@@ -332,27 +303,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
 
         while (query.MoveNext(out var update))
         {
-            var newLaws = lawset;
-
-            if (_mind.TryGetMind(update, out var _, out var mind))
-            {
-                var ev = new UpdatedSiliconLawsEvent(update);
-
-                foreach (var role in mind.MindRoles)
-                {
-                    RaiseLocalEvent(role, ref ev);
-
-                    if (ev.Handled)
-                        break;
-                }
-
-                foreach (var law in ev.PriorityLaws)
-                {
-                    newLaws.Add(law);
-                }
-            }
-
-            SetLaws(newLaws, update, provider.LawUploadSound);
+            SetLaws(lawset, update, provider.LawUploadSound);
         }
     }
 }

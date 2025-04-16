@@ -531,36 +531,6 @@ public abstract partial class SharedStationAiSystem : EntitySystem
 
         return _blocker.CanComplexInteract(entity.Owner);
     }
-
-    public bool TryGetStationAiCore(Entity<StationAiHeldComponent?> ent, [NotNullWhen(true)] out Entity<StationAiCoreComponent>? parentEnt)
-    {
-        parentEnt = null;
-        var parent = Transform(ent).ParentUid;
-
-        if (!parent.IsValid())
-            return false;
-
-        if (!TryComp<StationAiCoreComponent>(parent, out var stationAiCore))
-            return false;
-
-        parentEnt = new Entity<StationAiCoreComponent>(parent, stationAiCore);
-
-        return true;
-    }
-
-    public bool TryGetInsertedAI(Entity<StationAiCoreComponent> ent, [NotNullWhen(true)] out Entity<StationAiHeldComponent>? insertedAi)
-    {
-        insertedAi = null;
-        var insertedEnt = GetInsertedAI(ent);
-
-        if (TryComp<StationAiHeldComponent>(insertedEnt, out var stationAiHeld))
-        {
-            insertedAi = (insertedEnt.Value, stationAiHeld);
-            return true;
-        }
-
-        return false;
-    }
 }
 
 public sealed partial class JumpToCoreEvent : InstantActionEvent
