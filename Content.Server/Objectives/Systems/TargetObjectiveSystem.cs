@@ -27,16 +27,7 @@ public sealed class TargetObjectiveSystem : EntitySystem
         if (!GetTarget(uid, out var target, comp))
             return;
 
-        if (comp.Title != null)
-            _metaData.SetEntityName(uid, GetTitle(target.Value, comp.Title), args.Meta);
-    }
-
-    public void SetTargets(EntityUid uid, List<EntityUid> targets, TargetObjectiveComponent? comp = null)
-    {
-        if (!Resolve(uid, ref comp))
-            return;
-
-        comp.Targets = targets;
+        _metaData.SetEntityName(uid, GetTitle(target.Value, comp.Title), args.Meta);
     }
 
     /// <summary>
@@ -63,11 +54,6 @@ public sealed class TargetObjectiveSystem : EntitySystem
         mind.ObjectiveTargets.Add(target);
     }
     // end imp
-    public bool GetTargets(EntityUid uid, [NotNullWhen(true)] out List<EntityUid>? targets, TargetObjectiveComponent? comp = null)
-    {
-        targets = Resolve(uid, ref comp) ? comp.Targets : null;
-        return targets != null;
-    }
 
     /// <summary>
     /// Gets the target from the component.

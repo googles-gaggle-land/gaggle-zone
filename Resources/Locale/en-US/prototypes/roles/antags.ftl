@@ -1,3 +1,4 @@
+﻿## goob edited
 roles-antag-syndicate-agent-name = Traitor
 roles-antag-syndicate-agent-objective = Complete your objectives without being caught.
 

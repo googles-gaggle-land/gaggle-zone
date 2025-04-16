@@ -39,7 +39,6 @@ public sealed partial class AdminVerbSystem
 
     [ValidatePrototypeId<EntityPrototype>]
     private const string DefaultMalfunctionRule = "Malfunction";
-    private const string DefaultObsessedRule = "Obsessed";
 
     [ValidatePrototypeId<StartingGearPrototype>]
     private const string PirateGearId = "PirateGear";
@@ -255,18 +254,5 @@ public sealed partial class AdminVerbSystem
             Message = Loc.GetString("admin-verb-make-malfunction"),
         };
         args.Verbs.Add(malfunction);
-        Verb obsessed = new()
-        {
-            Text = Loc.GetString("admin-verb-text-make-obsessed"),
-            Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Objects/Storage/boxes.rsi"), "heart"),
-            Act = () =>
-            {
-                _antag.ForceMakeAntag<ObsessedRuleComponent>(targetPlayer, DefaultObsessedRule);
-            },
-            Impact = LogImpact.High,
-            Message = Loc.GetString("admin-verb-make-obsessed"),
-        };
-        args.Verbs.Add(obsessed);
     }
 }
