@@ -62,6 +62,13 @@ marking-LeonidTailLion-lion = Tail
 marking-LeonidTailLion-lion-tip = Tail Tip
 marking-LeonidTailLion = Lion
 
+marking-LeonidTailFluffy-fluffy = Tail
+marking-LeonidTailFluffy-fluffy-tip = Tail Tip
+marking-LeonidTailFluffy = Fluffy
+
+marking-LeonidTailStub-stub = Tail
+marking-LeonidTailStub = Stub
+
 marking-LeonidOverlayEyes-eyes = Leonid Eye Spots
 marking-LeonidOverlayEyes = Leonid Eye Spots
 

@@ -22,6 +22,18 @@
     {
       "name": "lion-tip",
       "directions": 4
+    },
+    {
+      "name": "fluffy",
+      "directions": 4
+    },
+    {
+      "name": "fluffy-tip",
+      "directions": 4
+    },
+    {
+      "name": "stub",
+      "directions": 4
     }
   ]
 }

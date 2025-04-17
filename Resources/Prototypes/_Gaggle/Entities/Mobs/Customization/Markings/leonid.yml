@@ -167,6 +167,26 @@
   - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
     state: lion-tip
 
+- type: marking
+  id: LeonidTailFluffy
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: fluffy
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: fluffy-tip
+
+- type: marking
+  id: LeonidTailStub
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: stub
+
 # overlay
 - type: marking
   id: LeonidSpots
