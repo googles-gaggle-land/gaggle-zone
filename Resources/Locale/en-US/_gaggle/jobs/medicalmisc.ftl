@@ -1,0 +1,2 @@
+job-description-geneticist = Make volunteers Skeleton Swedish Elvis. Fight a losing battle against sentient lab monkeys.
+job-description-virologist = Create beneficial viruses for the crew, cure epidemics, and get lynched for allegedly spreading the common cold. Be a neat freak. 
