@@ -43,6 +43,13 @@ marking-LeonidSnoutSmallLineUnderNose-small-under = Underside
 marking-LeonidSnoutSmallLineUnderNose-small-nose = Nose
 marking-LeonidSnoutSmallLineUnderNose = Small (Underside) (Line) (Nose)
 
+marking-LeonidSnoutSmallFace-small_line = Snout
+marking-LeonidSnoutSmallFace = Small (Face)
+
+marking-LeonidSnoutSmallFaceNose-small_line = Snout
+marking-LeonidSnoutSmallFaceNose-small-nose = Nose
+marking-LeonidSnoutSmallFaceNose = Small (Face) (Nose)
+
 marking-LeonidSpots-spots-right = Right Leonid Spot
 marking-LeonidSpots-spots-left = Left Leonid Spot
 marking-LeonidSpots = Leonid Spots

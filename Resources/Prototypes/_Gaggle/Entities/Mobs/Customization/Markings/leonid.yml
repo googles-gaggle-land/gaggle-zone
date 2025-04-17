@@ -124,6 +124,26 @@
   - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
     state: small-nose
 
+- type: marking
+  id: LeonidSnoutSmallFace
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_face
+    
+- type: marking
+  id: LeonidSnoutSmallFaceNose
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_face
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-nose
+
 # tails
 - type: marking
   id: LeonidTail

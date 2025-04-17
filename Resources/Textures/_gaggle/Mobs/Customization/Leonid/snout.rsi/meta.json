@@ -24,6 +24,10 @@
       "directions": 4
     },
     {
+      "name": "small_face",
+      "directions": 4
+    },
+    {
       "name": "spots-left",
       "directions": 4
     },
