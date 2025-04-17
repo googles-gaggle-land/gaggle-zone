@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: MaterialDrywall
+  icon:
+    sprite: _gaggle/Objects/Materials/Sheets/drywall.rsi
+    state: drywall_3
+  product: CrateMaterialDrywall
+  cost: 1000
+  category: cargoproduct-category-name-materials
+  group: market

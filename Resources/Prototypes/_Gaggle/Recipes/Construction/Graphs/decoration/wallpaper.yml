@@ -1,0 +1,35 @@
+- type: constructionGraph
+  id: Wallpaper
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: blank wallpaper
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - material: WallpaperBlank
+              doAfter: 1
+        
+        - to: old wallpaper
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - material: WallpaperOld
+              doAfter: 1
+        
+        - to: fake old wallpaper
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - material: WallpaperOldFake
+              doAfter: 1
+    
+    - node: blank wallpaper
+      entity: WallpaperStructureBlank
+    
+    - node: old wallpaper
+      entity: WallpaperStructureOld
+    
+    - node: fake old wallpaper
+      entity: WallpaperStructureOldFake
