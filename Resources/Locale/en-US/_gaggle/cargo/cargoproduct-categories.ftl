@@ -1,0 +1,1 @@
+cargoproduct-category-name-decoration = Decoration
