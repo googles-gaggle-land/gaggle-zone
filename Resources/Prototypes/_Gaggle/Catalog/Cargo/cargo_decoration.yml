@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: DecorationWallpaperBlank
+  icon:
+    sprite: _gaggle/Objects/Decoration/wallpaper.rsi
+    state: blank
+  product: CrateDecorationWallpaperBlank
+  cost: 1000
+  category: cargoproduct-category-name-decoration
+  group: market

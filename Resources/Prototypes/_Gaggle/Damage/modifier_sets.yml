@@ -14,3 +14,19 @@
     Cold: 0.95 # fur
     Heat: 1.1  # fur
     Blunt: 1.2 # because i think they would be frail/thin
+
+- type: damageModifierSet
+  id: Wallpaper
+  coefficients:
+    Blunt: 0.1
+    Slash: 1.5
+    Piercing: 0.5
+    Heat: 1.5
+
+- type: damageModifierSet
+  id: Drywall
+  coefficients:
+    Blunt: 1.3
+    Slash: 1
+    Piercing: 1.2
+    Heat: 0.75
