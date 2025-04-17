@@ -78,6 +78,10 @@
     {
       "name": "freaky_secondary",
       "directions": 4
+    },
+    {
+      "name": "head_appendages",
+      "directions": 4
     }
   ]
 }
