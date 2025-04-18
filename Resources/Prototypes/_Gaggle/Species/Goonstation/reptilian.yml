@@ -1,0 +1,136 @@
+- type: species
+  id: ReptilianGoon
+  name: species-name-reptilian
+  roundStart: false
+  prototype: MobReptilianGoon
+  sprites: MobReptilianGoonSprites
+  defaultSkinTone: "#34a223"
+  markingLimits: MobReptilianGoonMarkingLimits
+  dollPrototype: MobReptilianGoonDummy
+  skinColoration: Hues
+  maleFirstNames: names_reptilian_male
+  femaleFirstNames: names_reptilian_female
+  naming: FirstDashFirst
+
+- type: speciesBaseSprites
+  id: MobReptilianGoonSprites
+  sprites:
+    Head: MobReptilianGoonHead
+    Hair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Undergarments: MobHumanoidAnyMarking
+    Chest: MobReptilianGoonTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobHumanoidEyes
+    LArm: MobReptilianGoonLArm
+    RArm: MobReptilianGoonRArm
+    LHand: MobReptilianGoonLHand
+    RHand: MobReptilianGoonRHand
+    LLeg: MobReptilianGoonLLeg
+    RLeg: MobReptilianGoonRLeg
+    LFoot: MobReptilianGoonLFoot
+    RFoot: MobReptilianGoonRFoot
+
+- type: markingPoints
+  id: MobReptilianGoonMarkingLimits
+  onlyWhitelisted: false
+  points:
+    Hair:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ LizardGoonTailDefault ]
+    HeadTop:
+      points: 1
+      required: false
+    Chest:
+      points: 1 # imp 3<4
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonHead
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonHeadMale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonHeadFemale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonTorso
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonTorsoMale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonTorsoFemale
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonLLeg
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonLHand
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonLArm
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonLFoot
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonRLeg
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonRHand
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonRArm
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonRFoot
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: r_foot

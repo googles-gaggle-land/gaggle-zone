@@ -1,0 +1,6 @@
+- type: entity
+  save: false
+  name: Urist McGoon
+  suffix: Goonstation
+  parent: BaseMobHumanGoon
+  id: MobHumanGoon
