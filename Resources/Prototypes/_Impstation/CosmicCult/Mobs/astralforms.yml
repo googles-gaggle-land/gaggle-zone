@@ -270,6 +270,9 @@
       Critical:
       - ActionCritSuccumb
       - ActionCritLastWords
+      SoftCritical:
+      - ActionCritSuccumb
+      - ActionCritLastWords
       HardCritical:
       - ActionCritSuccumb
       - ActionCritLastWords

@@ -423,6 +423,10 @@
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
+      SoftCritical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
       HardCritical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
@@ -521,6 +525,10 @@
       Alive:
       - ActionSmiteNoReq
       Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+      SoftCritical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords

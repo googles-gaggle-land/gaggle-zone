@@ -1735,6 +1735,10 @@
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
+      SoftCritical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
       HardCritical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
@@ -3352,6 +3356,10 @@
   - type: MobStateActions
     actions:
       Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+      SoftCritical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
