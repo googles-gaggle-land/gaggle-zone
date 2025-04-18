@@ -17,6 +17,9 @@
   id: FoodMeatSausageCooked
 
 - type: Tag
+  id: LeonidEmotes
+  
+- type: Tag
   id: Armor # need this or else crash
 
 #- type: Tag

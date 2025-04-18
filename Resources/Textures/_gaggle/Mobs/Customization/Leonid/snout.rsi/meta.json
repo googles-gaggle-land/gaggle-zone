@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by miapyxel",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "small",
+      "directions": 4
+    },
+    {
+      "name": "small-nose",
+      "directions": 4
+    },
+    {
+      "name": "small-under",
+      "directions": 4
+    },
+    {
+      "name": "small_line",
+      "directions": 4
+    },
+    {
+      "name": "small_face",
+      "directions": 4
+    },
+    {
+      "name": "spots-left",
+      "directions": 4
+    },
+    {
+      "name": "spots-right",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+- type: speechVerb
+  id: Leonid
+  name: chat-speech-verb-name-leonid
+  speechVerbStrings:
+  - chat-speech-verb-leonid-1
+  - chat-speech-verb-leonid-2
+  - chat-speech-verb-leonid-3
+  - chat-speech-verb-leonid-4
