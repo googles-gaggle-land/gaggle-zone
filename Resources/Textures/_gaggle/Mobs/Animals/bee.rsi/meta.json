@@ -1,0 +1,2019 @@
+{
+  "version": 1,
+  "license": "CC BY-NC-SA 3.0",
+  "copyright": "Assets from Goonstation",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": ""
+    },
+    {
+      "name": "petbee",
+      "directions": 4
+    },
+    {
+      "name": "petbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "petbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "petbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "petbee-color",
+      "directions": 4
+    },
+    {
+      "name": "petbee-sleep-color",
+      "directions": 4
+    },
+    {
+      "name": "petbee-dead-color",
+      "directions": 4
+    },
+    {
+      "name": "antenna",
+      "directions": 4
+    },
+    {
+      "name": "antenna-sleep",
+      "directions": 4
+    },
+    {
+      "name": "antenna-dead",
+      "directions": 4
+    },
+    {
+      "name": "beezzzs",
+      "delays": [
+        [
+          5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "petbee_larva"
+    },
+    {
+      "name": "petbee_larva-dead"
+    },
+    {
+      "name": "petbee_larva-grow",
+      "delays": [
+        [
+          0.4,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "petbee_larva_bonnet"
+    },
+    {
+      "name": "petbee_larva_bonnet-dead"
+    },
+    {
+      "name": "petbee_larva_bonnet-grow",
+      "delays": [
+        [
+          0.4,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "petbee_egg"
+    },
+    {
+      "name": "moonbee_egg",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "sunbee_egg",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "petbee_carton"
+    },
+    {
+      "name": "petbee_carton1"
+    },
+    {
+      "name": "petbee_carton-buddybee1"
+    },
+    {
+      "name": "petbee_carton0"
+    },
+    {
+      "name": "chefbee",
+      "directions": 4
+    },
+    {
+      "name": "chefbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "chefbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "chefbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "buddybee"
+    },
+    {
+      "name": "buddybee-wings",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "buddybee-sleep"
+    },
+    {
+      "name": "buddybee-dead"
+    },
+    {
+      "name": "buddybee-color"
+    },
+    {
+      "name": "buddybee-sleep-color"
+    },
+    {
+      "name": "buddybee-dead-color"
+    },
+    {
+      "name": "beezzzs-buddybee",
+      "delays": [
+        [
+          5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "buddybee_egg"
+    },
+    {
+      "name": "buddybee_larva"
+    },
+    {
+      "name": "buddybee_larva-dead"
+    },
+    {
+      "name": "buddybee_larva-grow",
+      "delays": [
+        [
+          0.4,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          1.2
+        ]
+      ]
+    },
+    {
+      "name": "overbee",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "overbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "overbee-sleep",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "overbee-dead",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "antenna-overbee",
+      "directions": 4
+    },
+    {
+      "name": "antenna-overbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "antenna-overbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "traumabee",
+      "directions": 4,
+      "delays": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "traumabee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "traumabee-sleep",
+      "directions": 4,
+      "delays": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "traumabee-dead",
+      "directions": 4
+    },
+    {
+      "name": "santabee",
+      "directions": 4
+    },
+    {
+      "name": "santabee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "santabee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "santabee-dead",
+      "directions": 4
+    },
+    {
+      "name": "deerbee",
+      "directions": 4
+    },
+    {
+      "name": "deerbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "deerbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "deerbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "antenna-deerbee",
+      "directions": 4
+    },
+    {
+      "name": "antenna-deerbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "antenna-deerbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "bubsbee-8I",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee-color",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee-8I-color",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee-sleep-color",
+      "directions": 4
+    },
+    {
+      "name": "bubsbee-dead-color",
+      "directions": 4
+    },
+    {
+      "name": "antenna-bubsbee",
+      "directions": 4
+    },
+    {
+      "name": "antenna-bubsbee-8I",
+      "directions": 4
+    },
+    {
+      "name": "antenna-bubsbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "antenna-bubsbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "bombini",
+      "directions": 4
+    },
+    {
+      "name": "bombini-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bombini-sleep",
+      "directions": 4
+    },
+    {
+      "name": "bombini-dead",
+      "directions": 4
+    },
+    {
+      "name": "tophatbee",
+      "directions": 4
+    },
+    {
+      "name": "tophatbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "tophatbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "tophatbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "zombee",
+      "directions": 4
+    },
+    {
+      "name": "zombee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "zombee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "zombee-dead",
+      "directions": 4
+    },
+    {
+      "name": "creepybee",
+      "directions": 4
+    },
+    {
+      "name": "creepybee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "creepybee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "creepybee-dead",
+      "directions": 4
+    },
+    {
+      "name": "creepybee-color",
+      "directions": 4
+    },
+    {
+      "name": "creepybee-sleep-color",
+      "directions": 4
+    },
+    {
+      "name": "creepybee-dead-color",
+      "directions": 4
+    },
+    {
+      "name": "lilbee",
+      "directions": 4
+    },
+    {
+      "name": "lilbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "lilbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "lilbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "lilbee-color",
+      "directions": 4
+    },
+    {
+      "name": "lilbee-sleep-color",
+      "directions": 4
+    },
+    {
+      "name": "lilbee-dead-color",
+      "directions": 4
+    },
+    {
+      "name": "antenna-lilbee",
+      "directions": 4
+    },
+    {
+      "name": "antenna-lilbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "antenna-lilbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "syndiebee",
+      "directions": 4
+    },
+    {
+      "name": "syndiebee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "syndiebee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "syndiebee-dead",
+      "directions": 4
+    },
+    {
+      "name": "bhat-hosberet",
+      "directions": 4
+    },
+    {
+      "name": "bhat-ntberet",
+      "directions": 4
+    },
+    {
+      "name": "bhat-captain",
+      "directions": 4
+    },
+    {
+      "name": "bhat-centcom",
+      "directions": 4
+    },
+    {
+      "name": "bhat-centcom-red",
+      "directions": 4
+    },
+    {
+      "name": "bhat-hoscap",
+      "directions": 4
+    },
+    {
+      "name": "bhat-hardhat0",
+      "directions": 4
+    },
+    {
+      "name": "bhat-hardhat1",
+      "directions": 4
+    },
+    {
+      "name": "bhat-detective",
+      "directions": 4
+    },
+    {
+      "name": "bhat-chef",
+      "directions": 4
+    },
+    {
+      "name": "bhat-souschef",
+      "directions": 4
+    },
+    {
+      "name": "bhat-tophat",
+      "directions": 4
+    },
+    {
+      "name": "bhat-ptophat",
+      "directions": 4
+    },
+    {
+      "name": "bhat-mjhat",
+      "directions": 4
+    },
+    {
+      "name": "bhat-plunger",
+      "directions": 4
+    },
+    {
+      "name": "bhat-cakehat0",
+      "directions": 4
+    },
+    {
+      "name": "bhat-cakehat1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bhat-butt",
+      "directions": 4
+    },
+    {
+      "name": "bhat-butt-nc",
+      "directions": 4
+    },
+    {
+      "name": "bhat-butt-plant",
+      "directions": 4
+    },
+    {
+      "name": "bhat-butt-cyber",
+      "directions": 4
+    },
+    {
+      "name": "bhat-purplebutt",
+      "directions": 4
+    },
+    {
+      "name": "bhat-santa",
+      "directions": 4
+    },
+    {
+      "name": "bhat-wizard",
+      "directions": 4
+    },
+    {
+      "name": "bhat-wizardred",
+      "directions": 4
+    },
+    {
+      "name": "bhat-wizardpurple",
+      "directions": 4
+    },
+    {
+      "name": "bhat-witch",
+      "directions": 4
+    },
+    {
+      "name": "bhat-yellow",
+      "directions": 4
+    },
+    {
+      "name": "bhat-blue",
+      "directions": 4
+    },
+    {
+      "name": "bhat-red",
+      "directions": 4
+    },
+    {
+      "name": "bhat-green",
+      "directions": 4
+    },
+    {
+      "name": "bhat-black",
+      "directions": 4
+    },
+    {
+      "name": "bhat-white",
+      "directions": 4
+    },
+    {
+      "name": "bhat-psyche",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bhat-obcrown",
+      "directions": 4
+    },
+    {
+      "name": "bhat-macrown",
+      "directions": 4
+    },
+    {
+      "name": "bhat-safari",
+      "directions": 4
+    },
+    {
+      "name": "bhat-viking",
+      "directions": 4
+    },
+    {
+      "name": "bighat",
+      "directions": 4
+    },
+    {
+      "name": "bhat-flat_cap",
+      "directions": 4
+    },
+    {
+      "name": "bhat-dolan",
+      "directions": 4
+    },
+    {
+      "name": "bhat-camhat",
+      "directions": 4
+    },
+    {
+      "name": "bhat-redcamhat",
+      "directions": 4
+    },
+    {
+      "name": "bhat-mailcap",
+      "directions": 4
+    },
+    {
+      "name": "bhat-paper",
+      "directions": 4
+    },
+    {
+      "name": "bhat-policehelm",
+      "directions": 4
+    },
+    {
+      "name": "bhat-bikercap",
+      "directions": 4
+    },
+    {
+      "name": "bhat-apprentice",
+      "directions": 4
+    },
+    {
+      "name": "bhat-chavcap",
+      "directions": 4
+    },
+    {
+      "name": "bhat-captain-fancy",
+      "directions": 4
+    },
+    {
+      "name": "bhat-rank-fancy",
+      "directions": 4
+    },
+    {
+      "name": "bhat-mime_beret",
+      "directions": 4
+    },
+    {
+      "name": "bhat-mime_bowler",
+      "directions": 4
+    },
+    {
+      "name": "bigbee"
+    },
+    {
+      "name": "bigbee-angry"
+    },
+    {
+      "name": "oldbee"
+    },
+    {
+      "name": "pinkbee"
+    },
+    {
+      "name": "wings-petbee",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "wings-bubsbee",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "wings-buddybee",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "crown-petbee",
+      "directions": 4
+    },
+    {
+      "name": "halloweenmask",
+      "directions": 4
+    },
+    {
+      "name": "halloweenmask2",
+      "directions": 4
+    },
+    {
+      "name": "lichbee",
+      "directions": 4
+    },
+    {
+      "name": "lichbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "lichbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "lichbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "moth-dead",
+      "directions": 4
+    },
+    {
+      "name": "moth-sleep",
+      "directions": 4
+    },
+    {
+      "name": "moth-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "moth",
+      "directions": 4
+    },
+    {
+      "name": "madbee",
+      "directions": 4
+    },
+    {
+      "name": "madbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "madbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "madbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "madbee-color",
+      "directions": 4
+    },
+    {
+      "name": "madbee-sleep-color",
+      "directions": 4
+    },
+    {
+      "name": "madbee-dead-color",
+      "directions": 4
+    },
+    {
+      "name": "seabee",
+      "directions": 4
+    },
+    {
+      "name": "seabee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "seabee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "seabee-dead",
+      "directions": 4
+    },
+    {
+      "name": "seabee-color",
+      "directions": 4
+    },
+    {
+      "name": "seabee-sleep-color",
+      "directions": 4
+    },
+    {
+      "name": "seabee-dead-color",
+      "directions": 4
+    },
+    {
+      "name": "voorbees-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "voorbees",
+      "directions": 4
+    },
+    {
+      "name": "voorbees-sleep"
+    },
+    {
+      "name": "voorbees-dead"
+    },
+    {
+      "name": "bhat-buckethat",
+      "directions": 4
+    },
+    {
+      "name": "sonicbee",
+      "directions": 4
+    },
+    {
+      "name": "sonicbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "sonicbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "sonicbee-dead",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ascbee",
+      "directions": 4
+    },
+    {
+      "name": "ascbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ascbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "ascbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "lsbee",
+      "directions": 4
+    },
+    {
+      "name": "lsbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "lsbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "lsbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "rgbee",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "rgbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "rgbee-sleep",
+      "directions": 4,
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "rgbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "antenna-empty"
+    },
+    {
+      "name": "bhat-lesbeean",
+      "directions": 4
+    },
+    {
+      "name": "mini-bee",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.05,
+          0.1
+        ],
+        [
+          0.1,
+          0.05,
+          0.1
+        ],
+        [
+          0.1,
+          0.05,
+          0.1
+        ],
+        [
+          0.1,
+          0.05,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mini-bee2"
+    },
+    {
+      "name": "mini-bee-dead",
+      "directions": 4
+    },
+    {
+      "name": "beean",
+      "directions": 4
+    },
+    {
+      "name": "beean-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "beean-sleep",
+      "directions": 4
+    },
+    {
+      "name": "beean-dead",
+      "directions": 4
+    },
+    {
+      "name": "aloebee",
+      "directions": 4
+    },
+    {
+      "name": "aloebee-dead",
+      "directions": 4
+    },
+    {
+      "name": "aloebee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "aloebee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "clownbee",
+      "directions": 4
+    },
+    {
+      "name": "cluwnebee",
+      "directions": 4
+    },
+    {
+      "name": "mimebee",
+      "directions": 4
+    },
+    {
+      "name": "noirbee",
+      "directions": 4
+    },
+    {
+      "name": "clownbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "mimebee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "noirbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "cluwnebee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "cluwnebee-dead",
+      "directions": 4
+    },
+    {
+      "name": "clownbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "noirbee-dead",
+      "directions": 4
+    },
+    {
+      "name": "mimebee-dead",
+      "directions": 4
+    },
+    {
+      "name": "clownbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mimebee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "noirbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cluwnebee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "walpbee",
+      "directions": 4
+    },
+    {
+      "name": "walpbee-wings",
+      "directions": 4,
+      "delays": [
+        [
+          0.07,
+          0.07
+        ],
+        [
+          0.07,
+          0.07
+        ],
+        [
+          0.07,
+          0.07
+        ],
+        [
+          0.07,
+          0.07
+        ]
+      ]
+    },
+    {
+      "name": "walpbee-sleep",
+      "directions": 4
+    },
+    {
+      "name": "walpbee-dead",
+      "directions": 4
+    }
+  ]
+}

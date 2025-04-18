@@ -1,9 +1,9 @@
-using System.Numerics;
+﻿using System.Numerics;
 using Content.Shared.Movement.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
 
-namespace Content.Shared._vg.TileMovement;
+namespace Content.Shared.TileMovement;
 
 /// <summary>
 /// When attached to an entity with an InputMoverComponent, all mob movement on that entity will
@@ -45,21 +45,14 @@ public sealed partial class TileMovementComponent : Component
     public MoveButtons CurrentSlideMoveButtons;
 
     /// <summary>
+    /// Local coordinates of the entity on the last physics tick.
+    /// </summary>
+    [AutoNetworkedField]
+    public Vector2 LastTickPosition;
+
+    /// <summary>
     /// Whether this entity was weightless last physics tick.
     /// </summary>
     [AutoNetworkedField]
     public bool WasWeightlessLastTick;
-
-    /// <summary>
-    /// Whether the current ongoing slide was initiated due to a failed slide.
-    /// </summary>
-    [AutoNetworkedField]
-    public bool FailureSlideActive;
-
-    /// <summary>
-    /// Coordinates of the moving entity on the last physics tick. Null if the entity was not
-    /// parented to the same entity last tick.
-    /// </summary>
-    [AutoNetworkedField]
-    public Vector2? LastTickLocalCoordinates;
 }

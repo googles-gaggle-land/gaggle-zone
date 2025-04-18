@@ -14,7 +14,7 @@ thaven-mood-station-is-alive-name = The Station Is A Living Being
 thaven-mood-station-is-alive-desc = Harming or modifying the station is abhorrent. Anything which aims to harm the station is an infection.
 
 thaven-mood-uniform-is-job-name = Your Uniform IS Your Job
-thaven-mood-uniform-is-job-desc = If someone is wearing a uniform, they must do that job. Anyone not wearing a uniform is a passenger, and must be treated as such.
+thaven-mood-uniform-is-job-desc = If someone is wearing a uniform, they must do that job. Anyone not wearing a uniform is a staff assistant, and must be treated as such.
 
 thaven-mood-uniform-last-year-name = Your Uniform Is SO Last Year
 thaven-mood-uniform-last-year-desc = You need to find some new threads.

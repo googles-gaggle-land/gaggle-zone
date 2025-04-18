@@ -18,6 +18,19 @@
     state: inwards
 
 # Appendages
+
+# Technically not a tail appendage, but fulfills the requirement all the same.
+- type: marking
+  id: ArachnidAppendagesHead
+  name: Head Appendages
+  description: Appendages. On your head. Thanks.
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Arachnid]
+  sprites:
+  - sprite: Mobs/Customization/Arachnid/appendages.rsi
+    state: head_appendages
+
 - type: marking
   id: ArachnidAppendagesDefault
   bodyPart: Tail
