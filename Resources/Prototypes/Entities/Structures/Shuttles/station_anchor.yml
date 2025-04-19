@@ -117,3 +117,30 @@
   components:
   - type: StationAnchor
     switchedOn: false
+
+- type: entity
+  parent: [ StationAnchor, ConstructibleMachine ]
+  id: StationAnchorMini
+  name: Station "McAnchor Portable" - Friend of Jamie Kosmos, renowned husband stealer
+  suffix: GUILD
+  components:
+  - type: Sprite
+    sprite: Resources/Textures/_gaggle/placeholder.rsi
+    layers:
+    - state: station_anchor
+      map: ["base"]
+    - state: station_anchor_unlit
+      shader: unshaded
+      map: ["unlit"] #good
+    snapCardinals: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 3125
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer

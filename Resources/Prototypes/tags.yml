@@ -901,6 +901,9 @@
   id: Medal
 
 - type: Tag
+  id: MedicalPatch
+
+- type: Tag
   id: Medkit
 
 - type: Tag
