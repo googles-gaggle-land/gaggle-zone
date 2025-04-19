@@ -1,0 +1,718 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "directions": 4
+    },
+    {
+      "name": "left_detective",
+      "directions": 4
+    },
+    {
+      "name": "right_detective",
+      "directions": 4
+    },
+    {
+      "name": "left_inspector",
+      "directions": 4
+    },
+    {
+      "name": "right_inspector",
+      "directions": 4
+    },
+    {
+      "name": "left_boots",
+      "directions": 4
+    },
+    {
+      "name": "right_boots",
+      "directions": 4
+    },
+    {
+      "name": "left_chef",
+      "directions": 4
+    },
+    {
+      "name": "right_chef",
+      "directions": 4
+    },
+    {
+      "name": "left_white",
+      "directions": 4
+    },
+    {
+      "name": "right_white",
+      "directions": 4
+    },
+    {
+      "name": "left_clown",
+      "directions": 4
+    },
+    {
+      "name": "right_clown",
+      "directions": 4
+    },
+    {
+      "name": "left_cursedclown",
+      "directions": 4
+    },
+    {
+      "name": "right_cursedclown",
+      "directions": 4
+    },
+    {
+      "name": "left_blessedclown",
+      "directions": 4
+    },
+    {
+      "name": "right_blessedclown",
+      "directions": 4
+    },
+    {
+      "name": "left_purpleclown",
+      "directions": 4
+    },
+    {
+      "name": "right_purpleclown",
+      "directions": 4
+    },
+    {
+      "name": "left_pinkclown",
+      "directions": 4
+    },
+    {
+      "name": "right_pinkclown",
+      "directions": 4
+    },
+    {
+      "name": "left_yellowclown",
+      "directions": 4
+    },
+    {
+      "name": "right_yellowclown",
+      "directions": 4
+    },
+    {
+      "name": "right_clown_autumn",
+      "directions": 4
+    },
+    {
+      "name": "left_clown_autumn",
+      "directions": 4
+    },
+    {
+      "name": "right_clown_winter",
+      "directions": 4
+    },
+    {
+      "name": "left_clown_winter",
+      "directions": 4
+    },
+    {
+      "name": "left_red",
+      "directions": 4
+    },
+    {
+      "name": "right_red",
+      "directions": 4
+    },
+    {
+      "name": "left_wizard",
+      "directions": 4
+    },
+    {
+      "name": "right_wizard",
+      "directions": 4
+    },
+    {
+      "name": "left_galoshes",
+      "directions": 4
+    },
+    {
+      "name": "right_galoshes",
+      "directions": 4
+    },
+    {
+      "name": "left_swat",
+      "directions": 4
+    },
+    {
+      "name": "right_swat",
+      "directions": 4
+    },
+    {
+      "name": "right_swatheavy",
+      "directions": 4
+    },
+    {
+      "name": "left_swatheavy",
+      "directions": 4
+    },
+    {
+      "name": "right_knightboots",
+      "directions": 4
+    },
+    {
+      "name": "left_knightboots",
+      "directions": 4
+    },
+    {
+      "name": "right_capboots",
+      "directions": 4
+    },
+    {
+      "name": "left_capboots",
+      "directions": 4
+    },
+    {
+      "name": "left_black",
+      "directions": 4
+    },
+    {
+      "name": "right_black",
+      "directions": 4
+    },
+    {
+      "name": "left_brown",
+      "directions": 4
+    },
+    {
+      "name": "right_brown",
+      "directions": 4
+    },
+    {
+      "name": "left_orange",
+      "directions": 4
+    },
+    {
+      "name": "right_orange",
+      "directions": 4
+    },
+    {
+      "name": "left_orange1",
+      "directions": 4
+    },
+    {
+      "name": "right_orange1",
+      "directions": 4
+    },
+    {
+      "name": "left_psyche",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "right_psyche",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "left_tourist",
+      "directions": 4
+    },
+    {
+      "name": "right_tourist",
+      "directions": 4
+    },
+    {
+      "name": "left_cowboy",
+      "directions": 4
+    },
+    {
+      "name": "right_cowboy",
+      "directions": 4
+    },
+    {
+      "name": "left_magboots",
+      "directions": 4
+    },
+    {
+      "name": "right_magboots",
+      "directions": 4
+    },
+    {
+      "name": "left_indboots",
+      "directions": 4
+    },
+    {
+      "name": "right_indboots",
+      "directions": 4
+    },
+    {
+      "name": "left_mjshoes",
+      "directions": 4
+    },
+    {
+      "name": "right_mjshoes",
+      "directions": 4
+    },
+    {
+      "name": "left_flippers",
+      "directions": 4
+    },
+    {
+      "name": "right_flippers",
+      "directions": 4
+    },
+    {
+      "name": "left_moonshoes",
+      "directions": 4
+    },
+    {
+      "name": "right_moonshoes",
+      "directions": 4
+    },
+    {
+      "name": "left_rocketshoes",
+      "directions": 4
+    },
+    {
+      "name": "right_rocketshoes",
+      "directions": 4
+    },
+    {
+      "name": "left_machoboots",
+      "directions": 4
+    },
+    {
+      "name": "right_machoboots",
+      "directions": 4
+    },
+    {
+      "name": "left_utenashoes",
+      "directions": 4
+    },
+    {
+      "name": "right_utenashoes",
+      "directions": 4
+    },
+    {
+      "name": "blank"
+    },
+    {
+      "name": "left_virtual",
+      "directions": 4
+    },
+    {
+      "name": "right_virtual",
+      "directions": 4
+    },
+    {
+      "name": "left_blu",
+      "directions": 4
+    },
+    {
+      "name": "right_blu",
+      "directions": 4
+    },
+    {
+      "name": "left_pink",
+      "directions": 4
+    },
+    {
+      "name": "right_pink",
+      "directions": 4
+    },
+    {
+      "name": "left_oldclown",
+      "directions": 4
+    },
+    {
+      "name": "right_oldclown",
+      "directions": 4
+    },
+    {
+      "name": "left_ziggy",
+      "directions": 4
+    },
+    {
+      "name": "right_ziggy",
+      "directions": 4
+    },
+    {
+      "name": "left_fuzzy",
+      "directions": 4
+    },
+    {
+      "name": "right_fuzzy",
+      "directions": 4
+    },
+    {
+      "name": "left_gr_boots",
+      "directions": 4
+    },
+    {
+      "name": "right_gr_boots",
+      "directions": 4
+    },
+    {
+      "name": "left_wheels",
+      "directions": 4
+    },
+    {
+      "name": "right_wheels",
+      "directions": 4
+    },
+    {
+      "name": "left_bheels",
+      "directions": 4
+    },
+    {
+      "name": "right_bheels",
+      "directions": 4
+    },
+    {
+      "name": "left_rheels",
+      "directions": 4
+    },
+    {
+      "name": "right_rheels",
+      "directions": 4
+    },
+    {
+      "name": "left_dress",
+      "directions": 4
+    },
+    {
+      "name": "right_dress",
+      "directions": 4
+    },
+    {
+      "name": "left_cleats",
+      "directions": 4
+    },
+    {
+      "name": "right_cleats",
+      "directions": 4
+    },
+    {
+      "name": "left_rocketboots",
+      "directions": 4
+    },
+    {
+      "name": "right_rocketboots",
+      "directions": 4
+    },
+    {
+      "name": "left_gogo",
+      "directions": 4
+    },
+    {
+      "name": "right_gogo",
+      "directions": 4
+    },
+    {
+      "name": "left_sailormoon",
+      "directions": 4
+    },
+    {
+      "name": "right_sailormoon",
+      "directions": 4
+    },
+    {
+      "name": "left_thong",
+      "directions": 4
+    },
+    {
+      "name": "right_thong",
+      "directions": 4
+    },
+    {
+      "name": "left_witchfinder",
+      "directions": 4
+    },
+    {
+      "name": "right_witchfinder",
+      "directions": 4
+    },
+    {
+      "name": "left_divindboots",
+      "directions": 4
+    },
+    {
+      "name": "right_divindboots",
+      "directions": 4
+    },
+    {
+      "name": "left_jester",
+      "directions": 4
+    },
+    {
+      "name": "right_jester",
+      "directions": 4
+    },
+    {
+      "name": "right_rollerskates",
+      "directions": 4
+    },
+    {
+      "name": "left_rollerskates",
+      "directions": 4
+    },
+    {
+      "name": "left_cwboots",
+      "directions": 4
+    },
+    {
+      "name": "right_cwboots",
+      "directions": 4
+    },
+    {
+      "name": "right_floppy",
+      "directions": 4
+    },
+    {
+      "name": "left_floppy",
+      "directions": 4
+    },
+    {
+      "name": "left_bootsblk",
+      "directions": 4
+    },
+    {
+      "name": "right_bootsblk",
+      "directions": 4
+    },
+    {
+      "name": "left_bootswht",
+      "directions": 4
+    },
+    {
+      "name": "right_bootswht",
+      "directions": 4
+    },
+    {
+      "name": "left_bootsblu",
+      "directions": 4
+    },
+    {
+      "name": "right_bootsblu",
+      "directions": 4
+    },
+    {
+      "name": "left_bootsbrn",
+      "directions": 4
+    },
+    {
+      "name": "right_bootsbrn",
+      "directions": 4
+    },
+    {
+      "name": "left_flatsblk",
+      "directions": 4
+    },
+    {
+      "name": "right_flatsblk",
+      "directions": 4
+    },
+    {
+      "name": "left_flatswht",
+      "directions": 4
+    },
+    {
+      "name": "right_flatswht",
+      "directions": 4
+    },
+    {
+      "name": "left_flatsbrn",
+      "directions": 4
+    },
+    {
+      "name": "right_flatsbrn",
+      "directions": 4
+    },
+    {
+      "name": "left_flatsblu",
+      "directions": 4
+    },
+    {
+      "name": "right_flatsblu",
+      "directions": 4
+    },
+    {
+      "name": "left_flatspnk",
+      "directions": 4
+    },
+    {
+      "name": "right_flatspnk",
+      "directions": 4
+    },
+    {
+      "name": "left_mjblack",
+      "directions": 4
+    },
+    {
+      "name": "right_mjblack",
+      "directions": 4
+    },
+    {
+      "name": "left_mjwhite",
+      "directions": 4
+    },
+    {
+      "name": "right_mjwhite",
+      "directions": 4
+    },
+    {
+      "name": "left_mjbrown",
+      "directions": 4
+    },
+    {
+      "name": "right_mjbrown",
+      "directions": 4
+    },
+    {
+      "name": "left_mjnavy",
+      "directions": 4
+    },
+    {
+      "name": "right_mjnavy",
+      "directions": 4
+    },
+    {
+      "name": "left_westboot_black",
+      "directions": 4
+    },
+    {
+      "name": "right_westboot_black",
+      "directions": 4
+    },
+    {
+      "name": "left_westboot_dirty",
+      "directions": 4
+    },
+    {
+      "name": "right_westboot_dirty",
+      "directions": 4
+    },
+    {
+      "name": "left_westboot",
+      "directions": 4
+    },
+    {
+      "name": "right_westboot",
+      "directions": 4
+    },
+    {
+      "name": "left_westboot_brown",
+      "directions": 4
+    },
+    {
+      "name": "right_westboot_brown",
+      "directions": 4
+    },
+    {
+      "name": "left_witchboots",
+      "directions": 4
+    },
+    {
+      "name": "right_witchboots",
+      "directions": 4
+    },
+    {
+      "name": "right_stompboots",
+      "directions": 4
+    },
+    {
+      "name": "left_stompboots",
+      "directions": 4
+    },
+    {
+      "name": "right_goku",
+      "directions": 4
+    },
+    {
+      "name": "left_goku",
+      "directions": 4
+    },
+    {
+      "name": "left_boomboots",
+      "directions": 4
+    },
+    {
+      "name": "right_boomboots",
+      "directions": 4
+    },
+    {
+      "name": "right_swatclown",
+      "directions": 4
+    },
+    {
+      "name": "left_swatclown",
+      "directions": 4
+    },
+    {
+      "name": "right_clown_military",
+      "directions": 4
+    },
+    {
+      "name": "left_clown_military",
+      "directions": 4
+    }
+  ]
+}

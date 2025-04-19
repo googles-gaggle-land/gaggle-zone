@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "directions": 4
+    },
+    {
+      "name": "black",
+      "directions": 4
+    },
+    {
+      "name": "grey",
+      "directions": 4
+    },
+    {
+      "name": "white",
+      "directions": 4
+    },
+    {
+      "name": "darkred",
+      "directions": 4
+    },
+    {
+      "name": "red",
+      "directions": 4
+    },
+    {
+      "name": "lightred",
+      "directions": 4
+    },
+    {
+      "name": "orange",
+      "directions": 4
+    },
+    {
+      "name": "brown",
+      "directions": 4
+    },
+    {
+      "name": "lightbrown",
+      "directions": 4
+    },
+    {
+      "name": "yellow",
+      "directions": 4
+    },
+    {
+      "name": "yellowgreen",
+      "directions": 4
+    },
+    {
+      "name": "green",
+      "directions": 4
+    },
+    {
+      "name": "lightgreen",
+      "directions": 4
+    },
+    {
+      "name": "aqua",
+      "directions": 4
+    },
+    {
+      "name": "lightblue",
+      "directions": 4
+    },
+    {
+      "name": "blue",
+      "directions": 4
+    },
+    {
+      "name": "darkblue",
+      "directions": 4
+    },
+    {
+      "name": "purple",
+      "directions": 4
+    },
+    {
+      "name": "lightpurple",
+      "directions": 4
+    },
+    {
+      "name": "magenta",
+      "directions": 4
+    },
+    {
+      "name": "pink",
+      "directions": 4
+    },
+    {
+      "name": "suitB",
+      "directions": 4
+    },
+    {
+      "name": "suitB-dress",
+      "directions": 4
+    },
+    {
+      "name": "suitPn",
+      "directions": 4
+    },
+    {
+      "name": "suitG",
+      "directions": 4
+    },
+    {
+      "name": "suitG-dress",
+      "directions": 4
+    },
+    {
+      "name": "suitR",
+      "directions": 4
+    },
+    {
+      "name": "suitR-dress",
+      "directions": 4
+    },
+    {
+      "name": "suitT",
+      "directions": 4
+    },
+    {
+      "name": "suitT-dress",
+      "directions": 4
+    },
+    {
+      "name": "suitP",
+      "directions": 4
+    },
+    {
+      "name": "suitP-dress",
+      "directions": 4
+    },
+    {
+      "name": "suitRb",
+      "directions": 4
+    },
+    {
+      "name": "suitRb-dress",
+      "directions": 4
+    },
+    {
+      "name": "virtual",
+      "directions": 4
+    },
+    {
+      "name": "flashy",
+      "directions": 4,
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "overalls_orange",
+      "directions": 4
+    },
+    {
+      "name": "overalls_yellow",
+      "directions": 4
+    },
+    {
+      "name": "peacockdress",
+      "directions": 4
+    },
+    {
+      "name": "blossomdress",
+      "directions": 4
+    },
+    {
+      "name": "collardressbl",
+      "directions": 4
+    },
+    {
+      "name": "collardressr",
+      "directions": 4
+    },
+    {
+      "name": "collardressg",
+      "directions": 4
+    },
+    {
+      "name": "collardressb",
+      "directions": 4
+    },
+    {
+      "name": "suit-capB",
+      "directions": 4
+    },
+    {
+      "name": "suit-capB-dress",
+      "directions": 4
+    },
+    {
+      "name": "suit-capR",
+      "directions": 4
+    },
+    {
+      "name": "suit-capR-dress",
+      "directions": 4
+    },
+    {
+      "name": "red-tie",
+      "directions": 4
+    }
+  ]
+}

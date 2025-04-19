@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "cursedclown",
+      "directions": 4
+    },
+    {
+      "name": "blessedclown",
+      "directions": 4
+    },
+    {
+      "name": "purpleclown",
+      "directions": 4
+    },
+    {
+      "name": "yellowclown",
+      "directions": 4
+    },
+    {
+      "name": "pinkclown",
+      "directions": 4
+    },
+    {
+      "name": "clown_autumn",
+      "directions": 4
+    },
+    {
+      "name": "clown_winter",
+      "directions": 4
+    },
+    {
+      "name": "owl",
+      "directions": 4
+    },
+    {
+      "name": "sweater1",
+      "directions": 4
+    },
+    {
+      "name": "sweater2",
+      "directions": 4
+    },
+    {
+      "name": "sweater3",
+      "directions": 4
+    },
+    {
+      "name": "murph",
+      "directions": 4
+    },
+    {
+      "name": "sealab",
+      "directions": 4
+    },
+    {
+      "name": "chav1",
+      "directions": 4
+    },
+    {
+      "name": "chav2",
+      "directions": 4
+    },
+    {
+      "name": "birdman",
+      "directions": 4
+    },
+    {
+      "name": "dawson",
+      "directions": 4
+    },
+    {
+      "name": "hunter",
+      "directions": 4
+    },
+    {
+      "name": "safari",
+      "directions": 4
+    },
+    {
+      "name": "princess",
+      "directions": 4
+    },
+    {
+      "name": "dolan",
+      "directions": 4
+    },
+    {
+      "name": "moonwalker",
+      "directions": 4
+    },
+    {
+      "name": "vault13",
+      "directions": 4
+    },
+    {
+      "name": "merchant",
+      "directions": 4
+    },
+    {
+      "name": "viking",
+      "directions": 4
+    },
+    {
+      "name": "sailor",
+      "directions": 4
+    },
+    {
+      "name": "duke",
+      "directions": 4
+    },
+    {
+      "name": "johnny",
+      "directions": 4
+    },
+    {
+      "name": "psyche",
+      "directions": 4,
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ],
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "jetson",
+      "directions": 4
+    },
+    {
+      "name": "sbahjB",
+      "directions": 4
+    },
+    {
+      "name": "sbahjR",
+      "directions": 4
+    },
+    {
+      "name": "sbahjY",
+      "directions": 4
+    },
+    {
+      "name": "spiderman",
+      "directions": 4
+    },
+    {
+      "name": "machopants",
+      "directions": 4
+    },
+    {
+      "name": "towel",
+      "directions": 4
+    },
+    {
+      "name": "mario",
+      "directions": 4
+    },
+    {
+      "name": "luigi",
+      "directions": 4
+    },
+    {
+      "name": "wario",
+      "directions": 4
+    },
+    {
+      "name": "waluigi",
+      "directions": 4
+    },
+    {
+      "name": "rainbow",
+      "directions": 4
+    },
+    {
+      "name": "yay",
+      "directions": 4
+    },
+    {
+      "name": "cloud",
+      "directions": 4
+    },
+    {
+      "name": "waldo",
+      "directions": 4
+    },
+    {
+      "name": "odlaw",
+      "directions": 4
+    },
+    {
+      "name": "waldont1",
+      "directions": 4
+    },
+    {
+      "name": "waldont2",
+      "directions": 4
+    },
+    {
+      "name": "waldont3",
+      "directions": 4
+    },
+    {
+      "name": "waldont4",
+      "directions": 4
+    },
+    {
+      "name": "waldont5",
+      "directions": 4
+    },
+    {
+      "name": "waldont6",
+      "directions": 4
+    },
+    {
+      "name": "police",
+      "directions": 4
+    },
+    {
+      "name": "utena",
+      "directions": 4
+    },
+    {
+      "name": "anthy",
+      "directions": 4
+    },
+    {
+      "name": "butler",
+      "directions": 4
+    },
+    {
+      "name": "maid",
+      "directions": 4
+    },
+    {
+      "name": "ziggy",
+      "directions": 4
+    },
+    {
+      "name": "kilt",
+      "directions": 4
+    },
+    {
+      "name": "mime1",
+      "directions": 4
+    },
+    {
+      "name": "mime2",
+      "directions": 4
+    },
+    {
+      "name": "toga",
+      "directions": 4
+    },
+    {
+      "name": "flame",
+      "directions": 4
+    },
+    {
+      "name": "america",
+      "directions": 4
+    },
+    {
+      "name": "weddress",
+      "directions": 4
+    },
+    {
+      "name": "trashbag",
+      "directions": 4
+    },
+    {
+      "name": "biobag",
+      "directions": 4
+    },
+    {
+      "name": "rotten",
+      "directions": 4
+    },
+    {
+      "name": "frogsuit",
+      "directions": 4
+    },
+    {
+      "name": "shirtnjeans",
+      "directions": 4
+    },
+    {
+      "name": "hakama_1",
+      "directions": 4
+    },
+    {
+      "name": "hakama_2",
+      "directions": 4
+    },
+    {
+      "name": "hakama_3",
+      "directions": 4
+    },
+    {
+      "name": "hakama_4",
+      "directions": 4
+    },
+    {
+      "name": "hakama_5",
+      "directions": 4
+    },
+    {
+      "name": "hakama_6",
+      "directions": 4
+    },
+    {
+      "name": "sailormoon",
+      "directions": 4
+    },
+    {
+      "name": "witchfinder",
+      "directions": 4
+    },
+    {
+      "name": "jester",
+      "directions": 4
+    },
+    {
+      "name": "vampcostume",
+      "directions": 4
+    },
+    {
+      "name": "elvissuit",
+      "directions": 4
+    },
+    {
+      "name": "80smens",
+      "directions": 4
+    },
+    {
+      "name": "80swomens",
+      "directions": 4
+    },
+    {
+      "name": "rollerdisco",
+      "directions": 4
+    },
+    {
+      "name": "itsyourcousin",
+      "directions": 4
+    },
+    {
+      "name": "adidad",
+      "directions": 4
+    },
+    {
+      "name": "mumwraps",
+      "directions": 4
+    },
+    {
+      "name": "cwfashion",
+      "directions": 4
+    },
+    {
+      "name": "ftuniform",
+      "directions": 4
+    },
+    {
+      "name": "superhero",
+      "directions": 4
+    },
+    {
+      "name": "pajamas",
+      "directions": 4
+    },
+    {
+      "name": "dinerdress-mint",
+      "directions": 4
+    },
+    {
+      "name": "dinerdress-pink",
+      "directions": 4
+    },
+    {
+      "name": "guybrush",
+      "directions": 4
+    },
+    {
+      "name": "black_wcoat",
+      "directions": 4
+    },
+    {
+      "name": "red_wcoat",
+      "directions": 4
+    },
+    {
+      "name": "blue_wcoat",
+      "directions": 4
+    },
+    {
+      "name": "marchingband",
+      "directions": 4
+    },
+    {
+      "name": "donk",
+      "directions": 4
+    },
+    {
+      "name": "donkini",
+      "directions": 4
+    },
+    {
+      "name": "jcdenton",
+      "directions": 4
+    },
+    {
+      "name": "machopants_base",
+      "directions": 4
+    },
+    {
+      "name": "yukata_plain1",
+      "directions": 4
+    },
+    {
+      "name": "yukata_plain2",
+      "directions": 4
+    },
+    {
+      "name": "yukata_plain3",
+      "directions": 4
+    },
+    {
+      "name": "yukata_plain4",
+      "directions": 4
+    },
+    {
+      "name": "yukata_plain5",
+      "directions": 4
+    },
+    {
+      "name": "yukata_floral1",
+      "directions": 4
+    },
+    {
+      "name": "yukata_floral2",
+      "directions": 4
+    },
+    {
+      "name": "yukata_floral3",
+      "directions": 4
+    },
+    {
+      "name": "yukata_floral4",
+      "directions": 4
+    },
+    {
+      "name": "yukata_floral5",
+      "directions": 4
+    },
+    {
+      "name": "",
+      "directions": 4
+    },
+    {
+      "name": "weirdo",
+      "directions": 4
+    },
+    {
+      "name": "goku",
+      "directions": 4
+    }
+  ]
+}

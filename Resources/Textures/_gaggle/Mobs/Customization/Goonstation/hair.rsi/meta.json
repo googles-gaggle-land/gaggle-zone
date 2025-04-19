@@ -1,0 +1,1151 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "https://github.com/goonstation/goonstation",
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "short",
+      "directions": 4
+    },
+    {
+      "name": "long",
+      "directions": 4
+    },
+    {
+      "name": "cut",
+      "directions": 4
+    },
+    {
+      "name": "mohawk",
+      "directions": 4
+    },
+    {
+      "name": "mohawkS",
+      "directions": 4
+    },
+    {
+      "name": "mohawkFT",
+      "directions": 4
+    },
+    {
+      "name": "mohawkFB",
+      "directions": 4
+    },
+    {
+      "name": "balding",
+      "directions": 4
+    },
+    {
+      "name": "emo",
+      "directions": 4
+    },
+    {
+      "name": "emoH",
+      "directions": 4
+    },
+    {
+      "name": "bedhead",
+      "directions": 4
+    },
+    {
+      "name": "clown",
+      "directions": 4
+    },
+    {
+      "name": "clownT",
+      "directions": 4
+    },
+    {
+      "name": "clownM",
+      "directions": 4
+    },
+    {
+      "name": "clownB",
+      "directions": 4
+    },
+    {
+      "name": "dreads",
+      "directions": 4
+    },
+    {
+      "name": "dreadsA",
+      "directions": 4
+    },
+    {
+      "name": "afro",
+      "directions": 4
+    },
+    {
+      "name": "afroHR",
+      "directions": 4
+    },
+    {
+      "name": "afroHL",
+      "directions": 4
+    },
+    {
+      "name": "afroST",
+      "directions": 4
+    },
+    {
+      "name": "afroSM",
+      "directions": 4
+    },
+    {
+      "name": "afroSB",
+      "directions": 4
+    },
+    {
+      "name": "afroSL",
+      "directions": 4
+    },
+    {
+      "name": "afroSC",
+      "directions": 4
+    },
+    {
+      "name": "afroSR",
+      "directions": 4
+    },
+    {
+      "name": "afroCNW",
+      "directions": 4
+    },
+    {
+      "name": "afroCNE",
+      "directions": 4
+    },
+    {
+      "name": "afroCSW",
+      "directions": 4
+    },
+    {
+      "name": "afroCSE",
+      "directions": 4
+    },
+    {
+      "name": "afroSH",
+      "directions": 4
+    },
+    {
+      "name": "afroSV",
+      "directions": 4
+    },
+    {
+      "name": "bieb",
+      "directions": 4
+    },
+    {
+      "name": "bowl",
+      "directions": 4
+    },
+    {
+      "name": "part",
+      "directions": 4
+    },
+    {
+      "name": "ponytail",
+      "directions": 4
+    },
+    {
+      "name": "flattop",
+      "directions": 4
+    },
+    {
+      "name": "pomp",
+      "directions": 4
+    },
+    {
+      "name": "pompS",
+      "directions": 4
+    },
+    {
+      "name": "shavedhead",
+      "directions": 4
+    },
+    {
+      "name": "einstein",
+      "directions": 4
+    },
+    {
+      "name": "einalt",
+      "directions": 4
+    },
+    {
+      "name": "shoulders",
+      "directions": 4
+    },
+    {
+      "name": "tonsure",
+      "directions": 4
+    },
+    {
+      "name": "vlong",
+      "directions": 4
+    },
+    {
+      "name": "bun",
+      "directions": 4
+    },
+    {
+      "name": "80s",
+      "directions": 4
+    },
+    {
+      "name": "80sfade",
+      "directions": 4
+    },
+    {
+      "name": "longbraid",
+      "directions": 4
+    },
+    {
+      "name": "scraggly",
+      "directions": 4
+    },
+    {
+      "name": "indian",
+      "directions": 4
+    },
+    {
+      "name": "fabio",
+      "directions": 4
+    },
+    {
+      "name": "halfshavedL",
+      "directions": 4
+    },
+    {
+      "name": "halfshavedR",
+      "directions": 4
+    },
+    {
+      "name": "glammetal",
+      "directions": 4
+    },
+    {
+      "name": "glammetalO",
+      "directions": 4
+    },
+    {
+      "name": "spud",
+      "directions": 4
+    },
+    {
+      "name": "band",
+      "directions": 4
+    },
+    {
+      "name": "charioteers",
+      "directions": 4
+    },
+    {
+      "name": "king-of-rock-and-roll",
+      "directions": 4
+    },
+    {
+      "name": "pulledf",
+      "directions": 4
+    },
+    {
+      "name": "lowpig",
+      "directions": 4
+    },
+    {
+      "name": "midb",
+      "directions": 4
+    },
+    {
+      "name": "twotail",
+      "directions": 4
+    },
+    {
+      "name": "shoulderl",
+      "directions": 4
+    },
+    {
+      "name": "pulledb",
+      "directions": 4
+    },
+    {
+      "name": "pig",
+      "directions": 4
+    },
+    {
+      "name": "pig_half",
+      "directions": 4
+    },
+    {
+      "name": "shortflip",
+      "directions": 4
+    },
+    {
+      "name": "watson",
+      "directions": 4
+    },
+    {
+      "name": "chaplin",
+      "directions": 4
+    },
+    {
+      "name": "fullbeard",
+      "directions": 4
+    },
+    {
+      "name": "vandyke",
+      "directions": 4
+    },
+    {
+      "name": "elvis",
+      "directions": 4
+    },
+    {
+      "name": "abe",
+      "directions": 4
+    },
+    {
+      "name": "chin",
+      "directions": 4
+    },
+    {
+      "name": "gt",
+      "directions": 4
+    },
+    {
+      "name": "longbeard",
+      "directions": 4
+    },
+    {
+      "name": "longbeardfade",
+      "directions": 4
+    },
+    {
+      "name": "hip",
+      "directions": 4
+    },
+    {
+      "name": "handlebar",
+      "directions": 4
+    },
+    {
+      "name": "selleck",
+      "directions": 4
+    },
+    {
+      "name": "neckbeard",
+      "directions": 4
+    },
+    {
+      "name": "fu",
+      "directions": 4
+    },
+    {
+      "name": "robo",
+      "directions": 4
+    },
+    {
+      "name": "tramp",
+      "directions": 4
+    },
+    {
+      "name": "trampstains",
+      "directions": 4
+    },
+    {
+      "name": "villain",
+      "directions": 4
+    },
+    {
+      "name": "dali",
+      "directions": 4
+    },
+    {
+      "name": "braided",
+      "directions": 4
+    },
+    {
+      "name": "devil",
+      "directions": 4
+    },
+    {
+      "name": "puffbeard",
+      "directions": 4
+    },
+    {
+      "name": "thufir",
+      "directions": 4
+    },
+    {
+      "name": "bstreak",
+      "directions": 4
+    },
+    {
+      "name": "streak",
+      "directions": 4
+    },
+    {
+      "name": "lipstick",
+      "directions": 4
+    },
+    {
+      "name": "eyebrows",
+      "directions": 4
+    },
+    {
+      "name": "xcom",
+      "directions": 4
+    },
+    {
+      "name": "goku",
+      "directions": 4
+    },
+    {
+      "name": "super",
+      "directions": 4
+    },
+    {
+      "name": "bart",
+      "directions": 4
+    },
+    {
+      "name": "beib",
+      "directions": 4
+    },
+    {
+      "name": "homer",
+      "directions": 4
+    },
+    {
+      "name": "jetson",
+      "directions": 4
+    },
+    {
+      "name": "sailor_moon",
+      "directions": 4
+    },
+    {
+      "name": "chop_short",
+      "directions": 4
+    },
+    {
+      "name": "froofy_long",
+      "directions": 4
+    },
+    {
+      "name": "wavy_tail",
+      "directions": 4
+    },
+    {
+      "name": "wavy_tail_half",
+      "directions": 4
+    },
+    {
+      "name": "zapped",
+      "directions": 4
+    },
+    {
+      "name": "wiz",
+      "directions": 4
+    },
+    {
+      "name": "afroHA",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "afroRB",
+      "directions": 4,
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "flames",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medusa",
+      "directions": 4,
+      "delays": [
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ],
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ],
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ],
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ]
+      ]
+    },
+    {
+      "name": "bangs",
+      "directions": 4
+    },
+    {
+      "name": "bobcut",
+      "directions": 4
+    },
+    {
+      "name": "minipig",
+      "directions": 4
+    },
+    {
+      "name": "doublebun",
+      "directions": 4
+    },
+    {
+      "name": "mermaid",
+      "directions": 4
+    },
+    {
+      "name": "mermaidfade",
+      "directions": 4
+    },
+    {
+      "name": "combed_s",
+      "directions": 4
+    },
+    {
+      "name": "longsidepart_s",
+      "directions": 4
+    },
+    {
+      "name": "bluntbangs_s",
+      "directions": 4
+    },
+    {
+      "name": "combedbob_s",
+      "directions": 4
+    },
+    {
+      "name": "halfshaved_s",
+      "directions": 4
+    },
+    {
+      "name": "slightlymessy_s",
+      "directions": 4
+    },
+    {
+      "name": "ewave_s",
+      "directions": 4
+    },
+    {
+      "name": "geisha_s",
+      "directions": 4
+    },
+    {
+      "name": "baum_s",
+      "directions": 4
+    },
+    {
+      "name": "chub_s",
+      "directions": 4
+    },
+    {
+      "name": "chub2_s",
+      "directions": 4
+    },
+    {
+      "name": "sakura",
+      "directions": 4
+    },
+    {
+      "name": "sage",
+      "directions": 4
+    },
+    {
+      "name": "fun_bun",
+      "directions": 4
+    },
+    {
+      "name": "disheveled",
+      "directions": 4
+    },
+    {
+      "name": "croft",
+      "directions": 4
+    },
+    {
+      "name": "temsik",
+      "directions": 4
+    },
+    {
+      "name": "drill",
+      "directions": 4
+    },
+    {
+      "name": "doublepart",
+      "directions": 4
+    },
+    {
+      "name": "motley",
+      "directions": 4
+    },
+    {
+      "name": "tulip",
+      "directions": 4
+    },
+    {
+      "name": "subtlespiky",
+      "directions": 4
+    },
+    {
+      "name": "spiky",
+      "directions": 4
+    },
+    {
+      "name": "smoothwave_fade",
+      "directions": 4
+    },
+    {
+      "name": "smoothwave",
+      "directions": 4
+    },
+    {
+      "name": "smoothwave_half",
+      "directions": 4
+    },
+    {
+      "name": "longtailed",
+      "directions": 4
+    },
+    {
+      "name": "floof",
+      "directions": 4
+    },
+    {
+      "name": "bloom",
+      "directions": 4
+    },
+    {
+      "name": "2bangs_short",
+      "directions": 4
+    },
+    {
+      "name": "2bangs_long",
+      "directions": 4
+    },
+    {
+      "name": "visual",
+      "directions": 4
+    },
+    {
+      "name": "shitty_hair",
+      "directions": 4
+    },
+    {
+      "name": "shitty_beard",
+      "directions": 4
+    },
+    {
+      "name": "shitty_beard_stains",
+      "directions": 4
+    },
+    {
+      "name": "bundercut",
+      "directions": 4
+    },
+    {
+      "name": "flick",
+      "directions": 4
+    },
+    {
+      "name": "flick_half",
+      "directions": 4
+    },
+    {
+      "name": "ignite",
+      "directions": 4
+    },
+    {
+      "name": "mysterious",
+      "directions": 4
+    },
+    {
+      "name": "ripley",
+      "directions": 4
+    },
+    {
+      "name": "willow",
+      "directions": 4
+    },
+    {
+      "name": "violet",
+      "directions": 4
+    },
+    {
+      "name": "violet_half",
+      "directions": 4
+    },
+    {
+      "name": "glamponytail",
+      "directions": 4
+    },
+    {
+      "name": "glamponytail_half",
+      "directions": 4
+    },
+    {
+      "name": "rockponytail",
+      "directions": 4
+    },
+    {
+      "name": "rockponytail_half",
+      "directions": 4
+    },
+    {
+      "name": "spikyponytail",
+      "directions": 4
+    },
+    {
+      "name": "messyponytail",
+      "directions": 4
+    },
+    {
+      "name": "fiveoclock",
+      "directions": 4
+    },
+    {
+      "name": "looselongbraid",
+      "directions": 4
+    },
+    {
+      "name": "looselongbraidfaded",
+      "directions": 4
+    },
+    {
+      "name": "looselongbraidshoulder",
+      "directions": 4
+    },
+    {
+      "name": "combedfront",
+      "directions": 4
+    },
+    {
+      "name": "combedfrontbangs",
+      "directions": 4
+    },
+    {
+      "name": "combedfrontshort",
+      "directions": 4
+    },
+    {
+      "name": "combedfrontshortbangs",
+      "directions": 4
+    },
+    {
+      "name": "longfront",
+      "directions": 4
+    },
+    {
+      "name": "longfrontbangs",
+      "directions": 4
+    },
+    {
+      "name": "flatbangs",
+      "directions": 4
+    },
+    {
+      "name": "longwavebangs",
+      "directions": 4
+    },
+    {
+      "name": "pompompigtail",
+      "directions": 4
+    },
+    {
+      "name": "lionsmane",
+      "directions": 4
+    },
+    {
+      "name": "pinion",
+      "directions": 4
+    },
+    {
+      "name": "longtwintail",
+      "directions": 4
+    },
+    {
+      "name": "longtwintail_half",
+      "directions": 4
+    },
+    {
+      "name": "longwaves",
+      "directions": 4
+    },
+    {
+      "name": "longwaves_half",
+      "directions": 4
+    },
+    {
+      "name": "breezy",
+      "directions": 4
+    },
+    {
+      "name": "scruffy",
+      "directions": 4
+    },
+    {
+      "name": "sparks",
+      "directions": 4
+    },
+    {
+      "name": "untidyponytail",
+      "directions": 4
+    },
+    {
+      "name": "longwaves_fade",
+      "directions": 4
+    },
+    {
+      "name": "lionsmane_fade",
+      "directions": 4
+    },
+    {
+      "name": "breezy_fade",
+      "directions": 4
+    },
+    {
+      "name": "ripley_fade",
+      "directions": 4
+    },
+    {
+      "name": "violet_fade",
+      "directions": 4
+    },
+    {
+      "name": "willow_fade",
+      "directions": 4
+    },
+    {
+      "name": "flick_fade",
+      "directions": 4
+    },
+    {
+      "name": "rockponytail_fade",
+      "directions": 4
+    },
+    {
+      "name": "afro_fade",
+      "directions": 4
+    },
+    {
+      "name": "shortflatbangs",
+      "directions": 4
+    },
+    {
+      "name": "shortwavebangs",
+      "directions": 4
+    },
+    {
+      "name": "sidebangs",
+      "directions": 4
+    },
+    {
+      "name": "igniteshaved",
+      "directions": 4
+    },
+    {
+      "name": "mysterybangs",
+      "directions": 4
+    },
+    {
+      "name": "salty",
+      "directions": 4
+    },
+    {
+      "name": "wolfcut",
+      "directions": 4
+    },
+    {
+      "name": "brushed",
+      "directions": 4
+    },
+    {
+      "name": "walnut",
+      "directions": 4
+    },
+    {
+      "name": "mop",
+      "directions": 4
+    },
+    {
+      "name": "acorn",
+      "directions": 4
+    },
+    {
+      "name": "curtain",
+      "directions": 4
+    },
+    {
+      "name": "scott",
+      "directions": 4
+    },
+    {
+      "name": "curly_bob",
+      "directions": 4
+    },
+    {
+      "name": "charming",
+      "directions": 4
+    },
+    {
+      "name": "spoon",
+      "directions": 4
+    },
+    {
+      "name": "spoonbangs",
+      "directions": 4
+    },
+    {
+      "name": "messy_waves",
+      "directions": 4
+    },
+    {
+      "name": "messy_waves_half",
+      "directions": 4
+    },
+    {
+      "name": "blunt_bob",
+      "directions": 4
+    },
+    {
+      "name": "jelly",
+      "directions": 4
+    },
+    {
+      "name": "cockatiel",
+      "directions": 4
+    },
+    {
+      "name": "combed_fringe",
+      "directions": 4
+    },
+    {
+      "name": "slicked_back",
+      "directions": 4
+    },
+    {
+      "name": "asym_bob",
+      "directions": 4
+    },
+    {
+      "name": "side_curls",
+      "directions": 4
+    },
+    {
+      "name": "messy_fringe",
+      "directions": 4
+    },
+    {
+      "name": "aristocrat",
+      "directions": 4
+    },
+    {
+      "name": "brushed_bob",
+      "directions": 4
+    },
+    {
+      "name": "short_shag",
+      "directions": 4
+    },
+    {
+      "name": "luxury_bob",
+      "directions": 4
+    },
+    {
+      "name": "wavy_front",
+      "directions": 4
+    },
+    {
+      "name": "poofy_bob",
+      "directions": 4
+    },
+    {
+      "name": "short_dreads",
+      "directions": 4
+    },
+    {
+      "name": "shaggy",
+      "directions": 4
+    },
+    {
+      "name": "cockatielbang",
+      "directions": 4
+    },
+    {
+      "name": "combedfringebangs",
+      "directions": 4
+    },
+    {
+      "name": "longeyebangs",
+      "directions": 4
+    },
+    {
+      "name": "wavybang",
+      "directions": 4
+    },
+    {
+      "name": "tied_bangs",
+      "directions": 4
+    },
+    {
+      "name": "tied_bangs_long",
+      "directions": 4
+    },
+    {
+      "name": "bluntsidebang",
+      "directions": 4
+    },
+    {
+      "name": "emobang",
+      "directions": 4
+    },
+    {
+      "name": "lopsidedbang",
+      "directions": 4
+    },
+    {
+      "name": "curtainbangs",
+      "directions": 4
+    },
+    {
+      "name": "suave_mullet",
+      "directions": 4
+    },
+    {
+      "name": "curly_bob_fade",
+      "directions": 4
+    },
+    {
+      "name": "dwarfbraided",
+      "directions": 4
+    },
+    {
+      "name": "dwarfbeard",
+      "directions": 4
+    },
+    {
+      "name": "v_bangs",
+      "directions": 4
+    },
+    {
+      "name": "streakbangL",
+      "directions": 4
+    },
+    {
+      "name": "streakbangR",
+      "directions": 4
+    }
+  ]
+}
