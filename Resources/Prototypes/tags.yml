@@ -684,6 +684,12 @@
   id: HardsuitSpatio
 
 - type: Tag
+  id: HarpyEmotes
+
+- type: Tag
+  id: HarpySinger
+
+- type: Tag
   id: Haunted
 
 - type: Tag
