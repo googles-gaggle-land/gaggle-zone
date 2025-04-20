@@ -549,3 +549,19 @@ MagazineBoxAntiMaterielBig: null
 MagazineBoxCaselessRifle10x24: null
 MagazineBoxCaselessRifleBig: null
 MagazinePistolHighCapacityRubber: null
+
+# 2025-04-20 Google's Gaggle Land "The Doorening"
+# There are no glass sprites so we just replace these. Remove this once you indeed do add glass sprites
+
+AirlockEngineeringGlass: AirlockEngineering
+AirlockAtmosphericsGlass: AirlockAtmospherics
+AirlockCargoGlass: AirlockCargo
+AirlockHydroponicsGlass: AirlockHydroponics
+AirlockMedicalGlass: AirlockMedical
+AirlockChemistryGlass: AirlockChemistry
+AirlockVirologyGlass: AirlockMedical
+AirlockScienceGlass: AirlockScience
+AirlockRoboticsGlass: AirlockRobotics
+AirlockCommandGlass: AirlockCommand
+AirlockSecurityGlass: AirlockSecurity
+AirlockSyndicateGlass: AirlockSyndicate
