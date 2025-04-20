@@ -29,7 +29,7 @@
           position: "0,-0.5"
         hard: false
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/shuttle.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/shuttle.rsi
     snapCardinals: false
   - type: Wires
     layoutId: Docking
@@ -94,7 +94,7 @@
     noRot: false
   - type: Rotatable
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/shuttle.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Glass/shuttle.rsi
     state: closed
     snapCardinals: false
   - type: Construction

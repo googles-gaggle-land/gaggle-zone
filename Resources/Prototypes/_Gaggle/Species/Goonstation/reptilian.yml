@@ -17,13 +17,14 @@
   sprites:
     Head: MobReptilianGoonHead
     Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Undergarments: MobHumanoidAnyMarking
     Chest: MobReptilianGoonTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Eyes: MobHumanoidEyes
+    Eyes: MobReptilianGoonEyes
     LArm: MobReptilianGoonLArm
     RArm: MobReptilianGoonRArm
     LHand: MobReptilianGoonLHand
@@ -50,6 +51,12 @@
     Chest:
       points: 1 # imp 3<4
       required: false
+
+- type: humanoidBaseSprite
+  id: MobReptilianGoonEyes
+  baseSprite:
+    sprite: _gaggle/Mobs/Species/Goonstation/Lizard/parts.rsi
+    state: eyes
 
 - type: humanoidBaseSprite
   id: MobReptilianGoonHead
