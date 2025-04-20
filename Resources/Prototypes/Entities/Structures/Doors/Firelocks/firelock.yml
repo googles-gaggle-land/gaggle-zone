@@ -150,7 +150,7 @@
   components:
     - type: StationAiWhitelist
     - type: Sprite
-      sprite: Structures/Doors/Airlocks/Glass/firelock.rsi
+      sprite: _gaggle/Structures/Doors/Airlocks/Standard/firelock.rsi
     - type: Occluder
       enabled: false
     - type: Fixtures

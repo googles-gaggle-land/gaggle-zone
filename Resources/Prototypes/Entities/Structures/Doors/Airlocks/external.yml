@@ -32,7 +32,7 @@
   - type: Occluder
     enabled: false
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/external.rsi
+    sprite: _gaggle/Structures/Doors/Airlocks/Standard/external.rsi
   - type: PaintableAirlock
     group: ExternalGlass
   - type: Fixtures
