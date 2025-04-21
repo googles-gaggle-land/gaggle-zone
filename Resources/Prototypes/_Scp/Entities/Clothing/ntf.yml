@@ -1,4 +1,37 @@
 ﻿- components:
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxHelmet.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxHelmet.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxHelmet
+  name: nine tailed fox helmet
+  parent: ClothingHeadHelmetBasic
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxSuit.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxSuit.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSuit
+  name: nine tailed fox suit
+  parent: ClothingUniformBase
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxVest.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxVest.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxVest
+  name: nine tailed fox vest
+  parent: ClothingOuterVestWeb
+  suffix: SCP
+  type: entity
+- components:
   - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxWebbing.rsi
     type: Sprite
   - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxWebbing.rsi
@@ -138,7 +171,7 @@
     accentVColor: "#447987"
   - type: Icon
     state: pda-ert
-    
+
 - type: entity
   parent: IDCardStandard
   id: NTFIDCard
@@ -155,7 +188,7 @@
     job: NineTailedFox
   - type: NanoChatCard # DeltaV
     listNumber: true
-    
+
 - type: job
   id: NineTailedFox
   name: job-name-ninetailedfox
