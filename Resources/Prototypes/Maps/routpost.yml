@@ -1,0 +1,42 @@
+- type: gameMap
+  id: ResearchOutpost
+  mapName: 'Research Outpost'
+  mapPath: /Maps/_gaggle/routpost.yml
+  minPlayers: 0
+  maxPlayers: 15
+  stations:
+    ResearchOutpost:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'MFRA Research Outpost {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'SC'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
+        - type: StationJobs
+          availableJobs:
+            # Goobstation - TODO: add bso and ntr
+            Captain: [ 1, 1 ]
+            CargoTechnician: [ 1, 2 ]
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            MedicalDoctor: [ 1, 2 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 1, 1 ]
+            Scientist: [ 1, 2 ]
+            Roboticist: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
+            Passenger: [ -1, -1 ]
+
+        # Goobstation blob-config-start LOW
+        - type: StationBlobConfig
+          stageBegin: 15
+          stageCritical: 200
+          stageTheEnd: 400
+        # Goobstation blob-config-end
+
+

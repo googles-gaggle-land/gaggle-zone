@@ -5,24 +5,25 @@
   #- Atlas
   #- Bagel
   #- Box
-  - Cluster
-  - Pillbug
+  #- Cluster
+  #- Pillbug
   #- Cog # Goobstation - cog is broken
   #- Core
   #- Elkridge
   #- Fland
   #- Marathon
-  - Meta
+  #- Meta
   #- Oasis
   #- Omega
   #- Origin
   - Saltern
   - Packed
-  #- Reach # funkystation - operation revive lrp
+  - Reach # funkystation - operation revive lrp
   #- roid_outpost
   #- Train - Train is pain
   #- FlandHighPop
   #- OasisHighPop
   #- Barratry # Goobstation - Re-add barratry - Funkystation - Barratrauma
-  - Kettle
+  #- Kettle
   - Uoui
+  - ResearchOutpost
