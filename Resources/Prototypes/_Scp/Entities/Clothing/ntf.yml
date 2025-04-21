@@ -1,11 +1,4 @@
-﻿    type: Clothing
-  description: description
-  id: NineTailedFoxGasmask
-  name: nine tailed fox gasmask
-  parent: ClothingMaskGasERT
-  suffix: SCP
-  type: entity
-- components:
+﻿- components:
   - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxHelmet.rsi
     type: Sprite
   - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxHelmet.rsi
