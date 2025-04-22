@@ -86,6 +86,9 @@
     - id: BookPossum
       prob: 0.1
       orGroup: bookauthor
+    - id: BookArgocyte
+      prob: 0.1
+      orGroup: bookauthor
     - id: BookCafe
       prob: 0.1
       orGroup: bookauthor

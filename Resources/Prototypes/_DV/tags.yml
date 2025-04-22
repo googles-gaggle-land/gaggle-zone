@@ -13,4 +13,10 @@
   id: PreventLabel
 
 - type: Tag
-  id: PermissibleForSurgery # Can be worn on the body during surgery
+  id: BeltSlotNotBelt
+
+- type: Tag
+  id: ForensicBeltEquip
+
+- type: Tag
+  id: SecDogWearable

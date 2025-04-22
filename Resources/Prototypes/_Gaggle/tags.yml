@@ -1,0 +1,29 @@
+- type: Tag
+  id: Wallpaper
+
+- type: Tag
+  id: WallpaperItem
+  
+- type: Tag
+  id: WallpaperStructure
+
+- type: Tag
+  id: Painter
+
+- type: Tag
+  id: PaintRoller
+
+- type: Tag
+  id: FoodMeatSausageCooked
+
+- type: Tag
+  id: Armor # need this or else crash
+
+#- type: Tag
+#  id: WallpaperItemBlank
+
+#- type: Tag
+#  id: WallpaperItemOld
+
+#- type: Tag
+#  id: WallpaperItemOldFake

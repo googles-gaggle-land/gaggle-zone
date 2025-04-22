@@ -56,6 +56,9 @@
       - id: FoodMeatMeatball
         amount: !type:RangeNumberSelector
           range: 1, 8
+      - id: FoodMeatFish
+        amount: !type:RangeNumberSelector
+          range: 1, 5
       - !type:GroupSelector
         children:
         - id: FoodMeatCutlet
@@ -70,6 +73,12 @@
         - id: FoodMeatSalamiSlice
           amount: !type:RangeNumberSelector
             range: 1, 4
+        - id: FoodMeatPorkchop # gaggle
+          amount: !type:RangeNumberSelector
+            range: 1, 4
+      - id: FoodMeatPork # gaggle
+        amount: !type:RangeNumberSelector
+          range: 1, 4
     #Rotten
     - !type:GroupSelector
       weight: 2

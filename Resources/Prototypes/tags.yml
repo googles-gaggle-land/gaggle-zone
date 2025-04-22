@@ -16,6 +16,9 @@
   id: AirSensor
 
 - type: Tag
+  id: AllowGhostShownByEvent
+
+- type: Tag
   id: Ambrosia
 
 - type: Tag
@@ -29,6 +32,9 @@
 
 - type: Tag
   id: ArtifactFragment
+
+- type: Tag # Assmos - Metal Hydrogen
+  id: AtmosFireSuit
 
 - type: Tag
   id: ATVKeys
@@ -152,6 +158,12 @@
 
 - type: Tag
   id: Bread
+
+- type: Tag
+  id: BreadEmergency
+
+- type: Tag
+  id: BreathMask
 
 - type: Tag
   id: Briefcase
@@ -501,6 +513,15 @@
   id: EmagImmune
 
 - type: Tag
+  id: EmergencyMedipen
+
+- type: Tag
+  id: EmergencyNitrogenTank
+
+- type: Tag
+  id: EmergencyOxygenTank
+
+- type: Tag
   id: EmitterBolt
 
 - type: Tag
@@ -508,6 +529,9 @@
 
 - type: Tag
   id: ExplosivePassable
+
+- type: Tag
+  id: ExtendedEmergencyOxygenTank
 
 - type: Tag # goob edit
   id: Eyes
@@ -747,6 +771,12 @@
   id: IntercomElectronics
 
 - type: Tag
+  id: InvalidForGlobalSpawnSpell
+
+- type: Tag
+  id: InvalidForSurvivorAntag
+
+- type: Tag
   id: JawsOfLife
 
 - type: Tag
@@ -875,6 +905,9 @@
 
 - type: Tag
   id: Metal
+
+- type: Tag # Assmos - Metal Hydrogen
+  id: MetalHydrogenArmor
 
 - type: Tag
   id: MicroBomb
@@ -1024,6 +1057,9 @@
   id: PlushieGhost
 
 - type: Tag
+  id: PlushieLizard
+
+- type: Tag
   id: PlushieSharkBlue
 
 - type: Tag
@@ -1140,6 +1176,9 @@
 
 - type: Tag
   id: SecurityHelmet
+
+- type: Tag
+  id: SecurityBreathMask
 
 - type: Tag
   id: SecwayKeys
@@ -1264,6 +1303,9 @@
   id: Syndicate
 
 - type: Tag
+  id: SyndicateBreathMask
+
+- type: Tag
   id: SyndicateSegwayKeys
 
 - type: Tag
@@ -1271,6 +1313,9 @@
 
 - type: Tag
   id: SyringeGunAmmo
+
+- type: Tag
+  id: SpaceMedipen
 
 - type: Tag
   id: Spellbook

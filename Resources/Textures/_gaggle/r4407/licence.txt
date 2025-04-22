@@ -1,0 +1,1 @@
+All assets provided in this folder and it's subfolders is licenced under CC BY-NC-SA 2.0, and said assets originate from https://github.com/goonstation/goonstation-r4407/tree/master.

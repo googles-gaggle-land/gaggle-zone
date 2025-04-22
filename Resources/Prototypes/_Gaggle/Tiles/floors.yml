@@ -1,0 +1,194 @@
+- type: tile
+  id: FloorSteelAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/steel.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+
+- type: tile
+  id: FloorWhiteAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/white.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+  
+- type: tile
+  id: FloorDarkAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/dark.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  tileRipResistance: 4500
+
+- type: tile
+  id: FloorWoodAncient
+  name: tiles-wood-floor
+  sprite: /Textures/_gaggle/Tiles/wood.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+  tileRipResistance: 4500
+
+- type: tile
+  id: FloorReinforcedAncient
+  name: tiles-steel-floor
+  sprite: /Textures/_gaggle/Tiles/reinforced.png
+  baseTurf: PlatingAncient
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 20000
+  tileRipResistance: 4500
+
+- type: tile
+  id: PlatingAncient
+  name: tiles-plating
+  sprite: /Textures/_gaggle/Tiles/plating.png
+  baseTurf: Lattice
+  isSubfloor: true
+  # Goobstation - Fireaxe plating prying
+  deconstructTools: [ Axing ]
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  heatCapacity: 10000
+  
+- type: tile
+  id: FloorSunsDark
+  name: tiles-suns-dark
+  sprite: /Textures/_gaggle/Tiles/Suns/dark.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  heatCapacity: 10000
+  tileRipResistance: 100
+  
+- type: tile
+  id: FloorSunsDarkChunky
+  name: tiles-suns-darkchunky
+  sprite: /Textures/_gaggle/Tiles/Suns/darkchunky.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  heatCapacity: 10000
+  tileRipResistance: 100
+  
+- type: tile
+  id: FloorSunsDarkPattern
+  name: tiles-suns-darkpattern
+  sprite: /Textures/_gaggle/Tiles/Suns/darkpattern.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  heatCapacity: 10000
+  tileRipResistance: 100
+  
+- type: tile
+  id: FloorSunsDarkPlain
+  name: tiles-suns-darkplain
+  sprite: /Textures/_gaggle/Tiles/Suns/darkplain.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  heatCapacity: 10000
+  tileRipResistance: 100
+  
+- type: tile
+  id: FloorSunsLight
+  name: tiles-suns-light
+  sprite: /Textures/_gaggle/Tiles/Suns/light.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+  tileRipResistance: 100
+  
+- type: tile
+  id: FloorSunsLightHatched
+  name: tiles-suns-lighthatched
+  sprite: /Textures/_gaggle/Tiles/Suns/lighthatched.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+  tileRipResistance: 100
+  
+- type: tile
+  id: FloorSunsLightDiagonal
+  name: tiles-suns-lightdiagonal
+  sprite: /Textures/_gaggle/Tiles/Suns/lightdiag.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+  tileRipResistance: 100
+
+- type: tile
+  id: FloorSunsLightPattern
+  name: tiles-suns-lightpattern
+  sprite: /Textures/_gaggle/Tiles/Suns/lightpattern.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+  tileRipResistance: 100
+  
+- type: tile
+  id: FloorSunsLightPlain
+  name: tiles-suns-lightplain
+  sprite: /Textures/_gaggle/Tiles/Suns/lightplain.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  heatCapacity: 10000
+  tileRipResistance: 100

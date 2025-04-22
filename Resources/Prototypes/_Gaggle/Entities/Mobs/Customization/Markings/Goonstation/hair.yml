@@ -1,0 +1,1585 @@
+# The speciesRestriction thing can be removed in your case, I only have it because I added the goon humans and lizards in as an admeme thing on my server.
+
+- type: marking
+  id: GoonHair80s
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: 80s
+
+- type: marking
+  id: GoonHair80sfade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: 80sfade
+
+- type: marking
+  id: GoonHairAcorn
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: acorn
+
+- type: marking
+  id: GoonHairAfro
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: afro
+
+- type: marking
+  id: GoonHairAfroFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: afro_fade
+
+- type: marking
+  id: GoonHairAristocrat
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: aristocrat
+
+- type: marking
+  id: GoonHairBalding
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: balding
+
+- type: marking
+  id: GoonHairAsymBob
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: asym_bob
+
+- type: marking
+  id: GoonHairBand
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: band
+
+- type: marking
+  id: GoonHairBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bangs
+
+- type: marking
+  id: GoonHairBart
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bart
+
+- type: marking
+  id: GoonHairBedhead
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bedhead
+
+- type: marking
+  id: GoonHairBaum
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: baum_s
+
+- type: marking
+  id: GoonHairBeib
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: beib
+
+- type: marking
+  id: GoonHairBloom
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bloom
+
+- type: marking
+  id: GoonHairBluntBob
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: blunt_bob
+
+- type: marking
+  id: GoonHairBluntBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bluntbangs_s
+
+- type: marking
+  id: GoonHairBobcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bobcut
+
+- type: marking
+  id: GoonHairBowl
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bowl
+
+- type: marking
+  id: GoonHairBreezy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: breezy
+
+- type: marking
+  id: GoonHairBreezyFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: breezy_fade
+
+- type: marking
+  id: GoonHairBrushed
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: brushed
+
+- type: marking
+  id: GoonHairBrushedBob
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: brushed_bob
+
+- type: marking
+  id: GoonHairBun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bun
+
+- type: marking
+  id: GoonHairBundercut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: bundercut
+
+- type: marking
+  id: GoonHairCharioteers
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: charioteers
+
+- type: marking
+  id: GoonHairCharming
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: charming
+
+- type: marking
+  id: GoonHairChopShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: chop_short
+
+- type: marking
+  id: GoonHairClown
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: clown
+
+- type: marking
+  id: GoonHairCockatiel
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: cockatiel
+
+- type: marking
+  id: GoonHairCockatielBang
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: cockatielbang
+
+- type: marking
+  id: GoonHairCombedFringe
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: combed_fringe
+
+- type: marking
+  id: GoonHairCombedShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: combed_s
+
+- type: marking
+  id: GoonHairCombedBobShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: combedbob_s
+
+- type: marking
+  id: GoonHairCombedFringeBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: combedfringebangs
+
+- type: marking
+  id: GoonHairCombedFront
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: combedfront
+
+- type: marking
+  id: GoonHairCombedFrontBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: combedfrontbangs
+
+- type: marking
+  id: GoonHairCroft
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: croft
+
+- type: marking
+  id: GoonHairCurlyBobcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: curly_bob
+
+- type: marking
+  id: GoonHairCurlyBobcutFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: curly_bob_fade
+
+- type: marking
+  id: GoonHairCurtain
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: curtain
+
+- type: marking
+  id: GoonHairCurtainBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: curtainbangs
+
+- type: marking
+  id: GoonHairCut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: cut
+
+- type: marking
+  id: GoonHairDisheveled
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: disheveled
+
+- type: marking
+  id: GoonHairDoubleBun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: doublebun
+
+- type: marking
+  id: GoonHairDoublePart
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: doublepart
+
+- type: marking
+  id: GoonHairDreads
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: dreads
+
+- type: marking
+  id: GoonHairDreadsA
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: dreadsA
+
+- type: marking
+  id: GoonHairDrill
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: drill
+
+- type: marking
+  id: GoonHairEmo
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: emo
+
+- type: marking
+  id: GoonHairEmoBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: emobang
+
+- type: marking
+  id: GoonHairEwaveShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: ewave_s
+
+- type: marking
+  id: GoonHairFabio
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: fabio
+
+- type: marking
+  id: GoonHairFlames
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: flames
+
+- type: marking
+  id: GoonHairFlatBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: flatbangs
+
+- type: marking
+  id: GoonHairFlatTop
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: flattop
+
+- type: marking
+  id: GoonHairFlick
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: flick
+
+- type: marking
+  id: GoonHairFlickFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: flick_fade
+
+- type: marking
+  id: GoonHairFlickHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: flick_half
+
+- type: marking
+  id: GoonHairFloof
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: floof
+
+- type: marking
+  id: GoonHairFroofyLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: froofy_long
+
+- type: marking
+  id: GoonHairFunBun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: fun_bun
+
+- type: marking
+  id: GoonHairGeishaShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: geisha_s
+
+- type: marking
+  id: GoonHairGlamMetal
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: glammetal
+
+- type: marking
+  id: GoonHairGlamMetalO
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: glammetalO
+
+- type: marking
+  id: GoonHairGlamPonyTail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: glamponytail
+
+- type: marking
+  id: GoonHairGlamPonyTailHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: glamponytail_half
+
+- type: marking
+  id: GoonHairGoku
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: goku
+
+- type: marking
+  id: GoonHairHalfShavedShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: halfshaved_s
+
+- type: marking
+  id: GoonHairHalfShavedLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: halfshavedL
+
+- type: marking
+  id: GoonHairHalfShavedR
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: halfshavedR
+
+- type: marking
+  id: GoonHairHomer
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: homer
+
+- type: marking
+  id: GoonHairIgnite
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: ignite
+
+- type: marking
+  id: GoonHairIgniteShaved
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: igniteshaved
+
+- type: marking
+  id: GoonHairIndian
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: indian
+
+- type: marking
+  id: GoonHairJelly
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: jelly
+
+- type: marking
+  id: GoonHairJetson
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: jetson
+
+- type: marking
+  id: GoonHairKingOfRockAndRoll
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: king-of-rock-and-roll
+
+- type: marking
+  id: GoonHairLionsMane
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: lionsmane
+
+- type: marking
+  id: GoonHairLionsManeFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: lionsmane_fade
+
+- type: marking
+  id: GoonHairLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: long
+
+- type: marking
+  id: GoonHairLongBraid
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longbraid
+
+- type: marking
+  id: GoonHairLongFront
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longfront
+
+- type: marking
+  id: GoonHairLongFrontBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longfrontbangs
+
+- type: marking
+  id: GoonHairLongSidePartShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longsidepart_s
+
+- type: marking
+  id: GoonHairLongTailed
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longtailed
+
+- type: marking
+  id: GoonHairLongTwinTail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longtwintail
+
+- type: marking
+  id: GoonHairLongTwinTailHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longtwintail_half
+
+- type: marking
+  id: GoonHairLongWaveBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longwavebangs
+
+- type: marking
+  id: GoonHairLongWaves
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longwaves
+
+- type: marking
+  id: GoonHairLongWavesFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longwaves_fade
+
+- type: marking
+  id: GoonHairLongWavesHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: longwaves_half
+
+- type: marking
+  id: GoonHairLooseLongBraid
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: looselongbraid
+
+- type: marking
+  id: GoonHairLooseLongBraidFaded
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: looselongbraidfaded
+
+- type: marking
+  id: GoonHairLooseLongBraidShoulder
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: looselongbraidshoulder
+
+- type: marking
+  id: GoonHairLowPig
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: lowpig
+
+- type: marking
+  id: GoonHairLuxuryBobcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: luxury_bob
+
+- type: marking
+  id: GoonHairMermaid
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: mermaid
+
+- type: marking
+  id: GoonHairMermaidFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: mermaidfade
+
+- type: marking
+  id: GoonHairMessyFringe
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: messy_fringe
+
+- type: marking
+  id: GoonHairMessyWaves
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: messy_waves
+
+- type: marking
+  id: GoonHairMessyWavesHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: messy_waves_half
+
+- type: marking
+  id: GoonHairMessyPonytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: messyponytail
+
+- type: marking
+  id: GoonHairMidb
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: midb
+
+- type: marking
+  id: GoonHairMiniPig
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: minipig
+
+- type: marking
+  id: GoonHairMohawk
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: mohawk
+
+- type: marking
+  id: GoonHairMop
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: mop
+
+- type: marking
+  id: GoonHairMysterious
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: mysterious
+
+- type: marking
+  id: GoonHairMysteryBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: mysterybangs
+
+- type: marking
+  id: GoonHairPig
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: pig
+
+- type: marking
+  id: GoonHairPigHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: pig_half
+
+- type: marking
+  id: GoonHairPinion
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: pinion
+
+- type: marking
+  id: GoonHairPomp
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: pomp
+
+- type: marking
+  id: GoonHairPomPomPigtail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: pompompigtail
+
+- type: marking
+  id: GoonHairPonytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: ponytail
+
+- type: marking
+  id: GoonHairPoofyBobcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: poofy_bob
+
+- type: marking
+  id: GoonHairPulledBack
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: pulledb
+
+- type: marking
+  id: GoonHairPulledForward
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: pulledf
+
+- type: marking
+  id: GoonHairRipley
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: ripley
+
+- type: marking
+  id: GoonHairRipleyFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: ripley_fade
+
+- type: marking
+  id: GoonHairRockPonyTail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: rockponytail
+
+- type: marking
+  id: GoonHairRockPonyTailFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: rockponytail_fade
+
+- type: marking
+  id: GoonHairRockPonyTailHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: rockponytail_half
+
+- type: marking
+  id: GoonHairSage
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: sage
+
+- type: marking
+  id: GoonHairSailorMoon
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: sailor_moon
+
+- type: marking
+  id: GoonHairSakura
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: sakura
+
+- type: marking
+  id: GoonHairSalty
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: salty
+
+- type: marking
+  id: GoonHairScott
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: scott
+
+- type: marking
+  id: GoonHairScraggly
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: scraggly
+
+- type: marking
+  id: GoonHairScruffy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: scruffy
+
+- type: marking
+  id: GoonHairShaggy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shaggy
+
+- type: marking
+  id: GoonHairShavedHead
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shavedhead
+
+- type: marking
+  id: GoonHairShittyHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shitty_hair
+
+- type: marking
+  id: GoonHairShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: short
+
+- type: marking
+  id: GoonHairShortDreads
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: short_dreads
+
+- type: marking
+  id: GoonHairShortShaggy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: short_shag
+
+- type: marking
+  id: GoonHairShortFlatBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shortflatbangs
+
+- type: marking
+  id: GoonHairShortFlip
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shortflip
+
+- type: marking
+  id: GoonHairShortWaveBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shortwavebangs
+
+- type: marking
+  id: GoonHairShoulderLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shoulderl
+
+- type: marking
+  id: GoonHairShoulderShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: shoulders
+
+- type: marking
+  id: GoonHairSideCurls
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: side_curls
+
+- type: marking
+  id: GoonHairSlickedBack
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: slicked_back
+
+- type: marking
+  id: GoonHairSlightlyMessyShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: slightlymessy_s
+
+- type: marking
+  id: GoonHairSmoothWave
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: smoothwave
+
+- type: marking
+  id: GoonHairSmoothWaveFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: smoothwave_fade
+
+- type: marking
+  id: GoonHairSmoothWaveHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: smoothwave_half
+
+- type: marking
+  id: GoonHairSparks
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: sparks
+
+- type: marking
+  id: GoonHairSpiky
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: spiky
+
+- type: marking
+  id: GoonHairSpikyPonyTail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: spikyponytail
+
+- type: marking
+  id: GoonHairSpoon
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: spoon
+
+- type: marking
+  id: GoonHairSpoonBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: spoonbangs
+
+- type: marking
+  id: GoonHairSpud
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: spud
+
+- type: marking
+  id: GoonHairStreak
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: streak
+
+- type: marking
+  id: GoonHairSuaveMullet
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: suave_mullet
+
+- type: marking
+  id: GoonHairSubtleSpiky
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: subtlespiky
+
+- type: marking
+  id: GoonHairSuper
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: super
+
+- type: marking
+  id: GoonHairTemsik
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: temsik
+
+- type: marking
+  id: GoonHairTulip
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: tulip
+
+- type: marking
+  id: GoonHairTwoTail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: twotail
+
+- type: marking
+  id: GoonHairUntidyPonytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: untidyponytail
+
+- type: marking
+  id: GoonHairViolet
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: violet
+
+- type: marking
+  id: GoonHairVioletFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: violet_fade
+
+- type: marking
+  id: GoonHairVioletHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: violet_half
+
+- type: marking
+  id: GoonHairVisual
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: visual
+
+- type: marking
+  id: GoonHairVLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: vlong
+
+- type: marking
+  id: GoonHairWalnut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: walnut
+
+- type: marking
+  id: GoonHairWavyFront
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: wavy_front
+
+- type: marking
+  id: GoonHairWavyTail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: wavy_tail
+
+- type: marking
+  id: GoonHairWavyTailHalf
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: wavy_tail_half
+
+- type: marking
+  id: GoonHairWavyBang
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: wavybang
+
+- type: marking
+  id: GoonHairWillow
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: willow
+
+- type: marking
+  id: GoonHairWillowFade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: willow_fade
+
+- type: marking
+  id: GoonHairWolfcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: wolfcut
+
+- type: marking
+  id: GoonHairXCom
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: xcom
+
+- type: marking
+  id: GoonHairZapped
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ReptilianGoon, HumanGoon]
+  sprites:
+    - sprite: _gaggle/Mobs/Customization/Goonstation/hair.rsi
+      state: zapped

@@ -1,7 +1,7 @@
 - type: tile
   id: FloorSteel
   name: tiles-steel-floor
-  sprite: /Textures/Tiles/steel.png
+  sprite: /Textures/_gaggle/Tiles/tiled_gray.png
   variants: 4
   placementVariants:
   - 1.0
@@ -128,7 +128,7 @@
 - type: tile
   id: FloorSteelMono
   name: tiles-steel-floor-mono
-  sprite: /Textures/Tiles/steel_mono.png
+  sprite: /Textures/_gaggle/Tiles/monotile_gray.png
   variants: 4
   placementVariants:
   - 1.0
@@ -230,7 +230,7 @@
 - type: tile
   id: FloorPlastic
   name: tiles-plastic-floor
-  sprite: /Textures/Tiles/plastic.png
+  sprite: /Textures/_gaggle/Tiles/tile_full.png
   variants: 4
   placementVariants:
   - 1.0
@@ -270,7 +270,7 @@
 - type: tile
   id: FloorWhite
   name: tiles-white-floor
-  sprite: /Textures/Tiles/white.png
+  sprite: /Textures/_gaggle/Tiles/tiled_light.png
   variants: 4
   placementVariants:
   - 1.0
@@ -359,7 +359,7 @@
 - type: tile
   id: FloorWhiteMono
   name: tiles-white-floor-mono
-  sprite: /Textures/Tiles/white_mono.png
+  sprite: /Textures/_gaggle/Tiles/monotile_light.png
   variants: 4
   placementVariants:
   - 1.0
@@ -435,7 +435,7 @@
 - type: tile
   id: FloorWhitePlastic
   name: tiles-plastic-white-floor
-  sprite: /Textures/Tiles/white_plastic.png
+  sprite: /Textures/_gaggle/Tiles/tile_fulllight.png
   variants: 4
   placementVariants:
   - 1.0
@@ -454,7 +454,7 @@
 - type: tile
   id: FloorDark
   name: tiles-dark-floor
-  sprite: /Textures/Tiles/dark.png
+  sprite: /Textures/_gaggle/Tiles/tiled_dark.png
   variants: 4
   placementVariants:
   - 1.0
@@ -543,7 +543,7 @@
 - type: tile
   id: FloorDarkMono
   name: tiles-dark-floor-mono
-  sprite: /Textures/Tiles/dark_mono.png
+  sprite: /Textures/_gaggle/Tiles/monotile_dark.png
   variants: 4
   placementVariants:
   - 1.0
@@ -619,7 +619,7 @@
 - type: tile
   id: FloorDarkPlastic
   name: tiles-plastic-dark-floor
-  sprite: /Textures/Tiles/dark_plastic.png
+  sprite: /Textures/_gaggle/Tiles/tile_fulldark.png
   variants: 4
   placementVariants:
   - 1.0

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Original sprite by Phunny, redrawn by TheShuEd",
+  "copyright": "Original sprite by Phunny, redrawn by TheShuEd, variants sourced from https://heurl.in/ss14/recipes",
   "size": {
     "x": 32,
     "y": 32
@@ -12,6 +12,24 @@
     },
     {
       "name": "tacoshell_forward"
+    },
+    {
+      "name": "beef_taco"
+    },
+    {
+      "name": "beef_taco_supreme"
+    },
+    {
+      "name": "chicken_taco"
+    },
+    {
+      "name": "chicken_taco_supreme"
+    },
+    {
+      "name": "fish_taco"
+    },
+    {
+      "name": "rat_taco"
     }
   ]
 }

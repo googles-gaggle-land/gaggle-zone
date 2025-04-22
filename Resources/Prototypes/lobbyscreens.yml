@@ -1,3 +1,7 @@
 - type: lobbyBackground
-  id: Blueprint
-  background: /Textures/LobbyScreens/blueprint.webp
+  id: GaggleBasic
+  background: /Textures/_gaggle/LobbyScreens/gaggle_basic.png
+
+- type: lobbyBackground
+  id: GaggleSpongiSocks
+  background: /Textures/_gaggle/LobbyScreens/gaggle_spongi_socks.png

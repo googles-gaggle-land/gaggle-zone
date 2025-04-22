@@ -1,21 +1,33 @@
-#- type: reaction
-#  id: Dylovene
-#  reactants:
-#    Silicon:
-#      amount: 1
-#    Nitrogen:
-#      amount: 1
-#    Potassium:
-#      amount: 1
-#  products:
-#    Dylovene: 3
+- type: reaction
+  id: Dylovene
+  reactants:
+    Silicon:
+      amount: 1
+    Nitrogen:
+      amount: 1
+    Potassium:
+      amount: 1
+  products:
+    Dylovene: 3
 
+- type: reaction
+  id: EthylredoxrazineFunky
+  reactants:
+    Oxygen:
+      amount: 1
+    Multiver:
+      amount: 1
+    Carbon:
+      amount: 1
+  products:
+    Ethylredoxrazine: 3
+    
 - type: reaction
   id: Ethylredoxrazine
   reactants:
     Oxygen:
       amount: 1
-    Multiver:
+    Dylovene:
       amount: 1
     Carbon:
       amount: 1
@@ -44,15 +56,15 @@
   products:
     Arithrazine: 2
 
-#- type: reaction
-#  id: Bicaridine
-#  reactants:
-#    Inaprovaline:
-#      amount: 1
-#    Carbon:
-#      amount: 1
-#  products:
-#    Bicaridine: 2
+- type: reaction
+  id: Bicaridine
+  reactants:
+    Inaprovaline:
+      amount: 1
+    Carbon:
+      amount: 1
+  products:
+    Bicaridine: 2
 
 - type: reaction
   id: Cryoxadone
@@ -90,17 +102,17 @@
   products:
     Epinephrine: 4
 
-#- type: reaction
-#  id: Dermaline
-#  reactants:
-#    Kelotane:
-#      amount: 1
-#    Oxygen:
-#      amount: 1
-#    Phosphorus:
-#      amount: 1
-#  products:
-#    Dermaline: 3
+- type: reaction
+  id: Dermaline
+  reactants:
+    Kelotane:
+      amount: 1
+    Oxygen:
+      amount: 1
+    Phosphorus:
+      amount: 1
+  products:
+    Dermaline: 3
 
 - type: reaction
   id: Dexalin
@@ -113,17 +125,17 @@
   products:
     Dexalin: 3
 
-#- type: reaction
-#  id: DexalinPlus
-#  reactants:
-#    Dexalin:
-#      amount: 1
-#    Carbon:
-#      amount: 1
-#    Iron:
-#      amount: 1
-#  products:
-#    DexalinPlus: 3
+- type: reaction
+  id: DexalinPlus
+  reactants:
+    Dexalin:
+      amount: 1
+    Carbon:
+      amount: 1
+    Iron:
+      amount: 1
+  products:
+    DexalinPlus: 3
 
 - type: reaction
   id: Hyronalin
@@ -171,15 +183,15 @@
   products:
     TranexamicAcid: 3
 
-#- type: reaction
-#  id: Kelotane
-#  reactants:
-#    Silicon:
-#      amount: 1
-#    Carbon:
-#      amount: 1
-#  products:
-#    Kelotane: 2
+- type: reaction
+  id: Kelotane
+  reactants:
+    Silicon:
+      amount: 1
+    Carbon:
+      amount: 1
+  products:
+    Kelotane: 2
 
 - type: reaction
   id: Leporazine
@@ -381,7 +393,7 @@
     Cognizine: 1
 
 - type: reaction
-  id: Sigynate
+  id: SigynateFunky
   impact: Medium
   minTemp: 370
   reactants:
@@ -390,6 +402,24 @@
     SodiumHydroxide:
       amount: 1
     Lenturi: # Funky Chem Expansion
+      amount: 1
+    Water:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+    Sigynate: 4
+
+- type: reaction
+  id: Sigynate
+  impact: Medium
+  minTemp: 370
+  reactants:
+    SodiumCarbonate:
+      amount: 1
+    SodiumHydroxide:
+      amount: 1
+    Kelotane:
       amount: 1
     Water:
       amount: 1
@@ -409,7 +439,7 @@
     Saline: 5
 
 - type: reaction
-  id: Lacerinol
+  id: LacerinolFunky
   impact: Medium
   minTemp: 335
   reactants:
@@ -421,7 +451,7 @@
     Lacerinol: 2
 
 - type: reaction
-  id: Puncturase
+  id: PuncturaseFunky
   impact: Medium
   minTemp: 325
   reactants:
@@ -433,10 +463,47 @@
     Puncturase: 2
 
 - type: reaction
-  id: Bruizine
+  id: BruizineFunky
   impact: Medium
   reactants:
     Libital:
+      amount: 1
+    Lithium:
+      amount: 0.9
+    Sugar:
+      amount: 1
+  products:
+    Bruizine: 2
+    
+- type: reaction
+  id: Lacerinol
+  impact: Medium
+  minTemp: 335
+  reactants:
+    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+      amount: 1
+    Benzene:
+      amount: 1
+  products:
+    Lacerinol: 2
+
+- type: reaction
+  id: Puncturase
+  impact: Medium
+  minTemp: 325
+  reactants:
+    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+      amount: 1
+    Hydroxide:
+      amount: 1
+  products:
+    Puncturase: 2
+
+- type: reaction
+  id: Bruizine
+  impact: Medium
+  reactants:
+    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
       amount: 1
     Lithium:
       amount: 0.9
@@ -530,7 +597,7 @@
     Diphenhydramine: 3
 
 - type: reaction
-  id: Pyrazine
+  id: PyrazineFunky
   impact: Medium
   minTemp: 540
   reactants:
@@ -542,9 +609,23 @@
       amount: 1
   products:
     Pyrazine: 3
+    
+- type: reaction
+  id: Pyrazine
+  impact: Medium
+  minTemp: 540
+  reactants:
+    Leporazine:
+      amount: 1
+    Dermaline:
+      amount: 1
+    Carbon:
+      amount: 1
+  products:
+    Pyrazine: 3
 
 - type: reaction
-  id: Insuzine
+  id: InsuzineFunky
   impact: Medium
   minTemp: 433
   reactants:
@@ -556,6 +637,21 @@
       amount: 1
   products:
     Insuzine: 3
+    
+- type: reaction
+  id: Insuzine
+  impact: Medium
+  minTemp: 433
+  reactants:
+    Leporazine:
+      amount: 1
+    Kelotane:
+      amount: 1
+    Silicon:
+      amount: 1
+  products:
+    Insuzine: 3
+
 
 - type: reaction
   id: Opporozidone

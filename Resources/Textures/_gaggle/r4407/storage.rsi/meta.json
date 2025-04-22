@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "backpack"
+    },
+    {
+      "name": "box"
+    },
+    {
+      "name": "briefcase"
+    },
+    {
+      "name": "id"
+    },
+    {
+      "name": "firstaid"
+    },
+    {
+      "name": "ointment"
+    },
+    {
+      "name": "antitoxin"
+    },
+    {
+      "name": "bezerk"
+    },
+    {
+      "name": "syringe"
+    },
+    {
+      "name": "flashbang"
+    },
+    {
+      "name": "handcuff"
+    },
+    {
+      "name": "latex"
+    },
+    {
+      "name": "implant"
+    },
+    {
+      "name": "mousetraps"
+    },
+    {
+      "name": "red"
+    },
+    {
+      "name": "yellow"
+    },
+    {
+      "name": "blue"
+    },
+    {
+      "name": "beaker"
+    },
+    {
+      "name": "light"
+    },
+    {
+      "name": "pda"
+    },
+    {
+      "name": "secure"
+    },
+    {
+      "name": "secure0"
+    },
+    {
+      "name": "secureb",
+      "delays": [
+        [
+          1.5,
+          1.5
+        ]
+      ]
+    },
+    {
+      "name": "securespark",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "o2"
+    },
+    {
+      "name": "securecrate"
+    },
+    {
+      "name": "securecrateemag"
+    },
+    {
+      "name": "securecratesparks",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "securecrater"
+    },
+    {
+      "name": "securecrateg"
+    },
+    {
+      "name": "crate"
+    },
+    {
+      "name": "medicalcrate"
+    },
+    {
+      "name": "crateopen"
+    },
+    {
+      "name": "securecrateopen"
+    },
+    {
+      "name": "medicalcrateopen"
+    },
+    {
+      "name": "secgearcrate"
+    },
+    {
+      "name": "secgearcrateopen"
+    },
+    {
+      "name": "o2crate"
+    },
+    {
+      "name": "o2crateopen"
+    },
+    {
+      "name": "crateopen"
+    },
+    {
+      "name": "securecrate"
+    },
+    {
+      "name": "securecrateopen"
+    },
+    {
+      "name": "largebins"
+    },
+    {
+      "name": "largebin"
+    },
+    {
+      "name": "largebinopenfs"
+    },
+    {
+      "name": "largebinopenf"
+    },
+    {
+      "name": "largebinopenb"
+    },
+    {
+      "name": "largebing"
+    },
+    {
+      "name": "largebinr"
+    },
+    {
+      "name": "largebinemag"
+    },
+    {
+      "name": "largebinsparks",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "freezer"
+    },
+    {
+      "name": "freezeropen"
+    },
+    {
+      "name": "weaponcrate"
+    },
+    {
+      "name": "weaponcrateopen"
+    },
+    {
+      "name": "plasmacrate"
+    },
+    {
+      "name": "plasmacrateopen"
+    },
+    {
+      "name": "largebinsopen"
+    },
+    {
+      "name": "largebinopen"
+    },
+    {
+      "name": "disk_kit"
+    },
+    {
+      "name": "safe"
+    },
+    {
+      "name": "safe0"
+    },
+    {
+      "name": "safeb",
+      "delays": [
+        [
+          1.5,
+          1.5
+        ]
+      ]
+    },
+    {
+      "name": "safespark",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bible"
+    },
+    {
+      "name": "donk_kit"
+    }
+  ]
+}

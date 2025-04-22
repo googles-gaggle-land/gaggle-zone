@@ -32,12 +32,12 @@ loadout-group-hop-backpack = Head of Personnel backpack
 loadout-group-hop-outerclothing = Head of Personnel outer clothing
 
 # Civilian
-loadout-group-passenger-jumpsuit = Passenger jumpsuit
-loadout-group-passenger-mask = Passenger mask
-loadout-group-passenger-gloves = Passenger gloves
-loadout-group-passenger-outerclothing = Passenger outer clothing
-loadout-group-passenger-shoes = Passenger shoes
-loadout-group-passenger-neck = Passenger neck
+loadout-group-passenger-jumpsuit = Staff Assistant jumpsuit
+loadout-group-passenger-mask = Staff Assistant mask
+loadout-group-passenger-gloves = Staff Assistant gloves
+loadout-group-passenger-outerclothing = Staff Assistant outer clothing
+loadout-group-passenger-shoes = Staff Assistant shoes
+loadout-group-passenger-neck = Staff Assistant neck
 
 loadout-group-bartender-head = Bartender head
 loadout-group-bartender-jumpsuit = Bartender jumpsuit

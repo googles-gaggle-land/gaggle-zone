@@ -1,0 +1,8 @@
+- type: entity
+  save: false
+  name: Urisst' MzGoon
+  suffix: Goonstation
+  parent: BaseMobReptilianGoon
+  id: MobReptilianGoon
+
+#Weh

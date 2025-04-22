@@ -118,6 +118,7 @@
     - Bee
     - Trash
   - type: Bloodstream
+    bloodReagent: InsectBlood
     bloodMaxVolume: 0.1
   - type: MobPrice
     price: 50
@@ -231,6 +232,7 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
+  - type: ExaminableHunger
   - type: ReplacementAccent
     accent: chicken
   - type: SentienceTarget
@@ -676,6 +678,7 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
+  - type: ExaminableHunger
   - type: ReplacementAccent
     accent: duck
   - type: SentienceTarget
@@ -801,6 +804,7 @@
       Dead:
         Base: dead
   - type: Bloodstream
+    bloodReagent: InsectBlood
     bloodMaxVolume: 0.1
   - type: MobPrice
     price: 50
@@ -859,6 +863,7 @@
     reagentId: Milk
     quantityPerUpdate: 25
     growthDelay: 30
+  - type: ExaminableHunger
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -1025,6 +1030,7 @@
     reagentId: MilkGoat
     quantityPerUpdate: 25
     growthDelay: 20
+  - type: ExaminableHunger
   - type: Wooly
   - type: Food
     solution: wool
@@ -1336,7 +1342,6 @@
     - map: [ "gloves" ]
     - map: [ "shoes" ]
     - map: [ "ears" ]
-    - map: [ "outerClothing" ]
     - map: [ "eyes" ]
     - map: [ "belt" ]
     - map: [ "id" ]
@@ -1347,6 +1352,7 @@
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
     - map: [ "enum.HumanoidVisualLayers.Tail" ]
+    - map: [ "outerClothing" ]
     - map: [ "mask" ]
     - map: [ "head" ]
     - map: [ "pocket1" ]
@@ -1360,6 +1366,14 @@
         clownedon:
           True: {visible: true}
           False: {visible: false}
+      enum.CultHaloVisuals.CultHalo:
+        culthalo:
+          True: { visible: true }
+          False: { visible: false }
+      enum.CultEyesVisuals.CultEyes:
+          culteyes:
+            True: { visible: true }
+            False: { visible: false }
   - type: Body # Shitmed Change
     prototype: Monkey
     requiredLegs: 2
@@ -1718,6 +1732,14 @@
   - type: MobStateActions
     actions:
       Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+      SoftCritical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+      HardCritical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
@@ -2810,6 +2832,7 @@
   - type: Physics
   - type: Speech
     speechVerb: Canine
+    speechSounds: Dog
   - type: Fixtures
     fixtures:
       fix1:
@@ -3336,6 +3359,14 @@
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
+      SoftCritical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+      HardCritical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -3481,7 +3512,9 @@
   - type: Butcherable
     spawned:
     - id: FoodMeatBacon
-      amount: 6
+      amount: 5 # gaggle
+    - id: FoodMeatPork # gaggle
+      amount: 3
   - type: Grammar
     attributes:
       gender: epicene
@@ -3685,3 +3718,142 @@
         Base: reindeer_doe_dead
       Dead:
         Base: reindeer_doe_dead
+
+
+# Gaggle Start
+
+- type: entity
+  name: space koi
+  id: BaseMobKoi
+  parent: [ SimpleSpaceMobBase, FlyingMobBase ]
+  description: It's a space koi, the most gentle of space fish. It won't bite!
+  abstract: true
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+      - Passive
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _gaggle/Mobs/Animals/space_koi.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: koi1
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.40
+          density: 80
+          mask:
+            - FlyingMobMask
+          layer:
+            - FlyingMobLayer
+    - type: MobState
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        40: Dead
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 2.5
+      baseSprintSpeed: 3.5
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: koi1
+        Dead:
+          Base: koi1-dead
+    - type: Butcherable
+      spawned:
+        - id: FoodMeatFish
+          amount: 2
+    - type: TypingIndicator
+      proto: default
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+    - type: ReplacementAccent
+      accent: genericAggressive
+    - type: Speech
+      speechVerb: LargeMob
+    - type: InteractionPopup
+      interactSuccessString: petting-success-koi
+      interactFailureString: petting-failure-koi
+      interactFailureSound:
+        path: /Audio/Effects/bite.ogg
+    - type: Body # Shitmed: Special carp organs
+      prototype: Animal
+    - type: SurgeryTarget # Shitmed
+    - type: UserInterface # Shitmed
+      interfaces:
+        enum.SurgeryUIKey.Key:
+          type: SurgeryBui
+          
+- type: entity
+  name: space koi
+  id: MobKoiRed
+  parent: BaseMobKoi
+  components:
+    - type: Sprite
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: koi1
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: koi1
+        Dead:
+          Base: koi1-dead
+          
+- type: entity
+  name: space koi
+  id: MobKoiSpotted
+  parent: BaseMobKoi
+  components:
+    - type: Sprite
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: koi2
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: koi2
+        Dead:
+          Base: koi2-dead
+
+- type: entity
+  name: space koi
+  id: MobKoiYellow
+  parent: BaseMobKoi
+  components:
+    - type: Sprite
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: koi3
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: koi3
+        Dead:
+          Base: koi3-dead
+          
+
+- type: entity
+  name: space koi
+  id: MobKoiRGB
+  parent: BaseMobKoi
+  description: It's a space koi, the most gentle of space fish. It looks pretty!
+  components:
+    - type: Sprite
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: koi5
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: koi5
+        Dead:
+          Base: koi5-dead

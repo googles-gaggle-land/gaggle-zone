@@ -217,9 +217,9 @@ FoodDonutBlumpkin: FoodDonutBluePumpkin
 FoodDonutJellyBlumpkin: FoodDonutJellyBluePumpkin
 
 # 2024-02-19
-Drone: null
-SpawnMobDrone: null
-Onestar: null # I dont think this is even mapped, but just in case
+#Drone: null
+#SpawnMobDrone: null
+#Onestar: null # I dont think this is even mapped, but just in case
 
 # 2024-02-22
 SolarAssemblyPart: SolarAssemblyFlatpack
@@ -394,6 +394,7 @@ MaterialReclaimer: null
 MaterialReclaimerMachineCircuitboard: null
 
 # 2024-08-11
+#HEY GUESS WHAT, it's not in game! Maybe goob didn't merge it or funky didn't. If we're on EE, ignore this!
 FoodTacoBeef: FoodTacoShell
 FoodTacoChicken: FoodTacoShell
 FoodTacoFish: FoodTacoShell
@@ -542,3 +543,10 @@ FoodCondimentPacketFrostoil: FoodCondimentPacketColdsauce
 #2025-02-05
 WeaponSubMachineGunVector: null
 WeaponSubMachineGunVectorRubber: null
+
+# 2025-02-20
+MagazineBoxAntiMaterielBig: null
+MagazineBoxCaselessRifle10x24: null
+MagazineBoxCaselessRifleBig: null
+MagazinePistolHighCapacityRubber: null
+

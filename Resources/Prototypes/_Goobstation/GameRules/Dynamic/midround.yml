@@ -17,7 +17,7 @@
     minimumPlayers: 15
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/Announcements/attention.ogg
     duration: null
     occursDuringRoundEnd: false
   - type: AlertLevelInterceptionRule
@@ -39,7 +39,7 @@
     minimumPlayers: 15
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/Announcements/attention.ogg
     duration: null
     occursDuringRoundEnd: false
   - type: AlertLevelInterceptionRule
@@ -61,7 +61,7 @@
     minimumPlayers: 30
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/Announcements/attention.ogg
     duration: null
     occursDuringRoundEnd: false
   - type: AlertLevelInterceptionRule

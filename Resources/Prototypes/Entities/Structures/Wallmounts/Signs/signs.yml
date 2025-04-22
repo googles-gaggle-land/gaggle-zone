@@ -101,7 +101,7 @@
   parent: BaseSignDirectional
   id: SignDirectionalEvac
   name: evac sign
-  description: A direction sign, pointing out which way evac is.
+  description: A direction sign, pointing out which way the escape shuttle is.
   components:
   - type: Sprite
     state: direction_evac
@@ -786,7 +786,7 @@
   parent: BaseSign
   id: SignShipDock
   name: evac sign
-  description: A sign indicating the where the evac shuttle will (likely) arrive.
+  description: A sign indicating the where the escape shuttle will (likely) arrive.
   components:
   - type: Sprite
     state: dock

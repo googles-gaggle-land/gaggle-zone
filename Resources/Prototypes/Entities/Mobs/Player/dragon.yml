@@ -87,6 +87,12 @@
       Critical:
       - ActionCritSuccumb
       - ActionCritLastWords
+      SoftCritical:
+      - ActionCritSuccumb
+      - ActionCritLastWords
+      HardCritical:
+      - ActionCritSuccumb
+      - ActionCritLastWords
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -159,7 +165,6 @@
   - type: NightVision # Goobstation - Nigthvision
     isToggle: true
     color: "#808080"
-    playSoundOn: false
 
 - type: entity
   parent: BaseMobDragon

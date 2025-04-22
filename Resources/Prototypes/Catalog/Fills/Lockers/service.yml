@@ -120,6 +120,7 @@
   - type: StorageFill
     contents:
       - id: ClothingUniformOveralls
+      - id: ClothingUniformOverallsRed
       - id: ClothingHeadHatTrucker
         prob: 0.3
       - id: GatfruitSeeds
@@ -133,6 +134,7 @@
   id: ClosetJanitorBombFilled
   parent: ClosetJanitorBomb
   suffix: DO NOT MAP, Filled
+  categories: [ DoNotMap ]
   components:
   - type: StorageFill
     contents:

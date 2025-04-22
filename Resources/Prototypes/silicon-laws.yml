@@ -533,12 +533,12 @@
   id: Asimov2
   order: 2
   lawString: law-asimov-2
- 
+
 - type: siliconLaw
   id: Asimov3
   order: 3
   lawString: law-asimov-3
-  
+
 - type: siliconLawset
   id: AsimovLawset
   laws:
@@ -546,6 +546,43 @@
   - Asimov2
   - Asimov3
   obeysTo: laws-owner-crew
+
+# Niceymov lawset
+- type: siliconLaw
+  id: Niceymov1
+  order: 1
+  lawString: law-niceymov-1
+
+- type: siliconLaw
+  id: Niceymov2
+  order: 2
+  lawString: law-niceymov-2
+
+- type: siliconLaw
+  id: Niceymov3
+  order: 3
+  lawString: law-niceymov-3
+
+- type: siliconLaw
+  id: Niceymov4
+  order: 4
+  lawString: law-niceymov-4
+
+- type: siliconLaw
+  id: Niceymov5
+  order: 5
+  lawString: law-niceymov-5
+
+- type: siliconLawset
+  id: NiceymovLawset
+  laws:
+  - Niceymov1
+  - Niceymov2
+  - Niceymov3
+  - Niceymov4
+  - Niceymov5
+  obeysTo: laws-owner-crew
+
 
 # ion storm random lawsets
 - type: weightedRandom
@@ -569,3 +606,4 @@
     Ninja: 0.25
     JermovLawset: 0.25
     AsimovLawset: 0.5
+    Nicemyov: 0.5

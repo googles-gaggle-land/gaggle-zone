@@ -7,6 +7,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - ShaftMiner
 
 - type: department
   id: Civilian
@@ -17,6 +18,8 @@
   roles:
   - Bartender
   - Botanist
+  - Rancher
+  - Waiter
   - Boxer
   - Chaplain
   - Chef
@@ -102,6 +105,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  - Mechanic
 
 - type: department
   id: Medical
@@ -113,6 +117,8 @@
   - ChiefMedicalOfficer
   - MedicalDoctor
   - MedicalIntern
+  - Geneticist
+  - Virologist
   - Psychologist
   - Paramedic
 

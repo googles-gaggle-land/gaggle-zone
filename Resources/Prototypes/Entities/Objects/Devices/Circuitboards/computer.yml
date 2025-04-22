@@ -10,6 +10,9 @@
       state: cpuboard
     - type: Item
       storedRotation: -90
+    - type: Tag
+      tags:
+        - DroneUsable # Goobstation
     - type: StaticPrice
       price: 100
     - type: PhysicalComposition
@@ -96,6 +99,9 @@
       prototype: ComputerCargoOrders
     - type: StaticPrice
       price: 750
+    - type: Tag
+      tags:
+      - DroneUsable # Goobstation
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -181,6 +187,7 @@
   - type: Tag
     tags:
     - SurveillanceCameraMonitorCircuitboard
+    - DroneUsable # Goobstation
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -204,6 +211,7 @@
     - type: Tag
       tags:
         - ComputerTelevisionCircuitboard
+        - DroneUsable # Goobstation
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -264,6 +272,7 @@
     - type: Tag
       tags:
       - HighRiskItem
+      - DroneUsable # Goobstation
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -308,6 +317,17 @@
     state: cpu_wizard
   - type: ComputerBoard
     prototype: WizardComputerComms
+
+- type: entity
+  parent: [ BaseComputerCircuitboard, BaseCentcommContraband ]
+  id: CentcommCommsComputerCircuitboard
+  name: central command communications computer board
+  description: A computer printed circuit board for a central command communications console.
+  components:
+  - type: Sprite
+    state: cpu_centcomm
+  - type: ComputerBoard
+    prototype: CentcommComputerComms
 
 - type: entity
   parent: BaseComputerCircuitboard

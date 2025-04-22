@@ -3,7 +3,7 @@
   name: trait-natural-regeneration-name
   description: trait-natural-regeneration-desc
   category: Quirks
-  cost: 8
+  cost: 4
   components:
   - type: PassiveDamage
     allowedStates:
@@ -16,13 +16,13 @@
         Airloss: -0.1
         Toxin: -0.1
         Genetic: -0.1
-        
+
 - type: trait
   id: NaturalResiliance
   name: trait-natural-resiliance-name
   description: trait-natural-resiliance-desc
   category: Quirks
-  cost: 6
+  cost: 3
   components:
   - type: Armor
     modifiers:
@@ -42,7 +42,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Bloodloss: 4.0 
+        Bloodloss: 4.0
   speciesRestrictions:
   - IPC
 
@@ -51,7 +51,7 @@
   name: trait-careful-steps-name
   description: trait-careful-steps-desc
   category: Quirks
-  cost: 4 # Slower than galoshes, hurts no slip users, but still a no slip after all.
+  cost: 2 # Slower than galoshes, hurts no slip users, but still a no slip after all.
   components:
   - type: NoSlip
   - type: SlowedOverSlippery
@@ -68,7 +68,7 @@
   name: trait-swift-feet-name
   description: trait-swift-feet-desc
   category: Quirks
-  cost: 6
+  cost: 3
   components:
   - type: ClothingSpeedModifier
     walkModifier: 1.1
@@ -79,7 +79,7 @@
   name: trait-temperature-tolerance-name
   description: trait-temperature-tolerance-desc
   category: Quirks
-  cost: 2 
+  cost: 1
   components:
   - type: Temperature
     atmosTemperatureTransferEfficiency: 0.1
@@ -89,7 +89,7 @@
   name: trait-table-hider-name
   description: trait-table-hider-desc
   category: Quirks
-  cost: 16 # Literally the rodentia action, blatant why it costs a lot.
+  cost: 8 # Literally the rodentia action, blatant why it costs a lot.
   components:
   - type: CrawlUnderObjects
     actionProto: ActionToggleSneakMode
@@ -101,11 +101,32 @@
         Heat: 1.1
 
 - type: trait
+  id: SingerTrait
+  name: trait-singer-name
+  description: trait-singer-desc
+  category: Quirks
+  cost: 3 #feels right, it's just fun!
+  components:
+  - type: HarpySinger
+  - type: UserInterface
+    interfaces:
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface
+      enum.VoiceMaskUIKey.Key:
+        type: VoiceMaskBoundUserInterface
+      enum.HumanoidMarkingModifierKey.Key:
+        type: HumanoidMarkingModifierBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+
+
+
+- type: trait
   id: StrengthenedImmunity
   name: trait-strengthened-immunity-name
   description: trait-strengthened-immunity-desc
   category: Quirks
-  cost: 6 # Pretty strong but not more desirable than the other stat traits
+  cost: 3 # Pretty strong but not more desirable than the other stat traits
   components:
   - type: Armor
     modifiers:
@@ -117,7 +138,7 @@
   name: trait-stable-genes-name
   description: trait-stable-genes-desc
   category: Quirks
-  cost: 2 # Extremely situational and decently weak
+  cost: 1 # Extremely situational and decently weak
   components:
   - type: Armor
     modifiers:
@@ -129,7 +150,7 @@
   name: trait-resourceful-name
   description: trait-table-hider-desc
   category: Quirks
-  cost: 8
+  cost: 4
   components:
   - type: Storage
     clickInsert: false
@@ -145,7 +166,7 @@
   name: trait-lizard-dragger-name
   description: trait-lizard-dragger-desc
   category: Quirks
-  cost: 8
+  cost: 4
   components:
   - type: Puller
     needsHands: false
@@ -157,7 +178,7 @@
   name: trait-acrobat-name
   description: trait-acrobat-desc
   category: Quirks
-  cost: 3 # Passive like drunk res and careful steps but very situational.
+  cost: 1 # Passive like drunk res and careful steps but very situational.
   components:
   - type: MovementSpeedModifier
     weightlessAcceleration: 1.75 # 50% of a moth's buff

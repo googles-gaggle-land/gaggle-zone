@@ -270,6 +270,13 @@
     sprite: Objects/Devices/cartridge.rsi
     state: cart-sec
 
+- type: stealTargetGroup
+  id: ClothingNeckShockCollar
+  name: shock collar
+  sprite:
+    sprite: Clothing/Neck/Misc/shock_collar.rsi
+    state: icon
+
 #Thief structures
 
 - type: stealTargetGroup
@@ -373,6 +380,13 @@
     state: walter
 
 - type: stealTargetGroup
+  id: AnimalCookie
+  name: steal-target-groups-animal-cookie
+  sprite:
+    sprite: Mobs/Aliens/Argocyte/argocyte_common.rsi
+    state: molder
+
+- type: stealTargetGroup
   id: AnimalMorty
   name: steal-target-groups-animal-morty
   sprite:
@@ -400,4 +414,9 @@
     sprite: Mobs/Animals/crab.rsi
     state: crab
 
-
+- type: stealTargetGroup
+  id: AnimalFreddy
+  name: steal-target-groups-animal-freddy
+  sprite:
+    sprite: _gaggle/Mobs/Animals/space_koi.rsi
+    state: koi2

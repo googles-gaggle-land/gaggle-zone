@@ -1,0 +1,21 @@
+- type: entity
+  name: hot dog
+  parent: FoodMeatBase
+  id: FoodHotDog
+  description: A staple of cookouts.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - meaty
+  - type: Sprite
+    sprite: _gaggle/Objects/Consumable/Food/meals.rsi
+    state: hot-dog
+  - type: Construction
+    graph: FoodHotDog
+    node: hot dog

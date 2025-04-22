@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "pork, pork-cooked, porkchop, porkchop-cooked, sausage, sausage-cooked by miapyxel. sausage and sausage-cooked are edited versions of sausage in Objects/Consumable/Food/meat.rsi. pork and pork-cooked are edited versions of plain in Objects/Consumable/Food/meat.rsi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pork"
+    },
+    {
+      "name": "pork-cooked"
+    },
+    {
+      "name": "porkchop"
+    },
+    {
+      "name": "porkchop-cooked"
+    },
+    {
+      "name": "sausage"
+    },
+    {
+      "name": "sausage-cooked"
+    }
+  ]
+}

@@ -34,7 +34,7 @@
         layer:
         - MobLayer
   - type: Sprite
-    scale: 0.8, 0.8
+    #scale: 0.8, 0.8 - Funkystation hehehell naw
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
@@ -60,6 +60,11 @@
       - map: [ "shoes" ]
       - map: [ "ears" ]
       - map: [ "outerClothing" ]
+      - map: [ "culteyes" ] # funky cult
+        sprite: "_Funkystation/BloodCult/Effects/culteyes.rsi"
+        state: "human"  # TODO make rodentia version
+        shader: unshaded
+        visible: false
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "neck" ]
@@ -76,6 +81,11 @@
       - map: [ "clownedon" ] # Dynamically generated
         sprite: "_DV/Effects/creampie.rsi"
         state: "creampie_rodentia"
+        visible: false
+      - map: [ "culthalo" ] # funky cult
+        sprite: "_Funkystation/BloodCult/Effects/halo.rsi"
+        state: "halo"
+        shader: unshaded
         visible: false
   - type: MeleeWeapon
     soundHit:
@@ -101,17 +111,12 @@
       Unsexed: MaleRodentia
   - type: Rummager
   - type: AlwaysTriggerMousetrap
-  - type: PseudoItem
-    storedOffset: -10,0
-    shape:
-      - 0, 0, 3, 2
-      - 0, 2, 5, 4
   - type: MouthStorage
     mouthProto: CheekStorage
     openStorageAction: ActionOpenMouthStorage
     spitDamageThreshold: 3
-  - type: CrawlUnderObjects
-    actionProto: ActionToggleSneakMode
+#  - type: CrawlUnderObjects
+#    actionProto: ActionToggleSneakMode - funkystation no sneak
 
 - type: entity
   save: false

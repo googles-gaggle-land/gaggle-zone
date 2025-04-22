@@ -11,6 +11,7 @@
     tags:
     - PlantSampleTaker
     - Wirecutter
+    - DroneUsable # Goobstation
   - type: Sprite
     sprite: Objects/Tools/wirecutters.rsi
     layers:
@@ -69,6 +70,7 @@
   - type: Tag
     tags:
     - Screwdriver
+    - DroneUsable # Goobstation
   - type: Sprite
     sprite: Objects/Tools/screwdriver.rsi
     layers:
@@ -122,6 +124,7 @@
   - type: Tag
     tags:
     - Wrench
+    - DroneUsable # Goobstation
   - type: Sprite
     sprite: Objects/Tools/wrench.rsi
     state: icon
@@ -193,6 +196,7 @@
     tags:
       - Multitool
       - DoorElectronicsConfigurator
+      - DroneUsable # Goobstation
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
@@ -366,6 +370,9 @@
   - type: ActivatableUI
     inHandsOnly: true
     key: enum.RcdUiKey.Key
+  - type: Tag
+    tags:
+      - DroneUsable # Goobstation
 
 - type: entity
   id: RPD
@@ -391,6 +398,7 @@
     - VentPassive
     - MixerGas
     - Radiator
+    - BendedRadiator
     - SignalValve
     - CanisterPort
     - FilterGas
@@ -415,6 +423,19 @@
   parent: RCD
   name: experimental RCD
   description: A bluespace-enhanced rapid construction device that passively generates its own compressed matter.
+  suffix: AutoRecharge
+  components:
+  - type: LimitedCharges
+    maxCharges: 20
+    charges: 20
+  - type: AutoRecharge
+    rechargeDuration: 10
+
+- type: entity
+  id: RPDRecharging
+  parent: RPD
+  name: experimental RPD
+  description: A bluespace-enhanced rapid piping device that passively generates its own compressed matter.
   suffix: AutoRecharge
   components:
   - type: LimitedCharges
@@ -470,6 +491,8 @@
     - Multitool
   - type: Prying
     enabled: false
+  - type: UseDelay # Goobstation - For insta prying
+    delay: 0 # Goobstation - no switch CD
   - type: Tool
     qualities:
       - Screwing

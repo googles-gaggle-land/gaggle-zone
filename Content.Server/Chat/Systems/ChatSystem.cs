@@ -339,7 +339,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 			}
 			else
 			{
-				_audio.PlayGlobal(announcementSound == null ? DefaultAnnouncementSound : _audio.GetSound(announcementSound), Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
+				_audio.PlayGlobal(announcementSound == null ? DefaultAnnouncementSound : _audio.ResolveSound(announcementSound), Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
 			}
         }
 		else if (announcementWords != null)
@@ -439,7 +439,10 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool ignoreActionBlocker = false
         )
     {
-        if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
+        if (!_actionBlocker.CanSpeak(source, out var onlyWhisper) && !ignoreActionBlocker)
+            return;
+
+        if (onlyWhisper)
             return;
 
         var message = TransformSpeech(source, originalMessage);
@@ -512,7 +515,11 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool ignoreActionBlocker = false
         )
     {
-        if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
+        if (!_actionBlocker.CanSpeak(source, out var onlyWhisper) && !ignoreActionBlocker)
+            return;
+
+        // why does whispering handle radio messages?
+        if (channel != null && onlyWhisper)
             return;
 
         var message = TransformSpeech(source, FormattedMessage.RemoveMarkupOrThrow(originalMessage));

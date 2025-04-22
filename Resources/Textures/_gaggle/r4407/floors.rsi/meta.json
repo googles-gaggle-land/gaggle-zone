@@ -1,0 +1,413 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "floor"
+    },
+    {
+      "name": "shiny"
+    },
+    {
+      "name": "white"
+    },
+    {
+      "name": "whiteshiny"
+    },
+    {
+      "name": "plating"
+    },
+    {
+      "name": "dark"
+    },
+    {
+      "name": "bar"
+    },
+    {
+      "name": "cafeteria"
+    },
+    {
+      "name": "grimy"
+    },
+    {
+      "name": "red",
+      "directions": 8
+    },
+    {
+      "name": "redcorner",
+      "directions": 4
+    },
+    {
+      "name": "blue",
+      "directions": 8
+    },
+    {
+      "name": "bluecorner",
+      "directions": 4
+    },
+    {
+      "name": "green",
+      "directions": 8
+    },
+    {
+      "name": "greencorner",
+      "directions": 4
+    },
+    {
+      "name": "yellow",
+      "directions": 8
+    },
+    {
+      "name": "yellowcorner",
+      "directions": 4
+    },
+    {
+      "name": "black"
+    },
+    {
+      "name": "chapel",
+      "directions": 8
+    },
+    {
+      "name": "oldburning",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "engine"
+    },
+    {
+      "name": "circuit"
+    },
+    {
+      "name": "circuitoff"
+    },
+    {
+      "name": "neutral",
+      "directions": 8
+    },
+    {
+      "name": "neutralcorner",
+      "directions": 4
+    },
+    {
+      "name": "orange",
+      "directions": 8
+    },
+    {
+      "name": "orangecorner",
+      "directions": 4
+    },
+    {
+      "name": "whitehall",
+      "directions": 8
+    },
+    {
+      "name": "whitecorner",
+      "directions": 4
+    },
+    {
+      "name": "arrival",
+      "directions": 8
+    },
+    {
+      "name": "arrivalcorner",
+      "directions": 4
+    },
+    {
+      "name": "escape",
+      "directions": 8
+    },
+    {
+      "name": "escapecorner",
+      "directions": 4
+    },
+    {
+      "name": "purple",
+      "directions": 8
+    },
+    {
+      "name": "purplecorner",
+      "directions": 4
+    },
+    {
+      "name": "black",
+      "directions": 8
+    },
+    {
+      "name": "blackcorner",
+      "directions": 4
+    },
+    {
+      "name": "caution",
+      "directions": 8
+    },
+    {
+      "name": "cautioncorner",
+      "directions": 4
+    },
+    {
+      "name": "burning",
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "carpet"
+    },
+    {
+      "name": "carpet1"
+    },
+    {
+      "name": "carpet2"
+    },
+    {
+      "name": "carpetN"
+    },
+    {
+      "name": "carpetNE"
+    },
+    {
+      "name": "carpetE"
+    },
+    {
+      "name": "carpetSE"
+    },
+    {
+      "name": "carpetS"
+    },
+    {
+      "name": "carpetSW"
+    },
+    {
+      "name": "carpetW"
+    },
+    {
+      "name": "carpetNW"
+    },
+    {
+      "name": "grass1"
+    },
+    {
+      "name": "grass2"
+    },
+    {
+      "name": "grass3"
+    },
+    {
+      "name": "grass4"
+    },
+    {
+      "name": "sand1"
+    },
+    {
+      "name": "sand2"
+    },
+    {
+      "name": "sand3"
+    },
+    {
+      "name": "floorgrime"
+    },
+    {
+      "name": "caution_east"
+    },
+    {
+      "name": "caution_west"
+    },
+    {
+      "name": "corner_east"
+    },
+    {
+      "name": "corner_west"
+    },
+    {
+      "name": "L1"
+    },
+    {
+      "name": "L2"
+    },
+    {
+      "name": "L3"
+    },
+    {
+      "name": "L4"
+    },
+    {
+      "name": "L5"
+    },
+    {
+      "name": "L6"
+    },
+    {
+      "name": "L7"
+    },
+    {
+      "name": "L8"
+    },
+    {
+      "name": "L9"
+    },
+    {
+      "name": "L10"
+    },
+    {
+      "name": "L11"
+    },
+    {
+      "name": "L12"
+    },
+    {
+      "name": "L13"
+    },
+    {
+      "name": "L14"
+    },
+    {
+      "name": "L15"
+    },
+    {
+      "name": "L16"
+    },
+    {
+      "name": "solarpanel"
+    },
+    {
+      "name": "caution_south"
+    },
+    {
+      "name": "caution_north"
+    },
+    {
+      "name": "freezerfloor"
+    },
+    {
+      "name": "damaged1"
+    },
+    {
+      "name": "damaged3"
+    },
+    {
+      "name": "damaged2"
+    },
+    {
+      "name": "panelscorched"
+    },
+    {
+      "name": "floorscorched1"
+    },
+    {
+      "name": "floorscorched2"
+    },
+    {
+      "name": "damaged4"
+    },
+    {
+      "name": "damaged5"
+    },
+    {
+      "name": "platingdmg1"
+    },
+    {
+      "name": "platingdmg2"
+    },
+    {
+      "name": "platingdmg3"
+    },
+    {
+      "name": "delivery"
+    },
+    {
+      "name": "bot"
+    },
+    {
+      "name": "derelict1"
+    },
+    {
+      "name": "derelict2"
+    },
+    {
+      "name": "derelict3"
+    },
+    {
+      "name": "derelict4"
+    },
+    {
+      "name": "derelict5"
+    },
+    {
+      "name": "derelict6"
+    },
+    {
+      "name": "derelict7"
+    },
+    {
+      "name": "derelict8"
+    },
+    {
+      "name": "derelict9"
+    },
+    {
+      "name": "derelict10"
+    },
+    {
+      "name": "derelict11"
+    },
+    {
+      "name": "derelict12"
+    },
+    {
+      "name": "derelict13"
+    },
+    {
+      "name": "derelict14"
+    },
+    {
+      "name": "derelict15"
+    },
+    {
+      "name": "derelict16"
+    }
+  ]
+}

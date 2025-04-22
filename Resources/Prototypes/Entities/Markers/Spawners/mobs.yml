@@ -63,6 +63,34 @@
       - MobCorgiMouse
 
 - type: entity
+  name: Argocyte Cookie Spawner
+  id: SpawnMobArgocyteCookie
+  suffix: Freddy Fish
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobKoiFreddy
+      
+- type: entity
+  name: Freddy Fish Spawner
+  suffix: psychology
+  id: SpawnMobKoiFreddy
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobKoiFreddy
+
+- type: entity
   name: Possum Morty Spawner
   id: SpawnMobPossumMorty
   parent: MarkerBase

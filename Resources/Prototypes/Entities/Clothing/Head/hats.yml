@@ -580,7 +580,7 @@
 
 - type: entity
   abstract: true
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseMagicalContraband ]
   id: ClothingHeadHatWizardBase
   components:
   - type: WizardClothes
@@ -945,6 +945,7 @@
     tags:
       - WhitelistChameleon
       - HamsterWearable
+      - DroneUsable # Goobstation
 
 - type: entity
   parent: ClothingHeadHatPartyRed

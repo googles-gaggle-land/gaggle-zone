@@ -1,0 +1,64 @@
+- type: entity
+  parent: BaseWall
+  id: WallDrywall
+  name: drywall
+  description: Keeps the asbestos in and the greytide out.
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Appearance
+  - type: Sprite
+    sprite: _gaggle/Structures/Walls/drywall.rsi
+    state: drywall
+    layers:
+      - state: drywall
+      - map: ["enum.SolutionContainerLayers.Fill"]
+        state: fill-3
+        visible: false
+  - type: Damageable
+    damageModifierSet: Drywall
+  - type: WallReplacementMarker
+  - type: Construction
+    graph: Girder
+    node: drywall
+  - type: Icon
+    sprite: _gaggle/Structures/Walls/drywall.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  #- type: IconSmooth
+  #  key: walls
+  #  base: drywall
+  - type: Paintable
+  - type: SolutionContainerVisuals
+    solutionName: paint
+    maxFillLevels: 3
+    fillBaseName: fill-
+  - type: SolutionContainerManager
+    solution:
+      paint:
+        maxVol: 30

@@ -50,6 +50,64 @@
   - type: Climbing
   - type: NameIdentifier
     group: GenericNumber
+    
+- type: entity
+  save: false
+  parent: [ SimpleMobBase, StripableInventoryBase ]
+  id: BaseMobArgocytePassive
+  suffix: AI
+  description: A not-so-dangerous alien found on exoplanet colonies, known for their propensity for munching on ruins.
+  abstract: true
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: HTN
+    rootTask:
+      task: RuminantHostileCompound
+  - type: Grammar
+    attributes:
+      gender: epicene
+  - type: Sprite
+    sprite: Mobs/Aliens/Argocyte/argocyte_common.rsi
+  - type: SolutionContainerManager
+  - type: ReplacementAccent
+    accent: xeno
+  - type: Bloodstream
+    bloodReagent: FerrochromicAcid
+    bloodMaxVolume: 75 #we don't want the map to become pools of blood
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: Insulated
+  - type: CombatMode
+  - type: MeleeWeapon
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Slash: 5
+  - type: Body
+    prototype: Animal
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+    damage:
+      types:
+        Heat: 9
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: Climbing
+  - type: NameIdentifier
+    group: GenericNumber
 
 - type: entity
   parent: BaseMobArgocyte
@@ -74,6 +132,10 @@
     thresholds:
       0: Alive
       30: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 1
   - type: MovementSpeedModifier
     baseSprintSpeed : 3.5
     baseWalkSpeed : 3
@@ -104,6 +166,10 @@
     thresholds:
       0: Alive
       30: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 1
   - type: Fixtures
     fixtures:
       fix1:
@@ -140,6 +206,10 @@
     thresholds:
       0: Alive
       30: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 1
   - type: Fixtures
     fixtures:
       fix1:
@@ -176,6 +246,10 @@
     thresholds:
       0: Alive
       60: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
   - type: MovementSpeedModifier
     baseSprintSpeed : 5
 
@@ -198,6 +272,10 @@
     thresholds:
       0: Alive
       100: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
   - type: MovementSpeedModifier
     baseSprintSpeed : 4
     baseWalkSpeed : 3.5
@@ -221,6 +299,10 @@
     thresholds:
       0: Alive
       100: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
   - type: MeleeWeapon
     damage:
       types:
@@ -246,6 +328,10 @@
     thresholds:
       0: Alive
       100: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
   - type: MeleeWeapon
     damage:
       types:
@@ -274,6 +360,10 @@
     thresholds:
       0: Alive
       150: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
   - type: MeleeWeapon
     damage:
       types:
@@ -301,6 +391,10 @@
     thresholds:
       0: Alive
       150: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
   - type: MeleeWeapon
     damage:
       types:
@@ -330,6 +424,10 @@
     thresholds:
       0: Alive
       300: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 3
   - type: MeleeWeapon
     damage:
       types:
@@ -356,6 +454,11 @@
         Base: founder
       Dead:
         Base: founder_dead
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 5
   - type: Fixtures
     fixtures:
       fix1:
@@ -397,6 +500,11 @@
         Base: leviathing
       Dead:
         Base: leviathing_dead
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 10
   - type: Fixtures
     fixtures:
       fix1:

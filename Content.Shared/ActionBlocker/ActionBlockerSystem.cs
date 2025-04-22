@@ -109,10 +109,16 @@ namespace Content.Shared.ActionBlocker
         /// </remarks>
         public bool CanUseHeldEntity(EntityUid user, EntityUid used)
         {
-            var ev = new UseAttemptEvent(user, used);
-            RaiseLocalEvent(user, ev);
+            var useEv = new UseAttemptEvent(user, used);
+            RaiseLocalEvent(user, useEv);
 
-            return !ev.Cancelled;
+            if (useEv.Cancelled)
+                return false;
+
+            var usedEv = new GettingUsedAttemptEvent(user);
+            RaiseLocalEvent(used, usedEv);
+
+            return !usedEv.Cancelled;
         }
 
 
@@ -144,12 +150,13 @@ namespace Content.Shared.ActionBlocker
             return !itemEv.Cancelled;
         }
 
-        public bool CanSpeak(EntityUid uid)
+        public bool CanSpeak(EntityUid uid, out bool onlyWhisper)
         {
             // This one is used as broadcast
             var ev = new SpeakAttemptEvent(uid);
             RaiseLocalEvent(uid, ev, true);
 
+            onlyWhisper = ev.OnlyWhisper;
             return !ev.Cancelled;
         }
 

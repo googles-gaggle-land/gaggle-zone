@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "coffee"
+    },
+    {
+      "name": "coffee-broken"
+    },
+    {
+      "name": "coffee-off"
+    },
+    {
+      "name": "snack"
+    },
+    {
+      "name": "snack-broken"
+    },
+    {
+      "name": "snack-off"
+    },
+    {
+      "name": "coffee-vend",
+      "delays": [
+        [
+          0.1,
+          0.4,
+          2,
+          0.2,
+          0.1,
+          0.1,
+          0.5,
+          0.5,
+          0.1,
+          0.1,
+          0.9
+        ]
+      ]
+    },
+    {
+      "name": "cigs"
+    },
+    {
+      "name": "cigs-off"
+    },
+    {
+      "name": "cigs-broken"
+    },
+    {
+      "name": "generic",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "generic-broken"
+    },
+    {
+      "name": "generic-off"
+    },
+    {
+      "name": "med"
+    },
+    {
+      "name": "med-off"
+    },
+    {
+      "name": "med-deny",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "med-broken"
+    },
+    {
+      "name": "sec"
+    },
+    {
+      "name": "sec-off"
+    },
+    {
+      "name": "sec-broken"
+    },
+    {
+      "name": "sec-deny",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "med-panel"
+    },
+    {
+      "name": "sec-panel"
+    },
+    {
+      "name": "generic-panel"
+    },
+    {
+      "name": "coffee-panel"
+    },
+    {
+      "name": "snack-panel"
+    },
+    {
+      "name": "cigs-panel"
+    }
+  ]
+}

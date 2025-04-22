@@ -41,6 +41,9 @@ public sealed class HandTeleporterSystem : EntitySystem
 
     private void OnUseInHand(EntityUid uid, HandTeleporterComponent component, UseInHandEvent args)
     {
+        if (args.Handled)
+            return;
+
         if (Deleted(component.FirstPortal))
             component.FirstPortal = null;
 
@@ -55,8 +58,8 @@ public sealed class HandTeleporterSystem : EntitySystem
         else
         {
             var xform = Transform(args.User);
-            if (xform.ParentUid != xform.GridUid)
-                return;
+            //if (xform.ParentUid != xform.GridUid)
+            //    return;
 
             var doafterArgs = new DoAfterArgs(EntityManager, args.User, component.PortalCreationDelay, new TeleporterDoAfterEvent(), uid, used: uid)
             {
@@ -67,6 +70,8 @@ public sealed class HandTeleporterSystem : EntitySystem
 
             _doafter.TryStartDoAfter(doafterArgs);
         }
+
+        args.Handled = true;
     }
 
 
@@ -84,8 +89,8 @@ public sealed class HandTeleporterSystem : EntitySystem
         if (Deleted(component.FirstPortal) && Deleted(component.SecondPortal))
         {
             // don't portal
-            if (xform.ParentUid != xform.GridUid)
-                return;
+            //if (xform.ParentUid != xform.GridUid)
+            //    return;
 
             var timeout = EnsureComp<PortalTimeoutComponent>(user);
             timeout.EnteredPortal = null;
@@ -95,15 +100,15 @@ public sealed class HandTeleporterSystem : EntitySystem
         }
         else if (Deleted(component.SecondPortal))
         {
-            if (xform.ParentUid != xform.GridUid) // Still, don't portal.
-                return;
+            //if (xform.ParentUid != xform.GridUid) // Still, don't portal.
+            //    return;
 
-            if (!component.AllowPortalsOnDifferentGrids && xform.ParentUid != Transform(component.FirstPortal!.Value).ParentUid)
-            {
-                // Whoops. Fizzle time. Crime time too because yippee I'm not refactoring this logic right now (I started to, I'm not going to.)
-                FizzlePortals(uid, component, user, true);
-                return;
-            }
+            //if (!component.AllowPortalsOnDifferentGrids && xform.ParentUid != Transform(component.FirstPortal!.Value).ParentUid)
+            //{
+            //    // Whoops. Fizzle time. Crime time too because yippee I'm not refactoring this logic right now (I started to, I'm not going to.)
+            //    FizzlePortals(uid, component, user, true);
+            //    return;
+            //}
 
             var timeout = EnsureComp<PortalTimeoutComponent>(user);
             timeout.EnteredPortal = null;

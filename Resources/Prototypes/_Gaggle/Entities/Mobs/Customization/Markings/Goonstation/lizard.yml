@@ -1,0 +1,46 @@
+# These have a *very* niche use case, but I'm doing proper form anyways, since it helps me get more practice for adding species.
+# As always, sprites and such from Goonstation. More proper-er credits are in the meta.json of each RSI file.
+
+- type: marking
+  id: LizardGoonTailDefault
+  bodyPart: Tail
+  markingCategory: Tail
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [ReptilianGoon]
+  sprites:
+  - sprite: _gaggle/Mobs/Species/Goonstation/Lizard/markings.rsi
+    state: marking_tail_default
+    
+- type: marking
+  id: LizardGoonTailSmooth
+  bodyPart: Tail
+  markingCategory: Tail
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [ReptilianGoon]
+  sprites:
+  - sprite: _gaggle/Mobs/Species/Goonstation/Lizard/markings.rsi
+    state: marking_tail_thin
+    
+- type: marking
+  id: LizardGoonHeadFrills
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [ReptilianGoon]
+  sprites:
+  - sprite: _gaggle/Mobs/Species/Goonstation/Lizard/markings.rsi
+    state: marking_head_frills    
+    
+- type: marking
+  id: LizardGoonTorsoUnderbelly
+  bodyPart: Chest
+  markingCategory: Chest
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [ReptilianGoon]
+  sprites:
+  - sprite: _gaggle/Mobs/Species/Goonstation/Lizard/markings.rsi
+    state: marking_chest_underbelly

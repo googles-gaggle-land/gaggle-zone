@@ -1,0 +1,61 @@
+- type: reagent
+  id: GypsumPlaster
+  name: reagent-name-gypsumplaster
+  group: Others
+  desc: reagent-desc-gypsumplaster
+  flavor: chalky
+  color: "#FFFCEDBB"
+  physicalDesc: reagent-physical-desc-shiny
+  slippery: false
+  specificHeat: 0.2
+  #tileReactions:
+    #- !type:CreateEntityTileReaction TBA
+    #  entity: GypsumPlaster
+    #  usage: 10
+  metabolisms:
+    Poison:
+      effects:
+        - !type:HealthChange
+          conditions:
+          - !type:ReagentThreshold
+            reagent: GypsumPlaster
+            min: 20
+          damage:
+            types:
+              Poison: 0.5
+  plantMetabolism:
+    - !type:PlantAdjustHealth
+      amount: 0.1
+    - !type:PlantAdjustNutrition
+      amount: 0.6
+
+- type: reagent
+  id: Gypsum
+  name: reagent-name-gypsum
+  group: Others
+  desc: reagent-desc-gypsum
+  flavor: nothing
+  color: "#B2A99B"
+  physicalDesc: reagent-physical-desc-shiny
+  slippery: false
+  specificHeat: 0.2
+  #tileReactions:
+    #- !type:CreateEntityTileReaction # TBA
+    #  entity: GypsumOre
+    #  usage: 10
+  metabolisms:
+    Poison:
+      effects:
+        - !type:HealthChange
+          conditions:
+          - !type:ReagentThreshold
+            reagent: Gypsum
+            min: 20
+          damage:
+            types:
+              Poison: 0.5
+  plantMetabolism:
+    - !type:PlantAdjustHealth
+      amount: 0.1
+    - !type:PlantAdjustNutrition
+      amount: 0.6

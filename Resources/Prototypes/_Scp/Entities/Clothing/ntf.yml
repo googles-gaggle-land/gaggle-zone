@@ -1,0 +1,235 @@
+﻿- components:
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxHelmet.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxHelmet.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxHelmet
+  name: nine tailed fox helmet
+  parent: ClothingHeadHelmetBasic
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxSuit.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxSuit.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSuit
+  name: nine tailed fox suit
+  parent: ClothingUniformBase
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxVest.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxVest.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxVest
+  name: nine tailed fox vest
+  parent: ClothingOuterVestWeb
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxWebbing.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Regular/NineTailedFoxWebbing.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxWebbing
+  name: nine tailed fox webbing
+  parent: ClothingBeltSecurityWebbing
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistArmor.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistArmor.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistArmor
+  name: nine tailed fox specialist armor
+  parent:
+  - ClothingOuterBase
+  - BaseRestrictedContraband
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistBackpack.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistBackpack.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistBackpack
+  name: nine tailed fox specialist backpack
+  parent: ClothingBackpack
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistBalisticGlasses
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistBalisticGlasses
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistBalisticGlasses
+  name: nine tailed fox specialist balistic glasses
+  parent: ClothingEyesGlassesSecurity
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistGasmask.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistGasmask.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistGasmask
+  name: nine tailed fox specialist gasmask
+  parent: ClothingMaskGasERT
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistGloves.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistGloves.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistGloves
+  name: nine tailed fox specialist gloves
+  parent: ClothingHandsGlovesCombat
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistHelmet.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistHelmet.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistHelmet
+  name: nine tailed fox specialist helmet
+  parent: ClothingHeadHelmetBasic
+  suffix: SCP
+  type: entity
+
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistShield.rsi
+    state: icon
+    type: Sprite
+  - type: Item
+    heldPrefix: riot
+  description: description
+  id: NineTailedFoxSpecialistShield
+  name: nine tailed fox specialist shield
+  parent: BaseShield
+  suffix: SCP
+  type: entity
+
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistSuit.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistSuit.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistSuit
+  name: nine tailed fox specialist suit
+  parent: ClothingUniformBase
+  suffix: SCP
+  type: entity
+- components:
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistWebbing.rsi
+    type: Sprite
+  - sprite: _Scp/NineTailedFox/Specialist/NineTailedFoxSpecialistWebbing.rsi
+    type: Clothing
+  description: description
+  id: NineTailedFoxSpecialistWebbing
+  name: nine tailed fox specialist webbing
+  parent: ClothingBeltSecurityWebbing
+  suffix: SCP
+  type: entity
+
+
+- type: entity
+  parent: CentcomPDA
+  id: NineTailedFoxPDA
+  suffix: SCP
+  name: nine tailed fox PDA
+  description: Just hope you're not the one being contained.
+  components:
+  - type: Pda
+    id: NTFIDCard
+  - type: Tag #  Ignore Chameleon tags
+    tags:
+    - DoorBumpOpener
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-ert
+  - type: PdaBorderColor
+    borderColor: "#b2b2b2"
+    accentHColor: "#447987"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-ert
+
+- type: entity
+  parent: IDCardStandard
+  id: NTFIDCard
+  suffix: SCP
+  name: nine tailed fox ID card
+  description: Just hope you're not the one being contained.
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+  - type: Item
+    heldPrefix: blue
+  - type: PresetIdCard
+    job: NineTailedFox
+  - type: NanoChatCard # DeltaV
+    listNumber: true
+
+- type: job
+  id: NineTailedFox
+  name: job-name-ninetailedfox
+  description: job-description-ninetailedfox
+  playTimeTracker: JobNineTailedFox
+  setPreference: false
+  startingGear: NTFGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-none
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: NTFGear
+  equipment:
+    jumpsuit: NineTailedFoxSpecialistSuit
+    back: NineTailedFoxSpecialistBackpack
+    mask: NineTailedFoxSpecialistGasmask
+    eyes: NineTailedFoxSpecialistBalisticGlasses
+    ears: ClothingHeadsetAltCentCom
+    gloves: NineTailedFoxSpecialistGasmask
+    outerClothing: NineTailedFoxSpecialistArmor
+    shoes: ClothingShoesBootsMagAdv
+    id: NineTailedFoxPDA
+    belt: NineTailedFoxSpecialistWebbing
+    head: NineTailedFoxSpecialistHelmet
+  storage:
+    back:
+    - WeaponPulsePistol
+    - WeaponRevolverMatebaAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - BoxFlashbang
+    - ToolDebug # spanish army knife
+    - WelderExperimental
+    - Hypospray
+    - DeathAcidifierImplanter # crew will try to steal their amazing hardsuits
+    - FreedomImplanter
+  inhand:
+  - WeaponPulseRifle
+

@@ -1,0 +1,132 @@
+# Purely admin intervention roles.    
+- type: playTimeTracker
+  id: JobGeneticist
+
+- type: job
+  id: Geneticist
+  name: job-name-geneticist
+  description: job-description-geneticist
+  playTimeTracker: JobGeneticist
+  requirements:
+    - !type:OverallPlaytimeRequirement #different chems
+      time: 7200 #2 hrs
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 18000 #5 hrs
+  startingGear: GeneticistGear
+  icon: "JobIconGeneticist"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  - Maintenance
+  # Shitmed Change
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.75
+      
+- type: startingGear
+  id: GeneticistGear
+  equipment:
+    id: GeneticistPDA
+    jumpsuit: ClothingUniformJumpsuitGenetics
+    shoes: ClothingShoesColorBlack
+    ears: ClothingHeadsetMedical
+      
+- type: entity
+  parent: BaseMedicalPDA
+  id: GeneticistPDA
+  name: geneticist PDA
+  description: It smells like a monkey, for some reason.
+  components:
+  - type: Pda
+    id: GeneticistIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-paramedic
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+  - type: Icon
+    state: pda-paramedic
+    
+- type: entity
+  parent: IDCardStandard
+  id: GeneticistIDCard
+  name: geneticist ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idgeneticist
+  - type: PresetIdCard
+    job: Geneticist
+
+- type: playTimeTracker
+  id: JobVirologist
+      
+- type: job
+  id: Virologist
+  name: job-name-virologist
+  description: job-description-virologist
+  playTimeTracker: JobVirologist
+  requirements:
+    - !type:OverallPlaytimeRequirement #different chems
+      time: 7200 #2 hrs
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 18000 #5 hrs
+  startingGear: VirologistGear
+  icon: "JobIconVirologist"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  - Maintenance
+  # Shitmed Change
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.75
+
+- type: startingGear
+  id: VirologistGear
+  equipment:
+    id: VirologistPDA
+    ears: ClothingHeadsetMedical
+    jumpsuit: ClothingUniformJumpsuitVirology
+    shoes: ClothingShoesColorBlack
+    
+- type: entity
+  parent: BaseMedicalPDA
+  id: VirologistPDA
+  name: virologist PDA
+  description: It's completely sterile. You still feel like licking this will kill you.
+  components:
+  - type: Pda
+    id: VirologistIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-internservice
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#00cc35"
+  - type: Icon
+    state: pda-internservice
+    
+- type: entity
+  parent: IDCardStandard
+  id: VirologistIDCard
+  name: virologist ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idvirologist
+  - type: PresetIdCard
+    job: Virologist

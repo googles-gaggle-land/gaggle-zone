@@ -315,6 +315,9 @@
   - type: Construction
     graph: DoughRope
     node: start
+  - type: SliceableFood # gaggle
+    count: 3
+    slice: FoodDoughThin
   - type: SolutionContainerManager
     solutions:
       food:

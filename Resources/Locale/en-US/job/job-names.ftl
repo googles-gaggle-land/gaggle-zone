@@ -35,7 +35,7 @@ job-name-chaplain = Chaplain
 job-name-botanist = Botanist
 job-name-bartender = Bartender
 ## goob edit - epic passengers
-job-name-passenger = Assistant
+job-name-passenger = Staff Assistant
 job-name-salvagespec = Salvage Specialist
 job-name-station-ai = Station AI
 job-name-qm = Quartermaster
@@ -107,7 +107,7 @@ JobMime = Mime
 JobMusician = Musician
 JobParamedic = Paramedic
 JobPartyMaker = Party Maker
-JobPassenger = Assistant
+JobPassenger = Staff Assistant
 JobPsychologist = Psychologist
 JobQuartermaster = Quartermaster
 JobReporter = Reporter
