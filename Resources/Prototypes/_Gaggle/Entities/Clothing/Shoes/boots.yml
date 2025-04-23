@@ -1,0 +1,18 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsLink
+  name: hero's boots
+  description: A pair of boots for a hero.
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.50
+        Heat: 0.50
+        Cold: 0.50
+        Blunt: 0.50
+  - type: Sprite
+    sprite: _gaggle/Clothing/cdi_linkboots.rsi
+  - type: Clothing
+    sprite: _gaggle/Clothing/cdi_linkboots.rsi
+  - type: Matchbox

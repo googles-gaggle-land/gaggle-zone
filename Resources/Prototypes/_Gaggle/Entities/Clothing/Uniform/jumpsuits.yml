@@ -66,3 +66,27 @@
       toggleable-clothing: !type:ContainerSlot {}
   - type: ToggleableClothing
     clothingPrototype: LavalandEquipmentExplorerHood
+    
+# CDI stuff
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMorshu
+  name: shopkeeper's jumpsuit
+  description: A cozy jumpsuit fit for a not-so-cozy shopkeep who can't give credit.
+  components:
+  - type: Sprite
+    sprite: _gaggle/Clothing/cdi_morshusuit.rsi
+  - type: Clothing
+    sprite: _gaggle/Clothing/cdi_morshusuit.rsi
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitLink
+  name: hero's jumpsuit
+  description: Their sword wont hurt anyone friendly!
+  components:
+  - type: Sprite
+    sprite: _gaggle/Clothing/cdi_link.rsi
+  - type: Clothing
+    sprite: _gaggle/Clothing/cdi_link.rsi
