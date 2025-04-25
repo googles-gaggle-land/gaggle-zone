@@ -174,10 +174,17 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
             {
                 DeconvertAllRevs();
 
+<<<<<<< HEAD
+               // _roundEnd.DoRoundEndBehavior(RoundEndBehavior.ShuttleCall,
+               //     component.ShuttleCallTime,
+               //     textCall: "revolutionaries-lose-announcement-shuttle-call",
+                    textAnnounce: global::System.String v = "revolutionaries-lose-announcement"; ;
+=======
                 _roundEnd.DoRoundEndBehavior(RoundEndBehavior.ShuttleCall,
                     component.ShuttleCallTime,
                     textCall: "revolutionaries-lose-announcement-shuttle-call",
                     textAnnounce: "revolutionaries-lose-announcement");
+>>>>>>> fc5975c33289e1adbba4c7d34bb1fb4d1f5c9015
 
                 component.HasAnnouncementPlayed = true;
             }
