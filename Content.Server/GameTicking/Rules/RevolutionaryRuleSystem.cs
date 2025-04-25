@@ -119,36 +119,36 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
     {
         base.ActiveTick(uid, component, gameRule, frameTime);
 
-    //        if (component.RevLossTimerActive && !component.RevForceLose)
-    //    {
-    //        var headRevList = GetHeadRevs();
-    
-    //       if (!IsGroupDetainedOrDead(headRevList, true, false))
-    //        {
-    //           component.RevLossTimerActive = false;
-    
-    //            for (int i = 0; i < headRevList.Count; i++)
-    //           {
-    //               _popup.PopupEntity(Loc.GetString("rev-headrev-returned"), headRevList[i], headRevList[i]);
-    //            }
-    //       }
-    //      else if (component.RevLoseTime <= _timing.CurTime)
-    //       {
-    //                component.RevForceLose = true;
-    //           for (int i = 0; i < headRevList.Count; i++)
-    //          {
-    //               _popup.PopupEntity(Loc.GetString("rev-headrev-abandoned"), headRevList[i], headRevList[i]);
-    //          }
-    //      }
-    //  }
+        if (component.RevLossTimerActive && !component.RevForceLose)
+        {
+            var headRevList = GetHeadRevs();
+
+            if (!IsGroupDetainedOrDead(headRevList, true, false))
+            {
+                component.RevLossTimerActive = false;
+
+                for (int i = 0; i < headRevList.Count; i++)
+                {
+                    _popup.PopupEntity(Loc.GetString("rev-headrev-returned"), headRevList[i], headRevList[i]);
+                }
+            }
+            else if (component.RevLoseTime <= _timing.CurTime)
+            {
+                component.RevForceLose = true;
+                for (int i = 0; i < headRevList.Count; i++)
+                {
+                    _popup.PopupEntity(Loc.GetString("rev-headrev-abandoned"), headRevList[i], headRevList[i]);
+                }
+            }
+        }
 
         // funkystation
-    //    if (component.RevVictoryEndTime != null && _timing.CurTime >= component.RevVictoryEndTime)
-    //    {
-    //        EndRound();
+        if (component.RevVictoryEndTime != null && _timing.CurTime >= component.RevVictoryEndTime)
+        {
+            EndRound();
 
-    //        return;
-    //   }
+            return;
+        }
 
         if (component.CommandCheck <= _timing.CurTime)
         {
@@ -166,7 +166,7 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
 
                     component.HasRevAnnouncementPlayed = true;
 
-                 //   component.RevVictoryEndTime = _timing.CurTime + component.RevVictoryEndDelay;
+                    component.RevVictoryEndTime = _timing.CurTime + component.RevVictoryEndDelay;
                 }
             }
 
@@ -174,10 +174,17 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
             {
                 DeconvertAllRevs();
 
+<<<<<<< HEAD
                // _roundEnd.DoRoundEndBehavior(RoundEndBehavior.ShuttleCall,
                //     component.ShuttleCallTime,
                //     textCall: "revolutionaries-lose-announcement-shuttle-call",
                     textAnnounce: global::System.String v = "revolutionaries-lose-announcement"; ;
+=======
+                _roundEnd.DoRoundEndBehavior(RoundEndBehavior.ShuttleCall,
+                    component.ShuttleCallTime,
+                    textCall: "revolutionaries-lose-announcement-shuttle-call",
+                    textAnnounce: "revolutionaries-lose-announcement");
+>>>>>>> fc5975c33289e1adbba4c7d34bb1fb4d1f5c9015
 
                 component.HasAnnouncementPlayed = true;
             }
