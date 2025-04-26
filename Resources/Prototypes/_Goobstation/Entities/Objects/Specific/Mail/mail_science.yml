@@ -7,10 +7,10 @@
     contents:
     - id: IngotGold
       amount: 0
-      maxAmount: 5
+      maxAmount: 30
     - id: IngotSilver
       amount: 0
-      maxAmount: 5
+      maxAmount: 30
     - id: SheetUranium
       amount: 0
-      maxAmount: 2
+      maxAmount: 30 #we love gambling

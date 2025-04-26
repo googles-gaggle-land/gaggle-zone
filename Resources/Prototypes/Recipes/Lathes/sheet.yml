@@ -189,6 +189,20 @@
     RawBananium: 3000
 
 - type: latheRecipe
+  id: IngotGold30
+  result: IngotGold
+  completetime: 2
+  materials:
+    RawGold: 1000
+
+- type: latheRecipe
+  id: IngotSilver30
+  result: IngotSilver
+  completetime: 2
+  materials:
+    RawSilver: 1000
+
+- type: latheRecipe
   id: MaterialDiamond
   result: MaterialDiamond1
   completetime: 0
