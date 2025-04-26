@@ -10,6 +10,7 @@
     layers:
     - state: sleeper_0
       map: ["base"]
+  - type: Rotatable
   - type: UserInterface
     interfaces:
       enum.CryostorageUIKey.Key:
