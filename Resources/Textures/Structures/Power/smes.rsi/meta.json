@@ -26,7 +26,13 @@
       "name": "smes-open"
     },
     {
-      "name": "smes-oc0"
+      "name": "smes-oc0",
+      "delays": [
+        [
+          1.2,
+          1.2
+        ]
+      ]
     },
     {
       "name": "smes-oc1",
