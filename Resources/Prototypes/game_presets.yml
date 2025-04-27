@@ -6,7 +6,7 @@
   showInVote: false # secret
   description: survival-description
   rules:
-    # - MeteorSwarmScheduler Goobstation - nuh uh
+    - MeteorSwarmScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
@@ -68,7 +68,7 @@
     - BasicStationEventScheduler
     - KesslerSyndromeScheduler
     - MeteorSwarmMildScheduler
-    - MeteorSwarmScheduler
+   - MeteorSwarmScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
@@ -85,7 +85,7 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  # - MeteorSwarmScheduler Goobstation - nuh uh
+  - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -121,7 +121,7 @@
   description: secret-description
   rules:
     - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
+    - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -159,7 +159,7 @@
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
+    - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -187,7 +187,7 @@
     - Nukeops
     - SubGamemodesRule
     - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
+    - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -204,7 +204,7 @@
     - Revolutionary
     - SubGamemodesRule
     - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
+    - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -219,7 +219,7 @@
   - Wizard
   #- SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+ - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -237,7 +237,7 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-#  - MeteorSwarmScheduler Goobstation - nuh uh
+  - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 

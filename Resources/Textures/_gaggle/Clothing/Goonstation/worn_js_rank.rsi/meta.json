@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "",
+      "directions": 4
+    },
+    {
+      "name": "captain",
+      "directions": 4
+    },
+    {
+      "name": "captain-dress",
+      "directions": 4
+    },
+    {
+      "name": "captain-blue",
+      "directions": 4
+    },
+    {
+      "name": "captain-dress-blue",
+      "directions": 4
+    },
+    {
+      "name": "captain-red",
+      "directions": 4
+    },
+    {
+      "name": "captain-dress-red",
+      "directions": 4
+    },
+    {
+      "name": "captain-fancy",
+      "directions": 4
+    },
+    {
+      "name": "captain-fancy-blue",
+      "directions": 4
+    },
+    {
+      "name": "captain-fancy-red",
+      "directions": 4
+    },
+    {
+      "name": "hop",
+      "directions": 4
+    },
+    {
+      "name": "hop-dress",
+      "directions": 4
+    },
+    {
+      "name": "hop-fancy",
+      "directions": 4
+    },
+    {
+      "name": "hos",
+      "directions": 4
+    },
+    {
+      "name": "hos-old",
+      "directions": 4
+    },
+    {
+      "name": "hos-dress",
+      "directions": 4
+    },
+    {
+      "name": "hos-alt",
+      "directions": 4
+    },
+    {
+      "name": "hos-dress-alt",
+      "directions": 4
+    },
+    {
+      "name": "hos-fancy",
+      "directions": 4
+    },
+    {
+      "name": "chief",
+      "directions": 4
+    },
+    {
+      "name": "chief-dress",
+      "directions": 4
+    },
+    {
+      "name": "chief-alt",
+      "directions": 4
+    },
+    {
+      "name": "chief-dress-alt",
+      "directions": 4
+    },
+    {
+      "name": "chief-fancy",
+      "directions": 4
+    },
+    {
+      "name": "director",
+      "directions": 4
+    },
+    {
+      "name": "director-dress",
+      "directions": 4
+    },
+    {
+      "name": "director-alt",
+      "directions": 4
+    },
+    {
+      "name": "director-dress-alt",
+      "directions": 4
+    },
+    {
+      "name": "director-fancy",
+      "directions": 4
+    },
+    {
+      "name": "med_director",
+      "directions": 4
+    },
+    {
+      "name": "med_director-dress",
+      "directions": 4
+    },
+    {
+      "name": "med_director-alt",
+      "directions": 4
+    },
+    {
+      "name": "med_director-dress-alt",
+      "directions": 4
+    },
+    {
+      "name": "med_director-fancy",
+      "directions": 4
+    },
+    {
+      "name": "security",
+      "directions": 4
+    },
+    {
+      "name": "security-old",
+      "directions": 4
+    },
+    {
+      "name": "security-alt",
+      "directions": 4
+    },
+    {
+      "name": "security-assistant",
+      "directions": 4
+    },
+    {
+      "name": "detective",
+      "directions": 4
+    },
+    {
+      "name": "medical",
+      "directions": 4
+    },
+    {
+      "name": "medical-alt",
+      "directions": 4
+    },
+    {
+      "name": "robotics",
+      "directions": 4
+    },
+    {
+      "name": "robotics-alt",
+      "directions": 4
+    },
+    {
+      "name": "genetics",
+      "directions": 4
+    },
+    {
+      "name": "genetics-alt",
+      "directions": 4
+    },
+    {
+      "name": "scientist",
+      "directions": 4
+    },
+    {
+      "name": "scientist-alt",
+      "directions": 4
+    },
+    {
+      "name": "engine",
+      "directions": 4
+    },
+    {
+      "name": "engine-alt",
+      "directions": 4
+    },
+    {
+      "name": "mechanic",
+      "directions": 4
+    },
+    {
+      "name": "mechanic-alt",
+      "directions": 4
+    },
+    {
+      "name": "qm",
+      "directions": 4
+    },
+    {
+      "name": "qm-alt",
+      "directions": 4
+    },
+    {
+      "name": "miner",
+      "directions": 4
+    },
+    {
+      "name": "miner-alt",
+      "directions": 4
+    },
+    {
+      "name": "janitor",
+      "directions": 4
+    },
+    {
+      "name": "janitor-alt",
+      "directions": 4
+    },
+    {
+      "name": "barman",
+      "directions": 4
+    },
+    {
+      "name": "chef",
+      "directions": 4
+    },
+    {
+      "name": "chef-alt",
+      "directions": 4
+    },
+    {
+      "name": "hydro",
+      "directions": 4
+    },
+    {
+      "name": "hydro-alt",
+      "directions": 4
+    },
+    {
+      "name": "chaplain",
+      "directions": 4
+    },
+    {
+      "name": "assistant",
+      "directions": 4
+    },
+    {
+      "name": "assistant-alt",
+      "directions": 4
+    },
+    {
+      "name": "beekeeper",
+      "directions": 4
+    },
+    {
+      "name": "___",
+      "directions": 4
+    },
+    {
+      "name": "comm_officer",
+      "directions": 4
+    },
+    {
+      "name": "hos-fancy-alt",
+      "directions": 4
+    },
+    {
+      "name": "rancher",
+      "directions": 4
+    },
+    {
+      "name": "pathology",
+      "directions": 4
+    },
+    {
+      "name": "angler",
+      "directions": 4
+    },
+    {
+      "name": "chief-engineer-scarf",
+      "directions": 4
+    }
+  ]
+}

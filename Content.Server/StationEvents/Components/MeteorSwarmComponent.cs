@@ -51,8 +51,8 @@ public sealed partial class MeteorSwarmComponent : Component
     public MinMax Waves = new(3, 3);
 
     [DataField]
-    public MinMax MeteorsPerWave = new(3, 4);
+    public MinMax MeteorsPerWave = new(1, 2);
 
     [DataField]
-    public MinMax WaveCooldown = new (10, 60);
+    public MinMax WaveCooldown = new (45, 100);
 }
