@@ -22,6 +22,11 @@
       - ChemDispensable
     pack: ChemDispenserStandardInventory
   - type: ApcPowerReceiver
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
   - type: ExtensionCableReceiver
   - type: Destructible
     thresholds:
