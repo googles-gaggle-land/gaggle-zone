@@ -253,6 +253,9 @@
   id: Carp
 
 - type: Tag
+  id: CarpetRoyalRed
+
+- type: Tag
   id: Cartridge
 
 - type: Tag
