@@ -66,7 +66,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieAshleyTickum
-  name: salvager felinid plush
+  name: ashley tickum plush
   description: A plush toy that predates Nanotrasen's "Self Insert Plushies" campaign, which possibly was the inspiration for the campaign's creation.
   components:
   - type: Sprite
@@ -101,7 +101,7 @@
 - type: entity
   parent: BasePlushie
   id: BaseSelfPlushie
-  description: This plushie comes from Nanotrasen's "Self Insert" toys campaign, where many employees had their likenesses turned into plushies, as representations of the large variety of species that Nanotrasen employs.
+  description: This plushie comes from Nanotrasen's "Self Insert" toys campaign. The voicebox that contains several pre-recorded voice lines has long since lost it's battery.
   abstract: true
   components:
   - type: Sprite
@@ -116,7 +116,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieLunaStargazer
-  name: researcher moth person plushie
+  name: luna stargazer person plushie
   components:
   - type: Sprite
     state: plushie_lunastargazer
@@ -144,7 +144,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieMelodyHennion
-  name: service vulpkanin plushie
+  name: melody hennion plushie
   components:
   - type: Sprite
     state: plushie_melodyhennion
@@ -172,7 +172,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieJeepersCReepers
-  name: head of personnel human plushie
+  name: jeepers c reepers plushie
   components:
   - type: Sprite
     state: plushie_jeeperscreepers
@@ -192,7 +192,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieTincan
-  name: detective arachnid plushie
+  name: tincan plushie
   components:
   - type: Sprite
     state: plushie_tincan
@@ -220,7 +220,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieSilasAhas
-  name: doctor moth person plushie
+  name: silas ahas plushie
   components:
   - type: Sprite
     state: plushie_silasahas
@@ -250,7 +250,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieLokiHydrus
-  name: harpy plushie
+  name: loki hydrus plushie
   components:
   - type: Sprite
     state: plushie_lokihydrus
@@ -262,7 +262,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieKorrinKarpen
-  name: chief medical officer moth plushie
+  name: korrin karpen moth plushie
   components:
   - type: Sprite
     state: plushie_korrinkarpen
@@ -274,7 +274,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieRikdaVargh
-  name: representative lizard plushie
+  name: rikda vargh plushie
   components:
   - type: Sprite
     state: plushie_rikdavargh
@@ -302,7 +302,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieLintonByers
-  name: quartermaster felinid plushie
+  name: linton byers plushie
   components:
   - type: Sprite
     state: plushie_lintonbyers
@@ -332,7 +332,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieFelixKay
-  name: researcher slime person plushie
+  name: felix kay plushie
   components:
   - type: Sprite
     state: plushie_felixkay
@@ -344,7 +344,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieAliceAndreev
-  name: scientist slime person plushie
+  name: alice andreev plushie
   components:
   - type: Sprite
     state: plushie_aliceandreev
@@ -372,7 +372,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieParfeyMaelstorm
-  name: geneticist lizard plushie
+  name: parfey maelstrom plushie
   components:
   - type: Sprite
     state: plushie_parfeymaelstorm
@@ -402,7 +402,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieChadleySkrimblo
-  name: engineer human plushie
+  name: chadley skrimbo plushie
   components:
   - type: Sprite
     state: plushie_chadleyskrimblo
@@ -412,7 +412,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieAkishJeen
-  name: librarian lizard plushie
+  name: akish jeen plushie
   components:
   - type: Sprite
     state: plushie_akishjeen
@@ -440,7 +440,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieAltecZorban
-  name: purple lizard plushie
+  name: altec zorban plushie
   components:
   - type: Sprite
     state: plushie_alteczorban
@@ -470,7 +470,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieCynsKatyns
-  name: mailman harpy plushie
+  name: cyns katyns plushie
   components:
   - type: Sprite
     state: plushie_cynskatyns
@@ -500,7 +500,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieKuafuMoeller
-  name: atmosian moth person plushie
+  name: kaufu moeller plushie
   components:
   - type: Sprite
     state: plushie_kuafumoeller
@@ -530,7 +530,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieElanorLastname
-  name: cheif medical officer vulpkanin plushie
+  name: eleanor twiling plushie
   components:
   - type: Sprite
     state: plushie_elanorlastname
@@ -558,7 +558,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieSalRose
-  name: psychologist felinid plushie
+  name: sal rose plushie
   components:
   - type: Sprite
     state: plushie_salrose
@@ -588,7 +588,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieSyndeyKnapp
-  name: harpy cheif medical officer plushie
+  name: sydney knapp plushie
   components:
   - type: Sprite
     state: plushie_sydneyknapp
@@ -617,7 +617,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieMarinGoodwinter
-  name: janitor vulpkanin plushie
+  name: marin goodwinter plushie
   components:
   - type: Sprite
     state: plushie_maringoodwinter
@@ -646,7 +646,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieCassius
-  name: chemist felinid plushie
+  name: cassius plushie
   components:
   - type: Sprite
     state: plushie_cassius
@@ -676,7 +676,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieGoodwin
-  name: musician gingerbread plushie
+  name: goodwin plushie
   components:
   - type: Sprite
     state: plushie_goodwin
@@ -684,7 +684,7 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieLucerne
-  name: bartender vulpkanin plushie
+  name: lucerne plushie
   components:
   - type: Sprite
     state: plushie_lucerne
@@ -712,10 +712,18 @@
 - type: entity
   parent: BaseSelfPlushie
   id: PlushieSneakyNoodle
-  name: assistant rodentia plushie
+  name: sneaky noodle plushie
   components:
   - type: Sprite
     state: plushie_sneakynoodle
+
+- type: entity
+  parent: BaseSelfPlushie
+  id: PlushieClaraBloise
+  name: clara bloise plushie
+  components:
+  - type: Sprite
+    state: plushie_clara
 
 
 # stowaway toys (self insert ripoff :godo:)
@@ -723,7 +731,7 @@
 - type: entity
   parent: BasePlushie
   id: BaseStowawayPlushie
-  description: The tag says that this plushie was made by "Stowaway Toys," a toy-making brand you've never heard of before. This one looks familiar, but you don't know why.
+  description: This plushie is the result of Nanotrasen outsourcing self insert plushie creation to a chemical disposal company. Clearly this doesn't have any bad implications, right?
   abstract: true
   components:
   - type: Sprite
@@ -736,11 +744,13 @@
     delay: 1.8
   - type: DrainableSolution
     solution: drink
+  - type: DetailExaminable
+    DetailExaminableText: It feels damp. Not exactly wet per-se, but you might be able to juice it to see what it contains.
 
 - type: entity
   parent: BaseStowawayPlushie
   id: PlushieAssistantSpider
-  name: assistant spider plushie
+  name: spongiform websley plushie
   components:
   - type: Sprite
     state: plushie_assistantspider
@@ -762,7 +772,7 @@
 - type: entity
   parent: BaseStowawayPlushie
   id: PlushieBarkeepLizard
-  name: bartender kobold plushie
+  name: kip-kic plushie
   components:
   - type: Sprite
     state: plushie_barkeeplizard
@@ -784,7 +794,7 @@
 - type: entity
   parent: BaseStowawayPlushie
   id: PlushieCaptainSpider
-  name: captain spider plushie
+  name: theraphosa suavagesi plushie
   components:
   - type: Sprite
     state: plushie_captainspider
@@ -844,7 +854,7 @@
 - type: entity
   parent: BaseStowawayPlushie
   id: PlushieChaplainDog
-  name: chaplain vulpkanin plushie
+  name: pomp e dorable plushie
   components:
   - type: Sprite
     state: plushie_chaplaindog
@@ -888,23 +898,23 @@
 - type: entity
   parent: BaseStowawayPlushie
   id: PlushiePirateMoth
-  name: pirate moth plushie
+  name: chemist lizard plushie
   components:
   - type: Sprite
-    state: plushie_piratemoth
+    state: plushie_chemistlizard
   - type: UseDelay
     delay: 2
   - type: Extractable
     juiceSolution:
         reagents:
-        - ReagentId: SpaceDrugs
+        - ReagentId: Inaprovaline
           Quantity: 30
   - type: SolutionContainerManager
     solutions:
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: SpaceDrugs
+        - ReagentId: Inaprovaline
           Quantity: 30
 
 - type: entity
@@ -954,7 +964,7 @@
 - type: entity
   parent: BaseStowawayPlushie
   id: PlushieResearchDirectorLizard
-  name: researcher lizard plushie
+  name: burns-in-acid plushie
   components:
   - type: Sprite
     state: plushie_rdlizard
@@ -977,7 +987,7 @@
   parent: BaseStowawayPlushie
   id: PlushieSkeleton
   name: skeleton plushie
-  description: This thing rattles you to your bones! A plushie by Stowaway Toys.
+  description: Bad to the bone.
   components:
   - type: Sprite
     state: plushie_skele
@@ -1000,7 +1010,7 @@
   parent: BaseStowawayPlushie
   id: PlushiePanda
   name: panda plushie
-  description: Bamboo, anyone? A plushie by Stowaway Toys.
+  description: Some people get very unreasonably angry at the existance of pandas. They posit that, without any intervention, Pandas would have gone extinct a long, long time ago, and that we should just let nature do it's thing.
   components:
   - type: Sprite
     state: plushie_panda
