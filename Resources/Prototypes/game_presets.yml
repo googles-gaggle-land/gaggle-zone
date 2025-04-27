@@ -6,7 +6,7 @@
   showInVote: false # secret
   description: survival-description
   rules:
-    # - MeteorSwarmScheduler Goobstation - nuh uh
+     - MeteorSwarmScheduler Goobstation - nuh uh
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
@@ -85,7 +85,7 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  # - MeteorSwarmScheduler Goobstation - nuh uh
+   - MeteorSwarmScheduler Goobstation - nuh uh
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -187,7 +187,7 @@
     - Nukeops
     - SubGamemodesRule
     - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
+    - MeteorSwarmScheduler Goobstation - nuh uh
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -204,7 +204,7 @@
     - Revolutionary
     - SubGamemodesRule
     - BasicStationEventScheduler
-  #  - MeteorSwarmScheduler Goobstation - nuh uh
+    - MeteorSwarmScheduler Goobstation - nuh uh
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -237,7 +237,7 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-#  - MeteorSwarmScheduler Goobstation - nuh uh
+  - MeteorSwarmScheduler Goobstation - nuh uh
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
