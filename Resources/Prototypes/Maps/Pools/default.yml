@@ -2,28 +2,28 @@
   id: DefaultMapPool
   maps:
   - Amber
-  #- Atlas
-  #- Bagel
-  #- Box
-  #- Cluster
+  - Atlas
+  - Bagel
+  - Box
+  - Cluster
   #- Pillbug
   #- Cog # Goobstation - cog is broken
-  #- Core
-  #- Elkridge
-  #- Fland
-  #- Marathon
-  #- Meta
-  #- Oasis
-  #- Omega
-  #- Origin
+  - Core
+  - Elkridge
+  - Fland
+  - Marathon
+  - Meta
+  - Oasis
+  - Omega
+  - Origin
   - Saltern
   - Packed
   - Reach # funkystation - operation revive lrp
-  #- roid_outpost
-  #- Train - Train is pain
-  #- FlandHighPop
-  #- OasisHighPop
-  #- Barratry # Goobstation - Re-add barratry - Funkystation - Barratrauma
-  #- Kettle
+  - roid_outpost
+  - Train - Train is pain
+  - FlandHighPop
+  - OasisHighPop
+  - Barratry # Goobstation - Re-add barratry - Funkystation - Barratrauma
+  - Kettle
   - Uoui
-  - ResearchOutpost
+  #- ResearchOutpost
