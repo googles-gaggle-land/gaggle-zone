@@ -2,28 +2,28 @@
   id: DefaultMapPool
   maps:
   - Amber
-  #- Atlas
-  #- Bagel
-  #- Box
-  #- Cluster
-  #- Pillbug
-  #- Cog # Goobstation - cog is broken
-  #- Core
-  #- Elkridge
-  #- Fland
-  #- Marathon
-  #- Meta
-  #- Oasis
-  #- Omega
-  #- Origin
+  #- Atlas # worst map voted 2025
+  - Bagel
+  - Box
+  - Cluster
+  - Pillbug
+  - Cog # Goobstation - cog is broken
+  - Core
+  - Elkridge
+  - Fland
+  - Marathon
+  - Meta
+  - Oasis
+  #- Omega # its broken and i dont know why
+  - Origin
   - Saltern
   - Packed
   - Reach # funkystation - operation revive lrp
-  #- roid_outpost
-  #- Train - Train is pain
-  #- FlandHighPop
-  #- OasisHighPop
+  - roid_outpost
+  - Train
+  #- FlandHighPop # 50 players no way we're reaching that
+  #- OasisHighPop # 50 players no way we're reaching that
   #- Barratry # Goobstation - Re-add barratry - Funkystation - Barratrauma
-  #- Kettle
+  - Kettle
   - Uoui
-  - ResearchOutpost
+  #- ResearchOutpost # i give up man
