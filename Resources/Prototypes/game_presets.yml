@@ -237,7 +237,7 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler Goobstation - nuh uh
+  - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
