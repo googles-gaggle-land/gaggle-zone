@@ -7,7 +7,14 @@
   components:
   - type: Sprite
     sprite: Structures/dispensers.rsi
-    state: industrial-working
+    layers:
+    - state: industrial-off
+    - state: industrial-working
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: Icon
+    sprite: Structures/Machines/dispensers.rsi
+    state: industrial
     snapCardinals: true
   - type: ReagentDispenser
     storageWhitelist:
