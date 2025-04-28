@@ -1,0 +1,316 @@
+# only doing job jumpsuits.
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformGoonBase
+  name: jumpsuit
+  description: A jumpsuit. Worn by people who like not being naked, or people with good fashion sense. Hopefully both!
+  suffix: Goonstation
+  abstract: true # this entity is mostly just for flavor text and better sorting
+    
+# civilian / service
+# Icon / Sprite is a different directory since goon uses dmis and all worn and item sprites are seperate
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonAngler
+  name: angler's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: assistant
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: assistant
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonAssistant
+  name: staff assistant's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: assistant
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: assistant
+    
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonAssistantAlt
+  name: staff assistant's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: assistant-alt
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: assistant-alt
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonBarman
+  name: barman's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: barman
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: barman
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonBeekeeper
+  name: beekeeper's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: beekeeper
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: beekeeper
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonChaplain
+  name: chaplain's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: chaplain
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: chaplain
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonChef
+  name: chef's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: chef
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: chef
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonChefAlt
+  name: chef's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: chef-alt
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: chef-alt
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonRancher
+  name: rancher's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: rancher
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: rancher
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonHydro
+  name: botanist's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: hydro
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: hydro
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonHydroAlt
+  name: botanist's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: hydro-alt
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: hydro-alt
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonJanitor
+  name: janitor's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: janitor
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: janitor
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonJanitorAlt
+  name: janitor's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: janitor-alt
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: janitor-alt
+
+# HoP
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonHeadOfPersonnel
+  name: head of personnel's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: hop
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: hop
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonHeadOfPersonnelDress
+  name: head of personnel's dress
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: hop-dress
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: hop-dress
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonHeadOfPersonnelFancy
+  name: head of personnel's fancy jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: hop-fancy
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: hop-fancy
+
+# Captain (Command Dept.)
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptain
+  name: captain's jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainBlue
+  name: captain's blue jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-blue
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-blue
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainDress
+  name: captain's dress
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-dress
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-dress
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainBlueDress
+  name: captain's blue dress
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-dress-blue
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-dress-blue
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainRedDress
+  name: captain's red dress
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-dress-red
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-dress-red
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainFancy
+  name: captain's fancy jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-fancy
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-fancy-blue
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainFancyBlue
+  name: captain's fancy blue jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-fancy-blue
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-fancy-blue
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainFancyRed
+  name: captain's fancy red jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-fancy-red
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-fancy-red
+
+- type: entity
+  parent: ClothingUniformGoonBase
+  id: ClothingUniformGoonCaptainRed
+  name: captain's red jumpsuit
+  components: 
+  - type: Sprite
+    sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
+    state: captain-red
+  - type: Clothing
+    sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
+    state: captain-red
+# Command (Capt.)

@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "machovest"
+    },
+    {
+      "name": "santa"
+    },
+    {
+      "name": "johnny"
+    },
+    {
+      "name": "dukeabs"
+    },
+    {
+      "name": "cultist"
+    },
+    {
+      "name": "mjsuit"
+    },
+    {
+      "name": "merchant"
+    },
+    {
+      "name": "hev"
+    },
+    {
+      "name": "batsuit"
+    },
+    {
+      "name": "sweater_blue"
+    },
+    {
+      "name": "sweater_red"
+    },
+    {
+      "name": "sweater_green"
+    },
+    {
+      "name": "unp_armor"
+    },
+    {
+      "name": "um_armor"
+    },
+    {
+      "name": "nm_armor"
+    },
+    {
+      "name": "space_old"
+    },
+    {
+      "name": "robuddy"
+    },
+    {
+      "name": "bee"
+    },
+    {
+      "name": "monkey"
+    },
+    {
+      "name": "cyborg"
+    },
+    {
+      "name": "light_borg"
+    },
+    {
+      "name": "sneakmans"
+    },
+    {
+      "name": "suspenders"
+    },
+    {
+      "name": "scarf"
+    },
+    {
+      "name": "gr_armor"
+    },
+    {
+      "name": "tuxjacket"
+    },
+    {
+      "name": "painful"
+    },
+    {
+      "name": "joyful"
+    },
+    {
+      "name": "fb_red"
+    },
+    {
+      "name": "fb_blue"
+    },
+    {
+      "name": "mobile_suit"
+    },
+    {
+      "name": "moon_tshirt"
+    },
+    {
+      "name": "lshirt"
+    },
+    {
+      "name": "dan_red"
+    },
+    {
+      "name": "dan_blue"
+    },
+    {
+      "name": "dan_teal"
+    },
+    {
+      "name": "jacket_plastic"
+    },
+    {
+      "name": "jacket_yellow"
+    },
+    {
+      "name": "jacket_tan"
+    },
+    {
+      "name": "jacket_maroon"
+    },
+    {
+      "name": "jacket_magenta"
+    },
+    {
+      "name": "jacket_mint"
+    },
+    {
+      "name": "jacket_cerulean"
+    },
+    {
+      "name": "jacket_navy"
+    },
+    {
+      "name": "jacket_indigo"
+    },
+    {
+      "name": "jacket_grey"
+    },
+    {
+      "name": "jacket_sparkly",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "hi-vis"
+    },
+    {
+      "name": "jacketsjacket"
+    },
+    {
+      "name": "witchfinder"
+    },
+    {
+      "name": "dressb"
+    },
+    {
+      "name": "dressr"
+    },
+    {
+      "name": "dressg"
+    },
+    {
+      "name": "dressbl"
+    },
+    {
+      "name": "nursedress"
+    },
+    {
+      "name": "adeptus"
+    },
+    {
+      "name": "flockcultist"
+    },
+    {
+      "name": "h"
+    },
+    {
+      "name": "wwsuit"
+    },
+    {
+      "name": "gwsuit"
+    },
+    {
+      "name": "abomcostume"
+    },
+    {
+      "name": "hotdogsuit"
+    },
+    {
+      "name": "vampcape"
+    },
+    {
+      "name": "hasturcultist"
+    },
+    {
+      "name": "security_badge"
+    },
+    {
+      "name": "hosmedal"
+    },
+    {
+      "name": "dinosaur"
+    },
+    {
+      "name": "dinosaur-up"
+    },
+    {
+      "name": "guncoat_black"
+    },
+    {
+      "name": "guncoat_dirty"
+    },
+    {
+      "name": "guncoat_tan"
+    },
+    {
+      "name": "guncoat"
+    },
+    {
+      "name": "westflower"
+    },
+    {
+      "name": "westleaf"
+    },
+    {
+      "name": "guardscoat"
+    },
+    {
+      "name": "witchcape_purple"
+    },
+    {
+      "name": "witchcape_mint"
+    },
+    {
+      "name": "lined_jacket"
+    },
+    {
+      "name": "rugged_jacket"
+    },
+    {
+      "name": "star_cloak"
+    },
+    {
+      "name": "cow"
+    },
+    {
+      "name": "gradient_warm"
+    },
+    {
+      "name": "gradient_cool"
+    },
+    {
+      "name": "billow_cape"
+    },
+    {
+      "name": "torncape_red"
+    },
+    {
+      "name": "torncape_purple"
+    },
+    {
+      "name": "torncape_green"
+    },
+    {
+      "name": "torncape_brown"
+    },
+    {
+      "name": "torncape_blue"
+    },
+    {
+      "name": "torncape_black"
+    },
+    {
+      "name": "scarfcape_white"
+    },
+    {
+      "name": "scarfcape_red"
+    },
+    {
+      "name": "scarfcape_purple"
+    },
+    {
+      "name": "scarfcape_green"
+    },
+    {
+      "name": "scarfcape_blue"
+    },
+    {
+      "name": "scarfcape_black"
+    },
+    {
+      "name": "fakebeewings"
+    },
+    {
+      "name": "ljacket"
+    },
+    {
+      "name": "chaps"
+    },
+    {
+      "name": "picklesuit"
+    },
+    {
+      "name": "autumn_cape"
+    },
+    {
+      "name": "autumn_jacket"
+    },
+    {
+      "name": "lightrobe"
+    },
+    {
+      "name": "burnedrobe"
+    },
+    {
+      "name": "greenrobe"
+    },
+    {
+      "name": "naturerobe"
+    },
+    {
+      "name": "rabbitsuit"
+    },
+    {
+      "name": "shortscarf"
+    },
+    {
+      "name": "longscarf"
+    },
+    {
+      "name": "security_badge_paper"
+    },
+    {
+      "name": "security_badge_shielded"
+    },
+    {
+      "name": "blorbosuit"
+    },
+    {
+      "name": "security_badge_nanotrasen"
+    }
+  ]
+}
