@@ -11652,13 +11652,6 @@ entities:
     - type: Transform
       pos: 18.5,-1.5
       parent: 2
-- proto: BoomboxPurple
-  entities:
-  - uid: 18284
-    components:
-    - type: Transform
-      pos: -53.44579,-29.143232
-      parent: 2
 - proto: BoozeDispenser
   entities:
   - uid: 753
