@@ -18,10 +18,10 @@
   components: 
   - type: Sprite
     sprite: _gaggle/Clothing/Goonstation/item_js_rank.rsi
-    state: assistant
+    state: angler
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: assistant
+    equippedState: angler
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -33,7 +33,7 @@
     state: assistant
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: assistant
+    equippedState: assistant
     
 - type: entity
   parent: ClothingUniformGoonBase
@@ -45,7 +45,7 @@
     state: assistant-alt
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: assistant-alt
+    equippedState: assistant-alt
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -57,7 +57,7 @@
     state: barman
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: barman
+    equippedState: barman
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -69,7 +69,7 @@
     state: beekeeper
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: beekeeper
+    equippedState: beekeeper
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -81,7 +81,7 @@
     state: chaplain
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: chaplain
+    equippedState: chaplain
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -93,7 +93,7 @@
     state: chef
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: chef
+    equippedState: chef
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -105,7 +105,7 @@
     state: chef-alt
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: chef-alt
+    equippedState: chef-alt
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -117,7 +117,7 @@
     state: rancher
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: rancher
+    equippedState: rancher
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -129,7 +129,7 @@
     state: hydro
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: hydro
+    equippedState: hydro
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -141,7 +141,7 @@
     state: hydro-alt
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: hydro-alt
+    equippedState: hydro-alt
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -153,7 +153,7 @@
     state: janitor
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: janitor
+    equippedState: janitor
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -165,7 +165,7 @@
     state: janitor-alt
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: janitor-alt
+    equippedState: janitor-alt
 
 # HoP
 
@@ -179,7 +179,7 @@
     state: hop
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: hop
+    equippedState: hop
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -191,7 +191,7 @@
     state: hop-dress
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: hop-dress
+    equippedState: hop-dress
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -203,7 +203,7 @@
     state: hop-fancy
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: hop-fancy
+    equippedState: hop-fancy
 
 # Captain (Command Dept.)
 - type: entity
@@ -216,7 +216,7 @@
     state: captain
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain
+    equippedState: captain
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -228,7 +228,7 @@
     state: captain-blue
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-blue
+    equippedState: captain-blue
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -240,7 +240,7 @@
     state: captain-dress
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-dress
+    equippedState: captain-dress
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -252,7 +252,7 @@
     state: captain-dress-blue
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-dress-blue
+    equippedState: captain-dress-blue
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -264,7 +264,7 @@
     state: captain-dress-red
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-dress-red
+    equippedState: captain-dress-red
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -276,7 +276,7 @@
     state: captain-fancy
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-fancy-blue
+    equippedState: captain-fancy-blue
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -288,7 +288,7 @@
     state: captain-fancy-blue
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-fancy-blue
+    equippedState: captain-fancy-blue
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -300,7 +300,7 @@
     state: captain-fancy-red
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-fancy-red
+    equippedState: captain-fancy-red
 
 - type: entity
   parent: ClothingUniformGoonBase
@@ -312,5 +312,5 @@
     state: captain-red
   - type: Clothing
     sprite: _gaggle/Clothing/Goonstation/worn_js_rank.rsi
-    state: captain-red
+    equippedState: captain-red
 # Command (Capt.)

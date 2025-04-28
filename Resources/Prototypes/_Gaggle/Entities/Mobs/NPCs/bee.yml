@@ -1,0 +1,336 @@
+- type: entity
+  name: bee
+  parent: [ SimpleMobBase, FlyingMobBase ]
+  id: MobBeeGoonBase
+  suffix: Goonstation
+  description: Buzz buzz!
+  abstract: true
+  components:
+  - type: CombatMode
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 7
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 30
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Critical
+      75: Dead
+  - type: Stamina
+    critThreshold: 10
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Bee
+  - type: Bloodstream
+    bloodReagent: InsectBlood
+    bloodMaxVolume: 20
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: pet bee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonPet
+  suffix: Goonstation
+  description: Buzz buzz!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: petbee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: petbee-wings
+      Critical:
+        Base: petbee-sleep
+      Dead:
+        Base: petbee-dead
+      
+- type: entity
+  name: chef bee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonChef
+  suffix: Goonstation
+  description: Buzz buzz!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: chefbee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: chefbee-wings
+      Critical:
+        Base: chefbee-sleep
+      Dead:
+        Base: chefbee-dead 
+      
+- type: entity
+  name: lil bee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonLittle
+  suffix: Goonstation
+  description: Buzz buzz!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: lilbee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: lilbee-wings
+      Critical:
+        Base: lilbee-sleep
+      Dead:
+        Base: lilbee-dead 
+        
+- type: entity
+  name: rgbee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonRGB
+  suffix: Goonstation
+  description: Buzz buzz!
+  components:
+  - type: PointLight
+  - type: RgbLightController
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: rgbee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: rgbee-wings
+      Critical:
+        Base: rgbee-sleep
+      Dead:
+        Base: rgbee-dead
+        
+- type: entity
+  name: syndiebee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonSyndie
+  suffix: Goonstation
+  description: Buzz buzz!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: syndiebee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: syndiebee-wings
+      Critical:
+        Base: syndiebee-sleep
+      Dead:
+        Base: syndiebee-dead
+        
+- type: entity
+  name: tophatbee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonTophat
+  suffix: Goonstation
+  description: Buzz buzz!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: tophatbee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: tophatbee-wings
+      Critical:
+        Base: tophatbee-sleep
+      Dead:
+        Base: tophatbee-dead
+        
+- type: entity
+  name: trauma bee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonTrauma
+  suffix: Goonstation
+  description: Buzz... buzz...
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: traumabee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: traumabee-wings
+      Critical:
+        Base: traumabee-sleep
+      Dead:
+        Base: traumabee-dead
+        
+- type: entity
+  name: bubsbee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonBubs
+  suffix: Goonstation
+  description: Buzz.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bubsbee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bubsbee-wings
+      Critical:
+        Base: bubsbee-sleep
+      Dead:
+        Base: bubsbee-dead
+        
+- type: entity
+  name: zombee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonZombee
+  suffix: Goonstation
+  description: Brains.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: zombee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: zombee-wings
+      Critical:
+        Base: zombee-sleep
+      Dead:
+        Base: zombee-dead
+        
+- type: entity
+  name: moth
+  parent: MobBeeGoonBase
+  id: MobBeeGoonMoth
+  suffix: Goonstation
+  description: Buzz. Cloth!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: moth
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: moth-wings
+      Critical:
+        Base: moth-sleep
+      Dead:
+        Base: moth-dead
+        
+- type: entity
+  name: mime bee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonMime
+  suffix: Goonstation
+  description: ...
+  components:
+  - type: Muted
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: mimebee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mimebee-wings
+      Critical:
+        Base: mimebee-sleep
+      Dead:
+        Base: mimebee-dead
+      
+- type: entity
+  name: bombeeni
+  parent: MobBeeGoonBase
+  id: MobBeeGoonBombini
+  suffix: Goonstation
+  description: Buzz buzz!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bombini
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bombini-wings
+      Critical:
+        Base: bombini-sleep
+      Dead:
+        Base: bombini-dead 
+      
+- type: entity
+  name: clown bee
+  parent: MobBeeGoonBase
+  id: MobBeeGoonClown
+  suffix: Goonstation
+  description: Buzz buzz... honk!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: clownbee
+      sprite: _gaggle/Mobs/Animals/bee.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: clownbee-wings
+      Critical:
+        Base: clownbee-sleep
+      Dead:
+        Base: clownbee-dead 

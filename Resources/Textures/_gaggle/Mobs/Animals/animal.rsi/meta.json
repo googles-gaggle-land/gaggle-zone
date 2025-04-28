@@ -1,0 +1,1805 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "chicken_brown",
+      "directions": 4
+    },
+    {
+      "name": "chicken_brown",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "chicken_black",
+      "directions": 4
+    },
+    {
+      "name": "chicken_black",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "chicken_white",
+      "directions": 4
+    },
+    {
+      "name": "chicken_white",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "chicken_brown_dead"
+    },
+    {
+      "name": "chicken_black_dead"
+    },
+    {
+      "name": "chicken_white_dead"
+    },
+    {
+      "name": "chick",
+      "directions": 4
+    },
+    {
+      "name": "chick_dead"
+    },
+    {
+      "name": "chick_gib",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "lizard",
+      "directions": 4
+    },
+    {
+      "name": "lizard_dead"
+    },
+    {
+      "name": "lizard_gib",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "lizard_space",
+      "directions": 4
+    },
+    {
+      "name": "axolotl",
+      "directions": 4
+    },
+    {
+      "name": "axolotl_dead"
+    },
+    {
+      "name": "brownbear",
+      "directions": 4
+    },
+    {
+      "name": "brownbear_dead"
+    },
+    {
+      "name": "armor_bear",
+      "directions": 4
+    },
+    {
+      "name": "combatbear",
+      "directions": 4
+    },
+    {
+      "name": "combatbear_dead"
+    },
+    {
+      "name": "brownbear_gib",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bearfloor",
+      "directions": 4
+    },
+    {
+      "name": "bear",
+      "directions": 4
+    },
+    {
+      "name": "bear_dead"
+    },
+    {
+      "name": "bear_gib",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "snowbear",
+      "directions": 4
+    },
+    {
+      "name": "snowbear_dead"
+    },
+    {
+      "name": "butterbear",
+      "directions": 4
+    },
+    {
+      "name": "butterbear_dead"
+    },
+    {
+      "name": "tomato",
+      "directions": 4
+    },
+    {
+      "name": "tomato",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "tomato_dead"
+    },
+    {
+      "name": "mushroom",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mushroom_cap_dead"
+    },
+    {
+      "name": "mushroom_cap",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mushroom_color",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mushroom_dead"
+    },
+    {
+      "name": "mouse_brown",
+      "directions": 4
+    },
+    {
+      "name": "mouse_brown",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mouse_brown_dead"
+    },
+    {
+      "name": "mouse_brown_splat"
+    },
+    {
+      "name": "mouse_gray",
+      "directions": 4
+    },
+    {
+      "name": "mouse_gray",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mouse_gray_dead"
+    },
+    {
+      "name": "mouse_gray_splat"
+    },
+    {
+      "name": "mouse_white",
+      "directions": 4
+    },
+    {
+      "name": "mouse_white",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "mouse_white_dead"
+    },
+    {
+      "name": "mouse_white_splat"
+    },
+    {
+      "name": "regalrat",
+      "directions": 4
+    },
+    {
+      "name": "regalrat_dead"
+    },
+    {
+      "name": "parrot_fly",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "parrot_sit",
+      "directions": 4
+    },
+    {
+      "name": "parrot_dead"
+    },
+    {
+      "name": "clock_hawk_fly",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "clock_hawk_sit",
+      "directions": 4
+    },
+    {
+      "name": "faithless",
+      "directions": 4
+    },
+    {
+      "name": "faithless_dead"
+    },
+    {
+      "name": "forgotten",
+      "directions": 4
+    },
+    {
+      "name": "forgotten_dead"
+    },
+    {
+      "name": "viscerator",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "viscerator_attack",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "otherthing",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.1,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.1,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.1,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "otherthing-dead",
+      "directions": 4
+    },
+    {
+      "name": "morph",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "morph_dead"
+    },
+    {
+      "name": "heart",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bat",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bat_dead"
+    },
+    {
+      "name": "butterfly",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "butterfly_dead"
+    },
+    {
+      "name": "old_dead"
+    },
+    {
+      "name": "old"
+    },
+    {
+      "name": "stickman",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stickman",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stickman_dead"
+    },
+    {
+      "name": "stickmanranged",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stickmanranged",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stickdog",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stickdog",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "stickdog_dead"
+    },
+    {
+      "name": "lightgeist",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.4,
+          0.4,
+          0.2
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.4,
+          0.4,
+          0.2
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.4,
+          0.4,
+          0.2
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.4,
+          0.4,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "frog",
+      "directions": 4
+    },
+    {
+      "name": "frog",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "frog_dead"
+    },
+    {
+      "name": "rare_frog",
+      "directions": 4
+    },
+    {
+      "name": "rare_frog",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "rare_frog_dead"
+    },
+    {
+      "name": "frog_trash",
+      "directions": 4
+    },
+    {
+      "name": "frog_trash",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "frog_trash_dead"
+    },
+    {
+      "name": "rare_frog_trash",
+      "directions": 4
+    },
+    {
+      "name": "rare_frog_trash",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "rare_frog_trash_dead"
+    },
+    {
+      "name": "flan0",
+      "directions": 4
+    },
+    {
+      "name": "flan1",
+      "directions": 4
+    },
+    {
+      "name": "fireflan0",
+      "directions": 4
+    },
+    {
+      "name": "fireflan1",
+      "directions": 4
+    },
+    {
+      "name": "flan_dead"
+    },
+    {
+      "name": "fireflan_dead"
+    },
+    {
+      "name": "crab",
+      "directions": 4
+    },
+    {
+      "name": "crab",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "crab_dead"
+    },
+    {
+      "name": "evilcrab",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "evilcrab",
+      "directions": 4
+    },
+    {
+      "name": "evilcrab_dead"
+    },
+    {
+      "name": "evilkreb"
+    },
+    {
+      "name": "evilkreb_dead"
+    },
+    {
+      "name": "kreb"
+    },
+    {
+      "name": "kreb_dead"
+    },
+    {
+      "name": "mi-go",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mi-go-h",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mi-go-dead"
+    },
+    {
+      "name": "blank-body"
+    },
+    {
+      "name": "blank-dead"
+    },
+    {
+      "name": "snake_dead",
+      "delays": [
+        [
+          0.2,
+          0.030000001,
+          0.030000001,
+          0.030000001,
+          0.030000001,
+          0.030000001
+        ]
+      ]
+    },
+    {
+      "name": "snake",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "snake",
+      "directions": 4,
+      "delays": [
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bandedsnake_dead",
+      "delays": [
+        [
+          0.2,
+          0.030000001,
+          0.030000001,
+          0.030000001,
+          0.030000001,
+          0.030000001
+        ]
+      ]
+    },
+    {
+      "name": "bandedsnake",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bandedsnake",
+      "directions": 4,
+      "delays": [
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "deer-doe",
+      "directions": 4,
+      "delays": [
+        [
+          2,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          2,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "deer-doe-dead"
+    },
+    {
+      "name": "goose",
+      "directions": 4
+    },
+    {
+      "name": "goose_dead"
+    },
+    {
+      "name": "vomit_start",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1,
+          0.2,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1,
+          0.2,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1,
+          0.2,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1,
+          0.2,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "vomit",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "vomit_end",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "goat",
+      "directions": 4
+    },
+    {
+      "name": "goat_dead"
+    },
+    {
+      "name": "pig",
+      "directions": 4
+    },
+    {
+      "name": "pig_dead"
+    },
+    {
+      "name": "pig_gib",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "nothing"
+    },
+    {
+      "name": "hole"
+    },
+    {
+      "name": "headslug",
+      "directions": 4
+    },
+    {
+      "name": "headslug_dead"
+    },
+    {
+      "name": "cockroach",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "mobroach",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "cockroach_no_animation",
+      "directions": 4
+    },
+    {
+      "name": "glockroach",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "hauberoach",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "cockroach_sewer",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "mobroach_sewer",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "glockroach_sewer",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "hauberoach_sewer",
+      "directions": 4,
+      "delays": [
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "mothroach",
+      "directions": 4
+    },
+    {
+      "name": "mothroach_sleep",
+      "directions": 4
+    },
+    {
+      "name": "mothroach_dead",
+      "directions": 4
+    },
+    {
+      "name": "mothroach_rest",
+      "directions": 4
+    },
+    {
+      "name": "pony",
+      "directions": 4
+    },
+    {
+      "name": "pony_hair",
+      "directions": 4
+    },
+    {
+      "name": "pony_dead"
+    },
+    {
+      "name": "pony_hair_dead"
+    },
+    {
+      "name": "ponybase"
+    },
+    {
+      "name": "limb",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.2,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "barroach_dead",
+      "directions": 4
+    },
+    {
+      "name": "barroach_rest",
+      "directions": 4
+    },
+    {
+      "name": "barroach_sleep",
+      "directions": 4
+    },
+    {
+      "name": "barroach",
+      "directions": 4
+    },
+    {
+      "name": "fleshblob",
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    }
+  ]
+}
