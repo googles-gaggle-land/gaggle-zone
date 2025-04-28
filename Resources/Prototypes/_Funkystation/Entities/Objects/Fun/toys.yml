@@ -744,8 +744,6 @@
     delay: 1.8
   - type: DrainableSolution
     solution: drink
-  - type: DetailExaminable
-    DetailExaminableText: It feels damp. Not exactly wet per-se, but you might be able to juice it to see what it contains.
 
 - type: entity
   parent: BaseStowawayPlushie
