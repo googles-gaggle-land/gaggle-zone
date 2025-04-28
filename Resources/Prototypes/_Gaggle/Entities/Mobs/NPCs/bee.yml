@@ -30,7 +30,7 @@
   - type: Stamina
     critThreshold: 10
   - type: Item
-    size: Small
+    size: Normal
   - type: Tag
     tags:
     - Bee
@@ -137,7 +137,7 @@
         Base: rgbee-dead
         
 - type: entity
-  name: syndiebee
+  name: syndie bee
   parent: MobBeeGoonBase
   id: MobBeeGoonSyndie
   suffix: Goonstation
@@ -159,7 +159,7 @@
         Base: syndiebee-dead
         
 - type: entity
-  name: tophatbee
+  name: tophat bee
   parent: MobBeeGoonBase
   id: MobBeeGoonTophat
   suffix: Goonstation
@@ -253,6 +253,25 @@
   suffix: Goonstation
   description: Buzz. Cloth!
   components:
+  - type: Speech
+    speechVerb: Moth
+    speechSounds: Squeak
+    allowedEmotes: ['Chitter', 'Squeak']
+  - type: Body
+    prototype: Mothroach
+  - type: TypingIndicator
+    proto: moth
+  - type: MothAccent
+  - type: ReplacementAccent
+    accent: mothroach
+  - type: ZombieAccentOverride
+    accent: zombieMoth
+  - type: Vocal
+    sounds:
+      Male: UnisexMoth
+      Female: UnisexMoth
+      Unsexed: UnisexMoth
+    wilhelmProbability: 0.001
   - type: Sprite
     drawdepth: Mobs
     layers:
