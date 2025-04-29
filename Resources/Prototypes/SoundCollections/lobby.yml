@@ -2,10 +2,7 @@
   id: LobbyMusic
   files:
     - /Audio/Lobby/space_asshole.ogg
-    - /Audio/Lobby/comethalley.ogg
-    - /Audio/Lobby/main.ogg
-    - /Audio/Lobby/title2.ogg
-    - /Audio/Lobby/title3.ogg
-    - /Audio/Lobby/endless_space.ogg
-    - /Audio/Lobby/mod.flip-flap.ogg
-    - /Audio/Lobby/1.ogg
+    - /Audio/Jukebox/title3.ogg
+    - /Audio/Jukebox/starlight.ogg
+    - /Audio/Jukebox/sector11.ogg
+    - /Audio/Jukebox/flip-flap.ogg

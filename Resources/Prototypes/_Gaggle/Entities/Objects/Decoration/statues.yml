@@ -1,0 +1,15 @@
+- type: entity
+  id: StatueTheraphosa
+  parent: BaseStructure
+  name: statue of a honored captain
+  suffix: Red
+  description: A statue depicting a long retired captain. There is a plaque underneath...
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _gaggle/Objects/Decoration/theraphosa.rsi
+    state: statue
+    drawdepth: Mobs
+    offset: "0.0,0.5"
+  - type: DetailExaminable
+    content: Theraphosa Sauvagesi, the venerable captain. Served the station's crew when no one else would.

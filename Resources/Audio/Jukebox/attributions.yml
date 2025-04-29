@@ -30,3 +30,8 @@
   license: "CC-BY-SA-3.0"
   copyright: "By Kay Kayser, Copyright by Sony Music Entertainment. Exported in Mono OGG."
   source: "https://soundcloud.com/pigeonbeans/sunset"
+
+- files: ["tintin.ogg"] #gaggle addition
+  license: "CC-BY-SA-3.0"
+  copyright: "Remix by Hubismal, Tintin on the Moon originally by Jeroen Tel."
+  source: "https://www.youtube.com/watch?v=D-Fe8ECSYoo"

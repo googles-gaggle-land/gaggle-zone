@@ -6,9 +6,9 @@
 
 - type: jukebox
   id: Tintin
-  name: Jeroen Tel - Tintin on the Moon
+  name: Hubismal - Tintin on the Moon (Thalassophobia Remix)
   path:
-    path: /Audio/Jukebox/title3.ogg
+    path: /Audio/Jukebox/tintin.ogg
 
 - type: jukebox
   id: Thunderdome
