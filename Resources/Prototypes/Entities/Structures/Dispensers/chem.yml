@@ -9,6 +9,8 @@
     sprite: Structures/dispensers.rsi
     layers:
     - state: industrial-off
+    - state: industrial-action
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: industrial-working
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]

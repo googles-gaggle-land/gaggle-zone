@@ -11,10 +11,24 @@
       "name": "icon_straight"
     },
     {
+      "name": "icon_straightcut1"
+    },
+    {
+      "name": "icon_straightcut2"
+    },
+    {
       "name": "icon_end"
     },
     {
       "name": "straight",
+      "directions": 4
+    },
+    {
+      "name": "straight_cut1",
+      "directions": 4
+    },
+    {
+      "name": "straight_cut2",
       "directions": 4
     },
     {
