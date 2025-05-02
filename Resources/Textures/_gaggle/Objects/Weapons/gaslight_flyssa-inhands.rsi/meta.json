@@ -1,7 +1,11 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
     "copyright": "Inhands by RiceMar1244. used as a base and modified into gaslight flyssa from Caves of Qud by Cthyga",
+=======
+    "copyright": "Inhands by RiceMar1244.",
+>>>>>>> 220102da10 (added gaslight flyssa weapon)
     "size": {
         "x": 64,
         "y": 64
