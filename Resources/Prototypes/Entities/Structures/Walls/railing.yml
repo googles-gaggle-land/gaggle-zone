@@ -349,7 +349,7 @@
     state: corner_thick
 
 - type: entity
-  parent: BaseRailing
+  parent: RailingCornerSmall
   id: RailingCornerSmallThick
   name: thick small railing corner
   components:

@@ -52,7 +52,7 @@
   id: CarpetWhite
   result: FloorCarpetItemWhite
 
-- type: latheRecipie
-  parent: BaseCarpetRecipie
+- type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetRoyalRed
   result: FloorCarpetItemRoyalRed
