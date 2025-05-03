@@ -191,7 +191,7 @@
         damage:
           groups: # Funky
             Brute: -0.75
-          types: 
+          types:
             Heat: -0.25
       - !type:ChemVomit
         probability: 0.04
@@ -601,7 +601,7 @@
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/b52glass.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 4
+  metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:

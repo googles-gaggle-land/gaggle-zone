@@ -44,7 +44,15 @@
       "name": "sheaterPanelOpen"
     },
     {
-      "name": "sheaterStandby"
+      "name": "sheaterStandby",
+      "delays": [
+        [
+          0.2,
+		  0.2,
+		  0.2,
+		  0.2
+        ]
+      ]
     }
   ]
 }

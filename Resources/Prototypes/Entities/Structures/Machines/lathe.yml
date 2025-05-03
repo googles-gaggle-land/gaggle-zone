@@ -421,7 +421,7 @@
 
 - type: entity
   id: CircuitImprinter
-  parent: [BaseLatheLube, BaseSiloUtilizer] # Goob edit
+  parent: [BaseLatheLube, BaseSiloUtilizer] # Goob edita
   name: circuit imprinter
   description: Prints circuit boards for machines.
   components:

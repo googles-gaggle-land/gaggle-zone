@@ -3,25 +3,89 @@
     "license": "CC-BY-SA-3.0",
     "copyright": "tgstation at cf5fa29c1458b50fa2811169534b9e4f7f9f3252",
     "size": {
-      "x": 32,
-      "y": 32
+        "x": 32,
+        "y": 32
     },
-  "states": [
-    {
-      "name": "side",
-      "directions": 4
-    },
-    {
-      "name": "corner",
-      "directions": 4
-    },
-    {
-        "name": "corner_small",
-        "directions": 4
-    },
-    {
-        "name": "round",
-        "directions": 4
-    }
-  ]
+    "states": [
+        {
+            "name": "corner",
+            "directions": 4
+        },
+        {
+            "name": "corner_modern",
+            "directions": 4
+        },
+        {
+            "name": "corner_small",
+            "directions": 4
+        },
+        {
+            "name": "corner_small_modern",
+            "directions": 4
+        },
+        {
+            "name": "corner_small_thick",
+            "directions": 4
+        },
+        {
+            "name": "corner_small_thin",
+            "directions": 4
+        },
+        {
+            "name": "corner_small_wood",
+            "directions": 4
+        },
+        {
+            "name": "corner_thick",
+            "directions": 4
+        },
+        {
+            "name": "corner_thin",
+            "directions": 4
+        },
+        {
+            "name": "corner_wood",
+            "directions": 4
+        },
+        {
+            "name": "round",
+            "directions": 4
+        },
+        {
+            "name": "round_modern",
+            "directions": 4
+        },
+        {
+            "name": "round_thick",
+            "directions": 4
+        },
+        {
+            "name": "round_thin",
+            "directions": 4
+        },
+        {
+            "name": "round_wood",
+            "directions": 4
+        },
+        {
+            "name": "side",
+            "directions": 4
+        },
+        {
+            "name": "side_modern",
+            "directions": 4
+        },
+        {
+            "name": "side_thick",
+            "directions": 4
+        },
+        {
+            "name": "side_thin",
+            "directions": 4
+        },
+        {
+            "name": "side_wood",
+            "directions": 4
+        }
+    ]
 }

@@ -102,7 +102,7 @@
     state: glass
   - type: Stack
     stackType: Glass
-    count: 10
+    count: 10 #wah
 
 - type: entity
   parent: SheetGlass

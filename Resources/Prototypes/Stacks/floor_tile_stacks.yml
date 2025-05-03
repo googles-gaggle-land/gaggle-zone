@@ -383,6 +383,12 @@
   maxCount: 30
 
 - type: stack
+  id: FloorCarpetRoyalRed
+  name: white carpet tile
+  spawn: FloorCarpetRoyalRed
+  maxCount: 30
+
+- type: stack
   id: FloorTileStackCarpetClown
   name: clown carpet tile
   spawn: FloorTileItemCarpetClown
