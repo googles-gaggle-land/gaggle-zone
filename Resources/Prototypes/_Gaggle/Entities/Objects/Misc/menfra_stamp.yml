@@ -1,5 +1,5 @@
 - type: entity
-  name: MENFRA Guild Official Stamp
+  name: Menfra Guild Holdings Stamp
   parent: RubberStampBase
   id: RubberStampMenfra
   components:
