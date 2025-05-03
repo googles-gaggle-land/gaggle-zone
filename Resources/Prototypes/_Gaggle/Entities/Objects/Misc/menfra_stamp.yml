@@ -2,6 +2,7 @@
   name: Menfra Guild Holdings Stamp
   parent: RubberStampBase
   id: RubberStampMenfra
+  description: A rubber stamp for officiating guild business. Prevents tampering by normal means.
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-menfra
