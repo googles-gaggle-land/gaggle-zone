@@ -8,6 +8,7 @@
     stampedName: stamp-component-stamped-name-menfra
     stampedColor: "#008080"
     stampState: "paper_stamp-menfra"
+    stampLargeIcon: "large_stamp-menfra"
   - type: Sprite
     sprite: _gaggle/Objects/Misc/menfra-stamps.rsi
     state: stamp-menfra
