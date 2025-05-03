@@ -1,0 +1,12 @@
+- type: entity
+  name: MENFRA Guild Official Stamp
+  parent: RubberStampBase
+  id: RubberStampMenfra
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-menfra
+    stampedColor: "#008080"
+    stampState: "paper_stamp-menfra"
+  - type: Sprite
+    sprite: _gaggle/Objects/Misc/menfra-stamps.rsi
+    state: stamp-menfra
