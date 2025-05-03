@@ -21,3 +21,4 @@ stamp-component-stamped-name-greytide = Greytide
 stamp-component-stamped-name-psychologist = Psychologist
 stamp-component-stamped-name-wizard = Wizard
 stamp-component-stamped-name-menfra = MENFRA
+stamp-component-stamped-name-menfra-gal = Guild Assistance Liaison

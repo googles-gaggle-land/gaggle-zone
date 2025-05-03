@@ -16,6 +16,7 @@
   - large_stamp-syndicate.png
   - large_stamp-void.png
   - large_stamp-menfra.png # gaggle
+  - large_stamp-menfra-gal.png # gaggle
   license: "CC-BY-SA-3.0"
-  copyright: "Stamp icons taken from tgstation. large_stamp-menfra created by LanLan for gaggle and implemented by Cthyga."
+  copyright: "Stamp icons taken from tgstation. large_stamp-menfra, large_stamp-menfra-gal created by LanLan for gaggle and implemented by Cthyga."
   source: "https://github.com/tgstation/tgstation/commit/9a9b428b61f388a0f6d7a20bbba05147e61023d0"
