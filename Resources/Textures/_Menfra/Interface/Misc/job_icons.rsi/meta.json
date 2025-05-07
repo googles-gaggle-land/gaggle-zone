@@ -1,0 +1,68 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Icons by heree, modified from base job icon sprites",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "Commander"
+        },
+        {
+            "name": "BridgeAssistant"
+        },
+        {
+            "name": "SecurityLieutenant"
+        },
+        {
+            "name": "Sergeant"
+        },
+        {
+            "name": "SeniorLogistician"
+        },
+        {
+            "name": "Boatswain"
+        },
+        {
+            "name": "DSRSpecialist"
+        },
+        {
+            "name": "DataCoordinator"
+        },
+        {
+            "name": "SeniorScientist"
+        },
+        {
+            "name": "SeniorEngineer"
+        },
+        {
+            "name": "Foreman"
+        },
+        {
+            "name": "HydraEngineer"
+        },
+        {
+            "name": "LeadPhysician"
+        },
+        {
+            "name": "SeniorPhysician"
+        },
+        {
+            "name": "ExecutiveChef"
+        },
+        {
+            "name": "Server"
+        },
+        {
+            "name": "GuildAssistanceLiason"
+        },
+        {
+            "name": "ShipInspectionSpecialist"
+        },
+        {
+            "name": "ShipCounselor"
+        }
+    ]
+}
