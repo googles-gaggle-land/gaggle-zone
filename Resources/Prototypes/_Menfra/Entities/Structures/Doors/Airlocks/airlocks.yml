@@ -1,0 +1,7 @@
+- type: entity
+  parent: AirlockCommand
+  id: AirlockMenfra
+  suffix: Menfra
+  components:
+  - type: Sprite
+    sprite: _Menfra/Structures/Doors/Airlocks/Standard/menfra.rsi
