@@ -19,7 +19,7 @@
   - heret
   name: heretics-gamemode-title
   description: heretics-gamemode-description
-  showInVote: false
+  showInVote: true
   rules:
   - CalmHeretic
   - CalmTraitor
@@ -34,7 +34,7 @@
   - changehere
   name: heretics-gamemode-title
   description: heretics-gamemode-description
-  showInVote: false
+  showInVote: true
   rules:
   - CalmHeretic
   - CalmLing
@@ -50,7 +50,7 @@
   - TotsBlob
   name: blob-title
   description: blob-description
-  showInVote: false
+  showInVote: true
   rules:
   - CalmTraitor
   - BlobGameMode
