@@ -38,4 +38,18 @@
   - type: Item
     heldPrefix: default
   - type: PresetIdCard
-    job: ShipCounselor
+    job: ShipCounselor    
+    
+- type: entity
+  parent: IDCardStandard
+  id: BridgeAssistantIDCard
+  name: bridge assistant ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idbridgeassist
+  - type: Item
+    heldPrefix: default
+  - type: PresetIdCard
+    job: BridgeAssistant

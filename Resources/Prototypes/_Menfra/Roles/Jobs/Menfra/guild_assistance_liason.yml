@@ -58,7 +58,7 @@
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetMenfra
     belt: BoxFolderClipboard
+    pocket1: RubberStampMenfraGAL
   storage:
     back:
     - Flash
-    - RubberStampMenfraGAL

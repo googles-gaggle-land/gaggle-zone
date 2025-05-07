@@ -50,12 +50,12 @@
     
 - type: entity
   parent: BasePDA
-  id: ShipCounselorPDA
-  name: ship counselor PDA
-  description: Looks immaculately cleaned.
+  id: BridgeAssistantPDA
+  name: bridge assistant PDA
+  description: Be useless more AND less!
   components:
   - type: Pda
-    id: ShipCounselorIDCard
+    id: BridgeAssistantIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:

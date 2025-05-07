@@ -13,5 +13,6 @@
 - type: startingGear
   id: BridgeAssistantGear
   equipment:
-    id: PassengerPDA
+    id: BridgeAssistantPDA
     ears: ClothingHeadsetGrey
+    jumpsuit: ClothingUniformJumpsuitGreyShirt
