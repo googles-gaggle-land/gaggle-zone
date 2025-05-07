@@ -1,0 +1,29 @@
+- type: roleLoadout
+  id: JobGuildAssistanceLiason
+  groups:
+  - GroupTankHarness
+  - GALJumpsuit
+  - HoPBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
+  - GroupSpeciesBreathTool
+  
+- type: roleLoadout
+  id: JobShipInspectionSpecialist
+  groups:
+  - GroupTankHarness
+  - SISJumpsuit
+  - HoPBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GaggleExtraJumpsuits
+  - GaggleExtraClothesOuterClothing
+  - GaggleExtraClothesBelt
+  - GaggleExtraClothesShoes
+  - GroupSpeciesBreathTool

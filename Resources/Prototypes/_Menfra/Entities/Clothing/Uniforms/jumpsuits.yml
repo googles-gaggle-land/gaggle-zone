@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ClothingUniformBase, BaseMenfraContraband]
+  id: ClothingUniformJumpsuitGAL
+  name: guild assistance liason's jumpsuit
+  description: It's pretty clean, all things considered.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/gal.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/gal.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMenfraContraband]
+  id: ClothingUniformJumpsuitSIS
+  name: ship inspection specialist's jumpsuit
+  description: The coloring does NOT remind you of spending the weekday's nights anywhere. It's inoffensive, promise!
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/sis.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/sis.rsi

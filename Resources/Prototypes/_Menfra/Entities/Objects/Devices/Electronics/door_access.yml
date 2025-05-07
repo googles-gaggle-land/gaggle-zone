@@ -1,0 +1,7 @@
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsMenfra
+  suffix: Menfra, Locked
+  components:
+  - type: AccessReader
+    access: [["Menfra"]]

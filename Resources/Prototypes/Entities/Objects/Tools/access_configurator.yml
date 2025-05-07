@@ -123,6 +123,7 @@
     - NuclearOperative
     - SyndicateAgent
     - Wizard
+    - Menfra
     privilegedIdSlot:
       name: id-card-console-privileged-id
       ejectSound: /Audio/Machines/id_swipe.ogg

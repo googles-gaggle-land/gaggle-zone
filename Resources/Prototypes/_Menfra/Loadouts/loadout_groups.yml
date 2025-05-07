@@ -1,0 +1,11 @@
+  - type: loadoutGroup
+  id: GALJumpsuit
+  name: loadout-group-gal-jumpsuit
+  loadouts:
+  - GALJumpsuit
+  
+- type: loadoutGroup
+  id: SISJumpsuit
+  name: loadout-group-sis-jumpsuit
+  loadouts:
+  - SISJumpsuit

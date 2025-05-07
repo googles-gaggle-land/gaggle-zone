@@ -1,0 +1,4 @@
+- type: loadout
+  id: SISJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSIS
