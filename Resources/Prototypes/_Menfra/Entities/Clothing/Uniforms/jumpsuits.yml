@@ -19,3 +19,25 @@
     sprite: _Menfra/Clothing/Uniforms/Jumpsuit/sis.rsi
   - type: Clothing
     sprite: _Menfra/Clothing/Uniforms/Jumpsuit/sis.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMenfraContraband]
+  id: ClothingUniformJumpsuitMenfraProto1
+  name: menfra jumpsuit 1
+  description: prototype
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMenfraContraband]
+  id: ClothingUniformJumpsuitMenfraProto2
+  name: menfra jumpsuit 2
+  description: prototype
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test2.rsi

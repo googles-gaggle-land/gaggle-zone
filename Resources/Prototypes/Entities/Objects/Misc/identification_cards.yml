@@ -887,6 +887,7 @@
     - NuclearOperative
     - SyndicateAgent
     - Wizard
+    - Menfra
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener

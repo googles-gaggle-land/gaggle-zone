@@ -1,4 +1,4 @@
-  - type: loadoutGroup
+- type: loadoutGroup
   id: GALJumpsuit
   name: loadout-group-gal-jumpsuit
   loadouts:

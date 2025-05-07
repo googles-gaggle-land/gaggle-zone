@@ -8,22 +8,22 @@
   },
   "states": [
     {
-      "name": "over_alert3"
+      "name": "alert3"
     },
     {
-      "name": "over_harvest3"
+      "name": "harvest3"
     },
     {
-      "name": "over_lowhealth3"
+      "name": "lowhealth3"
     },
     {
-      "name": "over_lownutri"
+      "name": "lownutri"
     },
     {
-      "name": "over_lownutri3"
+      "name": "lownutri3"
     },
     {
-      "name": "over_lowwater3"
+      "name": "lowwater3"
     }
   ]
 }
