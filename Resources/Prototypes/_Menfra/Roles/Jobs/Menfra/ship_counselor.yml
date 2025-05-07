@@ -1,0 +1,26 @@
+- type: job
+  id: ShipCounselor
+  name: job-name-shipcounselor
+  description: job-description-shipcounselor
+  playTimeTracker: JobShipCounselor
+  startingGear: ShipCounselorGear
+  icon: "JobIconShipCounselor"
+  supervisors: job-supervisors-menfra
+  access:
+  - Medical
+  - Maintenance
+  - Menfra
+  special: # imp
+  - !type:AddComponentSpecial
+    components:
+    - type: SupermatterSoother
+
+- type: startingGear
+  id: ShipCounselorGear
+  equipment:
+    shoes: ClothingShoesLeather
+    id: ShipCounselorPDA
+    ears: ClothingHeadsetMenfraCounselor
+  storage:
+    back:
+    - RubberStampPsychologist

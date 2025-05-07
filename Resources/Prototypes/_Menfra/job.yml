@@ -1,0 +1,136 @@
+# menfra job icon protos for all the new jobs
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconBridgeAssistant
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: BridgeAssistant
+  jobName: job-name-bridgeassistant
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCommander
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: Commander
+  jobName: job-name-commander
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSecurityLieutenant
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: SecurityLieutenant
+  jobName: job-name-securitylieutenant
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSergeant
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: Sergeant
+  jobName: job-name-sergeant
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSeniorLogistician
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: SeniorLogistician
+  jobName: job-name-seniorlogistician
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconBoatswain
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: Boatswain
+  jobName: job-name-boatswain
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconDSRSpecialist
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: DSRSpecialist
+  jobName: job-name-dsrspecialist
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconDataCoordinator
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: DataCoordinator
+  jobName: job-name-datacoordinator
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSeniorScientist
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: SeniorScientist
+  jobName: job-name-seniorscientist
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHydraEngineer
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: HydraEngineer
+  jobName: job-name-hydraengineer
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconForeman
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: Foreman
+  jobName: job-name-foreman
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconLeadPhysician
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: LeadPhysician
+  jobName: job-name-leadphysician
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconExecutiveChef
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: ExecutiveChef
+  jobName: job-name-executivechef
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconServer
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: Server
+  jobName: job-name-server
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconGuildAssistanceLiason
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: GuildAssistanceLiason
+  jobName: job-name-guildassistanceliason
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconShipInspectionSpecialist
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: ShipInspectionSpecialist
+  jobName: job-name-shipinspectionspecialist
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconShipCounselor
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: ShipCounselor
+  jobName: job-name-shipcounselor

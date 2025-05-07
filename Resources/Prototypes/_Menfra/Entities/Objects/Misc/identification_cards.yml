@@ -1,0 +1,41 @@
+- type: entity
+  parent: IDCardStandard
+  id: GALIDCard
+  name: guild assistance liason ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idmenfra
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: GuildAssistanceLiason
+    
+- type: entity
+  parent: IDCardStandard
+  id: SISIDCard
+  name: ship inspection specialist ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idmenfra
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: ShipInspectionSpecialist   
+    
+- type: entity
+  parent: IDCardStandard
+  id: ShipCounselorIDCard
+  name: ship counselor ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idmenfra
+  - type: Item
+    heldPrefix: default
+  - type: PresetIdCard
+    job: ShipCounselor

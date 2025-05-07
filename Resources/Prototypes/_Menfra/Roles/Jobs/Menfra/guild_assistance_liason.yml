@@ -1,0 +1,63 @@
+- type: job
+  id: GuildAssistanceLiason
+  name: job-name-guildassistanceliason
+  description: job-description-guildassistanceliason
+  playTimeTracker: JobGuildAssistanceLiason
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 90000 #25 hrs
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 18000 #5 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 18000 #5 hrs
+  weight: 20
+  startingGear: GALGear
+  icon: "JobIconGuildAssistanceLiason"
+  supervisors: job-supervisors-menfra
+  canBeAntag: false
+  access:
+  - Command
+  - Menfra
+  - HeadOfPersonnel
+  - Bar
+  - Service
+  - Maintenance
+  - Janitor
+  - Theatre
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - External
+  - Cryogenics
+  - Chemistry
+  - Engineering
+  - Research
+  - Robotics
+  - Detective
+  - Salvage
+  - Security
+  - Brig
+  - Lawyer
+  - Cargo
+  - Atmospherics
+  - Medical
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: GALGear
+  equipment:
+    shoes: ClothingShoesColorBrown
+    id: GALPda
+    gloves: ClothingHandsGlovesHop
+    ears: ClothingHeadsetMenfra
+    belt: BoxFolderClipboard
+  storage:
+    back:
+    - Flash

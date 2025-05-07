@@ -1,0 +1,32 @@
+- type: entity
+  parent: [ ClothingHeadset, BaseMenfraContraband ]
+  id: ClothingHeadsetMenfra
+  name: Menfra Guild headset
+  description: A headset used by the Menfra Guild.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMenfra
+      - EncryptionKeyStationMaster
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/command.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/command.rsi
+    
+- type: entity
+  parent: [ ClothingHeadset, BaseMenfraContraband ]
+  id: ClothingHeadsetMenfraCounselor
+  name: ship counselor headset
+  description: A headset used by the ship counselor.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMenfra
+      - EncryptionKeyCommon
+      - EncryptionKeyMedical
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/medical.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/medical.rsi

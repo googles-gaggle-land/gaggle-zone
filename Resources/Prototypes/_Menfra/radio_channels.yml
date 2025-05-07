@@ -1,0 +1,7 @@
+- type: radioChannel
+  id: Menfra
+  name: chat-radio-menfra
+  keycode: 'g'
+  frequency: 1080
+  color: "#008080"
+  longRange: true

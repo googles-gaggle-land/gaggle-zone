@@ -1,0 +1,57 @@
+# Menfra Jobs
+- type: playTimeTracker
+  id: JobBridgeAssistant
+
+- type: playTimeTracker
+  id: JobCommander
+
+- type: playTimeTracker
+  id: JobSecurityLieutenant
+
+- type: playTimeTracker
+  id: JobSergeant
+
+- type: playTimeTracker
+  id: JobSeniorLogistician
+
+- type: playTimeTracker
+  id: JobBoatswain
+
+- type: playTimeTracker
+  id: JobDSRSpecialist
+
+- type: playTimeTracker
+  id: JobDataCoordinator
+
+- type: playTimeTracker
+  id: JobSeniorScientist
+
+- type: playTimeTracker
+  id: JobSeniorEngineer
+
+- type: playTimeTracker
+  id: JobHydraEngineer
+
+- type: playTimeTracker
+  id: JobForeman
+
+- type: playTimeTracker
+  id: JobSeniorPhysician
+
+- type: playTimeTracker
+  id: JobLeadPhysician
+
+- type: playTimeTracker
+  id: JobExecutiveChef
+
+- type: playTimeTracker
+  id: JobServer
+
+- type: playTimeTracker
+  id: JobGuildAssistanceLiason
+
+- type: playTimeTracker
+  id: JobShipInspectionSpecialist
+
+- type: playTimeTracker
+  id: JobShipCounselor

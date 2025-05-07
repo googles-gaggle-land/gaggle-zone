@@ -1,0 +1,17 @@
+- type: job
+  id: BridgeAssistant
+  name: job-name-bridgeassistant
+  description: job-description-bridgeassistant
+  playTimeTracker: JobBridgeAssistant
+  startingGear: BridgeAssistantGear
+  icon: "JobIconBridgeAssistant"
+  supervisors: job-supervisors-captain
+  access:
+  - Maintenance
+  - Command
+
+- type: startingGear
+  id: BridgeAssistantGear
+  equipment:
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey

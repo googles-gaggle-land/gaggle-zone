@@ -1,0 +1,68 @@
+- type: entity
+  parent: BasePDA
+  id: GALPda
+  name: guild assistance liason PDA
+  description: The pen ejection button is heavily worn.
+  components:
+  - type: Pda
+    id: GALIDCard
+    penSlot:
+      startingItem: PenHop
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-hop
+  - type: PdaBorderColor
+    borderColor: "#789876"
+    accentHColor: "#447987"
+  - type: Icon
+    state: pda-hop
+    
+- type: entity
+  parent: BasePDA
+  id: SISPda
+  name: ship inspection specialist PDA
+  description: The screen is all scratched up, probably from writing a lot of citations.
+  components:
+  - type: Pda
+    id: SISIDCard
+    penSlot:
+      startingItem: PenHop
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-hop
+  - type: PdaBorderColor
+    borderColor: "#789876"
+    accentHColor: "#447987"
+  - type: Icon
+    state: pda-hop
+    
+- type: entity
+  parent: BasePDA
+  id: ShipCounselorPDA
+  name: ship counselor PDA
+  description: Looks immaculately cleaned.
+  components:
+  - type: Pda
+    id: ShipCounselorIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-medical
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-medical

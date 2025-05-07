@@ -1,0 +1,14 @@
+- type: entity
+  parent: [ EncryptionKey, BaseMenfraContraband ]
+  id: EncryptionKeyMenfra
+  name: menfra guild encryption key
+  description: An encryption key used by the Menfra Guild.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Menfra
+    defaultChannel: Menfra
+  - type: Sprite
+    layers:
+    - state: crypt_blue
+    - state: menfra_label

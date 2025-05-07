@@ -1,0 +1,7 @@
+- type: entity
+  id: BaseMenfraContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Menfra ]
