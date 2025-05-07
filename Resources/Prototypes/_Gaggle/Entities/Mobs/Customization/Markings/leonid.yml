@@ -1,0 +1,308 @@
+# ears
+- type: marking
+  id: LeonidEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/ears.rsi
+    state: basic
+  - sprite: _gaggle/Mobs/Customization/Leonid/ears.rsi
+    state: basic-inner
+
+- type: marking
+  id: LeonidEarsSeperated
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/ears.rsi
+    state: basic_left
+  - sprite: _gaggle/Mobs/Customization/Leonid/ears.rsi
+    state: basic_left-inner
+  - sprite: _gaggle/Mobs/Customization/Leonid/ears.rsi
+    state: basic_right
+  - sprite: _gaggle/Mobs/Customization/Leonid/ears.rsi
+    state: basic_right-inner
+
+# sides
+- type: marking
+  id: LeonidWhiskers
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/sides.rsi
+    state: whiskers
+
+# snouts
+- type: marking
+  id: LeonidSnoutSmall
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small
+    
+- type: marking
+  id: LeonidSnoutSmallNose
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-nose
+
+- type: marking
+  id: LeonidSnoutSmallLine
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_line
+
+- type: marking
+  id: LeonidSnoutSmallLineNose
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_line
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-nose
+
+- type: marking
+  id: LeonidSnoutSmallUnder
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-under
+    
+- type: marking
+  id: LeonidSnoutSmallUnderNose
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-under
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-nose
+
+- type: marking
+  id: LeonidSnoutSmallLineUnder
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_line
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-under
+    
+- type: marking
+  id: LeonidSnoutSmallLineUnderNose
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_line
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-under
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-nose
+
+- type: marking
+  id: LeonidSnoutSmallFace
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_face
+    
+- type: marking
+  id: LeonidSnoutSmallFaceNose
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small_face
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: small-nose
+
+# tails
+- type: marking
+  id: LeonidTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: basic
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: basic-tip
+
+- type: marking
+  id: LeonidTailLion
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: lion
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: lion-tip
+
+- type: marking
+  id: LeonidTailFluffy
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: fluffy
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: fluffy-tip
+
+- type: marking
+  id: LeonidTailStub
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/tail.rsi
+    state: stub
+
+# overlay
+- type: marking
+  id: LeonidSpots
+  bodyPart: Snout
+  markingCategory: Overlay
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: spots-right
+  - sprite: _gaggle/Mobs/Customization/Leonid/snout.rsi
+    state: spots-left
+
+- type: marking
+  id: LeonidOverlayEyes
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: eyes
+
+- type: marking
+  id: LeonidForearms
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: arms
+
+- type: marking
+  id: LeonidForearmsSeperated
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: arms-left
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: arms-right
+
+- type: marking
+  id: LeonidCalves
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: legs
+
+- type: marking
+  id: LeonidCalvesSeperated
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: legs-left
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: legs-right
+
+- type: marking
+  id: LeonidHands
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: hands
+
+- type: marking
+  id: LeonidHandsSeperated
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: l_hand
+  - sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: r_hand
+
+- type: marking
+  id: LeonidFeet
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/overlay.rsi
+    state: feet
+
+- type: marking
+  id: LeonidFeetSeperated
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: l_foot
+  - sprite: _gaggle/Mobs/Species/Leonid/parts.rsi
+    state: r_foot
+
+# chest
+- type: marking
+  id: LeonidBellyMale
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/chest.rsi
+    state: belly_male
+
+- type: marking
+  id: LeonidBellyFemale
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Leonid]
+  sprites:
+  - sprite: _gaggle/Mobs/Customization/Leonid/chest.rsi
+    state: belly_female

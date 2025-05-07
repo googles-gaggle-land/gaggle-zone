@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by miapyxel",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "eyes",
+      "directions": 4
+    },
+    {
+      "name": "hands",
+      "directions": 4
+    },
+    {
+      "name": "feet",
+      "directions": 4
+    },
+    {
+      "name": "arms",
+      "directions": 4
+    },
+    {
+      "name": "arms-right",
+      "directions": 4
+    },
+    {
+      "name": "arms-left",
+      "directions": 4
+    },
+    {
+      "name": "legs",
+      "directions": 4
+    },
+    {
+      "name": "legs-right",
+      "directions": 4
+    },
+    {
+      "name": "legs-left",
+      "directions": 4
+    }
+  ]
+}
