@@ -235,3 +235,169 @@
         acts: [ "Destruction" ]
   - type: Construction
     node: railingRound
+
+#gaggle railing changes
+- type: entity
+  parent: Railing
+  id: RailingWood
+  name: wooden railing
+  components:
+  - type: Sprite
+    state: side_wood
+  - type: Icon
+    state: side_wood
+
+
+- type: entity
+  parent: RailingRound
+  id: RailingRoundWood
+  name: round wooden railing
+  components:
+  - type: Sprite
+    state: round_wood
+  - type: Icon
+    state: round_wood
+
+- type: entity
+  parent: RailingCorner
+  id: RailingCornerWood
+  name: round wooden corner railing
+  components:
+  - type: Sprite
+    state: corner_wood
+  - type: Icon
+    state: corner_wood
+
+- type: entity
+  parent: RailingCornerSmall
+  id: RailingCornerSmallWood
+  name: round wooden small corner railing
+  components:
+  - type: Sprite
+    state: corner_small_wood
+  - type: Icon
+    state: corner_small_wood
+#end wood
+- type: entity
+  parent: Railing
+  id: RailingModern
+  name: modern railing
+  components:
+  - type: Sprite
+    state: side_modern
+  - type: Icon
+    state: side_modern
+
+- type: entity
+  parent: RailingRound
+  id: RailingRoundModern
+  name: round modern railing
+  components:
+  - type: Sprite
+    state: round_modern
+  - type: Icon
+    state: round_modern
+
+- type: entity
+  parent: RailingCorner
+  id: RailingCornerModern
+  name: round modern corner railing
+  components:
+  - type: Sprite
+    state: corner_modern
+  - type: Icon
+    state: corner_modern
+
+- type: entity
+  parent: RailingCornerSmall
+  id: RailingCornerSmallModern
+  name: round small corner railing
+  components:
+  - type: Sprite
+    state: corner_small_modern
+  - type: Icon
+    state: corner_small_modern
+
+- type: entity
+  parent: Railing
+  name: thick railing
+  id: RailingThick
+  components:
+  - type: Sprite
+    state: side_thick
+  - type: Icon
+    state: side_thick
+
+- type: entity
+  parent: RailingRound
+  id: RailingRoundThick
+  name: round thick railing
+  components:
+  - type: Sprite
+    state: round_thick
+  - type: Icon
+    state: round_thick
+
+- type: entity
+  parent: RailingCorner
+  id: RailingCornerThick
+  name: thick railing corner
+  components:
+  - type: Sprite
+    state: corner_thick
+  - type: Icon
+    state: corner_thick
+
+- type: entity
+  parent: RailingCornerSmall
+  id: RailingCornerSmallThick
+  name: thick small railing corner
+  components:
+  - type: Sprite
+    state: corner_small_thick
+  - type: Icon
+    state: corner_small_thick
+
+#thin
+
+- type: entity
+  parent: Railing
+  id: RailingThin
+  name: thin railing
+  components:
+  - type: Sprite
+    state: side_thin
+  - type: Icon
+    state: side_thin
+
+- type: entity
+  parent: RailingRound
+  id: RailingRoundThin
+  name: thin round railing
+  components:
+  - type: Sprite
+    state: round_thin
+  - type: Icon
+    state: round_thin
+
+- type: entity
+  parent: RailingCorner
+  id: RailingCornerThin
+  name: thin railing corner
+  components:
+  - type: Sprite
+    state: corner_thin
+  - type: Icon
+    state: corner_thin
+
+- type: entity
+  parent: RailingCornerSmall
+  id: RailingCornerSmallThin
+  name: small thin railing corner
+  components:
+  - type: Sprite
+    state: corner_small_thin
+  - type: Icon
+    state: corner_small_thin
+
+

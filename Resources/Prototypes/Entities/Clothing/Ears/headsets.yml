@@ -207,6 +207,7 @@
       key_slots:
       - EncryptionKeyRobo
       - EncryptionKeyCommon
+      - EncryptionKeyBinary
   - type: Sprite
     sprite: Clothing/Ears/Headsets/robotics.rsi
   - type: Clothing

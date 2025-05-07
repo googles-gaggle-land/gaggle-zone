@@ -366,3 +366,32 @@
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
   - type: TrayScanReveal
+
+- type: entity
+  id: CarpetRoyalRed
+  parent: CarpetBase
+  suffix: Royal
+  components:
+  - type: Sprite
+    sprite: Structures/Furniture/Carpets/red_royal_carpet.rsi
+  - type: Icon
+    sprite: Structures/Furniture/Carpets/red_royal_carpet.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemRoyalRed:
+                min: 1
+                max: 1

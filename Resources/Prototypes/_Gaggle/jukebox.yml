@@ -1,0 +1,71 @@
+- type: jukebox
+  id: Hawaiian
+  name: Spongebob Squarepants Production Music - Hawaiian Flower
+  path:
+    path: /Audio/_gaggle/Jukebox/hawaiian.ogg
+    
+- type: jukebox
+  id: Stew
+  name: iteachvader - Hedgehog Stew
+  path:
+    path: /Audio/_gaggle/Jukebox/stew.ogg
+    
+- type: jukebox
+  id: WinTheRace
+  name: iteachvader - Win The Race
+  path:
+    path: /Audio/_gaggle/Jukebox/wintherace.ogg
+    
+- type: jukebox
+  id: drddiary
+  name: spin doctors - from dr d diary
+  path:
+    path: /Audio/_gaggle/Jukebox/from_dr_d_diary.ogg
+    
+- type: jukebox
+  id: bingospeedmath
+  name: 4mat / atebit - bingo speedmath
+  path:
+    path: /Audio/_gaggle/Jukebox/bingo_speedmath.ogg
+    
+- type: jukebox
+  id: synthjazzfunk
+  name: Unknown Artist - synthjazzfunk
+  path:
+    path: /Audio/_gaggle/Jukebox/synthjazzfunk.ogg
+    
+- type: jukebox
+  id: reggaeretki
+  name: Unknown Artist - reggaeretki
+  path:
+    path: /Audio/_gaggle/Jukebox/reggaeretki.ogg
+    
+- type: jukebox
+  id: spnch06
+  name: spoon - spn-ch06
+  path:
+    path: /Audio/_gaggle/Jukebox/spnch06.ogg
+    
+- type: jukebox
+  id: delasoul
+  name: Unknown Artist - de la soul is alive
+  path:
+    path: /Audio/_gaggle/Jukebox/de_la_soul_is_alive.ogg
+    
+- type: jukebox
+  id: sugarpuffs2
+  name: Unknown Artist - sugarpuffs2
+  path:
+    path: /Audio/_gaggle/Jukebox/sugarpuffs2.ogg
+    
+- type: jukebox
+  id: eternaljoy
+  name: Unknown Artist - eternal joy
+  path:
+    path: /Audio/_gaggle/Jukebox/eternaljoy.ogg
+    
+- type: jukebox
+  id: choosedontlose
+  name: Unknown Artist - choose dont lose (updated)
+  path:
+    path: /Audio/_gaggle/Jukebox/choose_dont_lose_updated.ogg

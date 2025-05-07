@@ -108,16 +108,12 @@
   cost: 3 #feels right, it's just fun!
   components:
   - type: HarpySinger
+  - type: Instrument
+    allowPercussion: false
   - type: UserInterface
     interfaces:
       enum.InstrumentUiKey.Key:
         type: InstrumentBoundUserInterface
-      enum.VoiceMaskUIKey.Key:
-        type: VoiceMaskBoundUserInterface
-      enum.HumanoidMarkingModifierKey.Key:
-        type: HumanoidMarkingModifierBoundUserInterface
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
 
 
 

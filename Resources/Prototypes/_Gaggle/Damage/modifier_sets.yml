@@ -9,6 +9,13 @@
     Poison: 1
 
 - type: damageModifierSet
+  id: Leonid
+  coefficients:
+    Cold: 0.95 # fur
+    Heat: 1.1  # fur
+    Blunt: 1.2 # because i think they would be frail/thin
+
+- type: damageModifierSet
   id: Wallpaper
   coefficients:
     Blunt: 0.1

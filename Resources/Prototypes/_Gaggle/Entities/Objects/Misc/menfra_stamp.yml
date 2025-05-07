@@ -1,0 +1,29 @@
+- type: entity
+  name: Menfra Guild Holdings Stamp
+  parent: RubberStampBase
+  id: RubberStampMenfra
+  description: A rubber stamp for officiating guild business. Prevents tampering by normal means.
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-menfra
+    stampedColor: "#008080"
+    stampState: "paper_stamp-menfra"
+    stampLargeIcon: "large_stamp-menfra"
+  - type: Sprite
+    sprite: _gaggle/Objects/Misc/menfra-stamps.rsi
+    state: stamp-menfra
+    
+- type: entity
+  name: Menfra Guild Assistance Liaison Stamp
+  parent: RubberStampBase
+  id: RubberStampMenfraGAL
+  description: A rubber stamp for the Guild Assistance Liaison. Prevents tampering by normal means.
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-menfra-gal
+    stampedColor: "#008080"
+    stampState: "paper_stamp-menfra-gal"
+    stampLargeIcon: "large_stamp-menfra-gal"
+  - type: Sprite
+    sprite: _gaggle/Objects/Misc/menfra-stamps.rsi
+    state: stamp-menfra-gal

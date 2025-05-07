@@ -192,3 +192,22 @@
     prototype: CarpetWhite
     doAfter: 0.5
     removeOnInteract: true
+
+- type: entity
+  parent: FloorCarpetItemRed
+  id: FloorCarpetItemRoyalRed
+  suffix: Royal Red
+  components:
+  - type: Sprite
+    state: carpet-white
+  - type: Item
+    heldPrefix: carpet-white
+  - type: Stack
+    stackType: FloorCarpetRoyalRed
+  - type: Tag
+    tags:
+    - CarpetRoyalRed
+  - type: SpawnAfterInteract #Nuke after convert to FloorTile
+    prototype: CarpetRoyalRed
+    doAfter: 0.5
+    removeOnInteract: true

@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: BaseStructureDynamic
   id: SmartFridge
-  name: SmartFridge
+  name: SmartFridge #debg
   description: A refrigerated storage unit for keeping items cold and fresh.
   components:
   - type: SmartFridge
@@ -50,7 +50,6 @@
   - type: Physics
     bodyType: Static
   - type: Transform
-    noRot: true
     anchored: true
   - type: Fixtures
     fixtures:

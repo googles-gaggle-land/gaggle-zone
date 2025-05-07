@@ -61,6 +61,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/katana.rsi
   - type: MeleeWeapon
+    attackRate: 1.5
     damage:
       types:
         Slash: 15
