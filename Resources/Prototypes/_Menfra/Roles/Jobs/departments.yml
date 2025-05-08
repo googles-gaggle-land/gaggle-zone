@@ -9,3 +9,13 @@
   - ShipCounselor  
   editorHidden: true # Keep it hush until Menfra is reel:tm:.
   weight: 120
+  
+- type: department
+  id: Navigation
+  name: department-Navigation
+  description: department-Navigation-description
+  color: "#DCE100"
+  roles:
+  # *crickets*
+  editorHidden: true # Keep it hush until Menfra is reel:tm:.
+  weight: 120

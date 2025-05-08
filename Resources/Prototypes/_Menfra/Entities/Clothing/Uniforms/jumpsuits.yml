@@ -1,43 +1,504 @@
+# The ranks go as follows:
+# Rank 1: Apprentice / Assistant
+# Rank 2: Staff / Worker
+# Rank 3: Senior
+# Rank 4: Vice
+# Rank 5: Head
+# General guidelines for the names, good if you're having a hard time thinking of a cool one.
+
+# Guild
+
 - type: entity
   parent: [ClothingUniformBase, BaseMenfraContraband]
-  id: ClothingUniformJumpsuitGAL
-  name: guild assistance liason's jumpsuit
-  description: It's pretty clean, all things considered.
+  id: ClothingUniformJumpsuitGuildApprentice
+  name: guild apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
   components:
   - type: Sprite
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/gal.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank1.rsi
   - type: Clothing
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/gal.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank1.rsi
     
 - type: entity
   parent: [ClothingUniformBase, BaseMenfraContraband]
-  id: ClothingUniformJumpsuitSIS
-  name: ship inspection specialist's jumpsuit
-  description: The coloring does NOT remind you of spending the weekday's nights anywhere. It's inoffensive, promise!
+  id: ClothingUniformJumpsuitGuildWorker
+  name: guild worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
   components:
   - type: Sprite
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/sis.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank2.rsi
   - type: Clothing
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/sis.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank2.rsi
     
 - type: entity
   parent: [ClothingUniformBase, BaseMenfraContraband]
-  id: ClothingUniformJumpsuitMenfraProto1
-  name: menfra jumpsuit 1
-  description: prototype
+  id: ClothingUniformJumpsuitGuildSenior
+  name: senior guild jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
   components:
   - type: Sprite
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank3.rsi
   - type: Clothing
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank3.rsi
     
 - type: entity
   parent: [ClothingUniformBase, BaseMenfraContraband]
-  id: ClothingUniformJumpsuitMenfraProto2
-  name: menfra jumpsuit 2
-  description: prototype
+  id: ClothingUniformJumpsuitGuildVice
+  name: vice guild jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
   components:
   - type: Sprite
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test2.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank4.rsi
   - type: Clothing
-    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/test2.rsi
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMenfraContraband]
+  id: ClothingUniformJumpsuitGuildHead
+  name: head guild jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Guild/rank5.rsi
+    
+# Command
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCommandApprentice
+  name: command apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank1.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank1.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCommandWorker
+  name: command worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank2.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCommandSenior
+  name: senior command jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank3.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank3.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCommandVice
+  name: vice command jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank4.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCommandHead
+  name: head command jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Command/rank5.rsi
+    
+# Security
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSecurityApprentice
+  name: security apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank1.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank1.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSecurityWorker
+  name: security worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank2.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSecuritySenior
+  name: senior security jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank3.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank3.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSecurityVice
+  name: vice security jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank4.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSecurityHead
+  name: head security jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Security/rank5.rsi
+    
+# Epistemics
+
+- type: entity
+  parent: [ClothingUniformBase, BaseScienceContraband]
+  id: ClothingUniformJumpsuitEpistemicsApprentice
+  name: epistemics apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank1.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank1.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseScienceContraband]
+  id: ClothingUniformJumpsuitEpistemicsWorker
+  name: epistemics worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank2.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseScienceContraband]
+  id: ClothingUniformJumpsuitEpistemicsSenior
+  name: senior epistemics jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank3.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank3.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseScienceContraband]
+  id: ClothingUniformJumpsuitEpistemicsVice
+  name: vice epistemics jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank4.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseScienceContraband]
+  id: ClothingUniformJumpsuitEpistemicsHead
+  name: head epistemics jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Epistemics/rank5.rsi
+    
+# Logistics
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCargoContraband]
+  id: ClothingUniformJumpsuitLogisticsApprentice
+  name: logistics apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank1.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank1.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCargoContraband]
+  id: ClothingUniformJumpsuitLogisticsWorker
+  name: logistics worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank2.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCargoContraband]
+  id: ClothingUniformJumpsuitLogisticsSenior
+  name: senior logistics jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank3.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank3.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCargoContraband]
+  id: ClothingUniformJumpsuitLogisticsVice
+  name: vice logistics jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank4.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseCargoContraband]
+  id: ClothingUniformJumpsuitLogisticsHead
+  name: head logistics jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Logistics/rank5.rsi
+    
+# Manufacturing
+
+- type: entity
+  parent: [ClothingUniformBase, BaseEngineeringContraband]
+  id: ClothingUniformJumpsuitManufacturingApprentice
+  name: manufacturing apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank1.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank1.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseEngineeringContraband]
+  id: ClothingUniformJumpsuitManufacturingWorker
+  name: manufacturing worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank2.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseEngineeringContraband]
+  id: ClothingUniformJumpsuitManufacturingSenior
+  name: senior manufacturing jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank3.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank3.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseEngineeringContraband]
+  id: ClothingUniformJumpsuitManufacturingVice
+  name: vice manufacturing jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank4.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseEngineeringContraband]
+  id: ClothingUniformJumpsuitManufacturingHead
+  name: head manufacturing jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Manufacturing/rank5.rsi
+    
+# Medical
+
+- type: entity
+  parent: [ClothingUniformBase, BaseMedicalContraband]
+  id: ClothingUniformJumpsuitMedicalApprentice
+  name: medical apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank1.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank1.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMedicalContraband]
+  id: ClothingUniformJumpsuitMedicalWorker
+  name: medical worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank2.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMedicalContraband]
+  id: ClothingUniformJumpsuitMedicalSenior
+  name: senior medical jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank3.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank3.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMedicalContraband]
+  id: ClothingUniformJumpsuitMedicalVice
+  name: vice medical jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank4.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseMedicalContraband]
+  id: ClothingUniformJumpsuitMedicalHead
+  name: head medical jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Medical/rank5.rsi
+    
+# Navigation
+# New Department
+
+- type: entity
+  parent: [ClothingUniformBase, BaseNavigationContraband]
+  id: ClothingUniformJumpsuitNavigationApprentice
+  name: navigation apprentice jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank1.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank1.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseNavigationContraband]
+  id: ClothingUniformJumpsuitNavigationWorker
+  name: navigation worker jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank2.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank2.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseNavigationContraband]
+  id: ClothingUniformJumpsuitNavigationSenior
+  name: senior navigation jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank3.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank3.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseNavigationContraband]
+  id: ClothingUniformJumpsuitNavigationVice
+  name: vice navigation jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank4.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank4.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseNavigationContraband]
+  id: ClothingUniformJumpsuitNavigationHead
+  name: head navigation jumpsuit
+  suffix: Menfra
+  description: A jumpsuit equipped with suit sensors.
+  components:
+  - type: Sprite
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank5.rsi
+  - type: Clothing
+    sprite: _Menfra/Clothing/Uniforms/Jumpsuit/Navigation/rank5.rsi
