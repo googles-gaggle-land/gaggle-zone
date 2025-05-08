@@ -1,0 +1,31 @@
+- type: entity
+  parent: ComputerComms
+  id: MenfraComputerComms
+  name: menfra communications computer
+  description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: service #TODO: actual sprite for these
+    - map: ["computerLayerKeys"]
+      state: service_keys 
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: AccessReader
+    access: [[ "Menfra" ]]
+  - type: CommunicationsConsole
+    title: comms-console-announcement-title-menfra
+    color: "#00bc74"
+    canShuttle: true
+    global: true # like the centcomm one
+  - type: Computer
+    board: MenfraCommsComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#00BC74"

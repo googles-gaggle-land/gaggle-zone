@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ BaseComputerCircuitboard, BaseMenfraContraband ]
+  id: MenfraCommsComputerCircuitboard
+  name: menfra communications computer board
+  description: A computer printed circuit board for a menfra communications computer.
+  components:
+  - type: Sprite
+    state: cpu_command
+  - type: ComputerBoard
+    prototype: MenfraComputerComms
