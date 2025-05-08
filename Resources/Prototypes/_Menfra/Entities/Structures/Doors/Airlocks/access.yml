@@ -6,3 +6,12 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsMenfra ]
+      
+- type: entity
+  parent: AirlockMenfra
+  id: AirlockNavigationLocked
+  suffix: Navigation, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNavigation ]

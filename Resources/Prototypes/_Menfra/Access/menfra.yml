@@ -1,3 +1,7 @@
 - type: accessLevel
   id: Menfra
   name: id-card-access-level-menfra
+
+- type: accessLevel
+  id: Navigation
+  name: id-card-access-level-navigation

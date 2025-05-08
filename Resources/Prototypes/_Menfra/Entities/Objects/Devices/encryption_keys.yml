@@ -12,3 +12,18 @@
     layers:
     - state: crypt_blue
     - state: menfra_label
+    
+- type: entity
+  parent: [ EncryptionKey, BaseNavigationContraband ]
+  id: EncryptionKeyNavigation
+  name: navigation encryption key
+  description: An encryption key used by the Navigation department.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Navigation
+    defaultChannel: Navigation
+  - type: Sprite
+    layers:
+    - state: crypt_blue
+    - state: menfra_label

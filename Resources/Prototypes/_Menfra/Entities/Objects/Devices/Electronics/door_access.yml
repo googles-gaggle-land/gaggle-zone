@@ -5,3 +5,11 @@
   components:
   - type: AccessReader
     access: [["Menfra"]]
+    
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNavigation
+  suffix: Navigation, Locked
+  components:
+  - type: AccessReader
+    access: [["Navigation"]]

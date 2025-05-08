@@ -5,3 +5,11 @@
   frequency: 1080
   color: "#008080"
   longRange: true
+  
+- type: radioChannel
+  id: Navigation
+  name: chat-radio-navigation
+  keycode: 'g'
+  frequency: 1042
+  color: "#DCE100"
+  longRange: false
