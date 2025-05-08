@@ -1,2 +1,5 @@
 department-Menfra = Menfra Guild
-department-Menfra-description = You feel like you really shouldn't be reading this right now. You might want to ignore it.
+department-Menfra-description = You are a direct consultant to the Menfra Guild.
+
+department-Navigation = Navigation
+department-Navigation-description = Help with navigating the larger ships. These guys are the pilots!

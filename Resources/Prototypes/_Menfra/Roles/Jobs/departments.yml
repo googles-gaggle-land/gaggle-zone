@@ -15,7 +15,6 @@
   name: department-Navigation
   description: department-Navigation-description
   color: "#DCE100"
-  roles:
-  # *crickets*
+  #roles: # *crickets* we need the jobs
   editorHidden: true # Keep it hush until Menfra is reel:tm:.
   weight: 120
