@@ -63,6 +63,9 @@
         },
         {
             "name": "ShipCounselor"
+        },
+        {
+            "name": "NavigationUnknown"
         }
     ]
 }

@@ -9,7 +9,7 @@
 - type: radioChannel
   id: Navigation
   name: chat-radio-navigation
-  keycode: 'g'
+  keycode: 'p'
   frequency: 1042
   color: "#DCE100"
   longRange: false

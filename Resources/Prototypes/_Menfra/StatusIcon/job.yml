@@ -134,3 +134,11 @@
     sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
     state: ShipCounselor
   jobName: job-name-shipcounselor
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNavigation
+  icon:
+    sprite: /Textures/_Menfra/Interface/Misc/job_icons.rsi
+    state: NavigationUnknown
+  jobName: department-Navigation
