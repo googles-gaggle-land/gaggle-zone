@@ -1,4 +1,27 @@
 - type: entity
+  parent: HeadHuman
+  id: BioSynthHead
+  name: bio-synthetic head
+  description: This head can be transplanted into any living organism and it will adapt to its recipient.
+  components:
+  - type: BodyPart
+    children:
+      head:
+        id: "head"
+        type: Head
+    organs:
+        brain: 
+            id: "OrganHumanBrain"
+            type: Brain
+        eyes:
+            id: "OrganHumanEyes"
+            type: Eyes
+  - type: ContainerContainer
+    containers:
+       body_organ_slot_brain: !type:ContainerSlot {}
+       body_organ_slot_eyes: !type:ContainerSlot {}
+
+- type: entity
   parent: LeftArmHuman
   id: BioSynthLeftArm
   name: bio-synthetic left arm

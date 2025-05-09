@@ -145,6 +145,13 @@
   completetime: 30
   materials:
     Biomass: 10
+    
+- type: latheRecipe
+  id: SynthHead
+  result: BioSynthHead
+  completetime: 30
+  materials:
+    Biomass: 25
 
 - type: latheRecipe
   id: SynthRightLeg
