@@ -1,4 +1,4 @@
-using Content.Shared.Bed.Sleep;
+﻿using Content.Shared.Bed.Sleep;
 using Content.Shared.Buckle.Components;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Damage.ForceSay;
@@ -79,7 +79,6 @@ public partial class MobStateSystem
         {
             case MobState.Dead:
             case MobState.Critical:
-            case MobState.HardCritical:
                 args.Cancelled = true;
                 break;
         }
@@ -93,13 +92,11 @@ public partial class MobStateSystem
                 //unused
                 break;
             case MobState.Critical:
-            case MobState.SoftCritical:
                 _standing.Stand(target);
-                break;
-            case MobState.HardCritical:
                 break;
             case MobState.Dead:
                 RemComp<CollisionWakeComponent>(target);
+                _standing.Stand(target);
                 break;
             case MobState.Invalid:
                 //unused
@@ -124,8 +121,6 @@ public partial class MobStateSystem
                 _appearance.SetData(target, MobStateVisuals.State, MobState.Alive);
                 break;
             case MobState.Critical:
-            case MobState.SoftCritical:
-            case MobState.HardCritical:
                 _standing.Down(target);
                 _appearance.SetData(target, MobStateVisuals.State, MobState.Critical);
                 break;
@@ -167,9 +162,6 @@ public partial class MobStateSystem
             return;
         }
 
-        if (component.CurrentState == MobState.SoftCritical)
-            args.OnlyWhisper = true;
-
         CheckAct(uid, component, args);
     }
 
@@ -179,7 +171,6 @@ public partial class MobStateSystem
         {
             case MobState.Dead:
             case MobState.Critical:
-            case MobState.HardCritical:
                 args.Cancel();
                 break;
         }
@@ -192,21 +183,7 @@ public partial class MobStateSystem
         {
             case MobState.Dead:
             case MobState.Critical:
-            case MobState.HardCritical:
                 args.Cancel();
-                break;
-            case MobState.SoftCritical:
-                if (!TryComp(args.Item, out ItemComponent? itemComp))
-                {
-                    // i dont think i need this but whatever!!
-                    args.Cancel();
-                    break;
-                }
-
-                // Can't carry items that are too heavy
-                if (_item.GetItemSizeWeight(itemComp.Size) >= 32)
-                    args.Cancel();
-
                 break;
         }
     }
@@ -218,8 +195,6 @@ public partial class MobStateSystem
         {
             case MobState.Dead:
             case MobState.Critical:
-            case MobState.SoftCritical:
-            case MobState.HardCritical:
                 args.Cancel();
                 break;
         }
@@ -258,8 +233,6 @@ public partial class MobStateSystem
         {
             case MobState.Dead:
             case MobState.Critical:
-            case MobState.SoftCritical:
-            case MobState.HardCritical:
                 args.Cancel(); // can't call CheckActSoftCrit because it's not a `CancellableEntityEventArgs` for some reason. why literally why
                 break;
         }

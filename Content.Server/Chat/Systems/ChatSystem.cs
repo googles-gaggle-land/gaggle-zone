@@ -439,10 +439,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool ignoreActionBlocker = false
         )
     {
-        if (!_actionBlocker.CanSpeak(source, out var onlyWhisper) && !ignoreActionBlocker)
-            return;
-
-        if (onlyWhisper)
+        if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
             return;
 
         var message = TransformSpeech(source, originalMessage);
@@ -515,11 +512,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool ignoreActionBlocker = false
         )
     {
-        if (!_actionBlocker.CanSpeak(source, out var onlyWhisper) && !ignoreActionBlocker)
-            return;
-
-        // why does whispering handle radio messages?
-        if (channel != null && onlyWhisper)
+        if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
             return;
 
         var message = TransformSpeech(source, FormattedMessage.RemoveMarkupOrThrow(originalMessage));
