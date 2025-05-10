@@ -1,4 +1,4 @@
-using Content.Shared.Database;
+﻿using Content.Shared.Database;
 using Content.Shared.Mobs.Components;
 using Content.Shared._Shitmed.Body.Organ;
 
@@ -101,32 +101,11 @@ public partial class MobStateSystem
     {
         var oldState = component.CurrentState;
         //make sure we are allowed to enter the new state
-
-        if (oldState == newState)
+        if (oldState == newState || !component.AllowedStates.Contains(newState))
             return;
 
-        if (!component.AllowedStates.Contains(newState))
-        {
-            if (newState != MobState.Critical)
-                return;
-
-            if (!component.AllowedStates.Contains(MobState.SoftCritical) || !component.AllowedStates.Contains(MobState.HardCritical))
-                return;
-
-            switch (oldState)
-            {
-                case MobState.Alive:
-                {
-                    newState = MobState.SoftCritical;
-                    break;
-                }
-                case MobState.Dead:
-                {
-                    newState = MobState.HardCritical;
-                    break;
-                }
-            }
-        }
+        if (oldState == MobState.Dead && HasComp<DebrainedComponent>(target)) // Shitmed Change
+            return;
 
         OnExitState(target, component, oldState);
         component.CurrentState = newState;

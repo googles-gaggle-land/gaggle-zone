@@ -1,4 +1,4 @@
-using Content.Shared.Mobs.Components;
+﻿using Content.Shared.Mobs.Components;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Mobs;
@@ -16,9 +16,7 @@ public enum MobState : byte
     Invalid = 0,
     Alive = 1,
     Critical = 2,
-    SoftCritical = 3,
-    HardCritical = 4,
-    Dead = 5
+    Dead = 3
 }
 
 /// <summary>

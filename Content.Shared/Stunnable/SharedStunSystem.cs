@@ -97,12 +97,14 @@ public abstract class SharedStunSystem : EntitySystem
         switch (args.NewMobState)
         {
             case MobState.Alive:
-            case MobState.SoftCritical:
                 {
                     break;
                 }
             case MobState.Critical:
-            case MobState.HardCritical:
+                {
+                    _statusEffect.TryRemoveStatusEffect(uid, "Stun");
+                    break;
+                }
             case MobState.Dead:
                 {
                     _statusEffect.TryRemoveStatusEffect(uid, "Stun");
