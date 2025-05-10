@@ -270,12 +270,6 @@
       Critical:
       - ActionCritSuccumb
       - ActionCritLastWords
-      SoftCritical:
-      - ActionCritSuccumb
-      - ActionCritLastWords
-      HardCritical:
-      - ActionCritSuccumb
-      - ActionCritLastWords
   - type: MobThresholds
     thresholds:
       0: Alive

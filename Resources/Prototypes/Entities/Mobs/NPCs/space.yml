@@ -528,14 +528,6 @@
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
-      SoftCritical:
-      - ActionCritSuccumb
-      - ActionCritFakeDeath
-      - ActionCritLastWords
-      HardCritical:
-      - ActionCritSuccumb
-      - ActionCritFakeDeath
-      - ActionCritLastWords
   - type: Godmode
   - type: MovementAlwaysTouching
 
