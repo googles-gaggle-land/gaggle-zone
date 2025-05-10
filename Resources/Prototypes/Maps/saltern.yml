@@ -4,6 +4,7 @@
   mapPath: /Maps/_gaggle/saltern.yml # gaggle doors
   minPlayers: 0
   maxPlayers: 35
+  fallback: false
   stations:
     Saltern:
       stationProto: StandardNanotrasenStation
