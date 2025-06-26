@@ -1,5 +1,33 @@
+// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <koolthunder019@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 portfiend <109661617+portfiend@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Humanoid.Prototypes;
 
@@ -82,13 +110,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     public HumanoidSkinColor SkinColoration { get; private set; }
 
     [DataField]
-    public string MaleFirstNames { get; private set; } = "names_first_male";
+    public string MaleFirstNames { get; private set; } = "NamesFirstMale";
 
     [DataField]
-    public string FemaleFirstNames { get; private set; } = "names_first_female";
+    public string FemaleFirstNames { get; private set; } = "NamesFirstFemale";
 
     [DataField]
-    public string LastNames { get; private set; } = "names_last";
+    public string LastNames { get; private set; } = "NamesLast";
 
     [DataField]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
@@ -97,19 +125,32 @@ public sealed partial class SpeciesPrototype : IPrototype
     public List<Sex> Sexes { get; private set; } = new() { Sex.Male, Sex.Female };
 
     /// <summary>
-    ///     Characters younger than this are too young to be hired by Nanotrasen.
+    ///     Characters younger than this do NOT exist. Do math.
     /// </summary>
     [DataField]
-    public int MinAge = 18;
+    public int MinAge = 0;
+
+    /// <summary>
+    ///     child assistant person
+    /// </summary>
+    [DataField]
+    public int ChildAge = 13;
 
     /// <summary>
     ///     Characters younger than this appear young.
     /// </summary>
     [DataField]
-    public int YoungAge = 30;
+    public int YoungAge = 18;
+
 
     /// <summary>
-    ///     Characters older than this appear old. Characters in between young and old age appear middle aged.
+    ///     Characters younger than this appear young.
+    /// </summary>
+    [DataField]
+    public int MiddleAge = 29;
+
+    /// <summary>
+    ///     Characters older than this appear old.
     /// </summary>
     [DataField]
     public int OldAge = 60;
@@ -119,7 +160,55 @@ public sealed partial class SpeciesPrototype : IPrototype
     ///     although imagine if ghosts could age people WYCI...
     /// </summary>
     [DataField]
-    public int MaxAge = 120;
+    public int MaxAge = 1000;
+
+    // Begin DV - CD Character Records shouldn't nuke species heights
+    /// <summary>
+    /// The base height scale for this species
+    /// </summary>
+    [DataField("baseScale")]
+    public System.Numerics.Vector2 BaseScale = new(1f, 1f);
+    // End DV - CD Character Records shouldn't nuke species heights
+
+    // Begin CD - Character Records
+    /// <summary>
+    /// The minimum height for this species
+    /// </summary>
+    [DataField("minHeight")]
+    public float MinHeight = 0.1f; // DeltaV - less trolling with the heights
+	// gaggle update -- we can let people be a little silly.
+
+    /// <summary>
+    /// The maximum height for this species
+    /// </summary>
+    [DataField("maxHeight")]
+    public float MaxHeight = 2.0f; // DeltaV - less trolling with the heights
+	// gaggle update -- we can let people be a little silly.
+
+    /// <summary>
+    /// The default height for this species
+    /// </summary>
+    [DataField("defaultHeight")]
+    public float DefaultHeight = 1f;
+
+    /// <summary>
+    /// The default width for this species
+    /// </summary>
+    [DataField("defaultWidth")]
+    public float DefaultWidth = 1f;
+
+    /// <summary>
+    /// Whether to scale horizontally or not
+    /// </summary>
+    [DataField("scaleWidth")]
+    public bool ScaleWidth = true;
+
+    /// <summary>
+    /// Whether to scale vertically or not
+    /// </summary>
+    [DataField("scaleHeight")]
+    public bool ScaleHeight = true;
+    // End CD - Character Records
 }
 
 public enum SpeciesNaming : byte
@@ -129,6 +218,7 @@ public enum SpeciesNaming : byte
     FirstDashFirst,
     TheFirstofLast,
     LastFirst, // DeltaV
+    LastNoFirst, // DeltaV
     FirstDashLast, // Goobstation
-	FirstQuoteLast,
+    FirstQuoteLast, //gaggle
 }
