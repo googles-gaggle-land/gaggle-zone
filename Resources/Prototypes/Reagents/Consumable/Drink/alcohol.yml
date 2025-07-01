@@ -203,6 +203,8 @@
         - !type:OrganType
           type: Dwarf
           shouldHave: false
+      - !type:DrunkHiccup # Gaggle
+        probability: 0.025 # i dont know what a good value for this is
       - !type:Drunk
         boozePower: 2
 

@@ -1,0 +1,18 @@
+- files:
+  - male_hiccup1
+  license: "CC0-1.0"
+  copyright: "Taken from https://freesound.org/. Convert from MP3 to OGG, edited volume"
+  source: "https://freesound.org/people/Hephaestus/sounds/250140/"
+
+- files:
+  - male_hiccup2
+  license: "CC0-1.0"
+  copyright: "Taken from https://freesound.org/. Convert from MP3 to OGG, edited volume"
+  source: "https://freesound.org/people/mango777/sounds/547371/"
+
+- files:
+  - female_hiccup1
+  - female_hiccup2
+  license: "CC0-1.0"
+  copyright: "Taken from https://freesound.org/. Convert from MP3 to OGG, cropped and edited volume"
+  source: "https://freesound.org/people/9voltfan/sounds/776025/"

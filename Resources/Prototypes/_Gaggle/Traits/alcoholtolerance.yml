@@ -1,0 +1,7 @@
+- type: trait
+  id: DrunkHiccups
+  name: trait-drunk-hiccups-name
+  description: trait-drunk-hiccups-desc
+  category: AlcoholTolerance
+  components:
+  - type: DrunkHiccup

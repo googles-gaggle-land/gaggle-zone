@@ -40,6 +40,8 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
+    Hiccup: # gaggle
+      collection: MaleHiccup
 
 - type: emoteSounds
   id: FemaleFelinid
@@ -82,3 +84,5 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+    Hiccup: # gaggle
+      collection: FemaleHiccup

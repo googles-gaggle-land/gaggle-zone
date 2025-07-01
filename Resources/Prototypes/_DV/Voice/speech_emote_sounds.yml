@@ -70,6 +70,8 @@
       collection: VulpkaninGekker
     Yap:
       collection: VulpkaninYap
+    Hiccup: # gaggle
+      collection: HarpyHiccup
 
 - type: emoteSounds
   id: SoundsHarpyMale
@@ -142,6 +144,8 @@
       collection: VulpkaninGekker
     Yap:
       collection: VulpkaninYap
+    Hiccup: # gaggle
+      collection: HarpyHiccup
 
 - type: emoteSounds
   id: FemaleVulpkanin
@@ -190,6 +194,8 @@
       collection: VulpkaninGekker
     Yap:
       collection: VulpkaninYap
+    Hiccup: # gaggle
+      collection: FemaleHiccup
 
 - type: emoteSounds
   id: MaleVulpkanin
@@ -238,6 +244,8 @@
       collection: VulpkaninYap
     Gekker:
       collection: VulpkaninGekker
+    Hiccup: # gaggle
+      collection: MaleHiccup
 
 - type: emoteSounds
   id: MobDog
@@ -290,6 +298,8 @@
       collection: MaleGasp
     DefaultDeathgasp:
       collection: MaleDeathGasp
+    Hiccup: # gaggle
+      collection: MaleHiccup
 
 - type: emoteSounds
   id: FemaleRodentia
@@ -324,3 +334,5 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+    Hiccup: # gaggle
+      collection: FemaleHiccup

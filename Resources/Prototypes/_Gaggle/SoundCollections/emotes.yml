@@ -1,0 +1,19 @@
+- type: soundCollection
+  id: MaleHiccup
+  files:
+  - /Audio/_gaggle/Voice/male_hiccup1.ogg
+  - /Audio/_gaggle/Voice/male_hiccup2.ogg
+
+- type: soundCollection
+  id: FemaleHiccup
+  files:
+  - /Audio/_gaggle/Voice/female_hiccup1.ogg
+  - /Audio/_gaggle/Voice/female_hiccup2.ogg
+
+- type: soundCollection
+  id: HarpyHiccups
+  files:
+  - /Audio/_gaggle/Voice/male_hiccup1.ogg
+  - /Audio/_gaggle/Voice/male_hiccup2.ogg
+  - /Audio/_gaggle/Voice/female_hiccup1.ogg
+  - /Audio/_gaggle/Voice/female_hiccup2.ogg
