@@ -33,6 +33,11 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+// Begin CD - Character Records
+using System.Globalization;
+using Content.Client._CD.Records.UI;
+using Content.Shared._CD.Records;
+// End CD - Character Records
 
 namespace Content.Client.Lobby.UI
 {
@@ -58,7 +63,7 @@ namespace Content.Client.Lobby.UI
 
         private bool _exporting;
         private bool _imaging;
-        private bool _doSizeActions = true;
+        public bool DoSizeActions { get; private set; } = true;
 
         /// <summary>
         /// If we're attempting to save.
@@ -96,6 +101,12 @@ namespace Content.Client.Lobby.UI
         private ColorSelectorSliders _rgbSkinColorSelector;
 
         private bool _isDirty;
+
+        // Begin CD - Station Records
+        private float _defaultHeight = 1f;
+
+        private readonly RecordEditorGui _recordsTab;
+        // End CD - Station Records
 
         [ValidatePrototypeId<GuideEntryPrototype>]
         private const string DefaultSpeciesGuidebook = "Species";
@@ -228,15 +239,20 @@ namespace Content.Client.Lobby.UI
 
             HeightSlider.OnValueChanged += args =>
             {
-                if (!_doSizeActions)
+                if (!DoSizeActions)
                     return;
 
                 Height.Text = ((int) args.Value).ToString();
                 SetCharacterHeight((int) args.Value);
+
+                if (_recordsTab is not null)
+                {
+                    _recordsTab.Update(Profile);
+                }
             };
             HeightResetButton.OnPressed += args =>
             {
-                if (!_doSizeActions)
+                if (!DoSizeActions)
                     return;
 
                 int defaultHeight = (Profile is not null && _prototypeManager.TryIndex<SpeciesPrototype>(Profile.Species, out var speciesPrototype)) ?
@@ -252,7 +268,7 @@ namespace Content.Client.Lobby.UI
 
             WidthSlider.OnValueChanged += args =>
             {
-                if (!_doSizeActions)
+                if (!DoSizeActions)
                     return;
 
                 Width.Text = ((int) args.Value).ToString();
@@ -260,7 +276,7 @@ namespace Content.Client.Lobby.UI
             };
             WidthResetButton.OnPressed += args =>
             {
-                if (!_doSizeActions)
+                if (!DoSizeActions)
                     return;
 
                 int defaultWidth = (Profile is not null && _prototypeManager.TryIndex<SpeciesPrototype>(Profile.Species, out var speciesPrototype)) ?
@@ -475,6 +491,16 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
+            // Begin CD - Character Records
+            #region CosmaticRecords
+
+            _recordsTab = new RecordEditorGui(UpdateProfileRecords, this);
+            TabContainer.AddChild(_recordsTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+
+            #endregion CosmaticRecords
+            // End CD - Character Records
+
             RefreshFlavorText();
 
             #region Dummy
@@ -632,7 +658,7 @@ namespace Content.Client.Lobby.UI
                         selector.Checkbox.TooltipSupplier = _ => tooltip;
                         selector.Preference = false;
                     }
-                    
+
                     selector.PreferenceChanged += preference =>
                     {
                         if (preference)
@@ -835,7 +861,7 @@ namespace Content.Client.Lobby.UI
             IsDirty = false;
             JobOverride = null;
 
-            _doSizeActions = false;
+            DoSizeActions = false;
 
             UpdateNameEdit();
             UpdateFlavorTextEdit();
@@ -854,6 +880,9 @@ namespace Content.Client.Lobby.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
+            // Begin CD - Character Records
+            _recordsTab.Update(profile);
+            // End CD - Character Records
 
             RefreshAntags();
             RefreshJobs();
@@ -865,7 +894,7 @@ namespace Content.Client.Lobby.UI
             RefreshSize();
             ReloadPreview();
 
-            _doSizeActions = true;
+            DoSizeActions = true;
 
             if (Profile != null)
             {
@@ -1155,6 +1184,16 @@ namespace Content.Client.Lobby.UI
             UpdateJobPriorities();
         }
 
+        // Start CD - Character Records
+        private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
+        {
+            if (Profile is null)
+                return;
+            Profile = Profile.WithCDCharacterRecords(records);
+            IsDirty = true;
+        }
+        // End CD - Character Records
+
         private void OnFlavorTextChange(string content)
         {
             if (Profile is null)
@@ -1307,7 +1346,7 @@ namespace Content.Client.Lobby.UI
             ReloadPreview();
         }
 
-        private void SetCharacterHeight(int newHeight)
+        public void SetCharacterHeight(int newHeight)
         {
             Profile = Profile?.WithHeight(newHeight);
             ReloadProfilePreview();
@@ -1463,6 +1502,10 @@ namespace Content.Client.Lobby.UI
             HeightSlider.Value = Profile.Height;
             WidthSlider.Value = Profile.Width;
             Height.Text = Profile.Height.ToString();
+            if (_recordsTab is not null)
+            {
+                _recordsTab.Update(Profile);
+            }
             Width.Text = Profile.Width.ToString();
         }
 
@@ -1567,6 +1610,7 @@ namespace Content.Client.Lobby.UI
 
             PronounsButton.SelectId((int) Profile.Gender);
         }
+
 
         private void UpdateSpawnPriorityControls()
         {
@@ -1710,6 +1754,7 @@ namespace Content.Client.Lobby.UI
             var name = HumanoidCharacterProfile.GetName(Profile.Species, Profile.Gender);
             SetName(name);
             UpdateNameEdit();
+            _recordsTab.Update(Profile); // CD - Character Records
         }
         // #Goobstation - Borg Preferred Name
         private void RandomizeBorgName()

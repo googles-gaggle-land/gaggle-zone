@@ -384,6 +384,14 @@
   name: medical records computer
   description: This can be used to check medical records.
   components:
+  - type: CharacterRecordConsole
+    consoleType: Medical
+  - type: UserInterface
+    interfaces:
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
