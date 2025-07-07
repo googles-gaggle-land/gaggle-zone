@@ -162,3 +162,7 @@
 
 - type: Tag
   id: EnergyMagAmmo
+
+- type: Tag
+  id: ExtendedContainer
+

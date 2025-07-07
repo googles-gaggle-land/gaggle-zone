@@ -1478,10 +1478,10 @@
 
 - type: Tag
   id: VulpEmotes
-  
+
 - type: Tag
   id: MedicalPatch
-  
+
 - type: Tag
   id: HEVSuit
 
@@ -1492,3 +1492,11 @@
   id: StasisBattery
 
 # ALPHABETICAL
+
+# gaggle ones
+
+- type: Tag # Goobstation
+  id: VehicleKey
+
+- type: Tag # Goobstation
+  id: JanicartKeys
