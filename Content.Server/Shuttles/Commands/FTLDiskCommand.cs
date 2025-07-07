@@ -1,8 +1,7 @@
 using Content.Server.Administration;
-using Content.Server.Labels;
 using Content.Shared.Administration;
 using Content.Shared.Hands.Components;
-using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Labels.EntitySystems;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
@@ -10,6 +9,7 @@ using Robust.Shared.Console;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared.Hands.EntitySystems;
 
 namespace Content.Server.Shuttles.Commands;
 

@@ -366,6 +366,9 @@
   id: CombatKnife
 
 - type: Tag
+  id: ComputerBoard
+
+- type: Tag
   id: ComputerTelevisionCircuitboard
 
 - type: Tag
@@ -1478,10 +1481,10 @@
 
 - type: Tag
   id: VulpEmotes
-  
+
 - type: Tag
   id: MedicalPatch
-  
+
 - type: Tag
   id: HEVSuit
 

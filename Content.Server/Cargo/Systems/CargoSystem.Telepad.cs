@@ -1,5 +1,8 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server.Cargo.Components;
+using Content.Server.Construction;
+using Content.Server.Paper;
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Station.Components;
@@ -18,6 +21,8 @@ public sealed partial class CargoSystem
     private void InitializeTelepad()
     {
         SubscribeLocalEvent<CargoTelepadComponent, ComponentInit>(OnInit);
+        //SubscribeLocalEvent<CargoTelepadComponent, RefreshPartsEvent>(OnRefreshParts);
+        //SubscribeLocalEvent<CargoTelepadComponent, UpgradeExamineEvent>(OnUpgradeExamine);
         SubscribeLocalEvent<CargoTelepadComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<CargoTelepadComponent, PowerChangedEvent>(OnTelepadPowerChange);
         // Shouldn't need re-anchored event
@@ -40,9 +45,8 @@ public sealed partial class CargoSystem
                 continue;
 
             // todo cannot be fucking asked to figure out device linking rn but this shouldn't just default to the first port.
-            if (!TryComp<DeviceLinkSinkComponent>(uid, out var sinkComponent) ||
-                sinkComponent.LinkedSources.FirstOrNull() is not { } console ||
-                console != args.OrderConsole.Owner)
+            if (!TryGetLinkedConsole((uid, tele), out var console) ||
+                console.Value.Owner != args.OrderConsole.Owner)
                 continue;
 
             for (var i = 0; i < args.Order.OrderQuantity; i++)
@@ -56,10 +60,26 @@ public sealed partial class CargoSystem
         }
     }
 
+    private bool TryGetLinkedConsole(Entity<CargoTelepadComponent> ent,
+        [NotNullWhen(true)] out Entity<CargoOrderConsoleComponent>? console)
+    {
+        console = null;
+        if (!TryComp<DeviceLinkSinkComponent>(ent, out var sinkComponent) ||
+            sinkComponent.LinkedSources.FirstOrNull() is not { } linked)
+            return false;
+
+        if (!TryComp<CargoOrderConsoleComponent>(linked, out var consoleComp))
+            return false;
+
+        console = (linked, consoleComp);
+        return true;
+    }
+
+
     private void UpdateTelepad(float frameTime)
     {
-        var query = EntityQueryEnumerator<CargoTelepadComponent>();
-        while (query.MoveNext(out var uid, out var comp))
+        var query = EntityQueryEnumerator<CargoTelepadComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out var comp, out var xform))
         {
             // Don't EntityQuery for it as it's not required.
             TryComp<AppearanceComponent>(uid, out var appearance);
@@ -82,17 +102,16 @@ public sealed partial class CargoSystem
                 continue;
             }
 
-            if (comp.CurrentOrders.Count == 0)
+            if (comp.CurrentOrders.Count == 0 || !TryGetLinkedConsole((uid, comp), out var console))
             {
                 comp.Accumulator += comp.Delay;
                 continue;
             }
 
-            var xform = Transform(uid);
             var currentOrder = comp.CurrentOrders.First();
-            if (FulfillOrder(currentOrder, xform.Coordinates, comp.PrinterOutput))
+            if (FulfillOrder(currentOrder, console.Value.Comp.Account, xform.Coordinates, comp.PrinterOutput))
             {
-                _audio.PlayPvs(_audio.ResolveSound(comp.TeleportSound), uid, AudioParams.Default.WithVolume(-8f));
+                _audio.PlayPvs(_audio.GetSound(comp.TeleportSound), uid, AudioParams.Default.WithVolume(-8f));
 
                 if (_station.GetOwningStation(uid) is { } station)
                     UpdateOrders(station);
@@ -111,6 +130,17 @@ public sealed partial class CargoSystem
         _linker.EnsureSinkPorts(uid, telepad.ReceiverPort);
     }
 
+    //private void OnRefreshParts(EntityUid uid, CargoTelepadComponent component, RefreshPartsEvent args)
+    //{
+    //    var rating = args.PartRatings[component.MachinePartTeleportDelay] - 1;
+    //    component.Delay = component.BaseDelay * MathF.Pow(component.PartRatingTeleportDelay, rating);
+    //}
+
+    //private void OnUpgradeExamine(EntityUid uid, CargoTelepadComponent component, UpgradeExamineEvent args)
+    //{
+    //    args.AddPercentageUpgrade("cargo-telepad-delay-upgrade", component.Delay / component.BaseDelay);
+    //}
+
     private void OnShutdown(Entity<CargoTelepadComponent> ent, ref ComponentShutdown args)
     {
         if (ent.Comp.CurrentOrders.Count == 0)
@@ -128,9 +158,12 @@ public sealed partial class CargoSystem
             !TryComp<StationDataComponent>(station, out var data))
             return;
 
+        if (!TryGetLinkedConsole(ent, out var console))
+            return;
+
         foreach (var order in ent.Comp.CurrentOrders)
         {
-            TryFulfillOrder((station, data), order, db);
+            TryFulfillOrder((station, data), console.Value.Comp.Account, order, db);
         }
     }
 

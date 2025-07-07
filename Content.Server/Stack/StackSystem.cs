@@ -55,7 +55,7 @@ namespace Content.Server.Stack
                 : Prototype(uid)?.ID;
 
             // Set the output parameter in the event instance to the newly split stack.
-            var entity = Spawn(prototype, spawnPosition);
+            var entity = SpawnAtPosition(prototype, spawnPosition);
 
             if (TryComp(entity, out StackComponent? stackComp))
             {

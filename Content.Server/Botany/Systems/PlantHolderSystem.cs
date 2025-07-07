@@ -22,8 +22,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using Content.Server.Labels.Components;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Labels.Components;
 
 namespace Content.Server.Botany.Systems;
 
