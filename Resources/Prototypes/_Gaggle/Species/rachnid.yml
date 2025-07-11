@@ -9,9 +9,9 @@
   dollPrototype: MobRachnidDummy
   skinColoration: Hues
   naming: FirstQuoteLast
-  maleFirstNames: names_rachnid_first
-  femaleFirstNames: names_rachnid_first
-  lastNames: names_rachnid_last
+  maleFirstNames: NamesRachnidFirst
+  femaleFirstNames: NamesRachnidFirst
+  lastNames: NamesRachnidLast
   sexes:
   - Unsexed
 
