@@ -15,10 +15,10 @@
   blacklist:
     components:
       - BorgChassis
-  components:
-    - type: BuckleOnMapInit
-      prototype: VehicleWheelchair
-    - type: LegsStartParalyzed
+##  components:
+##    - type: BuckleOnMapInit
+##      prototype: VehicleWheelchair
+##   - type: LegsStartParalyzed
 
 - type: trait
   id: ByondYourPrime

@@ -4,6 +4,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Verbs;
 using Robust.Shared.Utility;
+using Robust.Shared.GameStates;
 
 namespace Content.Shared.Armor;
 
