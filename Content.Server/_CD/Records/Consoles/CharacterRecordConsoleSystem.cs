@@ -21,13 +21,12 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<CharacterRecordConsoleComponent, CharacterRecordsModifiedEvent>((uid, component, _) =>
-            UpdateUi(uid, component));
+        SubscribeLocalEvent<CharacterRecordConsoleComponent, CharacterRecordsModifiedEvent>(UpdateUi);
 
         Subs.BuiEvents<CharacterRecordConsoleComponent>(CharacterRecordConsoleKey.Key,
             subr =>
             {
-                subr.Event<BoundUIOpenedEvent>((uid, component, _) => UpdateUi(uid, component));
+                subr.Event<BoundUIOpenedEvent>(UpdateUi);
                 subr.Event<CharacterRecordConsoleSelectMsg>(OnKeySelect);
                 subr.Event<CharacterRecordsConsoleFilterMsg>(OnFilterApplied);
             });
@@ -45,6 +44,25 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
         UpdateUi(ent);
     }
 
+    /// <summary>
+    ///     Called when character records are modified
+    /// </summary>
+    /// <param name="uid"></param>
+    /// <param name="console"></param>
+    /// <param name="args"></param>
+    private void UpdateUi(EntityUid uid, CharacterRecordConsoleComponent console, CharacterRecordsModifiedEvent args)
+    {
+        UpdateUi(uid, console);
+    }
+    /// <summary>
+    ///     Called when the UI is opened
+    /// </summary>
+    /// <param name="ent"></param>
+    /// <param name="msg"></param>
+    private void UpdateUi(Entity<CharacterRecordConsoleComponent> ent, ref BoundUIOpenedEvent msg)
+    {
+        UpdateUi(ent.Owner, ent.Comp);
+    }
     private void UpdateUi(EntityUid entity, CharacterRecordConsoleComponent? console = null)
     {
         if (!Resolve(entity, ref console))
@@ -83,7 +101,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
             }
 
             names[i] = new CharacterRecordConsoleState.CharacterInfo
-                { CharacterDisplayName = nameJob, StationRecordKey = r.StationRecordsKey };
+            { CharacterDisplayName = nameJob, StationRecordKey = r.StationRecordsKey };
         }
 
         var record =
