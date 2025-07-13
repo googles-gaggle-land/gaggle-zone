@@ -6,6 +6,8 @@ using Content.Shared.Security;
 using Content.Shared.StationRecords;
 using Content.Shared._CD.Records;
 using Robust.Server.GameObjects;
+using Content.Shared.CriminalRecords.Components;
+using Content.Server.CriminalRecords.Systems;
 
 namespace Content.Server._CD.Records.Consoles;
 
@@ -16,6 +18,7 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
     [Dependency] private readonly StationRecordsSystem _records = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
+    [Dependency] private readonly CriminalRecordsConsoleSystem _criminalRecordsConsole = default!;
 
     public override void Initialize()
     {
@@ -29,19 +32,37 @@ public sealed class CharacterRecordConsoleSystem : EntitySystem
                 subr.Event<BoundUIOpenedEvent>(UpdateUi);
                 subr.Event<CharacterRecordConsoleSelectMsg>(OnKeySelect);
                 subr.Event<CharacterRecordsConsoleFilterMsg>(OnFilterApplied);
+                subr.Event<CriminalRecordChangeStatus>(OnChangeStatus);
+                subr.Event<SelectStationRecord>(OnKeySelect);
             });
+    }
+
+    private void OnChangeStatus(Entity<CharacterRecordConsoleComponent> ent, ref CriminalRecordChangeStatus msg)
+    {
+        if (!TryComp<CriminalRecordsConsoleComponent>(ent.Owner, out var criminalRecordsConsole))
+            return;
+
+        _criminalRecordsConsole.OnChangeStatusNoUI((ent.Owner, criminalRecordsConsole), ref msg);
+        UpdateUi(ent.Owner, ent.Comp);
     }
 
     private void OnFilterApplied(Entity<CharacterRecordConsoleComponent> ent, ref CharacterRecordsConsoleFilterMsg msg)
     {
         ent.Comp.Filter = msg.Filter;
-        UpdateUi(ent);
+        UpdateUi(ent.Owner, ent.Comp);
     }
 
     private void OnKeySelect(Entity<CharacterRecordConsoleComponent> ent, ref CharacterRecordConsoleSelectMsg msg)
     {
         ent.Comp.SelectedIndex = msg.CharacterRecordKey;
-        UpdateUi(ent);
+        UpdateUi(ent.Owner, ent.Comp);
+    }
+    private void OnKeySelect(Entity<CharacterRecordConsoleComponent> ent, ref SelectStationRecord msg)
+    {
+        if (!TryComp<CriminalRecordsConsoleComponent>(ent.Owner, out var criminalRecordsConsole))
+            return;
+
+        _criminalRecordsConsole.OnKeySelectedNoUI((ent.Owner, criminalRecordsConsole), ref msg);
     }
 
     /// <summary>
