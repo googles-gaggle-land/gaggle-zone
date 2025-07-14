@@ -599,7 +599,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool hideLog = false,
         bool checkEmote = true,
         bool ignoreActionBlocker = false,
-        NetUserId? author = null
+        NetUserId? author = null,
+        RadioChannelPrototype? channel = null
         )
     {
         if (!_actionBlocker.CanEmote(source) && !ignoreActionBlocker)
@@ -610,14 +611,32 @@ public sealed partial class ChatSystem : SharedChatSystem
         string name = FormattedMessage.EscapeText(nameOverride ?? Name(ent));
 
         // Emotes use Identity.Name, since it doesn't actually involve your voice at all.
-        var wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
+        var messageWrapper = "chat-manager-entity-me-wrap-message";
+        var formattedAction = FormattedMessage.RemoveMarkupOrThrow(action);
+
+        // gaggle! Possesive emotes. "Urist McHands 's eyes blink"|"Urist McHands s eyes blink" -> "Urist McHands's eyes blink"
+        if (formattedAction.StartsWith("'s ") ||
+            formattedAction.StartsWith("s "))
+        {
+            var substringIndex = formattedAction.StartsWith("s ") ?
+                2 :
+                3;
+
+            messageWrapper = "chat-manager-entity-me-wrap-message-possessive";
+            formattedAction = formattedAction[substringIndex..];
+        }
+
+        var wrappedMessage = Loc.GetString(messageWrapper,
             ("entityName", name),
             ("entity", ent),
-            ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
+            ("message", formattedAction));
 
         if (checkEmote)
             TryEmoteChatInput(source, action);
         SendInVoiceRange(ChatChannel.Emotes, action, wrappedMessage, source, range, author);
+
+        // TODO : RADIO EMOTES
+
         if (!hideLog)
             if (name != Name(source))
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {ToPrettyString(source):user} as {name}: {action}");
