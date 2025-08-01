@@ -5,6 +5,12 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Client.UserInterface;
 using Content.Client.Lobby.UI;
 using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Prototypes;
+using Content.Shared._Funkystation.Records;
+using Robust.Client.Graphics;
+using Content.Client._Funkystation.Medical.Records.UI;
+using Robust.Shared.Utility;
+using System.Linq;
 
 namespace Content.Client._CD.Records.UI;
 
@@ -24,12 +30,36 @@ public sealed partial class RecordEditorGui : Control
         private set;
     } = default!;
     private HumanoidProfileEditor _profileEditor;
+    private readonly IPrototypeManager _prototypeManager;
+    private readonly ISawmill _sawmill = default!;
 
-    public RecordEditorGui(Action<PlayerProvidedCharacterRecords> updateProfileRecords, HumanoidProfileEditor profileEditor)
+    public RecordEditorGui(Action<PlayerProvidedCharacterRecords> updateProfileRecords, HumanoidProfileEditor profileEditor, IPrototypeManager prototypeManager)
     {
         RobustXamlLoader.Load(this);
         _updateProfileRecords = updateProfileRecords;
         _profileEditor = profileEditor;
+        _prototypeManager = prototypeManager;
+
+        // from funkystation
+        #region Dropdowns
+
+        // add options to each dropdown depending on the enums
+        foreach (var insuranceProvider in Enum.GetValues<InsuranceProviders>())
+        {
+            AddInsuranceProvider(insuranceProvider);
+        }
+
+        foreach (var insurancetype in Enum.GetValues<InsuranceTypes>())
+        {
+            AddInsuranceType(insurancetype);
+        }
+
+        foreach (var bloodtype in Enum.GetValues<BloodTypes>())
+        {
+            AddBloodType(bloodtype);
+        }
+
+        #endregion
 
         #region General
 
@@ -86,16 +116,6 @@ public sealed partial class RecordEditorGui : Control
 
         #region Medical
 
-        AllergiesEdit.OnTextChanged += args =>
-        {
-            UpdateRecords(Records.WithAllergies(args.Text));
-        };
-
-        DrugAllergiesEdit.OnTextChanged += args =>
-        {
-            UpdateRecords(Records.WithDrugAllergies(args.Text));
-        };
-
         PostmortemEdit.OnTextChanged += args =>
         {
             UpdateRecords(Records.WithPostmortemInstructions(args.Text));
@@ -136,12 +156,14 @@ public sealed partial class RecordEditorGui : Control
         UpdateWidgets();
     }
 
-    public void UpdateRecords(PlayerProvidedCharacterRecords records)
+    public void UpdateRecords(PlayerProvidedCharacterRecords records, bool updateWidgets = true)
     {
         records.EnsureValid();
         Records = records;
         _updateProfileRecords(Records);
-        UpdateWidgets();
+
+        if (updateWidgets)
+            UpdateWidgets();
     }
 
     private void UpdateWidgets()
@@ -159,8 +181,6 @@ public sealed partial class RecordEditorGui : Control
 
         IdentifyingFeaturesEdit.SetText(Records.IdentifyingFeatures);
 
-        AllergiesEdit.SetText(Records.Allergies);
-        DrugAllergiesEdit.SetText(Records.DrugAllergies);
         PostmortemEdit.SetText(Records.PostmortemInstructions);
     }
 
@@ -172,5 +192,127 @@ public sealed partial class RecordEditorGui : Control
     private void UpdateImperialWeight(int newWeight)
     {
         WeightImperialLabel.Text = UnitConversion.GetImperialDisplayMass(newWeight);
+    }
+
+    /* insurance dropdowns */
+    private void AddInsuranceProvider(InsuranceProviders provider)
+    {
+        var name = Loc.GetString($"character-records-insurance-provider-{provider.ToString().ToLower()}");
+        InsuranceCompanyDropdown.AddItem(name, (int)provider);
+    }
+
+    private void AddInsuranceType(InsuranceTypes type)
+    {
+        var name = Loc.GetString($"character-records-insurance-type-{type.ToString().ToLower()}");
+        InsurancePlanDropdown.AddItem(name, (int)type);
+    }
+
+    /* blood type dropdown */
+    private void AddBloodType(BloodTypes type)
+    {
+        var name = Loc.GetString($"character-records-blood-{type.ToString().ToLower()}");
+        BloodTypeDropdown.AddItem(name, (int)type);
+    }
+
+    private void RefreshMedicalInformation()
+    {
+        MedicalInfoContainer.DisposeAllChildren();
+
+        var info = _prototypeManager.EnumeratePrototypes<MedicalInfoPrototype>()
+            .OrderBy(t => Loc.GetString(t.Name))
+            .ToList();
+
+        // if there's no prototypes, generate a default label
+        if (info.Count < 1)
+        {
+            MedicalInfoContainer.AddChild(new Label
+            {
+                Text = Loc.GetString("medical-info-no-info"),
+                FontColorOverride = Color.Gray,
+            });
+            return;
+        }
+
+        Dictionary<string, List<string>> infoGroups = new();
+
+        foreach (var entry in info)
+        {
+            if (entry.Category == null || entry.Category == MedicalInfoCategoryPrototype.Default)
+            {
+                _sawmill.Warning($"Medical Info prototype {entry.ID} is missing a category (current category: {entry.Category}) and will be skipped.");
+                continue;
+            }
+
+            var group = infoGroups.GetOrNew(entry.Category);
+            group.Add(entry.ID);
+        }
+
+        // organize the dictionary after it gens so it stops randomizing the order of the columns
+        infoGroups.OrderBy(t => t);
+
+        // setup ui
+        foreach (var (categoryId, categoryInfo) in infoGroups)
+        {
+            if (categoryId == MedicalInfoCategoryPrototype.Default)
+                return;
+
+            var category = _prototypeManager.Index<MedicalInfoCategoryPrototype>(categoryId);
+
+            // having to define all of these different containers
+            // to get the layout feels wrong but whatever
+            var dividerContainer = new PanelContainer
+            {
+                VerticalExpand = true,
+                Margin = new Thickness(5,10),
+                SetWidth = 2,
+                PanelOverride = new StyleBoxFlat(Color.FromHex("#202028")),
+            };
+
+            var container = new ScrollContainer
+            {
+                HorizontalExpand = true,
+                HScrollEnabled = false,
+                Margin = new Thickness(10,5),
+                SetHeight = 300f,
+            };
+
+            var layout = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
+
+            layout.AddChild(new Label
+            {
+                Text = Loc.GetString(category.Name),
+                Margin = new Thickness(5),
+                Align = Label.AlignMode.Center,
+            });
+
+            container.AddChild(layout);
+            MedicalInfoContainer.AddChild(container);
+
+            // don't add the divider if its the last entry
+            if (categoryId != infoGroups.Keys.Last())
+                MedicalInfoContainer.AddChild(dividerContainer);
+
+            List<RecordChecklistEntry> selectors = new();
+
+            foreach (var infoProto in categoryInfo)
+            {
+                var trait = _prototypeManager.Index<MedicalInfoPrototype>(infoProto);
+                var selector = new RecordChecklistEntry(Loc.GetString(trait.Name));
+
+                selector.Preference = Records.MedicalInfo.Contains(trait.ID) == true;
+
+                selector.PreferenceChanged += preference =>
+                {
+                    UpdateRecords(preference
+                        ? Records.WithMedicalInfo(trait.ID, _prototypeManager)
+                        : Records.WithoutMedicalInfo(trait.ID, _prototypeManager),
+                        false);
+                    UpdateRecords(Records, false);
+                };
+
+                selectors.Add(selector);
+            }
+            foreach (var selector in selectors) { layout.AddChild(selector); }
+        }
     }
 }

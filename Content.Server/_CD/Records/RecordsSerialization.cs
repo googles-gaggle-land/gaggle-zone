@@ -1,5 +1,7 @@
 using Content.Server.Database;
 using Content.Shared._CD.Records;
+using Content.Shared._Funkystation.Records;
+using Robust.Shared.Prototypes;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
@@ -51,6 +53,29 @@ public static class RecordsSerialization
             .ToList();
     }
 
+    private static HashSet<ProtoId<MedicalInfoPrototype>> DeserializeSet(JsonElement e, string key)
+    {
+        var hashSet = new HashSet<ProtoId<MedicalInfoPrototype>>();
+
+        if (!e.TryGetProperty(key, out var v))
+            return [];
+
+        if (v.ValueKind != JsonValueKind.Array)
+            return [];
+
+        var enumerator = v.EnumerateArray();
+
+        while (enumerator.MoveNext())
+        {
+            var id = enumerator.Current.GetProperty("Id").GetString();
+            if (id is not null)
+                hashSet.Add(id);
+        }
+
+        return hashSet;
+
+    }
+
     /// <summary>
     /// We need to manually deserialize CharacterRecords because the easy JSON deserializer does not
     /// do exactly what we want. More specifically, we need to more robustly handle missing and extra fields
@@ -68,8 +93,11 @@ public static class RecordsSerialization
             emergencyContactName: DeserializeString(e, nameof(def.EmergencyContactName), def.EmergencyContactName),
             hasWorkAuthorization: DeserializeBool(e, nameof(def.HasWorkAuthorization), def.HasWorkAuthorization),
             identifyingFeatures: DeserializeString(e, nameof(def.IdentifyingFeatures), def.IdentifyingFeatures),
-            allergies: DeserializeString(e, nameof(def.Allergies), def.Allergies),
-            drugAllergies: DeserializeString(e, nameof(def.DrugAllergies), def.DrugAllergies),
+            hasInsurance: DeserializeBool(e, nameof(def.HasInsurance), def.HasInsurance),
+            insuranceProvider: DeserializeInt(e, nameof(def.InsuranceProvider), def.InsuranceProvider),
+            insuranceType: DeserializeInt(e, nameof(def.InsuranceType), def.InsuranceType),
+            medicalInfo: DeserializeSet(e, nameof(def.MedicalInfo)),
+            bloodType: DeserializeInt(e, nameof(def.BloodType), def.BloodType),
             postmortemInstructions: DeserializeString(e, nameof(def.PostmortemInstructions), def.PostmortemInstructions),
             medicalEntries: DeserializeEntries(entries, CDModel.DbRecordEntryType.Medical),
             securityEntries: DeserializeEntries(entries, CDModel.DbRecordEntryType.Security),

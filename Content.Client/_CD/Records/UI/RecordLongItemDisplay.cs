@@ -1,4 +1,8 @@
-using Robust.Client.UserInterface;
+// SPDX-FileCopyrightText: 2025 Lyndomen <49795619+Lyndomen@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
+//
+// SPDX-License-Identifier: MIT
+
 using Robust.Client.UserInterface.Controls;
 
 namespace Content.Client._CD.Records.UI;
@@ -10,7 +14,7 @@ namespace Content.Client._CD.Records.UI;
 /// </summary>
 public sealed class RecordLongItemDisplay : BoxContainer
 {
-    private const int MaxShortLength = 32;
+    private const int MaxShortLength = 64;
 
     public string? Title
     {
@@ -31,18 +35,17 @@ public sealed class RecordLongItemDisplay : BoxContainer
         HorizontalExpand = true,
         Visible = false,
     };
-    private readonly Label _titleLabel = new();
-    private readonly Label _shortContents = new() { Visible = true, Align = Label.AlignMode.Right };
-    private readonly RichTextLabel _longContents = new() { HorizontalExpand = true };
+
+    private readonly RichTextLabel _titleLabel = new() { Margin = new Thickness(0, 0, 5, 0) };
+    private readonly RichTextLabel _shortContents = new() { Visible = true, };
+    private readonly RichTextLabel _longContents = new() { HorizontalExpand = true, Margin = new Thickness(10, 0, 0, 0) };
 
     public RecordLongItemDisplay()
     {
         Orientation = LayoutOrientation.Vertical;
         _firstRow.AddChild(_titleLabel);
-        _firstRow.AddChild(new Control() { HorizontalExpand = true });
         _firstRow.AddChild(_shortContents);
         AddChild(_firstRow);
-        _secondRow.AddChild(new Control() { HorizontalExpand = true, SizeFlagsStretchRatio = 0.15f});
         _secondRow.AddChild(_longContents);
         AddChild(_secondRow);
     }
@@ -51,7 +54,7 @@ public sealed class RecordLongItemDisplay : BoxContainer
     {
         if (s.Length > MaxShortLength)
         {
-            _longContents.SetMessage(s);
+            _longContents.Text = s;
             _secondRow.Visible = true;
             _shortContents.Visible = false;
         }

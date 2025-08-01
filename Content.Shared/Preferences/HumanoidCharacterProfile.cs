@@ -39,6 +39,13 @@
 // SPDX-FileCopyrightText: 2025 Hyper B <137433177+HyperB1@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 // SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Lyndomen <49795619+Lyndomen@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -62,6 +69,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 using Content.Shared._CD.Records; // CD - Character Records
+using Content.Shared._Funkystation.Records; // CD - Character Records
 
 namespace Content.Shared.Preferences
 {
@@ -210,8 +218,7 @@ namespace Content.Shared.Preferences
             // Begin CD - Character Records
             PlayerProvidedCharacterRecords? cdCharacterRecords
             // End CD - Character Records
-        )
-
+            )
         {
             Name = name;
             FlavorText = flavortext;
@@ -430,7 +437,7 @@ namespace Content.Shared.Preferences
             return new(this) { FlavorText = flavorText };
         }
 
-         // Begin CD - Character Records
+        // Begin CD - Character Records
         public HumanoidCharacterProfile WithCDCharacterRecords(PlayerProvidedCharacterRecords records)
         {
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
