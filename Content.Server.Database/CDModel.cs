@@ -1,8 +1,3 @@
-// SPDX-FileCopyrightText: 2025 Lyndomen <49795619+Lyndomen@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
-//
-// SPDX-License-Identifier: MIT
-
 // File to store as much CD related database things outside of Model.cs
 
 using System;
@@ -29,9 +24,33 @@ public static class CDModel
         public int ProfileId { get; set; }
         public Profile Profile { get; set; } = null!;
 
-        public float Height { get; set; } = 1f;
-
         [Column("character_records", TypeName = "jsonb")]
         public JsonDocument? CharacterRecords { get; set; }
+
+        public List<CharacterRecordEntry> CharacterRecordEntries { get; set; } = new();
+
+        public string? CustomSpeciesName { get; set; } = null;
+
+    }
+    public enum DbRecordEntryType : byte
+    {
+         Medical = 0, Security = 1, Employment = 2
+    }
+
+    [Table("cd_character_record_entries"), Index(nameof(Id))]
+    public sealed class CharacterRecordEntry
+    {
+        public int Id { get; set;  }
+
+        public string Title { get; set; } = null!;
+
+        public string Involved { get; set; } = null!;
+
+        public string Description { get; set; } = null!;
+
+        public DbRecordEntryType Type { get; set; }
+
+        public int CDProfileId { get; set; }
+        public CDProfile CDProfile { get; set; } = null!;
     }
 }

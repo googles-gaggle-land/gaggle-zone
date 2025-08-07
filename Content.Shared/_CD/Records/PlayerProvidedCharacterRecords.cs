@@ -1,7 +1,5 @@
 using System.Linq;
 using System.Text.Json.Serialization;
-using Content.Shared._Funkystation.Records;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Records;
@@ -41,29 +39,11 @@ public sealed partial class PlayerProvidedCharacterRecords
 
     // Medical
     [DataField]
+    public string Allergies { get; private set; }
+    [DataField]
+    public string DrugAllergies { get; private set; }
+    [DataField]
     public string PostmortemInstructions { get; private set; }
-
-    [DataField]
-    public bool HasInsurance { get; private set; }
-
-    [DataField]
-    public int InsuranceProvider { get; private set; }
-
-    [DataField]
-    public int InsuranceType { get; private set; }
-
-    // medical info
-
-    /// <summary>
-    /// A character's enabled medical info,
-    /// includes: allergies, prescriptions, family history
-    /// </summary>
-    [DataField]
-    private HashSet<ProtoId<MedicalInfoPrototype>> _medicalInfo = new();
-    public HashSet<ProtoId<MedicalInfoPrototype>> MedicalInfo => _medicalInfo;
-
-    [DataField]
-    public int BloodType { get; private set; }
     // history, prescriptions, etc. would be a record below
 
     // "incidents"
@@ -118,10 +98,7 @@ public sealed partial class PlayerProvidedCharacterRecords
         int weight,
         string emergencyContactName,
         string identifyingFeatures,
-        bool hasInsurance,
-        int insuranceProvider, int insuranceType,
-        HashSet<ProtoId<MedicalInfoPrototype>> medicalInfo,
-        int bloodType,
+        string allergies, string drugAllergies,
         string postmortemInstructions,
         List<RecordEntry> medicalEntries, List<RecordEntry> securityEntries, List<RecordEntry> employmentEntries)
     {
@@ -130,11 +107,9 @@ public sealed partial class PlayerProvidedCharacterRecords
         Weight = weight;
         EmergencyContactName = emergencyContactName;
         IdentifyingFeatures = identifyingFeatures;
+        Allergies = allergies;
+        DrugAllergies = drugAllergies;
         PostmortemInstructions = postmortemInstructions;
-        HasInsurance = hasInsurance;
-        InsuranceProvider = insuranceProvider;
-        InsuranceType = insuranceType;
-        _medicalInfo = medicalInfo;
         MedicalEntries = medicalEntries;
         SecurityEntries = securityEntries;
         EmploymentEntries = employmentEntries;
@@ -147,10 +122,8 @@ public sealed partial class PlayerProvidedCharacterRecords
         EmergencyContactName = other.EmergencyContactName;
         HasWorkAuthorization = other.HasWorkAuthorization;
         IdentifyingFeatures = other.IdentifyingFeatures;
-        HasInsurance = other.HasInsurance;
-        InsuranceProvider = other.InsuranceProvider;
-        InsuranceType = other.InsuranceType;
-        _medicalInfo = other.MedicalInfo;
+        Allergies = other.Allergies;
+        DrugAllergies = other.DrugAllergies;
         PostmortemInstructions = other.PostmortemInstructions;
         MedicalEntries = other.MedicalEntries.Select(x => new RecordEntry(x)).ToList();
         SecurityEntries = other.SecurityEntries.Select(x => new RecordEntry(x)).ToList();
@@ -164,11 +137,8 @@ public sealed partial class PlayerProvidedCharacterRecords
             height: 170, weight: 70,
             emergencyContactName: "",
             identifyingFeatures: "",
-            hasInsurance: true,
-            insuranceProvider: 0,
-            insuranceType: 0,
-            medicalInfo: [],
-            bloodType: 0,
+            allergies: "None",
+            drugAllergies: "None",
             postmortemInstructions: "Return home",
             medicalEntries: new List<RecordEntry>(),
             securityEntries: new List<RecordEntry>(),
@@ -184,10 +154,8 @@ public sealed partial class PlayerProvidedCharacterRecords
                    && EmergencyContactName == other.EmergencyContactName
                    && HasWorkAuthorization == other.HasWorkAuthorization
                    && IdentifyingFeatures == other.IdentifyingFeatures
-                   && HasInsurance == other.HasInsurance
-                   && InsuranceProvider == other.InsuranceProvider
-                   && InsuranceType == other.InsuranceType
-                   && _medicalInfo.SetEquals(other.MedicalInfo)
+                   && Allergies == other.Allergies
+                   && DrugAllergies == other.DrugAllergies
                    && PostmortemInstructions == other.PostmortemInstructions;
         if (!test)
             return false;
@@ -235,17 +203,13 @@ public sealed partial class PlayerProvidedCharacterRecords
     /// </summary>
     public void EnsureValid()
     {
-        var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
-        var info = MedicalInfo
-            .Where(prototypeManager.HasIndex)
-            .ToList();
-        
         Weight = Math.Clamp(Weight, 0, MaxWeight);
         EmergencyContactName =
             ClampString(EmergencyContactName, TextMedLen);
         IdentifyingFeatures = ClampString(IdentifyingFeatures, TextMedLen);
+        Allergies = ClampString(Allergies, TextMedLen);
+        DrugAllergies = ClampString(DrugAllergies, TextMedLen);
         PostmortemInstructions = ClampString(PostmortemInstructions, TextMedLen);
-        _medicalInfo.UnionWith(GetValidInfo(info, prototypeManager));
 
         EnsureValidEntries(EmploymentEntries);
         EnsureValidEntries(MedicalEntries);
@@ -271,60 +235,13 @@ public sealed partial class PlayerProvidedCharacterRecords
     {
         return new(this) { IdentifyingFeatures = feat};
     }
-
-    public PlayerProvidedCharacterRecords WithInsurance(bool hasInsurance)
+    public PlayerProvidedCharacterRecords WithAllergies(string s)
     {
-        return new (this) { HasInsurance = hasInsurance };
+        return new(this) { Allergies = s };
     }
-
-    public PlayerProvidedCharacterRecords WithInsuranceProvider(int insuranceProvider)
+    public PlayerProvidedCharacterRecords WithDrugAllergies(string s)
     {
-        return new (this) { InsuranceProvider = insuranceProvider };
-    }
-
-    public PlayerProvidedCharacterRecords WithInsuranceType(int insuranceType)
-    {
-        return new (this) { InsuranceType = insuranceType };
-    }
-
-    public PlayerProvidedCharacterRecords WithMedicalInfo(ProtoId<MedicalInfoPrototype> medicalId, IPrototypeManager protoManager)
-    {
-        if (!protoManager.TryIndex(medicalId, out var medicalInfoProto))
-            return new(this);
-
-        var category = medicalInfoProto.Category;
-
-        MedicalInfoCategoryPrototype? categoryProto = null;
-
-        if (category != null && !protoManager.TryIndex(category, out categoryProto))
-            return new(this);
-
-        var list = new HashSet<ProtoId<MedicalInfoPrototype>>(_medicalInfo) { medicalId };
-
-        if (categoryProto == null)
-            return new(this) {_medicalInfo = list};
-
-        foreach (var item in list)
-        {
-            if (!protoManager.TryIndex(item, out var otherProto)
-                || otherProto.Category != categoryProto)
-                continue;
-        }
-
-        return new(this) { _medicalInfo = list };
-    }
-
-    public PlayerProvidedCharacterRecords WithoutMedicalInfo(ProtoId<MedicalInfoPrototype> medicalId, IPrototypeManager protoManager)
-    {
-        var list = new HashSet<ProtoId<MedicalInfoPrototype>>(_medicalInfo);
-        list.Remove(medicalId);
-
-        return new(this) { _medicalInfo = list };
-    }
-
-    public PlayerProvidedCharacterRecords WithBloodType(int b)
-    {
-        return new (this) { BloodType = b };
+        return new(this) { DrugAllergies = s };
     }
     public PlayerProvidedCharacterRecords WithPostmortemInstructions(string s)
     {
@@ -341,28 +258,6 @@ public sealed partial class PlayerProvidedCharacterRecords
     public PlayerProvidedCharacterRecords WithSecurityEntries(List<RecordEntry> entries)
     {
         return new(this) { SecurityEntries = entries};
-    }
-
-    public HashSet<ProtoId<MedicalInfoPrototype>> GetValidInfo(IEnumerable<ProtoId<MedicalInfoPrototype>> info, IPrototypeManager protoManager)
-    {
-        var result = new HashSet<ProtoId<MedicalInfoPrototype>>();
-
-        foreach (var item in info)
-        {
-            if (!protoManager.TryIndex(item, out var itemProto))
-                continue;
-
-            if (itemProto.Category == null)
-                continue;
-
-            // No category so dump it.
-            if (!protoManager.TryIndex(itemProto.Category, out var category))
-                continue;
-
-            result.Add(item);
-        }
-
-        return result;
     }
 }
 
