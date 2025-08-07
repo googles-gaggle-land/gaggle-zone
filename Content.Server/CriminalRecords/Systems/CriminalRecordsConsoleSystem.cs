@@ -14,7 +14,6 @@ using System.Diagnostics.CodeAnalysis;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Security.Components;
 using System.Linq;
-using Content.Shared.Roles.Jobs;
 
 namespace Content.Server.CriminalRecords.Systems;
 
@@ -54,11 +53,16 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         UpdateUserInterface(ent);
     }
 
-    private void OnKeySelected(Entity<CriminalRecordsConsoleComponent> ent, ref SelectStationRecord msg)
+    public bool OnKeySelectedNoUI(Entity<CriminalRecordsConsoleComponent> ent, ref SelectStationRecord msg)
     {
         // no concern of sus client since record retrieval will fail if invalid id is given
         ent.Comp.ActiveKey = msg.SelectedKey;
-        UpdateUserInterface(ent);
+        return true;
+    }
+    private void OnKeySelected(Entity<CriminalRecordsConsoleComponent> ent, ref SelectStationRecord msg)
+    {
+        if (OnKeySelectedNoUI(ent, ref msg))
+            UpdateUserInterface(ent);
     }
     private void OnStatusFilterPressed(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordSetStatusFilter msg)
     {
@@ -83,18 +87,18 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         officer = tryGetIdentityShortInfoEvent.Title ?? Loc.GetString("criminal-records-console-unknown-officer");
     }
 
-    private void OnChangeStatus(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordChangeStatus msg)
+    public bool OnChangeStatusNoUI(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordChangeStatus msg)
     {
         // prevent malf client violating wanted/reason nullability
         if (msg.Status == SecurityStatus.Wanted != (msg.Reason != null) &&
             msg.Status == SecurityStatus.Suspected != (msg.Reason != null))
-            return;
+            return false;
 
         if (!CheckSelected(ent, msg.Actor, out var mob, out var key))
-            return;
+            return false;
 
         if (!_records.TryGetRecord<CriminalRecord>(key.Value, out var record) || record.Status == msg.Status)
-            return;
+            return false;
 
         // validate the reason
         string? reason = null;
@@ -102,7 +106,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         {
             reason = msg.Reason.Trim();
             if (reason.Length < 1 || reason.Length > ent.Comp.MaxStringLength)
-                return;
+                return false;
         }
 
         var oldStatus = record.Status;
@@ -168,7 +172,13 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         _radio.SendRadioMessage(ent, Loc.GetString($"criminal-records-console-{statusString}", args),
             ent.Comp.SecurityChannel, ent);
 
-        UpdateUserInterface(ent);
+        return true;
+    }
+
+    private void OnChangeStatus(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordChangeStatus msg)
+    {
+        if (OnChangeStatusNoUI(ent, ref msg))
+            UpdateUserInterface(ent);
     }
 
     private void OnAddHistory(Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordAddHistory msg)

@@ -384,6 +384,14 @@
   name: medical records computer
   description: This can be used to check medical records.
   components:
+  - type: CharacterRecordConsole
+    consoleType: Medical
+  - type: UserInterface
+    interfaces:
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -410,14 +418,16 @@
   description: This can be used to check criminal records. Only security can modify them.
   components:
   - type: CriminalRecordsConsole
+  - type: CharacterRecordConsole
+    consoleType: Security
   - type: UserInterface
     interfaces:
-      enum.CriminalRecordsConsoleKey.Key:
-        type: CriminalRecordsConsoleBoundUserInterface
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.CriminalRecordsConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -441,31 +451,30 @@
   - type: GuideHelp
     guides:
     - CriminalRecords
+    - Forensics
 
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerStationRecords
-  name: station records computer
-  description: This can be used to check station records.
+  name: employment records computer
+  description: This can be used to check employment records.
   components:
-  - type: GeneralStationRecordConsole
+  - type: CharacterRecordConsole
+    consoleType: Employment
   - type: UserInterface
     interfaces:
-        enum.GeneralStationRecordConsoleKey.Key:
-          type: GeneralStationRecordConsoleBoundUserInterface
+        enum.CharacterRecordConsoleKey.Key:
+          type: CharacterRecordConsoleBoundUserInterface
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.GeneralStationRecordConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key
   - type: PointLight
     radius: 1.5
     energy: 1.6
     color: "#1f8c28"
   - type: Computer
     board: StationRecordsComputerCircuitboard
-  - type: GuideHelp
-    guides:
-    - Forensics
 
 - type: entity
   parent: BaseComputerAiAccess
