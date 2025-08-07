@@ -37,6 +37,11 @@ public sealed partial class CharacterRecordViewer : FancyWindow
 
     private DialogWindow? _wantedReasonDialog;
 
+    [Dependency]
+    private readonly ILogManager _logManager = default!;
+
+    private ISawmill? _sawmill = default!;
+
     /// <summary>
     /// The key to the record of the currently selected item in the listing.
     /// </summary>
@@ -56,12 +61,15 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     public CharacterRecordViewer()
     {
         RobustXamlLoader.Load(this);
+        IoCManager.InjectDependencies(this);
+
+        _sawmill = _logManager.GetSawmill("ui.records");
 
         // There is no reason why we can't just steal the StationRecordFilter class.
         // If wizden adds a new kind of filtering we want to replicate it here.
         foreach (var item in Enum.GetValues<StationRecordFilterType>())
         {
-            RecordFilterType.AddItem(GetTypeFilterLocals(item), (int)item);
+            RecordFilterType.AddItem(GetTypeFilterLocals(item), (int) item);
         }
 
         // Again, if wizden changes something about Criminal Records, we want to replicate the
@@ -339,6 +347,11 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             case RecordConsoleType.Security:
                 SetEntries(cr.SecurityEntries);
                 UpdateRecordBoxSecurity(record, state.SelectedSecurityStatus);
+
+                /*if (_sawmill is not null && state.SelectedSecurityStatus is not null)
+                {
+                    _sawmill.Debug($"security status: {state.SelectedSecurityStatus.Value.Item1}, reason: {state.SelectedSecurityStatus.Value.Item2}");
+                }*/
                 break;
             case RecordConsoleType.Admin:
                 UpdateRecordBoxEmployment(record);
